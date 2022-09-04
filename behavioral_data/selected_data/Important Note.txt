@@ -1,0 +1,4 @@
+** Important Note **
+Behavioral data files in this folder are randomly selected from raw_data folder 
+and for using in codes have been assigned numbers from 1 to 30 so files with same numbers
+in raw_data folder and this folder do not necessarily match with each other.
