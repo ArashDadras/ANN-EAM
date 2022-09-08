@@ -2,7 +2,7 @@
     "RDM": {
         "model_name": "RDM",
         "stan_file": "RDM/RDM.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
+        "dataset_name": "fastText_FC.csv",
         "plots_folder_name": "RDM",
         "transf_params": ["transf_mu_drift_word", "transf_mu_drift_nonword", "transf_mu_threshold",
                           "transf_mu_ndt"
@@ -11,7 +11,7 @@
     "RDM_ct": {
         "model_name": "RDM",
         "stan_file": "RDM/RDM_ct.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
+        "dataset_name": "fastText_FC.csv",
         "plots_folder_name": "RDM",
         "transf_params": ["transf_mu_drift_word", "transf_mu_drift_nonword", "transf_mu_threshold_word",
             "transf_mu_threshold_nonword", "transf_mu_ndt"
@@ -20,7 +20,7 @@
     "RDM_cd": {
         "model_name": "RDM_cd",
         "stan_file": "RDM/RDM_cd.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
+        "dataset_name": "fastText_FC.csv",
         "plots_folder_name": "RDM_cd",
         "transf_params": ["transf_mu_drift_word", "transf_mu_drift_nonword", "transf_mu_threshold_word",
             "transf_mu_threshold_nonword", "transf_mu_ndt"
@@ -29,17 +29,17 @@
     "RDM_ndm": {
         "model_name": "RDM_ndm",
         "stan_file": "RDM/RDM_ndm.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
+        "dataset_name": "fastText_FC.csv",
         "plots_folder_name": "RDM_ndm",
         "transf_params": ["transf_mu_drift_word", "transf_mu_drift_nonword", "transf_mu_threshold_word",
             "transf_mu_threshold_nonword", "transf_mu_g", "transf_mu_m"
         ]
     },
-    "ANN-RDM_l_FT": {
-        "model_name": "ANN-RDM_l_FT",
+    "ANN-RDM_l_FC": {
+        "model_name": "ANN-RDM_l_FC",
         "stan_file": "ANN-RDM/linear.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
-        "plots_folder_name": "ANN-RDM_l_FT",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-RDM_l_FC",
         "transf_params": ["transf_mu_alpha_1", "transf_mu_alpha_2",
             "transf_mu_b", "transf_mu_threshold_word",
             "transf_mu_threshold_nonword", "transf_mu_ndt"
@@ -85,11 +85,11 @@
             "transf_mu_threshold_nonword", "transf_mu_ndt"
         ]
     },
-    "ANN-RDM_l_ndm_FT": {
-        "model_name": "ANN-RDM_l_ndm_FT",
+    "ANN-RDM_l_ndm_FC": {
+        "model_name": "ANN-RDM_l_ndm_FC",
         "stan_file": "ANN-RDM/linear_ndm.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
-        "plots_folder_name": "ANN-RDM_l_ndm_FT",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-RDM_l_ndm_FC",
         "transf_params": ["transf_mu_alpha_1", "transf_mu_alpha_2",
             "transf_mu_b", "transf_mu_threshold_word", "transf_mu_threshold_nonword",
             "transf_mu_g", "transf_mu_m"
@@ -135,11 +135,11 @@
             "transf_mu_g", "transf_mu_m"
         ]
     },
-    "ANN-RDM_full_s_FT": {
-        "model_name": "ANN-RDM_full_FT",
+    "ANN-RDM_full_s_FC": {
+        "model_name": "ANN-RDM_full_FC",
         "stan_file": "ANN-RDM/sigmoid_am_ndm.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
-        "plots_folder_name": "ANN-RDM_full_FT",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-RDM_full_FC",
         "transf_params": ["transf_mu_alpha", "transf_mu_b", "transf_mu_threshold_word",
             "transf_mu_threshold_nonword", "transf_mu_g", "transf_mu_m",
             "transf_mu_k_1", "transf_mu_k_2"
@@ -185,11 +185,11 @@
             "transf_mu_k_1", "transf_mu_k_2"
         ]
     },
-    "ANN-RDM_s_am_FT": {
-        "model_name": "ANN-RDM_am_FT",
+    "ANN-RDM_s_am_FC": {
+        "model_name": "ANN-RDM_am_FC",
         "stan_file": "ANN-RDM/sigmoid_am.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
-        "plots_folder_name": "ANN-RDM_am_FT",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-RDM_am_FC",
         "transf_params": ["transf_mu_alpha", "transf_mu_b", "transf_mu_threshold_word",
             "transf_mu_threshold_nonword", "transf_mu_ndt",
             "transf_mu_k_1", "transf_mu_k_2"
@@ -235,11 +235,11 @@
             "transf_mu_k_1", "transf_mu_k_2"
         ]
     },
-    "ANN-RDM_s_ndm_FT": {
-        "model_name": "ANN-RDM_s_ndm_FT",
+    "ANN-RDM_s_ndm_FC": {
+        "model_name": "ANN-RDM_s_ndm_FC",
         "stan_file": "ANN-RDM/sigmoid_ndm.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
-        "plots_folder_name": "ANN-RDM_s_ndm_FT",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-RDM_s_ndm_FC",
         "transf_params": ["transf_mu_alpha", "transf_mu_threshold_word",
             "transf_mu_threshold_nonword", "transf_mu_g", "transf_mu_m",
             "transf_mu_k_1", "transf_mu_k_2"
@@ -285,11 +285,11 @@
             "transf_mu_k_1", "transf_mu_k_2"
         ]
     },
-    "ANN-RDM_s_FT": {
-        "model_name": "ANN-RDM_s_FT",
+    "ANN-RDM_s_FC": {
+        "model_name": "ANN-RDM_s_FC",
         "stan_file": "ANN-RDM/sigmoid.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
-        "plots_folder_name": "ANN-RDM_s_FT",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-RDM_s_FC",
         "transf_params": ["transf_mu_alpha", "transf_mu_threshold_word",
             "transf_mu_threshold_nonword", "transf_mu_ndt",
             "transf_mu_k_1", "transf_mu_k_2"

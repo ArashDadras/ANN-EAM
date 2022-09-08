@@ -2,7 +2,7 @@
     "LBA": {
         "model_name": "LBA",
         "stan_file": "LBA/LBA.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
+        "dataset_name": "fastText_FC.csv",
         "plots_folder_name": "LBA",
         "transf_params": ["transf_mu_k", "transf_mu_A", "transf_mu_ndt",
          "transf_mu_drift_word", "transf_mu_drift_nonword"
@@ -11,7 +11,7 @@
     "LBA_ct": {
         "model_name": "LBA_ct",
         "stan_file": "LBA/LBA_ct.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
+        "dataset_name": "fastText_FC.csv",
         "plots_folder_name": "LBA_ct",
         "transf_params": ["transf_mu_k_word", "transf_mu_A_word", "transf_mu_k_nonword", "transf_mu_A_nonword",
             "transf_mu_ndt", "transf_mu_drift_word", "transf_mu_drift_nonword"
@@ -20,7 +20,7 @@
     "LBA_cd": {
         "model_name": "LBA_cd",
         "stan_file": "LBA/LBA_cd.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
+        "dataset_name": "fastText_FC.csv",
         "plots_folder_name": "LBA_cd",
         "transf_params": ["transf_mu_k_word", "transf_mu_A_word", "transf_mu_k_nonword", "transf_mu_A_nonword",
             "transf_mu_ndt", "transf_mu_drift_word", "transf_mu_drift_nonword"
@@ -29,17 +29,17 @@
     "LBA_ndm": {
         "model_name": "LBA_ndm",
         "stan_file": "LBA/LBA_ndm.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
+        "dataset_name": "fastText_FC.csv",
         "plots_folder_name": "LBA_ndm",
         "transf_params": ["transf_mu_k_word", "transf_mu_A_word", "transf_mu_k_nonword", "transf_mu_A_nonword",
             "transf_mu_m", "transf_mu_g", "transf_mu_drift_word", "transf_mu_drift_nonword"
         ]
     },
-    "ANN-LBA_l_FT": {
-        "model_name": "ANN-LBA_l_FT",
+    "ANN-LBA_l_FC": {
+        "model_name": "ANN-LBA_l_FC",
         "stan_file": "ANN-LBA/linear.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
-        "plots_folder_name": "ANN-LBA_l_FT",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-LBA_l_FC",
         "transf_params": ["transf_mu_k_word", "transf_mu_A_word",
             "transf_mu_k_nonword", "transf_mu_A_nonword", "transf_mu_ndt",
             "transf_mu_alpha_1", "transf_mu_alpha_2", "transf_mu_b"
@@ -85,11 +85,11 @@
             "transf_mu_alpha_1", "transf_mu_alpha_2", "transf_mu_b"
         ]
     },
-    "ANN-LBA_l_ndm_FT": {
-        "model_name": "ANN-LBA_l_ndm_FT",
+    "ANN-LBA_l_ndm_FC": {
+        "model_name": "ANN-LBA_l_ndm_FC",
         "stan_file": "ANN-LBA/linear_ndm.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
-        "plots_folder_name": "ANN-LBA_l_ndm_FT",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-LBA_l_ndm_FC",
         "transf_params": ["transf_mu_k_word", "transf_mu_A_word",
             "transf_mu_k_nonword", "transf_mu_A_nonword", "transf_mu_g",
             "transf_mu_m", "transf_mu_alpha_1", "transf_mu_alpha_2",
@@ -140,11 +140,11 @@
             "transf_mu_b"
         ]
     },
-    "ANN-LBA_full_s_FT": {
-        "model_name": "ANN-LBA_full_s_FT",
+    "ANN-LBA_full_s_FC": {
+        "model_name": "ANN-LBA_full_s_FC",
         "stan_file": "ANN-LBA/sigmoid_am_ndm.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
-        "plots_folder_name": "ANN-LBA_full_s_FT",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-LBA_full_s_FC",
         "transf_params": ["transf_mu_k_word", "transf_mu_A_word",
             "transf_mu_k_nonword", "transf_mu_A_nonword", "transf_mu_g",
             "transf_mu_m", "transf_mu_alpha", "transf_mu_b",
@@ -195,11 +195,11 @@
             "transf_mu_theta_1", "transf_mu_theta_2"
         ]
     },
-    "ANN-LBA_s_am_FT": {
-        "model_name": "ANN-LBA_s_am_FT",
+    "ANN-LBA_s_am_FC": {
+        "model_name": "ANN-LBA_s_am_FC",
         "stan_file": "ANN-LBA/sigmoid_am.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
-        "plots_folder_name": "ANN-LBA_s_am_FT",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-LBA_s_am_FC",
         "transf_params": ["transf_mu_k_word", "transf_mu_A_word",
             "transf_mu_k_nonword", "transf_mu_A_nonword", "transf_mu_ndt", 
             "transf_mu_alpha", "transf_mu_b", "transf_mu_theta_1",
@@ -250,11 +250,11 @@
             "transf_mu_theta_2"
         ]
     },
-    "ANN-LBA_s_ndm_FT": {
-        "model_name": "ANN-LBA_s_ndm_FT",
+    "ANN-LBA_s_ndm_FC": {
+        "model_name": "ANN-LBA_s_ndm_FC",
         "stan_file": "ANN-LBA/sigmoid_ndm.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
-        "plots_folder_name": "ANN-LBA_s_ndm_FT",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-LBA_s_ndm_FC",
         "transf_params": ["transf_mu_k_word", "transf_mu_A_word",
             "transf_mu_k_nonword", "transf_mu_A_nonword", "transf_mu_g",
             "transf_mu_m", "transf_mu_alpha", "transf_mu_theta_1",
@@ -305,11 +305,11 @@
             "transf_mu_theta_2"
         ]
     },
-    "ANN-LBA_s_FT": {
-        "model_name": "ANN-LBA_s_FT",
+    "ANN-LBA_s_FC": {
+        "model_name": "ANN-LBA_s_FC",
         "stan_file": "ANN-LBA/sigmoid.stan",
-        "dataset_name": "fastText_subtlex_FT.csv",
-        "plots_folder_name": "ANN-LBA_s_FT",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-LBA_s_FC",
         "transf_params": ["transf_mu_k_word", "transf_mu_A_word",
             "transf_mu_k_nonword", "transf_mu_A_nonword", "transf_mu_ndt",
             "transf_mu_alpha", "transf_mu_theta_1", "transf_mu_theta_2"
