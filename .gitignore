@@ -129,3 +129,6 @@ ui-tests/playwright-report
 
 # Folders
 check_points/
+
+# Files
+.exe
