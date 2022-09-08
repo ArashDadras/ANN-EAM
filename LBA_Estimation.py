@@ -117,16 +117,17 @@ def remove_outliers(df, max_rt, min_rt, std_c=2.5):
 
 #### Reading and modifing each behavioral data file 
 #### and combining all of them into a single behavioral dataframe
-Number_Of_Participants = 5
-Number_Of_Trials = 400
+Number_Of_Participants = 100
+Number_Of_Trials = 500
 dataframes = []
 
 for i in range(Number_Of_Participants):
     # Loading each file
-    df = pd.read_csv(behavioural_data_root + str(i+1) + "DATA.LDT",
-                     names=['trial', 'string_id', 'string_type', 'accuracy', 'rt', 'string'])
+    df = pd.read_csv(behavioural_data_root + str(i+1) + "_DATA.LDT", names=['trial', 'string_id', 'string_type', 'accuracy', 'rt', 'string'])
     # Dropping non rows and first two rows that are demographic informations 
-    df = df.dropna().drop('string_id', axis=1).drop([0, 1]).iloc[:Number_Of_Trials] 
+    df = df.dropna().drop('string_id', axis=1).drop([0, 1]).iloc[:Number_Of_Trials]
+    # Dropping rows with wrong accuracies
+    df = df.loc[(df['accuracy'] == '0') | (df['accuracy'] == '1')]
     # Converting columns type to suitable data types
     convert_dict = {'string_type': 'int16',
                     'accuracy': 'int16',
@@ -214,10 +215,10 @@ data_dict = {'N': N,
              }
 
 # set sampling parameters
-n_iter = 500
+n_iter = 7000
 n_warmup = int(n_iter/2)
 n_sample = int(n_iter/2)
-n_chains = 2
+n_chains = 4
 
 #### Fitting the model
 fit = lba_model.sample(data=data_dict,

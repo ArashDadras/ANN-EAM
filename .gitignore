@@ -131,4 +131,4 @@ ui-tests/playwright-report
 check_points/
 
 # Files
-.exe
+*.exe

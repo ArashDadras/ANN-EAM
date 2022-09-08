@@ -1,0 +1,4 @@
+** Important Note **
+Behavioral data files in the selected_data are first 100 data files from raw_data folder 
+and for using in codes have been assigned numbers from 1 to 100 so files with same numbers
+in raw_data folder and selected_data folder do not necessarily match with each other.
