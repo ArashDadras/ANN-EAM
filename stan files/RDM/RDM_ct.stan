@@ -1,5 +1,5 @@
 // RDM with different threshold for words and nonwords and
-// different drifts across conditions
+// same drifts across conditions
 
 functions {
     real race_pdf(real t, real b, real v){

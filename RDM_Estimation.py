@@ -118,7 +118,7 @@ def remove_outliers(df, max_rt, min_rt, std_c=2.5):
 #### Reading and modifing each behavioral data file 
 #### and combining all of them into a single behavioral dataframe
 Number_Of_Participants = 100
-Number_Of_Trials = 500
+Number_Of_Trials = 400
 dataframes = []
 
 for i in range(Number_Of_Participants):
@@ -211,7 +211,7 @@ data_dict = {'N': N,
              }
 
 # set sampling parameters
-n_iter = 7000
+n_iter = 5000
 n_warmup = int(n_iter/2)
 n_sample = int(n_iter/2)
 n_chains = 4
