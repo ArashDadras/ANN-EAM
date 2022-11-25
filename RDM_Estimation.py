@@ -82,77 +82,13 @@ print(model_config)
 ## Prepare data
 #### Loading words and non-words with zipf and predicted probabilities
 word_nword_df = pd.read_csv(dataset_path, header=None, names =['string', 'freq',  'label', 'zipf','category', 'word_prob', 'non_word_prob'])
-word_nword_df
 
-def remove_outliers(df, max_rt, min_rt, std_c=2.5):
-    """
-    Returns remove outliers from dataframes. Outlier RTs are bigger than
-    max_rt and smaller than min_rt. Also RTsthat are out of -/+ (std_c * sd) 
-    of mean RT interval are considered as outliers too.
+#### Reading LDT Data
+behavioural_df = pd.read_csv(behavioural_data_root + 'LDT_data.csv', header=None,  names=['accuracy', 'rt', 'string', 'response', 'participant', 'minRT'])
 
-    Parameters
-    ----------
-        df: pandas dataframe with rt column
-        max_rt (float): maximum acceptable rt
-        min_rt (float): minimum acceptable rt
-        
-    Optional Parameters
-    ----------
-        std_c (float) : Optional
-            coefficient to define interval of non-outlier RTs
-    
-    Returns
-    -------
-        df: pandas dataframe without outliers  
-    """
-    mean = df['rt'].mean()
-    sd = df['rt'].std()
-    lower_thr = mean - std_c*sd
-    upper_thr = mean + std_c*sd
-    min_bound = max(min_rt, lower_thr)
-    max_bound = min(max_rt, upper_thr)
-    df = df[df['rt'] >= min_bound]
-    df = df[df['rt'] <= max_bound]
-    return df
-
-#### Reading and modifing each behavioral data file 
-#### and combining all of them into a single behavioral dataframe
-Number_Of_Participants = 100
-Number_Of_Trials = 400
-dataframes = []
-
-for i in range(Number_Of_Participants):
-    # Loading each file
-    df = pd.read_csv(behavioural_data_root + str(i+1) + "_DATA.LDT", names=['trial', 'string_id', 'string_type', 'accuracy', 'rt', 'string'])
-    # Dropping non rows and first two rows that are demographic informations 
-    df = df.dropna().drop('string_id', axis=1).drop([0, 1]).iloc[:Number_Of_Trials]
-    # Dropping rows with wrong accuracies
-    df = df.loc[(df['accuracy'] == '0') | (df['accuracy'] == '1')]
-    # Converting columns type to suitable data types
-    convert_dict = {'string_type': 'int16',
-                    'accuracy': 'int16',
-                    'rt': float
-                   }
-
-    df = df.astype(convert_dict)
-    # Convert RTs to seconds
-    df['rt'] = df['rt'].apply(lambda x: x/1000) 
-    # Removing Outliers
-    df = remove_outliers(df, 3, .2, 2.5)
-    # Extracting response of participant from his/her accuracy
-    df['response'] = np.logical_not(np.logical_xor(df['string_type'], df['accuracy'])).astype('int')
-    df = df.reset_index(drop=True)
-    # Particpant number
-    df['participant'] = i+1
-    # Minimum RT of participant in all trials (is needed for stan code)
-    df['minRT'] = df['rt'].min()
-    dataframes.append(df)
-
-#### Combining dataframes
-behavioural_df = pd.concat(dataframes)
 #### Merging  behavioral dataframe with word_nonword_df to have words and non-words data with behavioral data
 behavioural_df = pd.merge(behavioural_df, word_nword_df, on='string', how='left').dropna().reset_index(drop=True)
-behavioural_df = behavioural_df.drop(["trial", "string_type", "freq"], axis=1)
+behavioural_df = behavioural_df.drop(["freq"], axis=1)
 print(behavioural_df.head())
 
 #### Predicted probabilities of words and non-words in different conditions in all trials
@@ -179,6 +115,7 @@ response = behavioural_df['response'].to_numpy().astype(int)               # for
 rt = behavioural_df['rt'].to_numpy()                                       # for all models
 minRT = behavioural_df['minRT'].to_numpy()                                 # for all models
 RTbound = 0.1                                                              # for all models
+Number_Of_Participants = len(set(behavioural_df['participant']))
 
 threshold_priors = [0, 1, 1, 1]          # For all models with LBA
 ndt_priors = [0, 1, 1, 1];               # For models wtihout non-decision time modulation
@@ -239,6 +176,8 @@ for f in df["R_hat"]:
     if f >= 1.01 or f <= 0.9:
         counter+=1
 print(counter)
+
+print(df.loc[df['R_hat']>1.01].to_csv('logs/'+model_config['model_name']+'_rhat_log.csv'))
 
 print(df.loc[df['R_hat']>1.01])
 
