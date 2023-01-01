@@ -1,0 +1,684 @@
+nohup: ignoring input
+INFO:cmdstanpy:compiling stan file /storage/users/msiavashpour/ANN-EAM/stan files/ANN-RDM/sigmoid_am_ndm.stan to exe file /storage/users/msiavashpour/ANN-EAM/stan files/ANN-RDM/sigmoid_am_ndm
+INFO:cmdstanpy:compiled model executable: /storage/users/msiavashpour/ANN-EAM/stan files/ANN-RDM/sigmoid_am_ndm
+WARNING:cmdstanpy:Stan compiler has produced 24 warnings:
+WARNING:cmdstanpy:
+--- Translating Stan model to C++ code ---
+bin/stanc  --o=/tmp/tmp5zgk_ui2/tmptasbem7f.hpp /tmp/tmp5zgk_ui2/tmptasbem7f.stan
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 55, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 57, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 58, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 59, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 60, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 62, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 103, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 104, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 105, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 106, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 107, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 108, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 109, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 110, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 121, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 122, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 123, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 124, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 125, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 126, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 127, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 128, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 31, column 30: Use of
+    race_cdf without a vertical bar (|) between the first two arguments of a
+    CDF is deprecated and will be removed in Stan 2.32.0. This can be
+    automatically changed using the canonicalize flag for stanc
+Warning in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 35, column 30: Use of
+    race_cdf without a vertical bar (|) between the first two arguments of a
+    CDF is deprecated and will be removed in Stan 2.32.0. This can be
+    automatically changed using the canonicalize flag for stanc
+
+--- Compiling, linking C++ code ---
+/storage/users/msiavashpour/miniconda3/envs/stan-env/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /storage/users/msiavashpour/miniconda3/envs/stan-env/include -std=c++1y -D_REENTRANT -Wno-sign-compare -Wno-ignored-attributes      -I /storage/users/msiavashpour/miniconda3/envs/stan-env/include/    -O3 -I src -I stan/src -I lib/rapidjson_1.1.0/ -I lib/CLI11-1.9.1/ -I stan/lib/stan_math/ -I stan/lib/stan_math/lib/eigen_3.3.9 -I stan/lib/stan_math/lib/boost_1.78.0 -I stan/lib/stan_math/lib/sundials_6.1.1/include -I stan/lib/stan_math/lib/sundials_6.1.1/src/sundials -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /storage/users/msiavashpour/miniconda3/envs/stan-env/include    -DBOOST_DISABLE_ASSERTS   -DTBB_INTERFACE_NEW  -DTBB_INTERFACE_NEW     -c  -x c++ -o /tmp/tmp5zgk_ui2/tmptasbem7f.o /tmp/tmp5zgk_ui2/tmptasbem7f.hpp
+/storage/users/msiavashpour/miniconda3/envs/stan-env/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /storage/users/msiavashpour/miniconda3/envs/stan-env/include -std=c++1y -D_REENTRANT -Wno-sign-compare -Wno-ignored-attributes      -I /storage/users/msiavashpour/miniconda3/envs/stan-env/include/    -O3 -I src -I stan/src -I lib/rapidjson_1.1.0/ -I lib/CLI11-1.9.1/ -I stan/lib/stan_math/ -I stan/lib/stan_math/lib/eigen_3.3.9 -I stan/lib/stan_math/lib/boost_1.78.0 -I stan/lib/stan_math/lib/sundials_6.1.1/include -I stan/lib/stan_math/lib/sundials_6.1.1/src/sundials -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /storage/users/msiavashpour/miniconda3/envs/stan-env/include    -DBOOST_DISABLE_ASSERTS   -DTBB_INTERFACE_NEW  -DTBB_INTERFACE_NEW    -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/storage/users/msiavashpour/miniconda3/envs/stan-env/lib -Wl,-rpath-link,/storage/users/msiavashpour/miniconda3/envs/stan-env/lib -L/storage/users/msiavashpour/miniconda3/envs/stan-env/lib        -Wl,-L,"/storage/users/msiavashpour/miniconda3/envs/stan-env/lib/" -Wl,-rpath,"/storage/users/msiavashpour/miniconda3/envs/stan-env/lib/" -Wl,--disable-new-dtags -ltbb    /tmp/tmp5zgk_ui2/tmptasbem7f.o src/cmdstan/main.o        -Wl,-L,"/storage/users/msiavashpour/miniconda3/envs/stan-env/lib/" -Wl,-rpath,"/storage/users/msiavashpour/miniconda3/envs/stan-env/lib/" -Wl,--disable-new-dtags -ltbb stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_nvecserial.a stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_cvodes.a stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_idas.a stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_kinsol.a   -o /tmp/tmp5zgk_ui2/tmptasbem7f
+rm -f /tmp/tmp5zgk_ui2/tmptasbem7f.o
+
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [2] start processing
+INFO:cmdstanpy:Chain [3] start processing
+INFO:cmdstanpy:Chain [4] start processing
+INFO:cmdstanpy:Chain [2] done processing
+INFO:cmdstanpy:Chain [3] done processing
+INFO:cmdstanpy:Chain [4] done processing
+INFO:cmdstanpy:Chain [1] done processing
+Model name: ANN-RDM_full_s_FC
+Directory  ./Plots/ANN-RDM_full_FC/  Created 
+Directory  ./stan_results/ANN-RDM_full_FC/  Created 
+Model's configs:
+{'model_name': 'ANN-RDM_full_FC', 'stan_file': 'ANN-RDM/sigmoid_am_ndm.stan', 'dataset_name': 'fastText_FC.csv', 'plots_folder_name': 'ANN-RDM_full_FC', 'transf_params': ['transf_mu_alpha', 'transf_mu_b', 'transf_mu_threshold_word', 'transf_mu_threshold_nonword', 'transf_mu_g', 'transf_mu_m', 'transf_mu_k_1', 'transf_mu_k_2']}
+   accuracy     rt    string  ...  category  word_prob  non_word_prob
+0         1  0.651     curbs  ...        LF   0.999998   1.546347e-06
+1         1  0.698     germs  ...        HF   0.999999   7.800695e-07
+2         1  0.765      mark  ...        HF   1.000000   3.632955e-08
+3         1  0.642  draftees  ...        LF   0.999610   3.904704e-04
+4         1  0.674     lotto  ...        HF   0.999634   3.661419e-04
+
+[5 rows x 11 columns]
+Chain [1] method = sample (Default)
+Chain [1] sample
+Chain [1] num_samples = 2500
+Chain [1] num_warmup = 2500
+Chain [1] save_warmup = 0 (Default)
+Chain [1] thin = 1 (Default)
+Chain [1] adapt
+Chain [1] engaged = 1 (Default)
+Chain [1] gamma = 0.050000000000000003 (Default)
+Chain [1] delta = 0.80000000000000004 (Default)
+Chain [1] kappa = 0.75 (Default)
+Chain [1] t0 = 10 (Default)
+Chain [2] method = sample (Default)
+Chain [1] init_buffer = 75 (Default)
+Chain [1] term_buffer = 50 (Default)
+Chain [2] sample
+Chain [1] window = 25 (Default)
+Chain [2] num_samples = 2500
+Chain [2] num_warmup = 2500
+Chain [1] algorithm = hmc (Default)
+Chain [1] hmc
+Chain [2] save_warmup = 0 (Default)
+Chain [2] thin = 1 (Default)
+Chain [1] engine = nuts (Default)
+Chain [1] nuts
+Chain [2] adapt
+Chain [2] engaged = 1 (Default)
+Chain [1] max_depth = 10 (Default)
+Chain [1] metric = diag_e (Default)
+Chain [2] gamma = 0.050000000000000003 (Default)
+Chain [2] delta = 0.80000000000000004 (Default)
+Chain [2] kappa = 0.75 (Default)
+Chain [2] t0 = 10 (Default)
+Chain [2] init_buffer = 75 (Default)
+Chain [1] metric_file =  (Default)
+Chain [1] stepsize = 1 (Default)
+Chain [2] term_buffer = 50 (Default)
+Chain [2] window = 25 (Default)
+Chain [1] stepsize_jitter = 0 (Default)
+Chain [1] num_chains = 1 (Default)
+Chain [2] algorithm = hmc (Default)
+Chain [2] hmc
+Chain [1] id = 1 (Default)
+Chain [1] data
+Chain [2] engine = nuts (Default)
+Chain [2] nuts
+Chain [2] max_depth = 10 (Default)
+Chain [2] metric = diag_e (Default)
+Chain [2] metric_file =  (Default)
+Chain [2] stepsize = 1 (Default)
+Chain [2] stepsize_jitter = 0 (Default)
+Chain [2] num_chains = 1 (Default)
+Chain [1] file = /tmp/tmptxc_uoye/8s9r7pyh.json
+Chain [1] init = 2 (Default)
+Chain [1] random
+Chain [2] id = 2
+Chain [2] data
+Chain [2] file = /tmp/tmptxc_uoye/8s9r7pyh.json
+Chain [2] init = 2 (Default)
+Chain [1] seed = 10877
+Chain [1] output
+Chain [2] random
+Chain [2] seed = 10877
+Chain [1] file = /storage/users/msiavashpour/ANN-EAM/stan_results/ANN-RDM_full_FC/ANN-RDM_full_FC-20221230145735_1.csv
+Chain [1] diagnostic_file =  (Default)
+Chain [2] output
+Chain [2] file = /storage/users/msiavashpour/ANN-EAM/stan_results/ANN-RDM_full_FC/ANN-RDM_full_FC-20221230145735_2.csv
+Chain [1] refresh = 100 (Default)
+Chain [1] sig_figs = -1 (Default)
+Chain [2] diagnostic_file =  (Default)
+Chain [2] refresh = 100 (Default)
+Chain [2] sig_figs = -1 (Default)
+Chain [1] profile_file = profile.csv (Default)
+Chain [1] num_threads = 1 (Default)
+Chain [2] profile_file = profile.csv (Default)
+Chain [2] num_threads = 1 (Default)
+Chain [2] 
+Chain [1] 
+Chain [3] method = sample (Default)
+Chain [3] sample
+Chain [3] num_samples = 2500
+Chain [3] num_warmup = 2500
+Chain [3] save_warmup = 0 (Default)
+Chain [3] thin = 1 (Default)
+Chain [3] adapt
+Chain [3] engaged = 1 (Default)
+Chain [3] gamma = 0.050000000000000003 (Default)
+Chain [3] delta = 0.80000000000000004 (Default)
+Chain [3] kappa = 0.75 (Default)
+Chain [3] t0 = 10 (Default)
+Chain [3] init_buffer = 75 (Default)
+Chain [3] term_buffer = 50 (Default)
+Chain [3] window = 25 (Default)
+Chain [3] algorithm = hmc (Default)
+Chain [3] hmc
+Chain [3] engine = nuts (Default)
+Chain [3] nuts
+Chain [3] max_depth = 10 (Default)
+Chain [3] metric = diag_e (Default)
+Chain [3] metric_file =  (Default)
+Chain [3] stepsize = 1 (Default)
+Chain [3] stepsize_jitter = 0 (Default)
+Chain [3] num_chains = 1 (Default)
+Chain [3] id = 3
+Chain [3] data
+Chain [3] file = /tmp/tmptxc_uoye/8s9r7pyh.json
+Chain [3] init = 2 (Default)
+Chain [3] random
+Chain [3] seed = 10877
+Chain [3] output
+Chain [3] file = /storage/users/msiavashpour/ANN-EAM/stan_results/ANN-RDM_full_FC/ANN-RDM_full_FC-20221230145735_3.csv
+Chain [3] diagnostic_file =  (Default)
+Chain [3] refresh = 100 (Default)
+Chain [3] sig_figs = -1 (Default)
+Chain [3] profile_file = profile.csv (Default)
+Chain [3] num_threads = 1 (Default)
+Chain [3] 
+Chain [4] method = sample (Default)
+Chain [4] sample
+Chain [4] num_samples = 2500
+Chain [4] num_warmup = 2500
+Chain [4] save_warmup = 0 (Default)
+Chain [4] thin = 1 (Default)
+Chain [4] adapt
+Chain [4] engaged = 1 (Default)
+Chain [4] gamma = 0.050000000000000003 (Default)
+Chain [4] delta = 0.80000000000000004 (Default)
+Chain [4] kappa = 0.75 (Default)
+Chain [4] t0 = 10 (Default)
+Chain [4] init_buffer = 75 (Default)
+Chain [4] term_buffer = 50 (Default)
+Chain [4] window = 25 (Default)
+Chain [4] algorithm = hmc (Default)
+Chain [4] hmc
+Chain [4] engine = nuts (Default)
+Chain [4] nuts
+Chain [4] max_depth = 10 (Default)
+Chain [4] metric = diag_e (Default)
+Chain [4] metric_file =  (Default)
+Chain [4] stepsize = 1 (Default)
+Chain [4] stepsize_jitter = 0 (Default)
+Chain [4] num_chains = 1 (Default)
+Chain [4] id = 4
+Chain [4] data
+Chain [4] file = /tmp/tmptxc_uoye/8s9r7pyh.json
+Chain [4] init = 2 (Default)
+Chain [4] random
+Chain [4] seed = 10877
+Chain [4] output
+Chain [4] file = /storage/users/msiavashpour/ANN-EAM/stan_results/ANN-RDM_full_FC/ANN-RDM_full_FC-20221230145735_4.csv
+Chain [4] diagnostic_file =  (Default)
+Chain [4] refresh = 100 (Default)
+Chain [4] sig_figs = -1 (Default)
+Chain [4] profile_file = profile.csv (Default)
+Chain [4] num_threads = 1 (Default)
+Chain [4] 
+Chain [1] 
+Chain [1] Gradient evaluation took 0.090344 seconds
+Chain [1] 1000 transitions using 10 leapfrog steps per transition would take 903.44 seconds.
+Chain [1] Adjust your expectations accordingly!
+Chain [1] 
+Chain [1] 
+Chain [2] 
+Chain [2] Gradient evaluation took 0.083776 seconds
+Chain [2] 1000 transitions using 10 leapfrog steps per transition would take 837.76 seconds.
+Chain [2] Adjust your expectations accordingly!
+Chain [2] 
+Chain [2] 
+Chain [4] 
+Chain [4] Gradient evaluation took 0.092811 seconds
+Chain [4] 1000 transitions using 10 leapfrog steps per transition would take 928.11 seconds.
+Chain [4] Adjust your expectations accordingly!
+Chain [4] 
+Chain [4] 
+Chain [3] 
+Chain [3] Gradient evaluation took 0.093485 seconds
+Chain [3] 1000 transitions using 10 leapfrog steps per transition would take 934.85 seconds.
+Chain [3] Adjust your expectations accordingly!
+Chain [3] 
+Chain [3] 
+Chain [2] Iteration:    1 / 5000 [  0%]  (Warmup)
+Chain [4] Iteration:    1 / 5000 [  0%]  (Warmup)
+Chain [1] Iteration:    1 / 5000 [  0%]  (Warmup)
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: tmptasbem7f_model_namespace::log_prob: drift_word_t[738] is -nan, but must be greater than or equal to 0.000000 (in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 115, column 4 to column 36)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: tmptasbem7f_model_namespace::log_prob: drift_word_t[12] is -nan, but must be greater than or equal to 0.000000 (in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 115, column 4 to column 36)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [3] Iteration:    1 / 5000 [  0%]  (Warmup)
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: tmptasbem7f_model_namespace::log_prob: drift_word_t[12] is -nan, but must be greater than or equal to 0.000000 (in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 115, column 4 to column 36)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: tmptasbem7f_model_namespace::log_prob: drift_word_t[12] is -nan, but must be greater than or equal to 0.000000 (in '/tmp/tmp5zgk_ui2/tmptasbem7f.stan', line 115, column 4 to column 36)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [3] Iteration:  100 / 5000 [  2%]  (Warmup)
+Chain [4] Iteration:  100 / 5000 [  2%]  (Warmup)
+Chain [2] Iteration:  100 / 5000 [  2%]  (Warmup)
+Chain [1] Iteration:  100 / 5000 [  2%]  (Warmup)
+Chain [3] Iteration:  200 / 5000 [  4%]  (Warmup)
+Chain [4] Iteration:  200 / 5000 [  4%]  (Warmup)
+Chain [2] Iteration:  200 / 5000 [  4%]  (Warmup)
+Chain [3] Iteration:  300 / 5000 [  6%]  (Warmup)
+Chain [1] Iteration:  200 / 5000 [  4%]  (Warmup)
+Chain [4] Iteration:  300 / 5000 [  6%]  (Warmup)
+Chain [2] Iteration:  300 / 5000 [  6%]  (Warmup)
+Chain [3] Iteration:  400 / 5000 [  8%]  (Warmup)
+Chain [4] Iteration:  400 / 5000 [  8%]  (Warmup)
+Chain [1] Iteration:  300 / 5000 [  6%]  (Warmup)
+Chain [2] Iteration:  400 / 5000 [  8%]  (Warmup)
+Chain [3] Iteration:  500 / 5000 [ 10%]  (Warmup)
+Chain [4] Iteration:  500 / 5000 [ 10%]  (Warmup)
+Chain [1] Iteration:  400 / 5000 [  8%]  (Warmup)
+Chain [2] Iteration:  500 / 5000 [ 10%]  (Warmup)
+Chain [3] Iteration:  600 / 5000 [ 12%]  (Warmup)
+Chain [4] Iteration:  600 / 5000 [ 12%]  (Warmup)
+Chain [1] Iteration:  500 / 5000 [ 10%]  (Warmup)
+Chain [2] Iteration:  600 / 5000 [ 12%]  (Warmup)
+Chain [3] Iteration:  700 / 5000 [ 14%]  (Warmup)
+Chain [4] Iteration:  700 / 5000 [ 14%]  (Warmup)
+Chain [1] Iteration:  600 / 5000 [ 12%]  (Warmup)
+Chain [2] Iteration:  700 / 5000 [ 14%]  (Warmup)
+Chain [3] Iteration:  800 / 5000 [ 16%]  (Warmup)
+Chain [4] Iteration:  800 / 5000 [ 16%]  (Warmup)
+Chain [1] Iteration:  700 / 5000 [ 14%]  (Warmup)
+Chain [2] Iteration:  800 / 5000 [ 16%]  (Warmup)
+Chain [3] Iteration:  900 / 5000 [ 18%]  (Warmup)
+Chain [2] Iteration:  900 / 5000 [ 18%]  (Warmup)
+Chain [1] Iteration:  800 / 5000 [ 16%]  (Warmup)
+Chain [4] Iteration:  900 / 5000 [ 18%]  (Warmup)
+Chain [3] Iteration: 1000 / 5000 [ 20%]  (Warmup)
+Chain [2] Iteration: 1000 / 5000 [ 20%]  (Warmup)
+Chain [3] Iteration: 1100 / 5000 [ 22%]  (Warmup)
+Chain [4] Iteration: 1000 / 5000 [ 20%]  (Warmup)
+Chain [1] Iteration:  900 / 5000 [ 18%]  (Warmup)
+Chain [2] Iteration: 1100 / 5000 [ 22%]  (Warmup)
+Chain [3] Iteration: 1200 / 5000 [ 24%]  (Warmup)
+Chain [2] Iteration: 1200 / 5000 [ 24%]  (Warmup)
+Chain [4] Iteration: 1100 / 5000 [ 22%]  (Warmup)
+Chain [1] Iteration: 1000 / 5000 [ 20%]  (Warmup)
+Chain [3] Iteration: 1300 / 5000 [ 26%]  (Warmup)
+Chain [2] Iteration: 1300 / 5000 [ 26%]  (Warmup)
+Chain [4] Iteration: 1200 / 5000 [ 24%]  (Warmup)
+Chain [3] Iteration: 1400 / 5000 [ 28%]  (Warmup)
+Chain [1] Iteration: 1100 / 5000 [ 22%]  (Warmup)
+Chain [2] Iteration: 1400 / 5000 [ 28%]  (Warmup)
+Chain [3] Iteration: 1500 / 5000 [ 30%]  (Warmup)
+Chain [2] Iteration: 1500 / 5000 [ 30%]  (Warmup)
+Chain [4] Iteration: 1300 / 5000 [ 26%]  (Warmup)
+Chain [1] Iteration: 1200 / 5000 [ 24%]  (Warmup)
+Chain [3] Iteration: 1600 / 5000 [ 32%]  (Warmup)
+Chain [2] Iteration: 1600 / 5000 [ 32%]  (Warmup)
+Chain [1] Iteration: 1300 / 5000 [ 26%]  (Warmup)
+Chain [4] Iteration: 1400 / 5000 [ 28%]  (Warmup)
+Chain [3] Iteration: 1700 / 5000 [ 34%]  (Warmup)
+Chain [2] Iteration: 1700 / 5000 [ 34%]  (Warmup)
+Chain [1] Iteration: 1400 / 5000 [ 28%]  (Warmup)
+Chain [3] Iteration: 1800 / 5000 [ 36%]  (Warmup)
+Chain [4] Iteration: 1500 / 5000 [ 30%]  (Warmup)
+Chain [2] Iteration: 1800 / 5000 [ 36%]  (Warmup)
+Chain [3] Iteration: 1900 / 5000 [ 38%]  (Warmup)
+Chain [2] Iteration: 1900 / 5000 [ 38%]  (Warmup)
+Chain [1] Iteration: 1500 / 5000 [ 30%]  (Warmup)
+Chain [4] Iteration: 1600 / 5000 [ 32%]  (Warmup)
+Chain [3] Iteration: 2000 / 5000 [ 40%]  (Warmup)
+Chain [2] Iteration: 2000 / 5000 [ 40%]  (Warmup)
+Chain [1] Iteration: 1600 / 5000 [ 32%]  (Warmup)
+Chain [4] Iteration: 1700 / 5000 [ 34%]  (Warmup)
+Chain [3] Iteration: 2100 / 5000 [ 42%]  (Warmup)
+Chain [2] Iteration: 2100 / 5000 [ 42%]  (Warmup)
+Chain [1] Iteration: 1700 / 5000 [ 34%]  (Warmup)
+Chain [3] Iteration: 2200 / 5000 [ 44%]  (Warmup)
+Chain [2] Iteration: 2200 / 5000 [ 44%]  (Warmup)
+Chain [4] Iteration: 1800 / 5000 [ 36%]  (Warmup)
+Chain [3] Iteration: 2300 / 5000 [ 46%]  (Warmup)
+Chain [2] Iteration: 2300 / 5000 [ 46%]  (Warmup)
+Chain [1] Iteration: 1800 / 5000 [ 36%]  (Warmup)
+Chain [4] Iteration: 1900 / 5000 [ 38%]  (Warmup)
+Chain [3] Iteration: 2400 / 5000 [ 48%]  (Warmup)
+Chain [2] Iteration: 2400 / 5000 [ 48%]  (Warmup)
+Chain [1] Iteration: 1900 / 5000 [ 38%]  (Warmup)
+Chain [4] Iteration: 2000 / 5000 [ 40%]  (Warmup)
+Chain [2] Iteration: 2500 / 5000 [ 50%]  (Warmup)
+Chain [2] Iteration: 2501 / 5000 [ 50%]  (Sampling)
+Chain [3] Iteration: 2500 / 5000 [ 50%]  (Warmup)
+Chain [3] Iteration: 2501 / 5000 [ 50%]  (Sampling)
+Chain [1] Iteration: 2000 / 5000 [ 40%]  (Warmup)
+Chain [2] Iteration: 2600 / 5000 [ 52%]  (Sampling)
+Chain [4] Iteration: 2100 / 5000 [ 42%]  (Warmup)
+Chain [3] Iteration: 2600 / 5000 [ 52%]  (Sampling)
+Chain [1] Iteration: 2100 / 5000 [ 42%]  (Warmup)
+Chain [2] Iteration: 2700 / 5000 [ 54%]  (Sampling)
+Chain [3] Iteration: 2700 / 5000 [ 54%]  (Sampling)
+Chain [4] Iteration: 2200 / 5000 [ 44%]  (Warmup)
+Chain [2] Iteration: 2800 / 5000 [ 56%]  (Sampling)
+Chain [1] Iteration: 2200 / 5000 [ 44%]  (Warmup)
+Chain [3] Iteration: 2800 / 5000 [ 56%]  (Sampling)
+Chain [4] Iteration: 2300 / 5000 [ 46%]  (Warmup)
+Chain [2] Iteration: 2900 / 5000 [ 58%]  (Sampling)
+Chain [1] Iteration: 2300 / 5000 [ 46%]  (Warmup)
+Chain [3] Iteration: 2900 / 5000 [ 58%]  (Sampling)
+Chain [4] Iteration: 2400 / 5000 [ 48%]  (Warmup)
+Chain [2] Iteration: 3000 / 5000 [ 60%]  (Sampling)
+Chain [3] Iteration: 3000 / 5000 [ 60%]  (Sampling)
+Chain [1] Iteration: 2400 / 5000 [ 48%]  (Warmup)
+Chain [2] Iteration: 3100 / 5000 [ 62%]  (Sampling)
+Chain [4] Iteration: 2500 / 5000 [ 50%]  (Warmup)
+Chain [4] Iteration: 2501 / 5000 [ 50%]  (Sampling)
+Chain [3] Iteration: 3100 / 5000 [ 62%]  (Sampling)
+Chain [2] Iteration: 3200 / 5000 [ 64%]  (Sampling)
+Chain [1] Iteration: 2500 / 5000 [ 50%]  (Warmup)
+Chain [1] Iteration: 2501 / 5000 [ 50%]  (Sampling)
+Chain [3] Iteration: 3200 / 5000 [ 64%]  (Sampling)
+Chain [4] Iteration: 2600 / 5000 [ 52%]  (Sampling)
+Chain [2] Iteration: 3300 / 5000 [ 66%]  (Sampling)
+Chain [1] Iteration: 2600 / 5000 [ 52%]  (Sampling)
+Chain [3] Iteration: 3300 / 5000 [ 66%]  (Sampling)
+Chain [2] Iteration: 3400 / 5000 [ 68%]  (Sampling)
+Chain [4] Iteration: 2700 / 5000 [ 54%]  (Sampling)
+Chain [3] Iteration: 3400 / 5000 [ 68%]  (Sampling)
+Chain [1] Iteration: 2700 / 5000 [ 54%]  (Sampling)
+Chain [2] Iteration: 3500 / 5000 [ 70%]  (Sampling)
+Chain [3] Iteration: 3500 / 5000 [ 70%]  (Sampling)
+Chain [4] Iteration: 2800 / 5000 [ 56%]  (Sampling)
+Chain [2] Iteration: 3600 / 5000 [ 72%]  (Sampling)
+Chain [1] Iteration: 2800 / 5000 [ 56%]  (Sampling)
+Chain [3] Iteration: 3600 / 5000 [ 72%]  (Sampling)
+Chain [2] Iteration: 3700 / 5000 [ 74%]  (Sampling)
+Chain [4] Iteration: 2900 / 5000 [ 58%]  (Sampling)
+Chain [1] Iteration: 2900 / 5000 [ 58%]  (Sampling)
+Chain [3] Iteration: 3700 / 5000 [ 74%]  (Sampling)
+Chain [2] Iteration: 3800 / 5000 [ 76%]  (Sampling)
+Chain [4] Iteration: 3000 / 5000 [ 60%]  (Sampling)
+Chain [3] Iteration: 3800 / 5000 [ 76%]  (Sampling)
+Chain [2] Iteration: 3900 / 5000 [ 78%]  (Sampling)
+Chain [1] Iteration: 3000 / 5000 [ 60%]  (Sampling)
+Chain [3] Iteration: 3900 / 5000 [ 78%]  (Sampling)
+Chain [2] Iteration: 4000 / 5000 [ 80%]  (Sampling)
+Chain [4] Iteration: 3100 / 5000 [ 62%]  (Sampling)
+Chain [1] Iteration: 3100 / 5000 [ 62%]  (Sampling)
+Chain [3] Iteration: 4000 / 5000 [ 80%]  (Sampling)
+Chain [2] Iteration: 4100 / 5000 [ 82%]  (Sampling)
+Chain [4] Iteration: 3200 / 5000 [ 64%]  (Sampling)
+Chain [1] Iteration: 3200 / 5000 [ 64%]  (Sampling)
+Chain [2] Iteration: 4200 / 5000 [ 84%]  (Sampling)
+Chain [3] Iteration: 4100 / 5000 [ 82%]  (Sampling)
+Chain [2] Iteration: 4300 / 5000 [ 86%]  (Sampling)
+Chain [3] Iteration: 4200 / 5000 [ 84%]  (Sampling)
+Chain [4] Iteration: 3300 / 5000 [ 66%]  (Sampling)
+Chain [1] Iteration: 3300 / 5000 [ 66%]  (Sampling)
+Chain [2] Iteration: 4400 / 5000 [ 88%]  (Sampling)
+Chain [3] Iteration: 4300 / 5000 [ 86%]  (Sampling)
+Chain [4] Iteration: 3400 / 5000 [ 68%]  (Sampling)
+Chain [1] Iteration: 3400 / 5000 [ 68%]  (Sampling)
+Chain [2] Iteration: 4500 / 5000 [ 90%]  (Sampling)
+Chain [3] Iteration: 4400 / 5000 [ 88%]  (Sampling)
+Chain [4] Iteration: 3500 / 5000 [ 70%]  (Sampling)
+Chain [2] Iteration: 4600 / 5000 [ 92%]  (Sampling)
+Chain [1] Iteration: 3500 / 5000 [ 70%]  (Sampling)
+Chain [3] Iteration: 4500 / 5000 [ 90%]  (Sampling)
+Chain [2] Iteration: 4700 / 5000 [ 94%]  (Sampling)
+Chain [3] Iteration: 4600 / 5000 [ 92%]  (Sampling)
+Chain [4] Iteration: 3600 / 5000 [ 72%]  (Sampling)
+Chain [1] Iteration: 3600 / 5000 [ 72%]  (Sampling)
+Chain [2] Iteration: 4800 / 5000 [ 96%]  (Sampling)
+Chain [3] Iteration: 4700 / 5000 [ 94%]  (Sampling)
+Chain [1] Iteration: 3700 / 5000 [ 74%]  (Sampling)
+Chain [4] Iteration: 3700 / 5000 [ 74%]  (Sampling)
+Chain [2] Iteration: 4900 / 5000 [ 98%]  (Sampling)
+Chain [3] Iteration: 4800 / 5000 [ 96%]  (Sampling)
+Chain [1] Iteration: 3800 / 5000 [ 76%]  (Sampling)
+Chain [2] Iteration: 5000 / 5000 [100%]  (Sampling)
+Chain [2] 
+Chain [2] Elapsed Time: 21513.7 seconds (Warm-up)
+Chain [2] 20180.8 seconds (Sampling)
+Chain [2] 41694.5 seconds (Total)
+Chain [2] 
+Chain [2] 
+Chain [3] Iteration: 4900 / 5000 [ 98%]  (Sampling)
+Chain [4] Iteration: 3800 / 5000 [ 76%]  (Sampling)
+Chain [3] Iteration: 5000 / 5000 [100%]  (Sampling)
+Chain [3] 
+Chain [3] Elapsed Time: 21546.6 seconds (Warm-up)
+Chain [3] 21175.2 seconds (Sampling)
+Chain [3] 42721.8 seconds (Total)
+Chain [3] 
+Chain [3] 
+Chain [1] Iteration: 3900 / 5000 [ 78%]  (Sampling)
+Chain [4] Iteration: 3900 / 5000 [ 78%]  (Sampling)
+Chain [1] Iteration: 4000 / 5000 [ 80%]  (Sampling)
+Chain [4] Iteration: 4000 / 5000 [ 80%]  (Sampling)
+Chain [1] Iteration: 4100 / 5000 [ 82%]  (Sampling)
+Chain [4] Iteration: 4100 / 5000 [ 82%]  (Sampling)
+Chain [1] Iteration: 4200 / 5000 [ 84%]  (Sampling)
+Chain [4] Iteration: 4200 / 5000 [ 84%]  (Sampling)
+Chain [1] Iteration: 4300 / 5000 [ 86%]  (Sampling)
+Chain [4] Iteration: 4300 / 5000 [ 86%]  (Sampling)
+Chain [1] Iteration: 4400 / 5000 [ 88%]  (Sampling)
+Chain [4] Iteration: 4400 / 5000 [ 88%]  (Sampling)
+Chain [1] Iteration: 4500 / 5000 [ 90%]  (Sampling)
+Chain [4] Iteration: 4500 / 5000 [ 90%]  (Sampling)
+Chain [4] Iteration: 4600 / 5000 [ 92%]  (Sampling)
+Chain [1] Iteration: 4600 / 5000 [ 92%]  (Sampling)
+Chain [4] Iteration: 4700 / 5000 [ 94%]  (Sampling)
+Chain [1] Iteration: 4700 / 5000 [ 94%]  (Sampling)
+Chain [4] Iteration: 4800 / 5000 [ 96%]  (Sampling)
+Chain [1] Iteration: 4800 / 5000 [ 96%]  (Sampling)
+Chain [4] Iteration: 4900 / 5000 [ 98%]  (Sampling)
+Chain [1] Iteration: 4900 / 5000 [ 98%]  (Sampling)
+Chain [4] Iteration: 5000 / 5000 [100%]  (Sampling)
+Chain [4] 
+Chain [4] Elapsed Time: 26497.6 seconds (Warm-up)
+Chain [4] 26717.5 seconds (Sampling)
+Chain [4] 53215.1 seconds (Total)
+Chain [4] 
+Chain [4] 
+Chain [1] Iteration: 5000 / 5000 [100%]  (Sampling)
+Chain [1] 
+Chain [1] Elapsed Time: 27121.1 seconds (Warm-up)
+Chain [1] 26525.5 seconds (Sampling)
+Chain [1] 53646.6 seconds (Total)
+Chain [1] 
+Chain [1] 
+***hmc diagnostics:
+Processing csv files: /storage/users/msiavashpour/ANN-EAM/stan_results/ANN-RDM_full_FC/ANN-RDM_full_FC-20221230145735_1.csv, /storage/users/msiavashpour/ANN-EAM/stan_results/ANN-RDM_full_FC/ANN-RDM_full_FC-20221230145735_2.csv, /storage/users/msiavashpour/ANN-EAM/stan_results/ANN-RDM_full_FC/ANN-RDM_full_FC-20221230145735_3.csv, /storage/users/msiavashpour/ANN-EAM/stan_results/ANN-RDM_full_FC/ANN-RDM_full_FC-20221230145735_4.csv
+
+Checking sampler transitions treedepth.
+Treedepth satisfactory for all transitions.
+
+Checking sampler transitions for divergences.
+No divergent transitions found.
+
+Checking E-BFMI - sampler transitions HMC potential energy.
+E-BFMI satisfactory.
+
+Effective sample size satisfactory.
+
+The following parameters had split R-hat greater than 1.05:
+  z_m[30], ndt_t[10658], ndt_t[10660], ndt_t[10661], ndt_t[10662], ndt_t[10663], ndt_t[10665], ndt_t[10666], ndt_t[10667], ndt_t[10668], ndt_t[10669], ndt_t[10670], ndt_t[10671], ndt_t[10672], ndt_t[10673], ndt_t[10674], ndt_t[10679], ndt_t[10680], ndt_t[10681], ndt_t[10682], ndt_t[10684], ndt_t[10685], ndt_t[10686], ndt_t[10687], ndt_t[10688], ndt_t[10689], ndt_t[10690], ndt_t[10691], ndt_t[10693], ndt_t[10697], ndt_t[10699], ndt_t[10700], ndt_t[10701], ndt_t[10702], ndt_t[10703], ndt_t[10704], ndt_t[10705], ndt_t[10706], ndt_t[10708], ndt_t[10709], ndt_t[10710], ndt_t[10711], ndt_t[10712], ndt_t[10713], ndt_t[10717], ndt_t[10718], ndt_t[10719], ndt_t[10720], ndt_t[10721], ndt_t[10722], ndt_t[10723], ndt_t[10724], ndt_t[10727], ndt_t[10729], ndt_t[10730], ndt_t[10731], ndt_t[10732], ndt_t[10733], ndt_t[10736], ndt_t[10738], ndt_t[10739], ndt_t[10740], ndt_t[10742], ndt_t[10748], ndt_t[10751], ndt_t[10756], ndt_t[10758], ndt_t[10759], ndt_t[10760], ndt_t[10763], ndt_t[10764], ndt_t[10765], ndt_t[10766], ndt_t[10767], ndt_t[10772], ndt_t[10775], ndt_t[10778], ndt_t[10780], ndt_t[10781], ndt_t[10782], ndt_t[10783], ndt_t[10784], ndt_t[10786], ndt_t[10787], ndt_t[10790], ndt_t[10791], ndt_t[10792], ndt_t[10800], ndt_t[10809], ndt_t[10815], ndt_t[10823], ndt_t[10824], ndt_t[10827], ndt_t[10833], ndt_t[10836], ndt_t[10837], ndt_t[10839], ndt_t[10841], ndt_t[10843], ndt_t[10844], ndt_t[10845], ndt_t[10849], ndt_t[10850], ndt_t[10853], ndt_t[10863], ndt_t[10866], ndt_t[10869], ndt_t[10871], ndt_t[10875], ndt_t[10878], ndt_t[10882], ndt_t[10884], ndt_t[10886], ndt_t[10887], ndt_t[10891], ndt_t[10893], ndt_t[10894], ndt_t[10895], ndt_t[10898], ndt_t[10899], ndt_t[10900], ndt_t[10902], ndt_t[10905], ndt_t[10908], ndt_t[10909], ndt_t[10910], ndt_t[10915], ndt_t[10918], ndt_t[10922], ndt_t[10925], ndt_t[10926], ndt_t[10927], ndt_t[10929], ndt_t[10931], ndt_t[10932], ndt_t[10934], ndt_t[10935], ndt_t[10937], ndt_t[10938], ndt_t[10939], ndt_t[10941], ndt_t[10942], ndt_t[10949], ndt_t[10950], ndt_t[10955], ndt_t[10957], ndt_t[10961], ndt_t[10963], ndt_t[10969], ndt_t[10973], ndt_t[10974], ndt_t[10975], ndt_t[10976], ndt_t[10978], ndt_t[10979], ndt_t[10982], ndt_t[10983], ndt_t[10984], ndt_t[10986], ndt_t[10987], ndt_t[10992], ndt_t[10994], ndt_t[10996], ndt_t[10997], ndt_t[11003], ndt_t[11004], ndt_t[11008], ndt_t[11011], ndt_t[11012], ndt_t[11013], ndt_t[11014], ndt_t[11015], ndt_t[11018], ndt_t[11020], ndt_t[11021], ndt_t[11022], ndt_t[11025], m_sbj[30], log_lik[10704], log_lik[10706]
+Such high values indicate incomplete mixing and biased estimation.
+You should consider regularizating your model with additional prior information or a more effective parameterization.
+
+Processing complete.
+
+***DF: 
+                         Mean     MCSE  StdDev  ...    N_Eff  N_Eff/s  R_hat
+name                                            ...                         
+lp__                 -5000.00  0.68000  30.000  ...   1900.0    0.020    1.0
+mu_g                    -3.00  0.00320   0.280  ...   7600.0    0.080    1.0
+mu_m                    -0.13  0.00210   0.086  ...   1700.0    0.018    1.0
+mu_threshold_word        1.30  0.00063   0.041  ...   4200.0    0.044    1.0
+mu_threshold_nonword     1.50  0.00071   0.043  ...   3700.0    0.039    1.0
+...                       ...      ...     ...  ...      ...      ...    ...
+log_lik[36677]          -2.20  0.00150   0.160  ...  10712.0    0.110    1.0
+log_lik[36678]          -1.50  0.00100   0.110  ...  10876.0    0.110    1.0
+log_lik[36679]          -1.50  0.00110   0.110  ...  10787.0    0.110    1.0
+log_lik[36680]          -1.70  0.00120   0.130  ...  10813.0    0.110    1.0
+log_lik[36681]          -1.70  0.00140   0.150  ...  10939.0    0.120    1.0
+
+[221711 rows x 9 columns]
+***Rhat > 1.01: 
+180
+None
+                Mean    MCSE  StdDev    5%   50%  95%  N_Eff  N_Eff/s  R_hat
+name                                                                        
+z_m[30]         1.60  0.0960   0.890 -0.45  1.90  2.5   86.0  0.00091    1.1
+ndt_t[10658]    0.26  0.0049   0.046  0.15  0.27  0.3   88.0  0.00093    1.1
+ndt_t[10660]    0.26  0.0048   0.045  0.16  0.27  0.3   88.0  0.00093    1.1
+ndt_t[10661]    0.26  0.0048   0.045  0.16  0.27  0.3   88.0  0.00093    1.1
+ndt_t[10662]    0.26  0.0048   0.045  0.16  0.27  0.3   88.0  0.00093    1.1
+...              ...     ...     ...   ...   ...  ...    ...      ...    ...
+ndt_t[11022]    0.26  0.0048   0.045  0.16  0.27  0.3   88.0  0.00093    1.1
+ndt_t[11025]    0.26  0.0049   0.046  0.15  0.27  0.3   88.0  0.00093    1.1
+m_sbj[30]       1.50  0.0460   0.430  0.47  1.60  1.9   88.0  0.00093    1.1
+log_lik[10704]  1.40  0.0140   0.140  1.10  1.40  1.6   98.0  0.00100    1.1
+log_lik[10706]  1.40  0.0140   0.140  1.10  1.40  1.6   98.0  0.00100    1.1
+
+[180 rows x 9 columns]
+             Mean        MCSE      StdDev  ...       N_Eff     N_Eff/s         R_hat
+count  180.000000  180.000000  180.000000  ...  180.000000  180.000000  1.800000e+02
+mean     0.287000    0.005648    0.053106  ...   88.433333    0.000934  1.100000e+00
+std      0.180025    0.007496    0.069661  ...    1.398722    0.000012  4.453280e-16
+min      0.260000    0.004500    0.043000  ...   86.000000    0.000910  1.100000e+00
+25%      0.260000    0.004800    0.045000  ...   88.000000    0.000930  1.100000e+00
+50%      0.260000    0.004800    0.045000  ...   88.000000    0.000930  1.100000e+00
+75%      0.260000    0.004900    0.046000  ...   88.000000    0.000930  1.100000e+00
+max      1.600000    0.096000    0.890000  ...   98.000000    0.001000  1.100000e+00
+
+[8 rows x 9 columns]
+HF words, word drift mean and std:
+3.7409108283913883 0.02799316250325429
+HF words, nonword drift mean and std:
+1.2823117330593008 0.033039058805616445
+LF words word drift mean and std:
+2.7856469983712913 0.026001541319558435
+LF words nonword drift mean and std:
+1.299639593637397 0.03307100420416177
+NW words word drift mean and std:
+0.7035840317193518 0.023508758475113096
+NW words nonword drift mean and std:
+3.091811595335142 0.023940083524267793
+HF words, word threshold mean and std:
+1.5784262455451281 0.01800737309230472
+HF words, nonword threshold mean and std:
+1.7421797466809308 0.020983509967306156
+LF words word threshold mean and std:
+1.580429762299307 0.018076925649692828
+LF words nonword threshold mean and std:
+1.7403979919984585 0.020943776445967465
+NW words word threshold mean and std:
+1.5826661064403535 0.01802950225267655
+NW words nonword threshold mean and std:
+1.7437023594158334 0.02094994839755761
+HF words ndt_t mean and std:
+0.2558332345150426 0.0032934971887504517
+LF words ndt_t mean and std:
+0.2580668492518829 0.0032676588327491033
+Non Words ndt_t mean and std:
+0.27591056835260797 0.0038801756661140945
+Estimation Fit metrics:
+{'lppd': -4221.460499567271, 'p_waic': 724.2242034420931, 'waic': 9891.369406018728, 'waic_se': 466.03470091244435}
+INFO:cmdstanpy:deleting tmpfiles dir: /tmp/tmptxc_uoye
+INFO:cmdstanpy:done
