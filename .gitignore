@@ -132,3 +132,7 @@ check_points/
 
 # Files
 *.exe
+
+stan_results/
+stan files/
+
