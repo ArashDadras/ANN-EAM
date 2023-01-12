@@ -1,0 +1,917 @@
+nohup: ignoring input
+INFO:cmdstanpy:compiling stan file /storage/users/adadras/ANN-EAM/stan files/LBA/LBA_ndm.stan to exe file /storage/users/adadras/ANN-EAM/stan files/LBA/LBA_ndm
+INFO:cmdstanpy:compiled model executable: /storage/users/adadras/ANN-EAM/stan files/LBA/LBA_ndm
+WARNING:cmdstanpy:Stan compiler has produced 30 warnings:
+WARNING:cmdstanpy:
+--- Translating Stan model to C++ code ---
+bin/stanc  --o=/tmp/tmpim1kgfku/tmpke8r7101.hpp /tmp/tmpim1kgfku/tmpke8r7101.stan
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 109, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 110, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 111, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 113, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 114, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 116, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 157, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 158, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 159, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 160, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 161, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 162, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 163, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 164, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 165, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 179, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 180, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 181, column 1: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 182, column 1: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 183, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 184, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 185, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 186, column 1: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 187, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 26, column 23: normal_log
+    is deprecated and will be removed in Stan 2.32.0. Use normal_lpdf
+    instead. This can be automatically changed using the canonicalize flag
+    for stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 28, column 23: normal_log
+    is deprecated and will be removed in Stan 2.32.0. Use normal_lpdf
+    instead. This can be automatically changed using the canonicalize flag
+    for stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 51, column 28: normal_log
+    is deprecated and will be removed in Stan 2.32.0. Use normal_lpdf
+    instead. This can be automatically changed using the canonicalize flag
+    for stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 52, column 28: normal_log
+    is deprecated and will be removed in Stan 2.32.0. Use normal_lpdf
+    instead. This can be automatically changed using the canonicalize flag
+    for stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 84, column 28: Use of
+    lba_cdf without a vertical bar (|) between the first two arguments of a
+    CDF is deprecated and will be removed in Stan 2.32.0. This can be
+    automatically changed using the canonicalize flag for stanc
+Warning in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 88, column 28: Use of
+    lba_cdf without a vertical bar (|) between the first two arguments of a
+    CDF is deprecated and will be removed in Stan 2.32.0. This can be
+    automatically changed using the canonicalize flag for stanc
+
+--- Compiling, linking C++ code ---
+g++ -std=c++1y -pthread -D_REENTRANT -Wno-sign-compare -Wno-ignored-attributes      -I stan/lib/stan_math/lib/tbb_2020.3/include    -O3 -I src -I stan/src -I lib/rapidjson_1.1.0/ -I lib/CLI11-1.9.1/ -I stan/lib/stan_math/ -I stan/lib/stan_math/lib/eigen_3.3.9 -I stan/lib/stan_math/lib/boost_1.78.0 -I stan/lib/stan_math/lib/sundials_6.1.1/include -I stan/lib/stan_math/lib/sundials_6.1.1/src/sundials    -DBOOST_DISABLE_ASSERTS          -c -Wno-ignored-attributes   -x c++ -o /tmp/tmpim1kgfku/tmpke8r7101.o /tmp/tmpim1kgfku/tmpke8r7101.hpp
+g++ -std=c++1y -pthread -D_REENTRANT -Wno-sign-compare -Wno-ignored-attributes      -I stan/lib/stan_math/lib/tbb_2020.3/include    -O3 -I src -I stan/src -I lib/rapidjson_1.1.0/ -I lib/CLI11-1.9.1/ -I stan/lib/stan_math/ -I stan/lib/stan_math/lib/eigen_3.3.9 -I stan/lib/stan_math/lib/boost_1.78.0 -I stan/lib/stan_math/lib/sundials_6.1.1/include -I stan/lib/stan_math/lib/sundials_6.1.1/src/sundials    -DBOOST_DISABLE_ASSERTS                -Wl,-L,"/storage/users/adadras/.cmdstan/cmdstan-2.30.1/stan/lib/stan_math/lib/tbb" -Wl,-rpath,"/storage/users/adadras/.cmdstan/cmdstan-2.30.1/stan/lib/stan_math/lib/tbb"      /tmp/tmpim1kgfku/tmpke8r7101.o src/cmdstan/main.o        -Wl,-L,"/storage/users/adadras/.cmdstan/cmdstan-2.30.1/stan/lib/stan_math/lib/tbb" -Wl,-rpath,"/storage/users/adadras/.cmdstan/cmdstan-2.30.1/stan/lib/stan_math/lib/tbb"   stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_nvecserial.a stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_cvodes.a stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_idas.a stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_kinsol.a  stan/lib/stan_math/lib/tbb/libtbb.so.2 -o /tmp/tmpim1kgfku/tmpke8r7101
+rm -f /tmp/tmpim1kgfku/tmpke8r7101.o
+
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [2] start processing
+INFO:cmdstanpy:Chain [3] start processing
+INFO:cmdstanpy:Chain [4] start processing
+INFO:cmdstanpy:Chain [2] done processing
+INFO:cmdstanpy:Chain [1] done processing
+INFO:cmdstanpy:Chain [4] done processing
+INFO:cmdstanpy:Chain [3] done processing
+Model name: LBA_ndm
+Directory  ./Plots/LBA_ndm/  Created 
+Directory  ./stan_results/LBA_ndm/  Created 
+Model's configs:
+{'model_name': 'LBA_ndm', 'stan_file': 'LBA/LBA_ndm.stan', 'dataset_name': 'fastText_FC.csv', 'plots_folder_name': 'LBA_ndm', 'transf_params': ['transf_mu_k_word', 'transf_mu_sp_trial_var_word', 'transf_mu_k_nonword', 'transf_mu_sp_trial_var_nonword', 'transf_mu_g', 'transf_mu_m', 'transf_mu_drift_word', 'transf_mu_drift_nonword', 'transf_mu_drift_variability']}
+   accuracy     rt    string  ...  category  word_prob  non_word_prob
+0         1  0.651     curbs  ...        LF   0.999998   1.546347e-06
+1         1  0.698     germs  ...        HF   0.999999   7.800695e-07
+2         1  0.765      mark  ...        HF   1.000000   3.632955e-08
+3         1  0.642  draftees  ...        LF   0.999610   3.904704e-04
+4         1  0.674     lotto  ...        HF   0.999634   3.661419e-04
+
+[5 rows x 11 columns]
+Chain [2] method = sample (Default)
+Chain [2] sample
+Chain [2] num_samples = 3500
+Chain [2] num_warmup = 3500
+Chain [2] save_warmup = 0 (Default)
+Chain [2] thin = 1 (Default)
+Chain [2] adapt
+Chain [2] engaged = 1 (Default)
+Chain [2] gamma = 0.050000000000000003 (Default)
+Chain [2] delta = 0.80000000000000004 (Default)
+Chain [2] kappa = 0.75 (Default)
+Chain [2] t0 = 10 (Default)
+Chain [2] init_buffer = 75 (Default)
+Chain [2] term_buffer = 50 (Default)
+Chain [3] method = sample (Default)
+Chain [3] sample
+Chain [3] num_samples = 3500
+Chain [2] window = 25 (Default)
+Chain [2] algorithm = hmc (Default)
+Chain [3] num_warmup = 3500
+Chain [3] save_warmup = 0 (Default)
+Chain [2] hmc
+Chain [2] engine = nuts (Default)
+Chain [3] thin = 1 (Default)
+Chain [3] adapt
+Chain [3] engaged = 1 (Default)
+Chain [3] gamma = 0.050000000000000003 (Default)
+Chain [2] nuts
+Chain [2] max_depth = 10 (Default)
+Chain [3] delta = 0.80000000000000004 (Default)
+Chain [3] kappa = 0.75 (Default)
+Chain [3] t0 = 10 (Default)
+Chain [3] init_buffer = 75 (Default)
+Chain [3] term_buffer = 50 (Default)
+Chain [3] window = 25 (Default)
+Chain [2] metric = diag_e (Default)
+Chain [2] metric_file =  (Default)
+Chain [3] algorithm = hmc (Default)
+Chain [3] hmc
+Chain [2] stepsize = 1 (Default)
+Chain [2] stepsize_jitter = 0 (Default)
+Chain [3] engine = nuts (Default)
+Chain [3] nuts
+Chain [2] num_chains = 1 (Default)
+Chain [2] id = 2
+Chain [3] max_depth = 10 (Default)
+Chain [3] metric = diag_e (Default)
+Chain [3] metric_file =  (Default)
+Chain [3] stepsize = 1 (Default)
+Chain [2] data
+Chain [2] file = /tmp/tmpwniub9k_/ykt_i___.json
+Chain [3] stepsize_jitter = 0 (Default)
+Chain [3] num_chains = 1 (Default)
+Chain [3] id = 3
+Chain [3] data
+Chain [2] init = 2 (Default)
+Chain [2] random
+Chain [3] file = /tmp/tmpwniub9k_/ykt_i___.json
+Chain [3] init = 2 (Default)
+Chain [3] random
+Chain [2] seed = 31195
+Chain [2] output
+Chain [3] seed = 31195
+Chain [3] output
+Chain [3] file = /storage/users/adadras/ANN-EAM/stan_results/LBA_ndm/LBA_ndm-20230108134806_3.csv
+Chain [2] file = /storage/users/adadras/ANN-EAM/stan_results/LBA_ndm/LBA_ndm-20230108134806_2.csv
+Chain [3] diagnostic_file =  (Default)
+Chain [3] refresh = 100 (Default)
+Chain [2] diagnostic_file =  (Default)
+Chain [2] refresh = 100 (Default)
+Chain [3] sig_figs = -1 (Default)
+Chain [3] profile_file = profile.csv (Default)
+Chain [2] sig_figs = -1 (Default)
+Chain [2] profile_file = profile.csv (Default)
+Chain [3] num_threads = 1 (Default)
+Chain [3] 
+Chain [2] num_threads = 1 (Default)
+Chain [2] 
+Chain [1] method = sample (Default)
+Chain [1] sample
+Chain [1] num_samples = 3500
+Chain [1] num_warmup = 3500
+Chain [1] save_warmup = 0 (Default)
+Chain [1] thin = 1 (Default)
+Chain [1] adapt
+Chain [1] engaged = 1 (Default)
+Chain [1] gamma = 0.050000000000000003 (Default)
+Chain [1] delta = 0.80000000000000004 (Default)
+Chain [1] kappa = 0.75 (Default)
+Chain [1] t0 = 10 (Default)
+Chain [1] init_buffer = 75 (Default)
+Chain [1] term_buffer = 50 (Default)
+Chain [1] window = 25 (Default)
+Chain [1] algorithm = hmc (Default)
+Chain [1] hmc
+Chain [1] engine = nuts (Default)
+Chain [1] nuts
+Chain [1] max_depth = 10 (Default)
+Chain [1] metric = diag_e (Default)
+Chain [1] metric_file =  (Default)
+Chain [1] stepsize = 1 (Default)
+Chain [1] stepsize_jitter = 0 (Default)
+Chain [1] num_chains = 1 (Default)
+Chain [1] id = 1 (Default)
+Chain [1] data
+Chain [1] file = /tmp/tmpwniub9k_/ykt_i___.json
+Chain [1] init = 2 (Default)
+Chain [1] random
+Chain [1] seed = 31195
+Chain [1] output
+Chain [1] file = /storage/users/adadras/ANN-EAM/stan_results/LBA_ndm/LBA_ndm-20230108134806_1.csv
+Chain [1] diagnostic_file =  (Default)
+Chain [1] refresh = 100 (Default)
+Chain [1] sig_figs = -1 (Default)
+Chain [1] profile_file = profile.csv (Default)
+Chain [1] num_threads = 1 (Default)
+Chain [1] 
+Chain [4] method = sample (Default)
+Chain [4] sample
+Chain [4] num_samples = 3500
+Chain [4] num_warmup = 3500
+Chain [4] save_warmup = 0 (Default)
+Chain [4] thin = 1 (Default)
+Chain [4] adapt
+Chain [4] engaged = 1 (Default)
+Chain [4] gamma = 0.050000000000000003 (Default)
+Chain [4] delta = 0.80000000000000004 (Default)
+Chain [4] kappa = 0.75 (Default)
+Chain [4] t0 = 10 (Default)
+Chain [4] init_buffer = 75 (Default)
+Chain [4] term_buffer = 50 (Default)
+Chain [4] window = 25 (Default)
+Chain [4] algorithm = hmc (Default)
+Chain [4] hmc
+Chain [4] engine = nuts (Default)
+Chain [4] nuts
+Chain [4] max_depth = 10 (Default)
+Chain [4] metric = diag_e (Default)
+Chain [4] metric_file =  (Default)
+Chain [4] stepsize = 1 (Default)
+Chain [4] stepsize_jitter = 0 (Default)
+Chain [4] num_chains = 1 (Default)
+Chain [4] id = 4
+Chain [4] data
+Chain [4] file = /tmp/tmpwniub9k_/ykt_i___.json
+Chain [4] init = 2 (Default)
+Chain [4] random
+Chain [4] seed = 31195
+Chain [4] output
+Chain [4] file = /storage/users/adadras/ANN-EAM/stan_results/LBA_ndm/LBA_ndm-20230108134806_4.csv
+Chain [4] diagnostic_file =  (Default)
+Chain [4] refresh = 100 (Default)
+Chain [4] sig_figs = -1 (Default)
+Chain [4] profile_file = profile.csv (Default)
+Chain [4] num_threads = 1 (Default)
+Chain [4] 
+Chain [1] 
+Chain [1] Gradient evaluation took 0.130005 seconds
+Chain [1] 1000 transitions using 10 leapfrog steps per transition would take 1300.05 seconds.
+Chain [1] Adjust your expectations accordingly!
+Chain [1] 
+Chain [1] 
+Chain [3] 
+Chain [3] Gradient evaluation took 0.113244 seconds
+Chain [3] 1000 transitions using 10 leapfrog steps per transition would take 1132.44 seconds.
+Chain [3] Adjust your expectations accordingly!
+Chain [3] 
+Chain [3] 
+Chain [2] 
+Chain [2] Gradient evaluation took 0.148458 seconds
+Chain [2] 1000 transitions using 10 leapfrog steps per transition would take 1484.58 seconds.
+Chain [2] Adjust your expectations accordingly!
+Chain [2] 
+Chain [2] 
+Chain [4] 
+Chain [4] Gradient evaluation took 0.167332 seconds
+Chain [4] 1000 transitions using 10 leapfrog steps per transition would take 1673.32 seconds.
+Chain [4] Adjust your expectations accordingly!
+Chain [4] 
+Chain [4] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 49, column 8 to column 43) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 88, column 20 to column 90) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 49, column 8 to column 43) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 84, column 20 to column 99) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 49, column 8 to column 43) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 88, column 20 to column 90) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 49, column 8 to column 43) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 84, column 20 to column 99) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 49, column 8 to column 43) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 84, column 20 to column 99) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 49, column 8 to column 43) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 84, column 20 to column 99) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 87, column 20 to column 97) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 49, column 8 to column 43) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 84, column 20 to column 99) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 49, column 8 to column 43) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 84, column 20 to column 99) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [1] Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain [2] Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain [3] Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain [4] Iteration:    1 / 7000 [  0%]  (Warmup)
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 83, column 20 to column 88) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 87, column 20 to column 97) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 25, column 8 to column 34) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 87, column 20 to column 97) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Phi: x is -nan, but must be not nan! (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 90, column 16 to column 82) (in '/tmp/tmpim1kgfku/tmpke8r7101.stan', line 274, column 4 to line 275, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [3] Iteration:  100 / 7000 [  1%]  (Warmup)
+Chain [4] Iteration:  100 / 7000 [  1%]  (Warmup)
+Chain [1] Iteration:  100 / 7000 [  1%]  (Warmup)
+Chain [2] Iteration:  100 / 7000 [  1%]  (Warmup)
+Chain [3] Iteration:  200 / 7000 [  2%]  (Warmup)
+Chain [1] Iteration:  200 / 7000 [  2%]  (Warmup)
+Chain [4] Iteration:  200 / 7000 [  2%]  (Warmup)
+Chain [2] Iteration:  200 / 7000 [  2%]  (Warmup)
+Chain [3] Iteration:  300 / 7000 [  4%]  (Warmup)
+Chain [1] Iteration:  300 / 7000 [  4%]  (Warmup)
+Chain [4] Iteration:  300 / 7000 [  4%]  (Warmup)
+Chain [2] Iteration:  300 / 7000 [  4%]  (Warmup)
+Chain [3] Iteration:  400 / 7000 [  5%]  (Warmup)
+Chain [4] Iteration:  400 / 7000 [  5%]  (Warmup)
+Chain [1] Iteration:  400 / 7000 [  5%]  (Warmup)
+Chain [2] Iteration:  400 / 7000 [  5%]  (Warmup)
+Chain [4] Iteration:  500 / 7000 [  7%]  (Warmup)
+Chain [1] Iteration:  500 / 7000 [  7%]  (Warmup)
+Chain [3] Iteration:  500 / 7000 [  7%]  (Warmup)
+Chain [2] Iteration:  500 / 7000 [  7%]  (Warmup)
+Chain [4] Iteration:  600 / 7000 [  8%]  (Warmup)
+Chain [1] Iteration:  600 / 7000 [  8%]  (Warmup)
+Chain [2] Iteration:  600 / 7000 [  8%]  (Warmup)
+Chain [3] Iteration:  600 / 7000 [  8%]  (Warmup)
+Chain [4] Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain [1] Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain [2] Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain [3] Iteration:  700 / 7000 [ 10%]  (Warmup)
+Chain [4] Iteration:  800 / 7000 [ 11%]  (Warmup)
+Chain [1] Iteration:  800 / 7000 [ 11%]  (Warmup)
+Chain [2] Iteration:  800 / 7000 [ 11%]  (Warmup)
+Chain [3] Iteration:  800 / 7000 [ 11%]  (Warmup)
+Chain [4] Iteration:  900 / 7000 [ 12%]  (Warmup)
+Chain [1] Iteration:  900 / 7000 [ 12%]  (Warmup)
+Chain [2] Iteration:  900 / 7000 [ 12%]  (Warmup)
+Chain [3] Iteration:  900 / 7000 [ 12%]  (Warmup)
+Chain [1] Iteration: 1000 / 7000 [ 14%]  (Warmup)
+Chain [4] Iteration: 1000 / 7000 [ 14%]  (Warmup)
+Chain [2] Iteration: 1000 / 7000 [ 14%]  (Warmup)
+Chain [3] Iteration: 1000 / 7000 [ 14%]  (Warmup)
+Chain [1] Iteration: 1100 / 7000 [ 15%]  (Warmup)
+Chain [4] Iteration: 1100 / 7000 [ 15%]  (Warmup)
+Chain [2] Iteration: 1100 / 7000 [ 15%]  (Warmup)
+Chain [3] Iteration: 1100 / 7000 [ 15%]  (Warmup)
+Chain [1] Iteration: 1200 / 7000 [ 17%]  (Warmup)
+Chain [4] Iteration: 1200 / 7000 [ 17%]  (Warmup)
+Chain [2] Iteration: 1200 / 7000 [ 17%]  (Warmup)
+Chain [3] Iteration: 1200 / 7000 [ 17%]  (Warmup)
+Chain [1] Iteration: 1300 / 7000 [ 18%]  (Warmup)
+Chain [2] Iteration: 1300 / 7000 [ 18%]  (Warmup)
+Chain [4] Iteration: 1300 / 7000 [ 18%]  (Warmup)
+Chain [1] Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain [2] Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain [3] Iteration: 1300 / 7000 [ 18%]  (Warmup)
+Chain [4] Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain [1] Iteration: 1500 / 7000 [ 21%]  (Warmup)
+Chain [2] Iteration: 1500 / 7000 [ 21%]  (Warmup)
+Chain [3] Iteration: 1400 / 7000 [ 20%]  (Warmup)
+Chain [4] Iteration: 1500 / 7000 [ 21%]  (Warmup)
+Chain [1] Iteration: 1600 / 7000 [ 22%]  (Warmup)
+Chain [2] Iteration: 1600 / 7000 [ 22%]  (Warmup)
+Chain [3] Iteration: 1500 / 7000 [ 21%]  (Warmup)
+Chain [4] Iteration: 1600 / 7000 [ 22%]  (Warmup)
+Chain [3] Iteration: 1600 / 7000 [ 22%]  (Warmup)
+Chain [2] Iteration: 1700 / 7000 [ 24%]  (Warmup)
+Chain [1] Iteration: 1700 / 7000 [ 24%]  (Warmup)
+Chain [4] Iteration: 1700 / 7000 [ 24%]  (Warmup)
+Chain [3] Iteration: 1700 / 7000 [ 24%]  (Warmup)
+Chain [1] Iteration: 1800 / 7000 [ 25%]  (Warmup)
+Chain [2] Iteration: 1800 / 7000 [ 25%]  (Warmup)
+Chain [4] Iteration: 1800 / 7000 [ 25%]  (Warmup)
+Chain [1] Iteration: 1900 / 7000 [ 27%]  (Warmup)
+Chain [2] Iteration: 1900 / 7000 [ 27%]  (Warmup)
+Chain [3] Iteration: 1800 / 7000 [ 25%]  (Warmup)
+Chain [1] Iteration: 2000 / 7000 [ 28%]  (Warmup)
+Chain [4] Iteration: 1900 / 7000 [ 27%]  (Warmup)
+Chain [2] Iteration: 2000 / 7000 [ 28%]  (Warmup)
+Chain [3] Iteration: 1900 / 7000 [ 27%]  (Warmup)
+Chain [1] Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain [2] Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain [4] Iteration: 2000 / 7000 [ 28%]  (Warmup)
+Chain [3] Iteration: 2000 / 7000 [ 28%]  (Warmup)
+Chain [1] Iteration: 2200 / 7000 [ 31%]  (Warmup)
+Chain [2] Iteration: 2200 / 7000 [ 31%]  (Warmup)
+Chain [4] Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain [3] Iteration: 2100 / 7000 [ 30%]  (Warmup)
+Chain [1] Iteration: 2300 / 7000 [ 32%]  (Warmup)
+Chain [2] Iteration: 2300 / 7000 [ 32%]  (Warmup)
+Chain [3] Iteration: 2200 / 7000 [ 31%]  (Warmup)
+Chain [1] Iteration: 2400 / 7000 [ 34%]  (Warmup)
+Chain [4] Iteration: 2200 / 7000 [ 31%]  (Warmup)
+Chain [2] Iteration: 2400 / 7000 [ 34%]  (Warmup)
+Chain [3] Iteration: 2300 / 7000 [ 32%]  (Warmup)
+Chain [1] Iteration: 2500 / 7000 [ 35%]  (Warmup)
+Chain [2] Iteration: 2500 / 7000 [ 35%]  (Warmup)
+Chain [4] Iteration: 2300 / 7000 [ 32%]  (Warmup)
+Chain [1] Iteration: 2600 / 7000 [ 37%]  (Warmup)
+Chain [3] Iteration: 2400 / 7000 [ 34%]  (Warmup)
+Chain [2] Iteration: 2600 / 7000 [ 37%]  (Warmup)
+Chain [4] Iteration: 2400 / 7000 [ 34%]  (Warmup)
+Chain [1] Iteration: 2700 / 7000 [ 38%]  (Warmup)
+Chain [3] Iteration: 2500 / 7000 [ 35%]  (Warmup)
+Chain [2] Iteration: 2700 / 7000 [ 38%]  (Warmup)
+Chain [1] Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain [4] Iteration: 2500 / 7000 [ 35%]  (Warmup)
+Chain [3] Iteration: 2600 / 7000 [ 37%]  (Warmup)
+Chain [2] Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain [1] Iteration: 2900 / 7000 [ 41%]  (Warmup)
+Chain [2] Iteration: 2900 / 7000 [ 41%]  (Warmup)
+Chain [3] Iteration: 2700 / 7000 [ 38%]  (Warmup)
+Chain [4] Iteration: 2600 / 7000 [ 37%]  (Warmup)
+Chain [1] Iteration: 3000 / 7000 [ 42%]  (Warmup)
+Chain [2] Iteration: 3000 / 7000 [ 42%]  (Warmup)
+Chain [3] Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain [4] Iteration: 2700 / 7000 [ 38%]  (Warmup)
+Chain [1] Iteration: 3100 / 7000 [ 44%]  (Warmup)
+Chain [2] Iteration: 3100 / 7000 [ 44%]  (Warmup)
+Chain [3] Iteration: 2900 / 7000 [ 41%]  (Warmup)
+Chain [1] Iteration: 3200 / 7000 [ 45%]  (Warmup)
+Chain [4] Iteration: 2800 / 7000 [ 40%]  (Warmup)
+Chain [2] Iteration: 3200 / 7000 [ 45%]  (Warmup)
+Chain [3] Iteration: 3000 / 7000 [ 42%]  (Warmup)
+Chain [1] Iteration: 3300 / 7000 [ 47%]  (Warmup)
+Chain [2] Iteration: 3300 / 7000 [ 47%]  (Warmup)
+Chain [4] Iteration: 2900 / 7000 [ 41%]  (Warmup)
+Chain [3] Iteration: 3100 / 7000 [ 44%]  (Warmup)
+Chain [1] Iteration: 3400 / 7000 [ 48%]  (Warmup)
+Chain [2] Iteration: 3400 / 7000 [ 48%]  (Warmup)
+Chain [4] Iteration: 3000 / 7000 [ 42%]  (Warmup)
+Chain [3] Iteration: 3200 / 7000 [ 45%]  (Warmup)
+Chain [1] Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain [1] Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain [2] Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain [2] Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain [4] Iteration: 3100 / 7000 [ 44%]  (Warmup)
+Chain [3] Iteration: 3300 / 7000 [ 47%]  (Warmup)
+Chain [4] Iteration: 3200 / 7000 [ 45%]  (Warmup)
+Chain [3] Iteration: 3400 / 7000 [ 48%]  (Warmup)
+Chain [1] Iteration: 3600 / 7000 [ 51%]  (Sampling)
+Chain [2] Iteration: 3600 / 7000 [ 51%]  (Sampling)
+Chain [4] Iteration: 3300 / 7000 [ 47%]  (Warmup)
+Chain [3] Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain [3] Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain [1] Iteration: 3700 / 7000 [ 52%]  (Sampling)
+Chain [4] Iteration: 3400 / 7000 [ 48%]  (Warmup)
+Chain [2] Iteration: 3700 / 7000 [ 52%]  (Sampling)
+Chain [3] Iteration: 3600 / 7000 [ 51%]  (Sampling)
+Chain [4] Iteration: 3500 / 7000 [ 50%]  (Warmup)
+Chain [4] Iteration: 3501 / 7000 [ 50%]  (Sampling)
+Chain [1] Iteration: 3800 / 7000 [ 54%]  (Sampling)
+Chain [2] Iteration: 3800 / 7000 [ 54%]  (Sampling)
+Chain [3] Iteration: 3700 / 7000 [ 52%]  (Sampling)
+Chain [4] Iteration: 3600 / 7000 [ 51%]  (Sampling)
+Chain [1] Iteration: 3900 / 7000 [ 55%]  (Sampling)
+Chain [2] Iteration: 3900 / 7000 [ 55%]  (Sampling)
+Chain [3] Iteration: 3800 / 7000 [ 54%]  (Sampling)
+Chain [1] Iteration: 4000 / 7000 [ 57%]  (Sampling)
+Chain [4] Iteration: 3700 / 7000 [ 52%]  (Sampling)
+Chain [2] Iteration: 4000 / 7000 [ 57%]  (Sampling)
+Chain [1] Iteration: 4100 / 7000 [ 58%]  (Sampling)
+Chain [3] Iteration: 3900 / 7000 [ 55%]  (Sampling)
+Chain [2] Iteration: 4100 / 7000 [ 58%]  (Sampling)
+Chain [4] Iteration: 3800 / 7000 [ 54%]  (Sampling)
+Chain [1] Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain [3] Iteration: 4000 / 7000 [ 57%]  (Sampling)
+Chain [2] Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain [4] Iteration: 3900 / 7000 [ 55%]  (Sampling)
+Chain [1] Iteration: 4300 / 7000 [ 61%]  (Sampling)
+Chain [3] Iteration: 4100 / 7000 [ 58%]  (Sampling)
+Chain [2] Iteration: 4300 / 7000 [ 61%]  (Sampling)
+Chain [4] Iteration: 4000 / 7000 [ 57%]  (Sampling)
+Chain [1] Iteration: 4400 / 7000 [ 62%]  (Sampling)
+Chain [3] Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain [2] Iteration: 4400 / 7000 [ 62%]  (Sampling)
+Chain [4] Iteration: 4100 / 7000 [ 58%]  (Sampling)
+Chain [3] Iteration: 4300 / 7000 [ 61%]  (Sampling)
+Chain [1] Iteration: 4500 / 7000 [ 64%]  (Sampling)
+Chain [2] Iteration: 4500 / 7000 [ 64%]  (Sampling)
+Chain [4] Iteration: 4200 / 7000 [ 60%]  (Sampling)
+Chain [3] Iteration: 4400 / 7000 [ 62%]  (Sampling)
+Chain [1] Iteration: 4600 / 7000 [ 65%]  (Sampling)
+Chain [2] Iteration: 4600 / 7000 [ 65%]  (Sampling)
+Chain [4] Iteration: 4300 / 7000 [ 61%]  (Sampling)
+Chain [3] Iteration: 4500 / 7000 [ 64%]  (Sampling)
+Chain [1] Iteration: 4700 / 7000 [ 67%]  (Sampling)
+Chain [2] Iteration: 4700 / 7000 [ 67%]  (Sampling)
+Chain [4] Iteration: 4400 / 7000 [ 62%]  (Sampling)
+Chain [3] Iteration: 4600 / 7000 [ 65%]  (Sampling)
+Chain [1] Iteration: 4800 / 7000 [ 68%]  (Sampling)
+Chain [2] Iteration: 4800 / 7000 [ 68%]  (Sampling)
+Chain [4] Iteration: 4500 / 7000 [ 64%]  (Sampling)
+Chain [3] Iteration: 4700 / 7000 [ 67%]  (Sampling)
+Chain [1] Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain [2] Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain [4] Iteration: 4600 / 7000 [ 65%]  (Sampling)
+Chain [3] Iteration: 4800 / 7000 [ 68%]  (Sampling)
+Chain [2] Iteration: 5000 / 7000 [ 71%]  (Sampling)
+Chain [1] Iteration: 5000 / 7000 [ 71%]  (Sampling)
+Chain [4] Iteration: 4700 / 7000 [ 67%]  (Sampling)
+Chain [3] Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain [2] Iteration: 5100 / 7000 [ 72%]  (Sampling)
+Chain [1] Iteration: 5100 / 7000 [ 72%]  (Sampling)
+Chain [4] Iteration: 4800 / 7000 [ 68%]  (Sampling)
+Chain [2] Iteration: 5200 / 7000 [ 74%]  (Sampling)
+Chain [3] Iteration: 5000 / 7000 [ 71%]  (Sampling)
+Chain [4] Iteration: 4900 / 7000 [ 70%]  (Sampling)
+Chain [1] Iteration: 5200 / 7000 [ 74%]  (Sampling)
+Chain [2] Iteration: 5300 / 7000 [ 75%]  (Sampling)
+Chain [3] Iteration: 5100 / 7000 [ 72%]  (Sampling)
+Chain [4] Iteration: 5000 / 7000 [ 71%]  (Sampling)
+Chain [1] Iteration: 5300 / 7000 [ 75%]  (Sampling)
+Chain [2] Iteration: 5400 / 7000 [ 77%]  (Sampling)
+Chain [4] Iteration: 5100 / 7000 [ 72%]  (Sampling)
+Chain [3] Iteration: 5200 / 7000 [ 74%]  (Sampling)
+Chain [1] Iteration: 5400 / 7000 [ 77%]  (Sampling)
+Chain [2] Iteration: 5500 / 7000 [ 78%]  (Sampling)
+Chain [4] Iteration: 5200 / 7000 [ 74%]  (Sampling)
+Chain [3] Iteration: 5300 / 7000 [ 75%]  (Sampling)
+Chain [1] Iteration: 5500 / 7000 [ 78%]  (Sampling)
+Chain [2] Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain [4] Iteration: 5300 / 7000 [ 75%]  (Sampling)
+Chain [3] Iteration: 5400 / 7000 [ 77%]  (Sampling)
+Chain [1] Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain [2] Iteration: 5700 / 7000 [ 81%]  (Sampling)
+Chain [4] Iteration: 5400 / 7000 [ 77%]  (Sampling)
+Chain [3] Iteration: 5500 / 7000 [ 78%]  (Sampling)
+Chain [1] Iteration: 5700 / 7000 [ 81%]  (Sampling)
+Chain [2] Iteration: 5800 / 7000 [ 82%]  (Sampling)
+Chain [4] Iteration: 5500 / 7000 [ 78%]  (Sampling)
+Chain [3] Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain [1] Iteration: 5800 / 7000 [ 82%]  (Sampling)
+Chain [2] Iteration: 5900 / 7000 [ 84%]  (Sampling)
+Chain [4] Iteration: 5600 / 7000 [ 80%]  (Sampling)
+Chain [3] Iteration: 5700 / 7000 [ 81%]  (Sampling)
+Chain [1] Iteration: 5900 / 7000 [ 84%]  (Sampling)
+Chain [2] Iteration: 6000 / 7000 [ 85%]  (Sampling)
+Chain [4] Iteration: 5700 / 7000 [ 81%]  (Sampling)
+Chain [3] Iteration: 5800 / 7000 [ 82%]  (Sampling)
+Chain [1] Iteration: 6000 / 7000 [ 85%]  (Sampling)
+Chain [2] Iteration: 6100 / 7000 [ 87%]  (Sampling)
+Chain [4] Iteration: 5800 / 7000 [ 82%]  (Sampling)
+Chain [3] Iteration: 5900 / 7000 [ 84%]  (Sampling)
+Chain [1] Iteration: 6100 / 7000 [ 87%]  (Sampling)
+Chain [2] Iteration: 6200 / 7000 [ 88%]  (Sampling)
+Chain [4] Iteration: 5900 / 7000 [ 84%]  (Sampling)
+Chain [3] Iteration: 6000 / 7000 [ 85%]  (Sampling)
+Chain [1] Iteration: 6200 / 7000 [ 88%]  (Sampling)
+Chain [2] Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain [4] Iteration: 6000 / 7000 [ 85%]  (Sampling)
+Chain [3] Iteration: 6100 / 7000 [ 87%]  (Sampling)
+Chain [1] Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain [2] Iteration: 6400 / 7000 [ 91%]  (Sampling)
+Chain [4] Iteration: 6100 / 7000 [ 87%]  (Sampling)
+Chain [3] Iteration: 6200 / 7000 [ 88%]  (Sampling)
+Chain [1] Iteration: 6400 / 7000 [ 91%]  (Sampling)
+Chain [2] Iteration: 6500 / 7000 [ 92%]  (Sampling)
+Chain [4] Iteration: 6200 / 7000 [ 88%]  (Sampling)
+Chain [3] Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain [1] Iteration: 6500 / 7000 [ 92%]  (Sampling)
+Chain [2] Iteration: 6600 / 7000 [ 94%]  (Sampling)
+Chain [4] Iteration: 6300 / 7000 [ 90%]  (Sampling)
+Chain [3] Iteration: 6400 / 7000 [ 91%]  (Sampling)
+Chain [2] Iteration: 6700 / 7000 [ 95%]  (Sampling)
+Chain [1] Iteration: 6600 / 7000 [ 94%]  (Sampling)
+Chain [4] Iteration: 6400 / 7000 [ 91%]  (Sampling)
+Chain [3] Iteration: 6500 / 7000 [ 92%]  (Sampling)
+Chain [2] Iteration: 6800 / 7000 [ 97%]  (Sampling)
+Chain [1] Iteration: 6700 / 7000 [ 95%]  (Sampling)
+Chain [4] Iteration: 6500 / 7000 [ 92%]  (Sampling)
+Chain [3] Iteration: 6600 / 7000 [ 94%]  (Sampling)
+Chain [2] Iteration: 6900 / 7000 [ 98%]  (Sampling)
+Chain [4] Iteration: 6600 / 7000 [ 94%]  (Sampling)
+Chain [1] Iteration: 6800 / 7000 [ 97%]  (Sampling)
+Chain [2] Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain [2] 
+Chain [2] Elapsed Time: 94180.1 seconds (Warm-up)
+Chain [2] 159730 seconds (Sampling)
+Chain [2] 253910 seconds (Total)
+Chain [2] 
+Chain [2] 
+Chain [3] Iteration: 6700 / 7000 [ 95%]  (Sampling)
+Chain [4] Iteration: 6700 / 7000 [ 95%]  (Sampling)
+Chain [1] Iteration: 6900 / 7000 [ 98%]  (Sampling)
+Chain [3] Iteration: 6800 / 7000 [ 97%]  (Sampling)
+Chain [4] Iteration: 6800 / 7000 [ 97%]  (Sampling)
+Chain [1] Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain [1] 
+Chain [1] Elapsed Time: 93330.5 seconds (Warm-up)
+Chain [1] 166781 seconds (Sampling)
+Chain [1] 260111 seconds (Total)
+Chain [1] 
+Chain [1] 
+Chain [4] Iteration: 6900 / 7000 [ 98%]  (Sampling)
+Chain [3] Iteration: 6900 / 7000 [ 98%]  (Sampling)
+Chain [4] Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain [4] 
+Chain [4] Elapsed Time: 106611 seconds (Warm-up)
+Chain [4] 161537 seconds (Sampling)
+Chain [4] 268147 seconds (Total)
+Chain [4] 
+Chain [4] 
+Chain [3] Iteration: 7000 / 7000 [100%]  (Sampling)
+Chain [3] 
+Chain [3] Elapsed Time: 101076 seconds (Warm-up)
+Chain [3] 167341 seconds (Sampling)
+Chain [3] 268417 seconds (Total)
+Chain [3] 
+Chain [3] 
+***hmc diagnostics:
+Processing csv files: /storage/users/adadras/ANN-EAM/stan_results/LBA_ndm/LBA_ndm-20230108134806_1.csv, /storage/users/adadras/ANN-EAM/stan_results/LBA_ndm/LBA_ndm-20230108134806_2.csv, /storage/users/adadras/ANN-EAM/stan_results/LBA_ndm/LBA_ndm-20230108134806_3.csv, /storage/users/adadras/ANN-EAM/stan_results/LBA_ndm/LBA_ndm-20230108134806_4.csv
+
+Checking sampler transitions treedepth.
+Treedepth satisfactory for all transitions.
+
+Checking sampler transitions for divergences.
+No divergent transitions found.
+
+Checking E-BFMI - sampler transitions HMC potential energy.
+E-BFMI satisfactory.
+
+Effective sample size satisfactory.
+
+Split R-hat values satisfactory all parameters.
+
+Processing complete, no problems detected.
+
+***DF: 
+                            Mean    MCSE  StdDev  ...    N_Eff  N_Eff/s  R_hat
+name                                              ...                         
+lp__                    -6100.00  0.7400   38.00  ...   2700.0   0.0041    1.0
+mu_k_word                   0.87  0.0057    0.28  ...   2400.0   0.0036    1.0
+mu_k_nonword                1.30  0.0062    0.30  ...   2400.0   0.0036    1.0
+mu_sp_trial_var_word        1.00  0.0063    0.32  ...   2500.0   0.0039    1.0
+mu_sp_trial_var_nonword     1.70  0.0071    0.37  ...   2800.0   0.0042    1.0
+...                          ...     ...     ...  ...      ...      ...    ...
+log_lik[36677]             -2.60  0.0015    0.18  ...  14656.0   0.0220    1.0
+log_lik[36678]             -1.90  0.0013    0.15  ...  14905.0   0.0230    1.0
+log_lik[36679]             -1.90  0.0012    0.15  ...  14965.0   0.0230    1.0
+log_lik[36680]             -2.10  0.0013    0.16  ...  14769.0   0.0230    1.0
+log_lik[36681]             -2.40  0.0015    0.19  ...  16263.0   0.0250    1.0
+
+[333175 rows x 9 columns]
+***Rhat > 1.01: 
+0
+None
+Empty DataFrame
+Columns: [Mean, MCSE, StdDev, 5%, 50%, 95%, N_Eff, N_Eff/s, R_hat]
+Index: []
+       Mean  MCSE  StdDev   5%  50%  95%  N_Eff  N_Eff/s  R_hat
+count   0.0   0.0     0.0  0.0  0.0  0.0    0.0      0.0    0.0
+mean    NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+std     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+min     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+25%     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+50%     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+75%     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+max     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+HF words, word drift mean and std:
+4.1661087736663935 0.6094415789330557
+HF words, nonword drift mean and std:
+1.8368893419545842 0.27926497374570874
+LF words word drift mean and std:
+3.2134773989387684 0.47065506484946534
+LF words nonword drift mean and std:
+2.3861291930762016 0.35264997197776776
+NW words word drift mean and std:
+1.290583313250631 0.19449487507074467
+NW words nonword drift mean and std:
+4.010051854533818 0.5877412464003035
+HF words, word starting point mean and std:
+1.4872156910838972 0.22126900672497565
+HF words, nonword starting point mean and std:
+1.9945815869351986 0.2949710317084267
+LF words word starting point mean and std:
+1.4724114324494175 0.21903017256533075
+LF words nonword starting point mean and std:
+1.9826013362240544 0.2931211840284854
+NW words word starting point mean and std:
+1.4903381500764694 0.22164258930007755
+NW words nonword starting point mean and std:
+1.9986391078083257 0.2953859574403797
+HF words, word threshold mean and std:
+2.9744313821677943 0.4425380134499513
+HF words, nonword threshold mean and std:
+3.989163173870397 0.5899420634168534
+LF words word threshold mean and std:
+2.944822864898835 0.4380603451306615
+LF words nonword threshold mean and std:
+3.965202672448109 0.5862423680569708
+NW words word threshold mean and std:
+2.980676300152939 0.4432851786001551
+NW words nonword threshold mean and std:
+3.9972782156166513 0.5907719148807594
+HF words, word bias mean and std:
+1.4872156910838972 0.22126900672497565
+HF words, nonword bias mean and std:
+1.9945815869351986 0.2949710317084267
+LF words word bias mean and std:
+1.4724114324494175 0.21903017256533075
+LF words nonword bias mean and std:
+1.9826013362240544 0.2931211840284854
+NW words word bias mean and std:
+1.4903381500764694 0.22164258930007755
+NW words nonword bias mean and std:
+1.9986391078083257 0.2953859574403797
+HF words ndt mean and std:
+0.18242131114413532 0.008137267272099756
+LF words ndt mean and std:
+0.18363657576967132 0.007822611606317743
+Non Words ndt mean and std:
+0.19434479099832427 0.008085596017358043
+Estimation Fit metrics:
+{'lppd': -4839.64638927338, 'p_waic': 1051.1792817723165, 'waic': 11781.651342091393, 'waic_se': 490.96314637575256}
+INFO:cmdstanpy:deleting tmpfiles dir: /tmp/tmpwniub9k_
+INFO:cmdstanpy:done
