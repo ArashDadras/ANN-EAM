@@ -81,10 +81,13 @@ print(model_config)
 
 ## Prepare data
 #### Loading words and non-words with zipf and predicted probabilities
-word_nword_df = pd.read_csv(dataset_path, header=None, names =['string', 'freq',  'label', 'zipf','category', 'word_prob', 'non_word_prob'])
+word_nword_df = pd.read_csv(dataset_path, header=None, names =['string', 'freq',  'label', 'zipf',
+                                                               'category', 'word_prob', 'non_word_prob'])
 
 #### Reading LDT Data
-behavioural_df = pd.read_csv(behavioural_data_root + 'LDT_data.csv', header=None,  names=['accuracy', 'rt', 'string', 'response', 'participant', 'minRT'])
+behavioural_df = pd.read_csv(behavioural_data_root + 'LDT_data.csv', header=None,
+                             names=['accuracy', 'rt', 'string', 'response',
+                                    'participant', 'minRT', 'participant_id'])
 #### Merging  behavioral dataframe with word_nonword_df to have words and non-words data with behavioral data
 behavioural_df = pd.merge(behavioural_df, word_nword_df, on='string', how='left').dropna().reset_index(drop=True)
 behavioural_df = behavioural_df.drop(["freq"], axis=1)
@@ -102,11 +105,11 @@ behavioural_df.groupby(['category']).agg({'rt': ['mean', 'std', 'max', 'min'],
 ## Stan Model and Estimation
 #### Compiling stan model
 lba_model = cmdstanpy.CmdStanModel(model_name=model_config['model_name'],
-                                   stan_file=stan_file_path);
+                                   stan_file=stan_file_path)
 #### Preparing model's inputs
 #### note that some inputs of data_dict might not be used depending on which model is used
 N = len(behavioural_df)                                                    # For all models
-participant = behavioural_df['participant'].to_numpy()                     # For all models
+participant = behavioural_df['participant_id'].to_numpy()                     # For all models
 p = behavioural_df.loc[:, ['word_prob', 'non_word_prob']].to_numpy()       # predicted probabilites of words and non-words, for ANN-EAM models
 frequency = behavioural_df['zipf'].to_numpy().astype(int)                  # zipf values For models with non-decision time or drift modulation
 frequencyCondition = behavioural_df['category'].replace(["HF", "LF", "NW"], [1, 2, 3]).to_numpy() # For models with conditional drift
@@ -114,7 +117,7 @@ response = behavioural_df['response'].to_numpy().astype(int)               # for
 rt = behavioural_df['rt'].to_numpy()                                       # for all models
 minRT = behavioural_df['minRT'].to_numpy()                                 # for all models
 RTbound = 0.1                                                              # for all models
-Number_Of_Participants = len(set(behavioural_df['participant']))
+Number_Of_Participants = len(set(behavioural_df['participant_id']))
 
 k_priors = [0, 1, 1, 1]                  # All models with LBA
 A_priors = [1, 2, 1, 1]                  # All models wtih LBA
