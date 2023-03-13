@@ -8,32 +8,36 @@ endobj
 /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /Shading 6 0 R
 /XObject 7 0 R >>
 endobj
-10 0 obj
-<< /Annots [ ] /Contents 9 0 R
-/Group << /CS /DeviceRGB /S /Transparency /Type /Group >>
-/MediaBox [ 0 0 648 648 ] /Parent 2 0 R /Resources 8 0 R /Type /Page >>
+11 0 obj
+<< /Annots 10 0 R /Contents 9 0 R /MediaBox [ 0 0 648 648 ] /Parent 2 0 R
+/Resources 8 0 R /Type /Page >>
 endobj
 9 0 obj
-<< /Filter /FlateDecode /Length 11 0 R >>
+<< /Filter /FlateDecode /Length 12 0 R >>
 stream
-xœUMoÛ0½ëWğ¸¦ˆ)Q»µÀÖëŠØaØ!MÒl…³¡Y‹bÿ~”ä¸¶“v;m’ïñKF¸3;pp§Ï|…o*7€p¥ÏÎ8Õö&’¨ìª,O§ï›ünÌ­Y\¨éoµ¸2’¬¾T'NÑ&_ÎİñÌÉYOª7³A­Qîap&ÉåC/[ø?aqá+ŠuCòLYÏ=gFædœ%I˜b‚ÃNékJ–gI½äcwsØ™)Ç½	Á[|¦ÜÔàÙF?$4Scs©ì	1EJ¨X"!{ä(Q•LY\Ñcáı¢¥™Yš)§ıI•{}`5ã<Ë¨’ÌŠãqAÎB­T¬•«Ä^ù:­Àş<V…¡Ë'U«ÆíAØg*€„9ºTP™ó†ff8%²?©ÉxJG$gô•Ù5Ü#Çé’Ñt¹2]º2Şe›rÛşœ’Îa‚ğd.—°øˆ€Ë[µˆÖgİ&KA`¹1oÜ[XŞÁ‡¥©á±~Â®?¿X;ƒãpxw´“
-+bCb‹.V»‹õÃãªƒnu³í¦Z—ˆ’ÍAIHĞŞÕó,œ–çö¬0%òj\øÀr_ï“3I6ï‚8@ôêÿA`Îº7cˆó‰~œmN>¡®ØÄñÓa»ù±~Øn¦ÅÀÚõv-Ö
-KHÌ¡4¹$‰:-%„—ÌÏ"—¶ˆ«&f(Ô¶t&	hRGªäËÔKş'Mˆ‚2vÄÌ4Ğ¬6Â}Å¼«€‰­d(‹¢÷D•õãaµşŸ×¿Û÷å2”ØSÊtí™_›¿€ÁN*
+xœTÉR1½û+tLñX¶dË¹A–¹†0U9“¦™@Íb€PùûÈî…îfBrè²å–Ş{ZìÕÇö×uÓ~]ŸÂ‡s³z¶š{ƒpcV'Û{pp£ß ¬aîäô|o"‰®»º–o§çÃZÎs«x[5Ö
+²5’¬şÔXNÑ&_ö»aÏÉYOjwn£©0WæÆ`’\~ôË¡…op«_%[0$Ï”uïp`L"ÆY¢œØ¹[•£¹Yî³û[,ÂÌ\ÛŞ„à->KíÌàÙF?&²0GgsªªÄ{ÅOIX¹D²ø˜%G52ûÄ1_õşÕÓ,<Í\ÓşEu{{TµĞ¼È¨ŠÌQ¢OÄXd	u¥bè…½òw^ıq®:cw_T­*˜¶E|`Ÿ©æèRaíÄw4Ç¹ı‹šL§s"r!_•Áİ8z0L•èT•‘×ã]¶)w3ßïSÒ¹«ÑOæt«ÏH°¹Rh}ÖKd)l.Í÷67ğic*¬!Ö_ØÁõûWàˆµ#8…Ãnğ“J+bCb‹.V¿“æáñb»‹ïín® ëQ²9¨	ÚóÁ<®ÂiYŞi¯ŠR"¯ÎElöõ™8’dGá]°GŠŞü?
+ÌÙj&Çã8Ûœ|B½Z³À/‡öòºyh/çÅÀÚíîY«J$æPš\’D’áõf>gˆ\^Ä²¬»e@¡¶u
+0rš%0²I©’/Sï,‰éŸ2u 
+Ë4Yx”Ù¿ÚnˆCm@%Ll%C¹ ú>t£Ò<.šßpŞü<´ïË#@‰CŒœKĞ3óÚqVø
 endstream
 endobj
-11 0 obj
-598
-endobj
 12 0 obj
+612
+endobj
+10 0 obj
+[ ]
+endobj
+13 0 obj
 << /BaseFont /Times-Bold /Encoding /WinAnsiEncoding /Subtype /Type1
 /Type /Font >>
 endobj
-13 0 obj
+14 0 obj
 << /BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Subtype /Type1
 /Type /Font >>
 endobj
 3 0 obj
-<< /F1 13 0 R /F2 12 0 R >>
+<< /F1 14 0 R /F2 13 0 R >>
 endobj
 4 0 obj
 << /A1 << /CA 0 /Type /ExtGState /ca 1 >>
@@ -49,32 +53,33 @@ endobj
 << >>
 endobj
 2 0 obj
-<< /Count 1 /Kids [ 10 0 R ] /Type /Pages >>
+<< /Count 1 /Kids [ 11 0 R ] /Type /Pages >>
 endobj
-14 0 obj
-<< /CreationDate (D:20221026081756Z)
-/Creator (matplotlib 3.2.2, http://matplotlib.org)
-/Producer (matplotlib pdf backend 3.2.2) >>
+15 0 obj
+<< /CreationDate (D:20230313143415Z)
+/Creator (Matplotlib v3.5.3, https://matplotlib.org)
+/Producer (Matplotlib pdf backend v3.5.3) >>
 endobj
 xref
-0 15
+0 16
 0000000000 65535 f 
 0000000016 00000 n 
-0000001482 00000 n 
-0000001277 00000 n 
-0000001320 00000 n 
+0000001461 00000 n 
+0000001256 00000 n 
+0000001299 00000 n 
+0000001398 00000 n 
 0000001419 00000 n 
 0000001440 00000 n 
-0000001461 00000 n 
 0000000065 00000 n 
-0000000385 00000 n 
+0000000330 00000 n 
+0000001037 00000 n 
 0000000208 00000 n 
-0000001058 00000 n 
-0000001078 00000 n 
-0000001177 00000 n 
-0000001542 00000 n 
+0000001017 00000 n 
+0000001057 00000 n 
+0000001156 00000 n 
+0000001521 00000 n 
 trailer
-<< /Info 14 0 R /Root 1 0 R /Size 15 >>
+<< /Info 15 0 R /Root 1 0 R /Size 16 >>
 startxref
-1690
+1672
 %%EOF
