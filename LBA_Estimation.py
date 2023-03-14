@@ -96,16 +96,6 @@ behavioural_df = pd.read_csv(behavioural_data_root + 'LDT_data.csv', header=None
 behavioural_df = pd.merge(behavioural_df, word_nword_df,
                           on='string', how='left').dropna().reset_index(drop=True)
 behavioural_df = behavioural_df.drop(["freq"], axis=1)
-print(behavioural_df.head())
-
-# Predicted probabilities of words and non-words in different conditions in all trials
-# across participants
-behavioural_df.groupby(['category']).agg({'word_prob': ['mean', 'std', 'count', 'max', 'min'],
-                                         'non_word_prob': ['mean', 'std', 'count', 'max', 'min']})
-# RT and response description of words and non-words in different conditions in all trials
-# across participants
-behavioural_df.groupby(['category']).agg({'rt': ['mean', 'std', 'max', 'min'],
-                                          'response': ['mean', 'std', 'max', 'min']})
 
 # Stan Model and Estimation
 # Compiling stan model
