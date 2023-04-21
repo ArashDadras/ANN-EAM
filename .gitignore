@@ -135,4 +135,5 @@ check_points/
 
 stan_results/
 stan files/
-
+dist/
+utils.egg-info/
