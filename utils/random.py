@@ -83,7 +83,6 @@ def random_rdm_2A(w_drift, nw_drift, threshold_word, threshold_nonword, ndt, noi
             ongoing[ended_incorrect] = False
     return rt, acc
 
-
 def simulate_ANN_RDM_full_s(n_trials, trials_info_df, parameters_set):
     
     data = pd.DataFrame([])    
@@ -141,7 +140,6 @@ def simulate_ANN_RDM_full_s(n_trials, trials_info_df, parameters_set):
     
     return data
 
-
 def simulate_ANN_RDM(n_trials, trials_info_df, parameters_set):
     
     data = pd.DataFrame([])    
@@ -194,7 +192,6 @@ def simulate_ANN_RDM(n_trials, trials_info_df, parameters_set):
     data['minRT'] = np.repeat(min_rt, n_trials)
     
     return data   
-
 
 def random_lba_2A(word_drift, nonword_drift, sp_trial_var_word, sp_trial_var_nonword,
                   ndt, k_word, k_nonword, drift_trial_var):

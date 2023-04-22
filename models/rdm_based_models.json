@@ -136,5 +136,16 @@
             "transf_mu_threshold_nonword", "transf_mu_ndt",
             "transf_mu_k_1", "transf_mu_k_2"
         ]
+    },
+
+    "ANN-RDM_full_FC_individual": {
+        "model_name": "ANN-RDM_full_FC",
+        "stan_file": "ANN-RDM/sigmoid_am_ndm.stan",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-RDM_full_FC",
+        "transf_params": ["transf_mu_alpha", "transf_mu_b", "transf_mu_threshold_word",
+            "transf_mu_threshold_nonword", "transf_mu_g", "transf_mu_m",
+            "transf_mu_k_1", "transf_mu_k_2"
+        ]
     }
 }
