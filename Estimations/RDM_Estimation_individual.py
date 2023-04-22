@@ -33,13 +33,14 @@ parser.add_argument('model_name', metavar='N',
 args = parser.parse_args()
 print("Model name: " + args.model_name)
 
+
 # roots
 root = "../"
-plots_root = "Results/hierarchical/Plots/"
+plots_root = "Results/individual/Plots/"
 datasets_root = root + "Datasets/"
 behavioural_data_root = datasets_root +  "behavioral_data/selected_data/" 
 stan_files_root = root +  "models/stan/" 
-saved_models_root = "Results/hierarchical/stan_results/"
+saved_models_root = "Results/individual/stan_results/"
 
 model_config = {}
 plots_path = ""
@@ -51,6 +52,9 @@ stan_output_dir = ""
 with open("../models/rdm_based_models.json") as f:
     models = json.load(f)
     models_name = list(models.keys())
+    models_name = list(
+        filter(lambda model_name: "individual" in model_name,
+               models_name))
 
 if not args.model_name in models_name:
     sys.exit("Not a valid model")
@@ -101,6 +105,9 @@ behavioural_df = pd.read_csv(behavioural_data_root + "LDT_data.csv",
 behavioural_df = pd.merge(behavioural_df, word_nword_df, on="string", how="left").dropna().reset_index(drop=True)
 behavioural_df = behavioural_df.drop(["freq", "participant"], axis=1)
 
+# Chossing a participant
+behavioural_df = behavioural_df.loc[behavioural_df["participant_id"] == 1]
+
 # Stan Model and Estimation
 # Compiling stan model
 rdm_model = cmdstanpy.CmdStanModel(model_name=model_config['model_name'],
@@ -109,7 +116,6 @@ rdm_model = cmdstanpy.CmdStanModel(model_name=model_config['model_name'],
 # note that some inputs of data_dict might not be used depending on which model is used
 # For all models
 N = len(behavioural_df)                                                    # For all models
-participant = behavioural_df["participant_id"].to_numpy()                     # For all models
 p = behavioural_df.loc[:, ["word_prob", "non_word_prob"]].to_numpy()       # predicted probabilites of words and non-words, for ANN-EAM models
 frequency = behavioural_df["zipf"].to_numpy().astype(int)                  # zipf values, for models with non-decision time or drift modulation
 frequencyCondition = behavioural_df["category"].replace(["HF", "LF", "NW"], [1, 2, 3]).to_numpy() # For models with conditional drift
@@ -119,19 +125,17 @@ minRT = behavioural_df["minRT"].to_numpy()                                 # for
 RTbound = 0.1                                                              # for all models
 Number_Of_Participants = len(set(behavioural_df["participant_id"]))
 
-threshold_priors = [0, 1, 1, 1]          # For all models with LBA
-ndt_priors = [0, 1, 1, 1];               # For models wtihout non-decision time modulation
-g_priors = [-2, 1, 0, 1]                 # For models wtih non-decision time modulation
-m_priors = [0, 0.5, 0, 1]                # For models wtih non-decision time modulation
-drift_priors = [1, 2, 1, 1]              # For models without drift mapping functions (non ANN-EAM models)
-alpha_priors = [0, 1, 1, 1]              # For models with drift mapping functions
-b_priors = [0, 1, 1, 1]                  # For models with drift mapping functions with asymptote modulation and linear models
-k_priors = [2, 1, 1, 1]                  # For models with sigmoid drift mapping functions (ANN-EAM models)
+threshold_priors = [2, 1]          # For all models with RDM
+ndt_priors = [0, 1];               # For models wtihout non-decision time modulation
+g_priors = [-2, 1]                 # For models wtih non-decision time modulation
+m_priors = [0, 0.5]                # For models wtih non-decision time modulation
+drift_priors = [1, 2]              # For models without drift mapping functions (non ANN-EAM models)
+alpha_priors = [0, 1]              # For models with drift mapping functions
+b_priors = [0, 1]                  # For models with drift mapping functions with asymptote modulation and linear models
+k_priors = [2, 1]                  # For models with sigmoid drift mapping functions (ANN-EAM models)
 
 # define input for the model
 data_dict = {"N": N,
-             "L": Number_Of_Participants,
-             "participant": participant,
              "response": response,
              "rt": rt,
              "minRT": minRT,
@@ -150,7 +154,7 @@ data_dict = {"N": N,
              }
 
 # set sampling parameters
-n_iter = 9000
+n_iter = 2000
 n_warmup = int(n_iter/2)
 n_sample = int(n_iter/2)
 n_chains = 4
@@ -179,7 +183,7 @@ for f in df["R_hat"]:
         counter += 1
 print(counter)
 
-df.loc[df["R_hat"]>1.01].to_csv("Results/hierarchical/logs/" + model_config["model_name"] + "_rhat_log.csv")
+df.loc[df["R_hat"]>1.01].to_csv("Results/individual/logs/" + model_config["model_name"] + "_rhat_log.csv")
 
 print(df.loc[df['R_hat'] > 1.01])
 

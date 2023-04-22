@@ -51,8 +51,6 @@ functions {
 
 data {
     int<lower=1> N;                                 // number of data items
-    int<lower=1> L;                                 // number of levels
-    int<lower=1, upper=L> participant[N];           // level (participant)
 
     vector[2] p[N];                                 // Semantic Word Probabilty p[n][1]:word probability p[n][2]:non-word probability
     int<lower=0> frequency[N];                      // zipf values (representing frequency)
@@ -118,13 +116,13 @@ transformed parameters {
     transf_m = log(1 + exp(m));
 
     for (n in 1:N) {
-        drift_word_t[n] = (k_1 + b * frequency[n]) / (1 + exp(-alpha * (p[n][1]-0.5)));
-        drift_nonword_t[n] = k_2 / (1 + exp(-alpha * (p[n][2]-0.5)));
+        drift_word_t[n] = (transf_k_1 + transf_b * frequency[n]) / (1 + exp(-transf_alpha * (p[n][1]-0.5)));
+        drift_nonword_t[n] = transf_k_2 / (1 + exp(-transf_alpha * (p[n][2]-0.5)));
        
-        threshold_t_word[n] = threshold_sbj_word[participant[n]];
-        threshold_t_nonword[n] = threshold_sbj_nonword[participant[n]];
+        threshold_t_word[n] = transf_threshold_word;
+        threshold_t_nonword[n] = transf_threshold_nonword;
         
-        ndt_t[n] = (m +  g * exp(-frequency[n])) * (minRT[n] - RTbound) + RTbound;
+        ndt_t[n] = (transf_m +  transf_g * exp(-frequency[n])) * (minRT[n] - RTbound) + RTbound;
     }
 }
 

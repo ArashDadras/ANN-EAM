@@ -140,12 +140,12 @@
 
     "ANN-RDM_full_FT_individual": {
         "model_name": "ANN-RDM_full_FT",
-        "stan_file": "ANN-RDM/sigmoid_am_ndm.stan",
+        "stan_file": "ANN-RDM/individual/sigmoid_am_ndm.stan",
         "dataset_name": "fastText_FC.csv",
         "plots_folder_name": "ANN-RDM_full_FT",
-        "transf_params": ["transf_mu_alpha", "transf_mu_b", "transf_mu_threshold_word",
-            "transf_mu_threshold_nonword", "transf_mu_g", "transf_mu_m",
-            "transf_mu_k_1", "transf_mu_k_2"
+        "transf_params": ["transf_alpha", "transf_b", "transf_threshold_word",
+            "transf_threshold_nonword", "transf_g", "transf_m",
+            "transf_k_1", "transf_k_2"
         ]
     }
 }
