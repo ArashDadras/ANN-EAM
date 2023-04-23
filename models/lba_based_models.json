@@ -19,11 +19,11 @@
                           "transf_mu_drift_word", "transf_mu_drift_nonword", "transf_mu_drift_variability"
         ]
     },
-    "ANN-LBA_l_FC": {
-        "model_name": "ANN-LBA_l_FC",
+    "ANN-LBA_l_FT": {
+        "model_name": "ANN-LBA_l_FT",
         "stan_file": "ANN-LBA/linear.stan",
         "dataset_name": "fastText_FC.csv",
-        "plots_folder_name": "ANN-LBA_l_FC",
+        "plots_folder_name": "ANN-LBA_l_FT",
         "transf_params": ["transf_mu_k_word", "transf_mu_k_nonword", "transf_mu_sp_trial_var_word",
                           "transf_mu_sp_trial_var_nonword", "transf_mu_ndt", "transf_mu_alpha_1",
                           "transf_mu_alpha_2", "transf_mu_b", "transf_mu_drift_variability"
@@ -39,11 +39,11 @@
                           "transf_mu_alpha_2", "transf_mu_b", "transf_mu_drift_variability"
         ]
     },
-    "ANN-LBA_l_ndm_FC": {
-        "model_name": "ANN-LBA_l_ndm_FC",
+    "ANN-LBA_l_ndm_FT": {
+        "model_name": "ANN-LBA_l_ndm_FT",
         "stan_file": "ANN-LBA/linear_ndm.stan",
         "dataset_name": "fastText_FC.csv",
-        "plots_folder_name": "ANN-LBA_l_ndm_FC",
+        "plots_folder_name": "ANN-LBA_l_ndm_FT",
         "transf_params": ["transf_mu_k_word", "transf_mu_k_nonword", "transf_mu_sp_trial_var_word",
                           "transf_mu_sp_trial_var_nonword", "transf_mu_g", "transf_mu_m",
                           "transf_mu_alpha_1", "transf_mu_alpha_2", "transf_mu_b",
@@ -61,11 +61,11 @@
                           "transf_mu_drift_variability"
         ]
     },
-    "ANN-LBA_full_s_FC": {
-        "model_name": "ANN-LBA_full_s_FC",
+    "ANN-LBA_full_s_FT": {
+        "model_name": "ANN-LBA_full_s_FT",
         "stan_file": "ANN-LBA/sigmoid_am_ndm.stan",
         "dataset_name": "fastText_FC.csv",
-        "plots_folder_name": "ANN-LBA_full_s_FC",
+        "plots_folder_name": "ANN-LBA_full_s_FT",
         "transf_params": ["transf_mu_k_word", "transf_mu_k_nonword", "transf_mu_sp_trial_var_word",
                           "transf_mu_sp_trial_var_nonword", "transf_mu_g", "transf_mu_m",
                           "transf_mu_alpha", "transf_mu_b", "transf_mu_theta_1", "transf_mu_theta_2",
@@ -83,11 +83,11 @@
                           "transf_mu_drift_variability"
         ]
     },
-    "ANN-LBA_s_am_FC": {
-        "model_name": "ANN-LBA_s_am_FC",
+    "ANN-LBA_s_am_FT": {
+        "model_name": "ANN-LBA_s_am_FT",
         "stan_file": "ANN-LBA/sigmoid_am.stan",
         "dataset_name": "fastText_FC.csv",
-        "plots_folder_name": "ANN-LBA_s_am_FC",
+        "plots_folder_name": "ANN-LBA_s_am_FT",
         "transf_params": ["transf_mu_k_word", "transf_mu_k_nonword", "transf_mu_sp_trial_var_word",
                           "transf_mu_sp_trial_var_nonword", "transf_mu_ndt", "transf_mu_alpha",
                           "transf_mu_b", "transf_mu_theta_1", "transf_mu_theta_2", "transf_mu_drift_variability"
@@ -103,11 +103,11 @@
                           "transf_mu_b", "transf_mu_theta_1", "transf_mu_theta_2", "transf_mu_drift_variability"
         ]
     },
-    "ANN-LBA_s_ndm_FC": {
-        "model_name": "ANN-LBA_s_ndm_FC",
+    "ANN-LBA_s_ndm_FT": {
+        "model_name": "ANN-LBA_s_ndm_FT",
         "stan_file": "ANN-LBA/sigmoid_ndm.stan",
         "dataset_name": "fastText_FC.csv",
-        "plots_folder_name": "ANN-LBA_s_ndm_FC",
+        "plots_folder_name": "ANN-LBA_s_ndm_FT",
         "transf_params": ["transf_mu_k_word", "transf_mu_k_nonword", "transf_mu_sp_trial_var_word",
                           "transf_mu_sp_trial_var_nonword", "transf_mu_g", "transf_mu_m",
                           "transf_mu_alpha", "transf_mu_theta_1", "transf_mu_theta_2",
@@ -125,11 +125,11 @@
                           "transf_mu_drift_variability"
         ]
     },
-    "ANN-LBA_s_FC": {
-        "model_name": "ANN-LBA_s_FC",
+    "ANN-LBA_s_FT": {
+        "model_name": "ANN-LBA_s_FT",
         "stan_file": "ANN-LBA/sigmoid.stan",
         "dataset_name": "fastText_FC.csv",
-        "plots_folder_name": "ANN-LBA_s_FC",
+        "plots_folder_name": "ANN-LBA_s_FT",
         "transf_params": ["transf_mu_k_word", "transf_mu_k_nonword", "transf_mu_sp_trial_var_word",
                           "transf_mu_sp_trial_var_nonword", "transf_mu_ndt", "transf_mu_alpha",
                           "transf_mu_theta_1", "transf_mu_theta_2", "transf_mu_drift_variability"
@@ -143,6 +143,18 @@
         "transf_params": ["transf_mu_k_word", "transf_mu_k_nonword", "transf_mu_sp_trial_var_word",
                           "transf_mu_sp_trial_var_nonword", "transf_mu_ndt", "transf_mu_alpha",
                           "transf_mu_theta_1", "transf_mu_theta_2", "transf_mu_drift_variability"
+        ]
+    },
+
+    "ANN-LBA_full_individual": {
+        "model_name": "ANN-LBA_full_s_FT",
+        "stan_file": "ANN-LBA/individual/sigmoid_am_ndm.stan",
+        "dataset_name": "fastText_FC.csv",
+        "plots_folder_name": "ANN-LBA_full_s_FT",
+        "transf_params": ["transf_k_word", "transf_k_nonword", "transf_sp_trial_var_word",
+                          "transf_sp_trial_var_nonword", "transf_g", "transf_m",
+                          "transf_alpha", "transf_b", "transf_theta_1", "transf_theta_2",
+                          "transf_drift_variability"
         ]
     }
 }

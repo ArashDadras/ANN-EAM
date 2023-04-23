@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import arviz as az
 import json
-from utils.random import random_rdm_2A
+from utils.random import random_lba_2A
 from utils.utils import get_dfs, calculate_waic, bci, plot_mean_posterior
 import argparse
 
@@ -33,13 +33,14 @@ parser.add_argument('model_name', metavar='N',
 args = parser.parse_args()
 print("Model name: " + args.model_name)
 
+
 # roots
 root = "../"
-plots_root = "Results/hierarchical/Plots/"
+plots_root = "Results/individual/Plots/"
 datasets_root = root + "Datasets/"
 behavioural_data_root = datasets_root +  "behavioral_data/selected_data/" 
 stan_files_root = root +  "models/stan/" 
-saved_models_root = "Results/hierarchical/stan_results/"
+saved_models_root = "Results/individual/stan_results/"
 
 model_config = {}
 plots_path = ""
@@ -48,13 +49,16 @@ stan_file_path = ""
 stan_output_dir = ""
 
 # read models configuration json file
-with open("../models/rdm_based_models.json") as f:
+with open("../models/lba_based_models.json") as f:
     models = json.load(f)
     models_name = list(models.keys())
+    models_name = list(
+        filter(lambda model_name: "individual" in model_name,
+               models_name))
 
 if not args.model_name in models_name:
     sys.exit("Not a valid model")
-    
+
 # Choose and set model configuration
 def SetModelAndPaths(model_name):
     global model_config
@@ -91,7 +95,9 @@ print(model_config)
 word_nword_df = pd.read_csv(dataset_path, header=None,
                             names =["string", "freq",  "label", "zipf",
                                     "category", "word_prob", "non_word_prob"])
+word_nword_df
 
+# Reading LDT Data
 # Reading LDT Data
 behavioural_df = pd.read_csv(behavioural_data_root + "LDT_data.csv",
                              header=None,
@@ -101,62 +107,71 @@ behavioural_df = pd.read_csv(behavioural_data_root + "LDT_data.csv",
 behavioural_df = pd.merge(behavioural_df, word_nword_df, on="string", how="left").dropna().reset_index(drop=True)
 behavioural_df = behavioural_df.drop(["freq", "participant"], axis=1)
 
+# Chossing a participant
+behavioural_df = behavioural_df.loc[behavioural_df["participant_id"] == 1]
+
 # Stan Model and Estimation
 # Compiling stan model
-rdm_model = cmdstanpy.CmdStanModel(model_name=model_config['model_name'],
+lba_model = cmdstanpy.CmdStanModel(model_name=model_config['model_name'],
                                    stan_file=stan_file_path)
 # Preparing model's inputs
 # note that some inputs of data_dict might not be used depending on which model is used
 # For all models
 N = len(behavioural_df)                                                    # For all models
-participant = behavioural_df["participant_id"].to_numpy()                     # For all models
-p = behavioural_df.loc[:, ["word_prob", "non_word_prob"]].to_numpy()       # predicted probabilites of words and non-words, for ANN-EAM models
-frequency = behavioural_df["zipf"].to_numpy().astype(int)                  # zipf values, for models with non-decision time or drift modulation
-frequencyCondition = behavioural_df["category"].replace(["HF", "LF", "NW"], [1, 2, 3]).to_numpy() # For models with conditional drift
-response = behavioural_df["response"].to_numpy().astype(int)               # for all models
-rt = behavioural_df["rt"].to_numpy()                                       # for all models
-minRT = behavioural_df["minRT"].to_numpy()                                 # for all models
+p = behavioural_df.loc[:, ['word_prob', 'non_word_prob']].to_numpy()       # predicted probabilites of words and non-words, for ANN-EAM models
+frequency = behavioural_df['zipf'].to_numpy().astype(int)                  # zipf values For models with non-decision time or drift modulation
+frequencyCondition = behavioural_df['category'].replace(["HF", "LF", "NW"], [1, 2, 3]).to_numpy() # For models with conditional drift
+response = behavioural_df['response'].to_numpy().astype(int)               # for all models
+rt = behavioural_df['rt'].to_numpy()                                       # for all models
+minRT = behavioural_df['minRT'].to_numpy()                                 # for all models
 RTbound = 0.1                                                              # for all models
-Number_Of_Participants = len(set(behavioural_df["participant_id"]))
+Number_Of_Participants = len(set(behavioural_df['participant_id']))
 
-threshold_priors = [0, 1, 1, 1]          # For all models with RDM
-ndt_priors = [0, 1, 1, 1];               # For models wtihout non-decision time modulation
-g_priors = [-2, 1, 0, 1]                 # For models wtih non-decision time modulation
-m_priors = [0, 0.5, 0, 1]                # For models wtih non-decision time modulation
-drift_priors = [1, 2, 1, 1]              # For models without drift mapping functions (non ANN-EAM models)
-alpha_priors = [0, 1, 1, 1]              # For models with drift mapping functions
-b_priors = [0, 1, 1, 1]                  # For models with drift mapping functions with asymptote modulation and linear models
-k_priors = [2, 1, 1, 1]                  # For models with sigmoid drift mapping functions (ANN-EAM models)
+k_priors = [1, 1]                  # All models with LBA
+A_priors = [1, 1]                  # All models wtih LBA
+ndt_priors = [0, 1];               # For models wtihout non-decision time modulation
+g_priors = [-2, 1]                 # For models wtih non-decision time modulation
+m_priors = [0, 0.5]                # For models wtih non-decision time modulation
+drift_priors = [1, 2]              # For models withoud drift mapping functions (non ANN-EAM models)
+alpha_priors = [0, 1]              # For models with drift mapping functions
+b_priors = [0, 1]                  # For models with drift mapping functions with asymptote modulation and linear models
+
+# There is a k parameter in LBA impelemention so we use theta as k parameter in sigmoid function
+theta_priors = [2, 1]              # For models with sigmoid drift mapping functions (ANN-EAM models) (equivalent of k_priors in RDM and ANN-RDM)
+sp_trial_var_priors = [1, 1]
+drift_variability_priors = [1, 1]
 
 # define input for the model
-data_dict = {"N": N,
-             "L": Number_Of_Participants,
-             "participant": participant,
-             "response": response,
-             "rt": rt,
-             "minRT": minRT,
-             "RTbound": RTbound,
-             "frequency": frequency,
-             "frequencyCondition": frequencyCondition,
-             "threshold_priors": threshold_priors,
-             "ndt_priors": ndt_priors,
-             "g_priors": g_priors,
-             "m_priors": m_priors,
-             "drift_priors": drift_priors,
-             "p": p,
-             "alpha_priors": alpha_priors,
-             "b_priors": b_priors,
-             "k_priors": k_priors,
+data_dict = {'N': N,
+             'response': response,
+             'rt': rt,
+             'minRT': minRT,
+             'RTbound': RTbound,
+             'frequency': frequency,
+             'frequencyCondition': frequencyCondition,
+             'k_priors': k_priors,
+             'A_priors': A_priors,
+             'ndt_priors': ndt_priors,
+             'g_priors': g_priors,
+             'm_priors': m_priors,
+             'drift_priors': drift_priors,
+             'p': p,
+             'alpha_priors': alpha_priors,
+             'b_priors': b_priors,
+             'k_priors': k_priors,
+             'theta_priors': theta_priors,
+             'sp_trial_var_priors': sp_trial_var_priors,
+             'drift_variability_priors': drift_variability_priors
              }
 
 # set sampling parameters
-n_iter = 7000
+n_iter = 2000
 n_warmup = int(n_iter/2)
 n_sample = int(n_iter/2)
 n_chains = 4
 
 # Fitting the model
-fit = rdm_model.sample(data=data_dict,
+fit = lba_model.sample(data=data_dict,
                        iter_sampling=n_sample, 
                        iter_warmup=n_warmup,
                        chains=n_chains,
@@ -179,128 +194,207 @@ for f in df["R_hat"]:
         counter += 1
 print(counter)
 
-df.loc[df["R_hat"]>1.01].to_csv("Results/hierarchical/logs/" + model_config["model_name"] + "_rhat_log.csv")
-
-print(df.loc[df['R_hat'] > 1.01])
+df.loc[df["R_hat"]>1.01].to_csv("Results/individual/logs/" + model_config["model_name"] + "_rhat_log.csv")
 
 print(df.loc[df['R_hat'] > 1.01].describe())
 
 # Check parameters
 # Parameters posterior plots
-az.plot_posterior(fit, var_names=model_config["transf_params"],
-                  hdi_prob=.95);
-plt.savefig(plots_path + "Parameters.pdf")
+az.plot_posterior(fit, var_names=model_config['transf_params'],
+                  hdi_prob=.95)
+plt.savefig(plots_path + 'Parameters.pdf')
 
 # Loading model parameters for each trial
 drift_word_t = fit.stan_variables()['drift_word_t']
 drift_nonword_t = fit.stan_variables()['drift_nonword_t']
-if model_config['model_name'] != "RDM":
-    threshold_t_word = fit.stan_variables()['threshold_t_word']
-    threshold_t_nonword = fit.stan_variables()['threshold_t_nonword']
-else:
-    threshold_t = fit.stan_variables()['threshold_t']
 ndt_t = fit.stan_variables()['ndt_t']
+drift_variability_t = fit.stan_variables()['drift_variability_t']
+if model_config['model_name'] != "LBA":
+    k_t_word = fit.stan_variables()['k_t_word']
+    k_t_nonword = fit.stan_variables()['k_t_nonword']
+    sp_t_word = fit.stan_variables()['sp_trial_var_t_word']
+    sp_t_nonword = fit.stan_variables()['sp_trial_var_t_nonword']
+
+else:
+    k_t = fit.stan_variables()['k_t']
+    sp_trial_var_t = fit.stan_variables()['sp_trial_var_t']
 
 # Models mean parameters in different conditions
-HF_condition_w = drift_word_t[:, behavioural_df['category'] == "HF"]
-HF_condition_nw = drift_nonword_t[:, behavioural_df['category'] == "HF"]
-LF_condition_w = drift_word_t[:, behavioural_df['category'] == "LF"]
-LF_condition_nw = drift_nonword_t[:, behavioural_df['category'] == "LF"]
-NW_condition_w = drift_word_t[:, behavioural_df['category'] == "NW"]
-NW_condition_nw = drift_nonword_t[:, behavioural_df['category'] == "NW"]
+v_HF_condition_w = drift_word_t[:, behavioural_df['category'] == "HF"]
+v_HF_condition_nw = drift_nonword_t[:, behavioural_df['category'] == "HF"]
+v_LF_condition_w = drift_word_t[:, behavioural_df['category'] == "LF"]
+v_LF_condition_nw = drift_nonword_t[:, behavioural_df['category'] == "LF"]
+v_NW_condition_w = drift_word_t[:, behavioural_df['category'] == "NW"]
+v_NW_condition_nw = drift_nonword_t[:, behavioural_df['category'] == "NW"]
 
 print('HF words, word drift mean and std:')
-print(np.mean(np.mean(HF_condition_w, axis=1)),
-      np.std(np.mean(HF_condition_w, axis=1)))
+print(np.mean(np.mean(v_HF_condition_w, axis=1)),
+      np.std(np.mean(v_HF_condition_w, axis=1)))
 print('HF words, nonword drift mean and std:')
-print(np.mean(np.mean(HF_condition_nw, axis=1)),
-      np.std(np.mean(HF_condition_nw, axis=1)))
+print(np.mean(np.mean(v_HF_condition_nw, axis=1)),
+      np.std(np.mean(v_HF_condition_nw, axis=1)))
 print('LF words word drift mean and std:')
-print(np.mean(np.mean(LF_condition_w, axis=1)),
-      np.std(np.mean(LF_condition_w, axis=1)))
+print(np.mean(np.mean(v_LF_condition_w, axis=1)),
+      np.std(np.mean(v_LF_condition_w, axis=1)))
 print('LF words nonword drift mean and std:')
-print(np.mean(np.mean(LF_condition_nw, axis=1)),
-      np.std(np.mean(LF_condition_nw, axis=1)))
+print(np.mean(np.mean(v_LF_condition_nw, axis=1)),
+      np.std(np.mean(v_LF_condition_nw, axis=1)))
 print('NW words word drift mean and std:')
-print(np.mean(np.mean(NW_condition_w, axis=1)),
-      np.std(np.mean(NW_condition_w, axis=1)))
+print(np.mean(np.mean(v_NW_condition_w, axis=1)),
+      np.std(np.mean(v_NW_condition_w, axis=1)))
 print('NW words nonword drift mean and std:')
-print(np.mean(np.mean(NW_condition_nw, axis=1)),
-      np.std(np.mean(NW_condition_nw, axis=1)))
+print(np.mean(np.mean(v_NW_condition_nw, axis=1)),
+      np.std(np.mean(v_NW_condition_nw, axis=1)))
 
-if model_config['model_name'] != "RDM":
-    HF_condition_w = threshold_t_word[:, behavioural_df['category'] == "HF"]
-    HF_condition_nw = threshold_t_nonword[:,
-                                          behavioural_df['category'] == "HF"]
-    LF_condition_w = threshold_t_word[:, behavioural_df['category'] == "LF"]
-    LF_condition_nw = threshold_t_nonword[:,
-                                          behavioural_df['category'] == "LF"]
-    NW_condition_w = threshold_t_word[:, behavioural_df['category'] == "NW"]
-    NW_condition_nw = threshold_t_nonword[:,
-                                          behavioural_df['category'] == "NW"]
+if model_config['model_name'] != "LBA":
+    sp_HF_condition_w = sp_t_word[:, behavioural_df['category'] == "HF"]
+    sp_HF_condition_nw = sp_t_nonword[:, behavioural_df['category'] == "HF"]
+    sp_LF_condition_w = sp_t_word[:, behavioural_df['category'] == "LF"]
+    sp_LF_condition_nw = sp_t_nonword[:, behavioural_df['category'] == "LF"]
+    sp_NW_condition_w = sp_t_word[:, behavioural_df['category'] == "NW"]
+    sp_NW_condition_nw = sp_t_nonword[:, behavioural_df['category'] == "NW"]
 else:
-    HF_condition = threshold_t[:, behavioural_df['category'] == "HF"]
-    LF_condition = threshold_t[:, behavioural_df['category'] == "LF"]
-    NW_condition = threshold_t[:, behavioural_df['category'] == "NW"]
+    sp_HF_condition = sp_trial_var_t[:, behavioural_df['category'] == "HF"]
+    sp_LF_condition = sp_trial_var_t[:, behavioural_df['category'] == "LF"]
+    sp_NW_condition = sp_trial_var_t[:, behavioural_df['category'] == "NW"]
 
-if model_config['model_name'] != "RDM":
+if model_config['model_name'] != "LBA":
+    print('HF words, word starting point mean and std:')
+    print(np.mean(np.mean(sp_HF_condition_w, axis=1)),
+          np.std(np.mean(sp_HF_condition_w, axis=1)))
+    print('HF words, nonword starting point mean and std:')
+    print(np.mean(np.mean(sp_HF_condition_nw, axis=1)),
+          np.std(np.mean(sp_HF_condition_nw, axis=1)))
+    print('LF words word starting point mean and std:')
+    print(np.mean(np.mean(sp_LF_condition_w, axis=1)),
+          np.std(np.mean(sp_LF_condition_w, axis=1)))
+    print('LF words nonword starting point mean and std:')
+    print(np.mean(np.mean(sp_LF_condition_nw, axis=1)),
+          np.std(np.mean(sp_LF_condition_nw, axis=1)))
+    print('NW words word starting point mean and std:')
+    print(np.mean(np.mean(sp_NW_condition_w, axis=1)),
+          np.std(np.mean(sp_NW_condition_w, axis=1)))
+    print('NW words nonword starting point mean and std:')
+    print(np.mean(np.mean(sp_NW_condition_nw, axis=1)),
+          np.std(np.mean(sp_NW_condition_nw, axis=1)))
+else:
+    print('HF words, starting point mean and std:')
+    print(np.mean(np.mean(sp_HF_condition, axis=1)),
+          np.std(np.mean(sp_HF_condition, axis=1)))
+    print('LF words starting point mean and std:')
+    print(np.mean(np.mean(sp_LF_condition, axis=1)),
+          np.std(np.mean(sp_LF_condition, axis=1)))
+    print('NW words starting point mean and std:')
+    print(np.mean(np.mean(sp_NW_condition, axis=1)),
+          np.std(np.mean(sp_NW_condition, axis=1)))
+
+if model_config['model_name'] != "LBA":
+    k_HF_condition_w = k_t_word[:, behavioural_df['category'] == "HF"]
+    k_HF_condition_nw = k_t_nonword[:, behavioural_df['category'] == "HF"]
+    k_LF_condition_w = k_t_word[:, behavioural_df['category'] == "LF"]
+    k_LF_condition_nw = k_t_nonword[:, behavioural_df['category'] == "LF"]
+    k_NW_condition_w = k_t_word[:, behavioural_df['category'] == "NW"]
+    k_NW_condition_nw = k_t_nonword[:, behavioural_df['category'] == "NW"]
+
+    t_HF_condition_w = sp_HF_condition_w + sp_HF_condition_w
+    t_HF_condition_nw = sp_HF_condition_nw + sp_HF_condition_nw
+    t_LF_condition_w = sp_LF_condition_w + sp_LF_condition_w
+    t_LF_condition_nw = sp_LF_condition_nw + sp_LF_condition_nw
+    t_NW_condition_w = sp_NW_condition_w + sp_NW_condition_w
+    t_NW_condition_nw = sp_NW_condition_nw + sp_NW_condition_nw
+else:
+    k_HF_condition = k_t[:, behavioural_df['category'] == "HF"]
+    k_LF_condition = k_t[:, behavioural_df['category'] == "LF"]
+    k_NW_condition = k_t[:, behavioural_df['category'] == "NW"]
+
+    t_HF_condition = sp_HF_condition + k_HF_condition
+    t_LF_condition = sp_LF_condition + k_LF_condition
+    t_NW_condition = sp_NW_condition + k_NW_condition
+
+if model_config['model_name'] != "LBA":
     print('HF words, word threshold mean and std:')
-    print(np.mean(np.mean(HF_condition_w, axis=1)),
-          np.std(np.mean(HF_condition_w, axis=1)))
+    print(np.mean(np.mean(t_HF_condition_w, axis=1)),
+          np.std(np.mean(t_HF_condition_w, axis=1)))
     print('HF words, nonword threshold mean and std:')
-    print(np.mean(np.mean(HF_condition_nw, axis=1)),
-          np.std(np.mean(HF_condition_nw, axis=1)))
+    print(np.mean(np.mean(t_HF_condition_nw, axis=1)),
+          np.std(np.mean(t_HF_condition_nw, axis=1)))
     print('LF words word threshold mean and std:')
-    print(np.mean(np.mean(LF_condition_w, axis=1)),
-          np.std(np.mean(LF_condition_w, axis=1)))
+    print(np.mean(np.mean(t_LF_condition_w, axis=1)),
+          np.std(np.mean(t_LF_condition_w, axis=1)))
     print('LF words nonword threshold mean and std:')
-    print(np.mean(np.mean(LF_condition_nw, axis=1)),
-          np.std(np.mean(LF_condition_nw, axis=1)))
+    print(np.mean(np.mean(t_LF_condition_nw, axis=1)),
+          np.std(np.mean(t_LF_condition_nw, axis=1)))
     print('NW words word threshold mean and std:')
-    print(np.mean(np.mean(NW_condition_w, axis=1)),
-          np.std(np.mean(NW_condition_w, axis=1)))
+    print(np.mean(np.mean(t_NW_condition_w, axis=1)),
+          np.std(np.mean(t_NW_condition_w, axis=1)))
     print('NW words nonword threshold mean and std:')
-    print(np.mean(np.mean(NW_condition_nw, axis=1)),
-          np.std(np.mean(NW_condition_nw, axis=1)))
+    print(np.mean(np.mean(t_NW_condition_nw, axis=1)),
+          np.std(np.mean(t_NW_condition_nw, axis=1)))
 else:
-    print('HF words, threshold mean and std:')
-    print(np.mean(np.mean(HF_condition, axis=1)),
-          np.std(np.mean(HF_condition, axis=1)))
-    print('LF words, threshold mean and std:')
-    print(np.mean(np.mean(LF_condition, axis=1)),
-          np.std(np.mean(LF_condition, axis=1)))
-    print('NW words, word threshold mean and std:')
-    print(np.mean(np.mean(NW_condition, axis=1)),
-          np.std(np.mean(NW_condition, axis=1)))
+    print('HF words,  threshold mean and std:')
+    print(np.mean(np.mean(t_HF_condition, axis=1)),
+          np.std(np.mean(t_HF_condition, axis=1)))
+    print('LF words threshold mean and std:')
+    print(np.mean(np.mean(t_LF_condition, axis=1)),
+          np.std(np.mean(t_LF_condition, axis=1)))
+    print('NW words word threshold mean and std:')
+    print(np.mean(np.mean(t_NW_condition, axis=1)),
+          np.std(np.mean(t_NW_condition, axis=1)))
 
-HF_condition = ndt_t[:, behavioural_df['category'] == "HF"]
-LF_condition = ndt_t[:, behavioural_df['category'] == "LF"]
-NW_condition = ndt_t[:, behavioural_df['category'] == "NW"]
+if model_config['model_name'] != "LBA":
+    bias_HF_condition_w = t_HF_condition_w - sp_HF_condition_w
+    bias_HF_condition_nw = t_HF_condition_nw - sp_HF_condition_nw
+    bias_LF_condition_w = t_LF_condition_w - sp_LF_condition_w
+    bias_LF_condition_nw = t_LF_condition_nw - sp_LF_condition_nw
+    bias_NW_condition_w = t_NW_condition_w - sp_NW_condition_w
+    bias_NW_condition_nw = t_NW_condition_nw - sp_NW_condition_nw
 
-print('HF words ndt_t mean and std:')
-print(np.mean(np.mean(HF_condition, axis=1)),
-      np.std(np.mean(HF_condition, axis=1)))
-print('LF words ndt_t mean and std:')
-print(np.mean(np.mean(LF_condition, axis=1)),
-      np.std(np.mean(LF_condition, axis=1)))
-print('Non Words ndt_t mean and std:')
-print(np.mean(np.mean(NW_condition, axis=1)),
-      np.std(np.mean(NW_condition, axis=1)))
+if model_config['model_name'] != "LBA":
+    print('HF words, word bias mean and std:')
+    print(np.mean(np.mean(bias_HF_condition_w, axis=1)),
+          np.std(np.mean(bias_HF_condition_w, axis=1)))
+    print('HF words, nonword bias mean and std:')
+    print(np.mean(np.mean(bias_HF_condition_nw, axis=1)),
+          np.std(np.mean(bias_HF_condition_nw, axis=1)))
+    print('LF words word bias mean and std:')
+    print(np.mean(np.mean(bias_LF_condition_w, axis=1)),
+          np.std(np.mean(bias_LF_condition_w, axis=1)))
+    print('LF words nonword bias mean and std:')
+    print(np.mean(np.mean(bias_LF_condition_nw, axis=1)),
+          np.std(np.mean(bias_LF_condition_nw, axis=1)))
+    print('NW words word bias mean and std:')
+    print(np.mean(np.mean(bias_NW_condition_w, axis=1)),
+          np.std(np.mean(bias_NW_condition_w, axis=1)))
+    print('NW words nonword bias mean and std:')
+    print(np.mean(np.mean(bias_NW_condition_nw, axis=1)),
+          np.std(np.mean(bias_NW_condition_nw, axis=1)))
+
+ndt_HF_condition = ndt_t[:, behavioural_df['category'] == "HF"]
+ndt_LF_condition = ndt_t[:, behavioural_df['category'] == "LF"]
+ndt_NW_condition = ndt_t[:, behavioural_df['category'] == "NW"]
+
+print('HF words ndt mean and std:')
+print(np.mean(np.mean(ndt_HF_condition, axis=1)),
+      np.std(np.mean(ndt_HF_condition, axis=1)))
+print('LF words ndt mean and std:')
+print(np.mean(np.mean(ndt_LF_condition, axis=1)),
+      np.std(np.mean(ndt_LF_condition, axis=1)))
+print('Non Words ndt mean and std:')
+print(np.mean(np.mean(ndt_NW_condition, axis=1)),
+      np.std(np.mean(ndt_NW_condition, axis=1)))
 
 # Calculating metrics
-log_likelihood = fit.stan_variables()["log_lik"]
+log_likelihood = fit.stan_variables()['log_lik']
 print("Estimation Fit metrics:")
 print(calculate_waic(log_likelihood))
 
-# Simulating RDM with estimated parameters
-if model_config['model_name'] != "RDM":
-    pp_rt, pp_response = random_rdm_2A(drift_word_t, drift_nonword_t,
-                                       threshold_t_word, threshold_t_nonword, ndt_t,
-                                       noise_constant=1, dt=0.001, max_rt=5)
+# Simulating LBA with estimated parameters
+if model_config["model_name"] != "RDM":
+    pp_rt, pp_response = random_lba_2A(drift_word_t, drift_nonword_t, sp_t_word, sp_t_nonword,
+                                       ndt_t, k_t_word, k_t_nonword, drift_variability_t)
 else:
-    pp_rt, pp_response = random_rdm_2A(drift_word_t, drift_nonword_t, threshold_t,
-                                       threshold_t, ndt_t, noise_constant=1, dt=0.001,
-                                       max_rt=5)
+    pp_rt, pp_response = random_lba_2A(drift_word_t, drift_nonword_t, sp_trial_var_t, sp_trial_var_t,
+                                       ndt_t, k_t, k_t, drift_variability_t)
 
 # Predicted Data
 tmp1 = pd.DataFrame(pp_rt,

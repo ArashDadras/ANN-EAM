@@ -154,7 +154,7 @@ data_dict = {"N": N,
              }
 
 # set sampling parameters
-n_iter = 2000
+n_iter = 4000
 n_warmup = int(n_iter/2)
 n_sample = int(n_iter/2)
 n_chains = 4
