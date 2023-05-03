@@ -51,7 +51,6 @@ functions {
 
 data {
     int<lower=1> N;                                 // number of data items
-
     vector[2] p[N];                                 // Semantic Word Probabilty p[n][1]:word probability p[n][2]:non-word probability
     int<lower=0> frequency[N];                      // zipf values (representing frequency)
     int<lower=0,upper=1> response[N];               // 1-> word, 0->nonword

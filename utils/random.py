@@ -83,18 +83,70 @@ def random_rdm_2A(w_drift, nw_drift, threshold_word, threshold_nonword, ndt, noi
             ongoing[ended_incorrect] = False
     return rt, acc
 
-def simulate_ANN_RDM_full_s(n_trials, trials_info_df, parameters_set):
+def simulate_ANNRDM_individual(n_trials, trials_info_df, parameters_set):
+    
+    data = pd.DataFrame([])    
+    selected_trials_df = trials_info_df.sample(n_trials).reset_index(drop=True)
+    zipf = selected_trials_df["zipf"].to_numpy()
+    pword = selected_trials_df["word_prob"].to_numpy()
+    pnword = selected_trials_df["non_word_prob"].to_numpy()     
+    
+    data["trial"] = np.arange(1, n_trials+1)
+
+    alpha = parameters_set[0]
+    b = parameters_set[1]
+    k_1 = parameters_set[2]
+    k_2 = parameters_set[3]
+    threshold_word = parameters_set[4]
+    threshold_nonword = parameters_set[5]
+    m = parameters_set[6]
+    g = parameters_set[7]
+    
+    data["k_1"] = np.repeat(k_1, n_trials)
+    data["k_2"] = np.repeat(k_2, n_trials)
+    data["alpha"]= np.repeat(alpha, n_trials)
+    data["b"] = np.repeat(b, n_trials)
+    data["m"] = np.repeat(m, n_trials)
+    data["g"] = np.repeat(g, n_trials)
+    data["threshold_word"] = np.repeat(threshold_word, n_trials)
+    data["threshold_nonword"] = np.repeat(threshold_nonword, n_trials)
+
+    word_drifts = k_1 + b * zipf
+    word_drifts /= 1 + np.exp(-alpha * (pword-0.5))
+    data["word_drifts"] = word_drifts
+
+    nonword_drifts = k_2 / (1 + np.exp(-alpha * (pnword-0.5)))
+    data["nonword_drifts"] = nonword_drifts
+
+    data["ndt"] = m + g * np.exp(-zipf)
+    
+    rt, response = random_rdm_2A(data["word_drifts"], data["nonword_drifts"],
+                      data["threshold_word"], data["threshold_nonword"],
+                      data["ndt"], max_rt=10)
+    
+    selected_trials_df_edited =  selected_trials_df[["zipf", "category", "word_prob", "non_word_prob"]].reset_index().drop(["index"], axis=1)
+    data = pd.concat([data, selected_trials_df_edited], axis=1)
+    
+    data["rt"] = rt
+    data["response"] = response
+    min_rt = data["rt"].min()
+    data["minRT"] = np.repeat(min_rt, n_trials)
+    
+    return data
+
+
+def simulate_ANNRDM(n_trials, trials_info_df, parameters_set):
     
     data = pd.DataFrame([])    
     n_participants = parameters_set.shape[0]
 
     selected_trials_df = trials_info_df.sample(n_trials).reset_index(drop=True)
-    zipf = selected_trials_df['zipf'].to_numpy()
-    pword = selected_trials_df['word_prob'].to_numpy()
-    pnword = selected_trials_df['non_word_prob'].to_numpy()     
+    zipf = selected_trials_df["zipf"].to_numpy()
+    pword = selected_trials_df["word_prob"].to_numpy()
+    pnword = selected_trials_df["non_word_prob"].to_numpy()     
     
-    data['participant_id'] = np.repeat(np.arange(n_participants)+1, n_trials)
-    data['trial'] = np.tile(np.arange(1, n_trials+1), n_participants)
+    data["participant_id"] = np.repeat(np.arange(n_participants)+1, n_trials)
+    data["trial"] = np.tile(np.arange(1, n_trials+1), n_participants)
 
     alpha_sbj = parameters_set[:,0]
     b_sbj = parameters_set[:, 1]
@@ -105,93 +157,40 @@ def simulate_ANN_RDM_full_s(n_trials, trials_info_df, parameters_set):
     m_sbj = parameters_set[:, 6]
     g_sbj = parameters_set[:, 7]
     
-    data['k_1'] = np.repeat(k_1_sbj, n_trials)
-    data['k_2'] = np.repeat(k_2_sbj, n_trials)
-    data['alpha']= np.repeat(alpha_sbj, n_trials)
-    data['b'] = np.repeat(b_sbj, n_trials)
-    data['m'] = np.repeat(m_sbj, n_trials)
-    data['g'] = np.repeat(g_sbj, n_trials)
-    data['threshold_word'] = np.repeat(threshold_word_sbj, n_trials)
-    data['threshold_nonword'] = np.repeat(threshold_nonword_sbj, n_trials)
+    data["k_1"] = np.repeat(k_1_sbj, n_trials)
+    data["k_2"] = np.repeat(k_2_sbj, n_trials)
+    data["alpha"]= np.repeat(alpha_sbj, n_trials)
+    data["b"] = np.repeat(b_sbj, n_trials)
+    data["m"] = np.repeat(m_sbj, n_trials)
+    data["g"] = np.repeat(g_sbj, n_trials)
+    data["threshold_word"] = np.repeat(threshold_word_sbj, n_trials)
+    data["threshold_nonword"] = np.repeat(threshold_nonword_sbj, n_trials)
 
     word_drifts = k_1_sbj[:, np.newaxis] + b_sbj[:,np.newaxis] * zipf
     word_drifts /= 1 + np.exp((pword-0.5) * -alpha_sbj[:, np.newaxis])
     word_drifts = word_drifts.ravel()
-    data['word_drifts'] = word_drifts
+    data["word_drifts"] = word_drifts
 
     nonword_drifts = k_2_sbj[:, np.newaxis] / (1 + np.exp((pnword-0.5) * -alpha_sbj[:, np.newaxis]))
     nonword_drifts = nonword_drifts.ravel()
-    data['nonword_drifts'] = nonword_drifts
+    data["nonword_drifts"] = nonword_drifts
 
-    data['ndt'] = (m_sbj[:, np.newaxis] + g_sbj[:, np.newaxis] * np.exp(-zipf)).ravel()
+    data["ndt"] = (m_sbj[:, np.newaxis] + g_sbj[:, np.newaxis] * np.exp(-zipf)).ravel()
     
-    rt, response = random_rdm_2A(data['word_drifts'], data['nonword_drifts'],
-                      data['threshold_word'], data['threshold_nonword'],
-                      data['ndt'], max_rt=10)
+    rt, response = random_rdm_2A(data["word_drifts"], data["nonword_drifts"],
+                      data["threshold_word"], data["threshold_nonword"],
+                      data["ndt"], max_rt=10)
     
     selected_trials_df_edited =  pd.concat([selected_trials_df[["zipf", "category", "word_prob", "non_word_prob"]]]
                                  *n_participants).reset_index().drop(["index"], axis=1)
     data = pd.concat([data, selected_trials_df_edited], axis=1)
     
-    data['rt'] = rt
-    data['response'] = response
-    min_rt = data.groupby('participant_id')['rt'].min().to_numpy()
-    data['minRT'] = np.repeat(min_rt, n_trials)
+    data["rt"] = rt
+    data["response"] = response
+    min_rt = data.groupby("participant_id")["rt"].min().to_numpy()
+    data["minRT"] = np.repeat(min_rt, n_trials)
     
     return data
-
-def simulate_ANN_RDM(n_trials, trials_info_df, parameters_set):
-    
-    data = pd.DataFrame([])    
-    n_participants = parameters_set.shape[0]
-
-    selected_trials_df = trials_info_df.sample(n_trials).reset_index(drop=True)
-    zipf = selected_trials_df['zipf'].to_numpy()
-    pword = selected_trials_df['word_prob'].to_numpy()
-    pnword = selected_trials_df['non_word_prob'].to_numpy()     
-    
-    data['participant_id'] = np.repeat(np.arange(n_participants)+1, n_trials)
-    data['trial'] = np.tile(np.arange(1, n_trials+1), n_participants)
-
-    alpha_sbj = parameters_set[:,0]
-    b_sbj = parameters_set[:, 1]
-    k_1_sbj = parameters_set[:, 2]
-    k_2_sbj = parameters_set[:, 3]
-    threshold_word_sbj = parameters_set[:, 4]
-    threshold_nonword_sbj = parameters_set[:, 5]
-    ndt_sbj = parameters_set[:, 6]
-    
-    data['k_1'] = np.repeat(k_1_sbj, n_trials)
-    data['k_2'] = np.repeat(k_2_sbj, n_trials)
-    data['alpha']= np.repeat(alpha_sbj, n_trials)
-    data['b'] = np.repeat(b_sbj, n_trials)
-    data['ndt'] = np.repeat(ndt_sbj, n_trials)
-    data['threshold_word'] = np.repeat(threshold_word_sbj, n_trials)
-    data['threshold_nonword'] = np.repeat(threshold_nonword_sbj, n_trials)
-
-    word_drifts = k_1_sbj[:, np.newaxis] + b_sbj[:,np.newaxis] * zipf
-    word_drifts /= 1 + np.exp((pword-0.5) * -alpha_sbj[:, np.newaxis])
-    word_drifts = word_drifts.ravel()
-    data['word_drifts'] = word_drifts
-
-    nonword_drifts = k_2_sbj[:, np.newaxis] / (1 + np.exp((pnword-0.5) * -alpha_sbj[:, np.newaxis]))
-    nonword_drifts = nonword_drifts.ravel()
-    data['nonword_drifts'] = nonword_drifts
-    
-    rt, response = random_rdm_2A(data['word_drifts'], data['nonword_drifts'],
-                      data['threshold_word'], data['threshold_nonword'],
-                      data['ndt'], max_rt=10)
-    
-    selected_trials_df_edited =  pd.concat([selected_trials_df[["zipf", "category", "word_prob", "non_word_prob"]]]
-                                 *n_participants).reset_index().drop(["index"], axis=1)
-    data = pd.concat([data, selected_trials_df_edited], axis=1)
-    
-    data['rt'] = rt
-    data['response'] = response
-    min_rt = data.groupby('participant_id')['rt'].min().to_numpy()
-    data['minRT'] = np.repeat(min_rt, n_trials)
-    
-    return data   
 
 def random_lba_2A(word_drift, nonword_drift, sp_trial_var_word, sp_trial_var_nonword,
                   ndt, k_word, k_nonword, drift_trial_var):

@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import cmdstanpy
 from scipy.stats import gaussian_kde
 
 def get_rt_quantiles(behavioural_df, probs, result_df_size = 400, method="median_unbiased"):
@@ -220,3 +221,23 @@ def calculate_waic(log_likelihood, pointwise=False):
                 'waic':waic,
                 'waic_se':waic_se}
     return out
+
+def get_parameters_range(path_to_stan_output, parameters=None, likelihood_ratio=0.2):
+    fit = cmdstanpy.from_csv(path_to_stan_output)
+    params = fit.stan_variables()
+
+    likelihoods = params['log_lik']
+    twenty_percent_count = round(likelihoods.shape[0] * likelihood_ratio)
+    max_ll_indecies = np.argsort(likelihoods.sum(axis=1))[::-1][:twenty_percent_count]
+
+    if parameters:
+        params = {k: params[k] for k in parameters}
+
+    parameters_range_df = pd.DataFrame([], columns=["max", "min"])
+
+    for parameter in params.keys():
+        max_val = params[parameter][max_ll_indecies].max()
+        min_val = params[parameter][max_ll_indecies].min()
+        parameters_range_df.loc[parameter] = [max_val, min_val]
+
+    return parameters_range_df
