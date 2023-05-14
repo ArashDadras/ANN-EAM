@@ -222,22 +222,31 @@ def calculate_waic(log_likelihood, pointwise=False):
                 'waic_se':waic_se}
     return out
 
-def get_parameters_range(path_to_stan_output, parameters=None, likelihood_ratio=0.2):
+def get_parameters_range(path_to_stan_output, behavioural_df):
     fit = cmdstanpy.from_csv(path_to_stan_output)
     params = fit.stan_variables()
+    particpant_trials_counts = np.unique(behavioural_df.participant_id,
+                                         return_counts=True)[1]
 
-    likelihoods = params['log_lik']
-    twenty_percent_count = round(likelihoods.shape[0] * likelihood_ratio)
-    max_ll_indecies = np.argsort(likelihoods.sum(axis=1))[::-1][:twenty_percent_count]
+    max_likelihood_participant = 0
+    max_likelihood = -float("inf")
+    lower_index = 0
 
-    if parameters:
-        params = {k: params[k] for k in parameters}
+    for participant_index, trials_count in enumerate(particpant_trials_counts):
+        upper_index = lower_index + trials_count
+        sum_likelihood = np.sum(params["log_lik"][:, lower_index:upper_index])
+        if sum_likelihood > max_likelihood:
+            max_likelihood_participant = participant_index
+        lower_index = upper_index
+    
+    parameters_range_df = pd.DataFrame([], columns=["mean", "std"])
+    needed_parameters = ["alpha_sbj", "b_sbj", "k_1_sbj", "k_2_sbj",
+                        "threshold_sbj_word", "threshold_sbj_nonword",
+                        "g_sbj", "m_sbj"]
 
-    parameters_range_df = pd.DataFrame([], columns=["max", "min"])
-
-    for parameter in params.keys():
-        max_val = params[parameter][max_ll_indecies].max()
-        min_val = params[parameter][max_ll_indecies].min()
+    for parameter in needed_parameters:
+        max_val = params[parameter][:, max_likelihood_participant].mean()
+        min_val = params[parameter][:, max_likelihood_participant].std()
         parameters_range_df.loc[parameter] = [max_val, min_val]
 
     return parameters_range_df

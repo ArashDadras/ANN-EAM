@@ -93,14 +93,14 @@ def simulate_ANNRDM_individual(n_trials, trials_info_df, parameters_set):
     
     data["trial"] = np.arange(1, n_trials+1)
 
-    alpha = parameters_set[0]
-    b = parameters_set[1]
-    k_1 = parameters_set[2]
-    k_2 = parameters_set[3]
-    threshold_word = parameters_set[4]
-    threshold_nonword = parameters_set[5]
-    m = parameters_set[6]
-    g = parameters_set[7]
+    alpha = parameters_set.loc["alpha", "generated"]
+    b = parameters_set.loc["b", "generated"]
+    k_1 = parameters_set.loc["k_1", "generated"]
+    k_2 = parameters_set.loc["k_2", "generated"]
+    threshold_word = parameters_set.loc["threshold_word", "generated"]
+    threshold_nonword = parameters_set.loc["threshold_nonword", "generated"]
+    g = parameters_set.loc["g", "generated"]
+    m = parameters_set.loc["m", "generated"]
     
     data["k_1"] = np.repeat(k_1, n_trials)
     data["k_2"] = np.repeat(k_2, n_trials)
