@@ -118,7 +118,9 @@ def simulate_ANNRDM_individual(n_trials, trials_info_df, parameters_set):
     nonword_drifts = k_2 / (1 + np.exp(-alpha * (pnword-0.5)))
     data["nonword_drifts"] = nonword_drifts
 
-    data["ndt"] = m + g * np.exp(-zipf)
+    # 0.3315 is mean minRT of fitted data
+    # calulated by behavioural_df.minRT.unique().mean()
+    data["ndt"] = (m + g * np.exp(-zipf)) * (0.3315 - 0.1) + 0.1
     
     rt, response = random_rdm_2A(data["word_drifts"], data["nonword_drifts"],
                       data["threshold_word"], data["threshold_nonword"],
