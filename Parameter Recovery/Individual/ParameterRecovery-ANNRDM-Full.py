@@ -27,7 +27,7 @@ plots_root = "Results/individual/Plots/"
 datasets_root = root + "Datasets/"
 behavioural_data_root = datasets_root +  "behavioral_data/selected_data/" 
 
-dataset_path = datasets_root + "AI Models Results/FastText_FC.csv"
+dataset_path = datasets_root + "AI Models Results/fastText_FC.csv"
 stan_file_path = root +  "models/stan/ANN-RDM/individual/sigmoid_am_ndm.stan" 
 
 number_of_participants = 100
@@ -161,7 +161,7 @@ while iteration_count < number_of_participants:
                        iter_sampling=n_sample, 
                        iter_warmup=n_warmup,
                        chains=n_chains,
-                       show_console=False)
+                       show_console=True)
     
     df = fit.summary()
     badRhat = False
