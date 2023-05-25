@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from scipy.stats import truncnorm
 
 def random_rdm_2A(w_drift, nw_drift, threshold_word, threshold_nonword, ndt, noise_constant=1, dt=0.001, max_rt=10):
     """ 
@@ -99,17 +100,18 @@ def simulate_ANNRDM_individual(n_trials, trials_info_df, parameters_set):
     k_2 = parameters_set.loc["k_2", "generated"]
     threshold_word = parameters_set.loc["threshold_word", "generated"]
     threshold_nonword = parameters_set.loc["threshold_nonword", "generated"]
-    g = parameters_set.loc["g", "generated"]
-    m = parameters_set.loc["m", "generated"]
+    # g = parameters_set.loc["g", "generated"]
+    # m = parameters_set.loc["m", "generated"]
     
     data["k_1"] = np.repeat(k_1, n_trials)
     data["k_2"] = np.repeat(k_2, n_trials)
     data["alpha"]= np.repeat(alpha, n_trials)
     data["b"] = np.repeat(b, n_trials)
-    data["m"] = np.repeat(m, n_trials)
-    data["g"] = np.repeat(g, n_trials)
+    # data["m"] = np.repeat(m, n_trials)
+    # data["g"] = np.repeat(g, n_trials)
     data["threshold_word"] = np.repeat(threshold_word, n_trials)
     data["threshold_nonword"] = np.repeat(threshold_nonword, n_trials)
+    data["ndt"] = np.repeat(truncnorm.rvs(0.1, 1,loc=0.3315), n_trials)
 
     word_drifts = k_1 + b * zipf
     word_drifts /= 1 + np.exp(-alpha * (pword-0.5))
@@ -120,8 +122,8 @@ def simulate_ANNRDM_individual(n_trials, trials_info_df, parameters_set):
 
     # 0.3315 is mean minRT of fitted data
     # calulated by behavioural_df.minRT.unique().mean()
-    data["ndt"] = (m + g * np.exp(-zipf)) * (0.3315 - 0.1) + 0.1
-    
+    # data["ndt"] = (m + g * np.exp(-zipf)) * (0.3315 - 0.1) + 0.1
+
     rt, response = random_rdm_2A(data["word_drifts"], data["nonword_drifts"],
                       data["threshold_word"], data["threshold_nonword"],
                       data["ndt"], max_rt=10)

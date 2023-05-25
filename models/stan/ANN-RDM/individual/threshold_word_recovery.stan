@@ -59,11 +59,13 @@ data {
     real minRT[N];                                  // minimum RT for each subject of the observed data
     real RTbound;                                   // lower bound or RT across all subjects (e.g., 0.1 second)
     vector<lower=RTbound, upper=minRT[1]>[N] ndt;
-                         
-    vector[2] threshold_priors;                     
-    vector[2] alpha_priors;
-    vector[2] b_priors;
-    vector[2] k_priors;
+    vector<lower=0>[N] threshold_nonword;
+    vector<lower=0>[N] k_1;
+    vector<lower=0>[N] k_2;
+    vector<lower=0>[N] b;
+    vector<lower=0>[N] alpha;
+                                            
+    vector[2] threshold_priors;
 }
 
 transformed data {
@@ -77,52 +79,26 @@ transformed data {
 }
 
 parameters {
-    real threshold_word;
-    real threshold_nonword;
-    real alpha;
-    real b;
-    real k_1;
-    real k_2;
+    real<lower=0> threshold_word;
 }
 
 transformed parameters {
     vector<lower=0>[N] drift_word_t;                     // trial-by-trial drift rate for predictions
     vector<lower=0>[N] drift_nonword_t;                  // trial-by-trial drift rate for predictions
     vector<lower=0>[N] threshold_t_word;                 // trial-by-trial word threshold
-    vector<lower=0>[N] threshold_t_nonword;              // trial-by-trial nonword threshold
-
-    real<lower=0> transf_alpha;
-    real<lower=0> transf_b;
-    real<lower=0> transf_k_1;
-    real<lower=0> transf_k_2;
-    real<lower=0> transf_threshold_word;
-    real<lower=0> transf_threshold_nonword;
-    
-    transf_alpha = log(1 + exp(alpha));
-    transf_b = log(1 + exp(b));
-    transf_k_1 = log(1 + exp(k_1));
-    transf_k_2 = log(1 + exp(k_2));
-    transf_threshold_word = log(1 + exp(threshold_word));
-    transf_threshold_nonword = log(1 + exp(threshold_nonword));
 
     for (n in 1:N) {
-        drift_word_t[n] = (transf_k_1 + transf_b * frequency[n]) / (1 + exp(-transf_alpha * (p[n][1]-0.5)));
-        drift_nonword_t[n] = transf_k_2 / (1 + exp(-transf_alpha * (p[n][2]-0.5)));
-       
-        threshold_t_word[n] = transf_threshold_word;
-        threshold_t_nonword[n] = transf_threshold_nonword;
+        drift_word_t[n] = (k_1[n] + b[n] * frequency[n]) / (1 + exp(-alpha[n] * (p[n][1]-0.5)));
+        drift_nonword_t[n] = k_2[n] / (1 + exp(-alpha[n] * (p[n][2]-0.5)));
+        
+        threshold_t_word[n] = threshold_word;
     }
 }
 
 model {
     threshold_word ~ normal(threshold_priors[1], threshold_priors[2]);
-    threshold_nonword ~ normal(threshold_priors[1], threshold_priors[2]);
-    alpha ~ normal(alpha_priors[1], alpha_priors[2]);
-    b ~ normal(b_priors[1], b_priors[2]);
-    k_1 ~ normal(k_priors[1], k_priors[2]);
-    k_2 ~ normal(k_priors[1], k_priors[2]);
     
-    RT ~ race(ndt, threshold_t_word, threshold_t_nonword, drift_word_t, drift_nonword_t);
+    RT ~ race(ndt, threshold_t_word, threshold_nonword, drift_word_t, drift_nonword_t);
 }
 
 generated quantities {
@@ -130,7 +106,7 @@ generated quantities {
     {
         for (n in 1:N){
             log_lik[n] = race_lpdf(block(RT, n, 1, 1, 2)| segment(ndt, n, 1), segment(threshold_t_word, n, 1),
-                                   segment(threshold_t_nonword, n, 1), segment(drift_word_t, n, 1),
+                                   segment(threshold_nonword, n, 1), segment(drift_word_t, n, 1),
                                    segment(drift_nonword_t, n, 1));
         }
     }
