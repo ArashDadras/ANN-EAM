@@ -119,8 +119,8 @@ minRT = behavioural_df["minRT"].to_numpy()                                 # for
 RTbound = 0.1                                                              # for all models
 Number_Of_Participants = len(set(behavioural_df["participant_id"]))
 
-threshold_priors = [0, 1, 1, 1]          # For all models with RDM
-ndt_priors = [0, 1, 1, 1];               # For models wtihout non-decision time modulation
+threshold_priors = [2, 1, 1, 1]          # For all models with RDM
+ndt_priors = [0, 0.5, 1, 1];             # For models wtihout non-decision time modulation
 g_priors = [-2, 1, 0, 1]                 # For models wtih non-decision time modulation
 m_priors = [0, 0.5, 0, 1]                # For models wtih non-decision time modulation
 drift_priors = [1, 2, 1, 1]              # For models without drift mapping functions (non ANN-EAM models)
