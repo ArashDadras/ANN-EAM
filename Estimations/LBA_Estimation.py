@@ -123,7 +123,7 @@ Number_Of_Participants = len(set(behavioural_df['participant_id']))
 
 k_priors = [0, 1, 1, 1]                  # All models with LBA
 A_priors = [1, 2, 1, 1]                  # All models wtih LBA
-ndt_priors = [0, 1, 1, 1];               # For models wtihout non-decision time modulation
+ndt_priors = [0, 0.5, 1, 1];               # For models wtihout non-decision time modulation
 g_priors = [-2, 1, 0, 1]                 # For models wtih non-decision time modulation
 m_priors = [0, 0.5, 0, 1]                # For models wtih non-decision time modulation
 drift_priors = [1, 2, 1, 1]              # For models withoud drift mapping functions (non ANN-EAM models)
