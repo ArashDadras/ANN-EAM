@@ -139,4 +139,3 @@ stan files/
 dist/
 utils.egg-info/
 build/
-models/
