@@ -1,0 +1,825 @@
+nohup: ignoring input
+INFO:cmdstanpy:compiling stan file /storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan to exe file /storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd
+INFO:cmdstanpy:compiled model executable: /storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd
+WARNING:cmdstanpy:Stan compiler has produced 27 warnings:
+WARNING:cmdstanpy:
+--- Translating Stan model to C++ code ---
+bin/stanc  --o=/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.hpp /storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 108, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 109, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 111, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 112, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 114, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 152, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 153, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 154, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 155, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 156, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 157, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 158, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 159, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 173, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 174, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 175, column 1: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 176, column 1: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 177, column 1: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 178, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 179, column 1: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 180, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 25, column 23: normal_log
+    is deprecated and will be removed in Stan 2.32.0. Use normal_lpdf
+    instead. This can be automatically changed using the canonicalize flag
+    for stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 27, column 23: normal_log
+    is deprecated and will be removed in Stan 2.32.0. Use normal_lpdf
+    instead. This can be automatically changed using the canonicalize flag
+    for stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 50, column 28: normal_log
+    is deprecated and will be removed in Stan 2.32.0. Use normal_lpdf
+    instead. This can be automatically changed using the canonicalize flag
+    for stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 51, column 28: normal_log
+    is deprecated and will be removed in Stan 2.32.0. Use normal_lpdf
+    instead. This can be automatically changed using the canonicalize flag
+    for stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 83, column 28: Use
+    of lba_cdf without a vertical bar (|) between the first two arguments of
+    a CDF is deprecated and will be removed in Stan 2.32.0. This can be
+    automatically changed using the canonicalize flag for stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 87, column 28: Use
+    of lba_cdf without a vertical bar (|) between the first two arguments of
+    a CDF is deprecated and will be removed in Stan 2.32.0. This can be
+    automatically changed using the canonicalize flag for stanc
+
+--- Compiling, linking C++ code ---
+g++ -std=c++1y -pthread -D_REENTRANT -Wno-sign-compare -Wno-ignored-attributes      -I stan/lib/stan_math/lib/tbb_2020.3/include    -O3 -I src -I stan/src -I lib/rapidjson_1.1.0/ -I lib/CLI11-1.9.1/ -I stan/lib/stan_math/ -I stan/lib/stan_math/lib/eigen_3.3.9 -I stan/lib/stan_math/lib/boost_1.78.0 -I stan/lib/stan_math/lib/sundials_6.1.1/include -I stan/lib/stan_math/lib/sundials_6.1.1/src/sundials    -DBOOST_DISABLE_ASSERTS          -c -Wno-ignored-attributes   -x c++ -o /storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.o /storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.hpp
+g++ -std=c++1y -pthread -D_REENTRANT -Wno-sign-compare -Wno-ignored-attributes      -I stan/lib/stan_math/lib/tbb_2020.3/include    -O3 -I src -I stan/src -I lib/rapidjson_1.1.0/ -I lib/CLI11-1.9.1/ -I stan/lib/stan_math/ -I stan/lib/stan_math/lib/eigen_3.3.9 -I stan/lib/stan_math/lib/boost_1.78.0 -I stan/lib/stan_math/lib/sundials_6.1.1/include -I stan/lib/stan_math/lib/sundials_6.1.1/src/sundials    -DBOOST_DISABLE_ASSERTS                -Wl,-L,"/storage/users/adadras/.cmdstan/cmdstan-2.30.1/stan/lib/stan_math/lib/tbb" -Wl,-rpath,"/storage/users/adadras/.cmdstan/cmdstan-2.30.1/stan/lib/stan_math/lib/tbb"      /storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.o src/cmdstan/main.o        -Wl,-L,"/storage/users/adadras/.cmdstan/cmdstan-2.30.1/stan/lib/stan_math/lib/tbb" -Wl,-rpath,"/storage/users/adadras/.cmdstan/cmdstan-2.30.1/stan/lib/stan_math/lib/tbb"   stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_nvecserial.a stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_cvodes.a stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_idas.a stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_kinsol.a  stan/lib/stan_math/lib/tbb/libtbb.so.2 -o /storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd
+rm -f /storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.o
+
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [2] start processing
+INFO:cmdstanpy:Chain [3] start processing
+INFO:cmdstanpy:Chain [4] start processing
+INFO:cmdstanpy:Chain [2] done processing
+INFO:cmdstanpy:Chain [4] done processing
+INFO:cmdstanpy:Chain [3] done processing
+INFO:cmdstanpy:Chain [1] done processing
+Model name: LBA_cd
+Directory  Results/hierarchical/Plots/LBA_cd/  Created 
+Directory  Results/hierarchical/stan_results/LBA_cd/  Created 
+Model's configs:
+{'model_name': 'LBA_cd', 'stan_file': 'LBA/LBA_cd.stan', 'dataset_name': 'fastText_FC.csv', 'plots_folder_name': 'LBA_cd', 'transf_params': ['transf_mu_k_word', 'transf_mu_sp_trial_var_word', 'transf_mu_k_nonword', 'transf_mu_sp_trial_var_nonword', 'transf_mu_ndt', 'transf_mu_drift_word', 'transf_mu_drift_nonword', 'transf_mu_drift_variability']}
+Chain [1] method = sample (Default)
+Chain [1] sample
+Chain [1] num_samples = 2500
+Chain [1] num_warmup = 2500
+Chain [1] save_warmup = 0 (Default)
+Chain [1] thin = 1 (Default)
+Chain [1] adapt
+Chain [1] engaged = 1 (Default)
+Chain [1] gamma = 0.050000000000000003 (Default)
+Chain [1] delta = 0.80000000000000004 (Default)
+Chain [1] kappa = 0.75 (Default)
+Chain [1] t0 = 10 (Default)
+Chain [1] init_buffer = 75 (Default)
+Chain [1] term_buffer = 50 (Default)
+Chain [1] window = 25 (Default)
+Chain [1] algorithm = hmc (Default)
+Chain [1] hmc
+Chain [1] engine = nuts (Default)
+Chain [1] nuts
+Chain [1] max_depth = 10 (Default)
+Chain [3] method = sample (Default)
+Chain [1] metric = diag_e (Default)
+Chain [1] metric_file =  (Default)
+Chain [3] sample
+Chain [1] stepsize = 1 (Default)
+Chain [1] stepsize_jitter = 0 (Default)
+Chain [1] num_chains = 1 (Default)
+Chain [1] id = 1 (Default)
+Chain [3] num_samples = 2500
+Chain [1] data
+Chain [1] file = /tmp/tmpycgm7l_4/zfctb9tc.json
+Chain [3] num_warmup = 2500
+Chain [1] init = 2 (Default)
+Chain [1] random
+Chain [3] save_warmup = 0 (Default)
+Chain [1] seed = 53027
+Chain [1] output
+Chain [3] thin = 1 (Default)
+Chain [1] file = /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/LBA_cd/LBA_cd-20230722040852_1.csv
+Chain [1] diagnostic_file =  (Default)
+Chain [3] adapt
+Chain [1] refresh = 100 (Default)
+Chain [1] sig_figs = -1 (Default)
+Chain [3] engaged = 1 (Default)
+Chain [1] profile_file = profile.csv (Default)
+Chain [1] num_threads = 1 (Default)
+Chain [3] gamma = 0.050000000000000003 (Default)
+Chain [1] 
+Chain [3] delta = 0.80000000000000004 (Default)
+Chain [3] kappa = 0.75 (Default)
+Chain [3] t0 = 10 (Default)
+Chain [3] init_buffer = 75 (Default)
+Chain [3] term_buffer = 50 (Default)
+Chain [3] window = 25 (Default)
+Chain [3] algorithm = hmc (Default)
+Chain [3] hmc
+Chain [3] engine = nuts (Default)
+Chain [3] nuts
+Chain [3] max_depth = 10 (Default)
+Chain [3] metric = diag_e (Default)
+Chain [3] metric_file =  (Default)
+Chain [3] stepsize = 1 (Default)
+Chain [3] stepsize_jitter = 0 (Default)
+Chain [3] num_chains = 1 (Default)
+Chain [3] id = 3
+Chain [3] data
+Chain [3] file = /tmp/tmpycgm7l_4/zfctb9tc.json
+Chain [3] init = 2 (Default)
+Chain [3] random
+Chain [3] seed = 53027
+Chain [3] output
+Chain [3] file = /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/LBA_cd/LBA_cd-20230722040852_3.csv
+Chain [3] diagnostic_file =  (Default)
+Chain [3] refresh = 100 (Default)
+Chain [3] sig_figs = -1 (Default)
+Chain [3] profile_file = profile.csv (Default)
+Chain [3] num_threads = 1 (Default)
+Chain [3] 
+Chain [4] method = sample (Default)
+Chain [4] sample
+Chain [4] num_samples = 2500
+Chain [4] num_warmup = 2500
+Chain [4] save_warmup = 0 (Default)
+Chain [4] thin = 1 (Default)
+Chain [4] adapt
+Chain [4] engaged = 1 (Default)
+Chain [4] gamma = 0.050000000000000003 (Default)
+Chain [4] delta = 0.80000000000000004 (Default)
+Chain [4] kappa = 0.75 (Default)
+Chain [4] t0 = 10 (Default)
+Chain [4] init_buffer = 75 (Default)
+Chain [4] term_buffer = 50 (Default)
+Chain [4] window = 25 (Default)
+Chain [4] algorithm = hmc (Default)
+Chain [4] hmc
+Chain [4] engine = nuts (Default)
+Chain [4] nuts
+Chain [4] max_depth = 10 (Default)
+Chain [4] metric = diag_e (Default)
+Chain [4] metric_file =  (Default)
+Chain [4] stepsize = 1 (Default)
+Chain [4] stepsize_jitter = 0 (Default)
+Chain [4] num_chains = 1 (Default)
+Chain [4] id = 4
+Chain [4] data
+Chain [4] file = /tmp/tmpycgm7l_4/zfctb9tc.json
+Chain [4] init = 2 (Default)
+Chain [4] random
+Chain [4] seed = 53027
+Chain [4] output
+Chain [4] file = /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/LBA_cd/LBA_cd-20230722040852_4.csv
+Chain [4] diagnostic_file =  (Default)
+Chain [4] refresh = 100 (Default)
+Chain [4] sig_figs = -1 (Default)
+Chain [4] profile_file = profile.csv (Default)
+Chain [4] num_threads = 1 (Default)
+Chain [4] 
+Chain [2] method = sample (Default)
+Chain [2] sample
+Chain [2] num_samples = 2500
+Chain [2] num_warmup = 2500
+Chain [2] save_warmup = 0 (Default)
+Chain [2] thin = 1 (Default)
+Chain [2] adapt
+Chain [2] engaged = 1 (Default)
+Chain [2] gamma = 0.050000000000000003 (Default)
+Chain [2] delta = 0.80000000000000004 (Default)
+Chain [2] kappa = 0.75 (Default)
+Chain [2] t0 = 10 (Default)
+Chain [2] init_buffer = 75 (Default)
+Chain [2] term_buffer = 50 (Default)
+Chain [2] window = 25 (Default)
+Chain [2] algorithm = hmc (Default)
+Chain [2] hmc
+Chain [2] engine = nuts (Default)
+Chain [2] nuts
+Chain [2] max_depth = 10 (Default)
+Chain [2] metric = diag_e (Default)
+Chain [2] metric_file =  (Default)
+Chain [2] stepsize = 1 (Default)
+Chain [2] stepsize_jitter = 0 (Default)
+Chain [2] num_chains = 1 (Default)
+Chain [2] id = 2
+Chain [2] data
+Chain [2] file = /tmp/tmpycgm7l_4/zfctb9tc.json
+Chain [2] init = 2 (Default)
+Chain [2] random
+Chain [2] seed = 53027
+Chain [2] output
+Chain [2] file = /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/LBA_cd/LBA_cd-20230722040852_2.csv
+Chain [2] diagnostic_file =  (Default)
+Chain [2] refresh = 100 (Default)
+Chain [2] sig_figs = -1 (Default)
+Chain [2] profile_file = profile.csv (Default)
+Chain [2] num_threads = 1 (Default)
+Chain [2] 
+Chain [3] 
+Chain [3] Gradient evaluation took 0.112733 seconds
+Chain [3] 1000 transitions using 10 leapfrog steps per transition would take 1127.33 seconds.
+Chain [3] Adjust your expectations accordingly!
+Chain [3] 
+Chain [3] 
+Chain [4] 
+Chain [4] Gradient evaluation took 0.130157 seconds
+Chain [4] 1000 transitions using 10 leapfrog steps per transition would take 1301.57 seconds.
+Chain [4] Adjust your expectations accordingly!
+Chain [4] 
+Chain [4] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [2] 
+Chain [2] Gradient evaluation took 0.165813 seconds
+Chain [2] 1000 transitions using 10 leapfrog steps per transition would take 1658.13 seconds.
+Chain [2] Adjust your expectations accordingly!
+Chain [2] 
+Chain [2] 
+Chain [1] 
+Chain [1] Gradient evaluation took 0.190922 seconds
+Chain [1] 1000 transitions using 10 leapfrog steps per transition would take 1909.22 seconds.
+Chain [1] Adjust your expectations accordingly!
+Chain [1] 
+Chain [1] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 48, column 8 to column 43) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 83, column 20 to column 99) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 48, column 8 to column 43) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 83, column 20 to column 99) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 48, column 8 to column 43) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 83, column 20 to column 99) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 48, column 8 to column 43) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 83, column 20 to column 99) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 48, column 8 to column 43) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 83, column 20 to column 99) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [4] Iteration:    1 / 5000 [  0%]  (Warmup)
+Chain [3] Iteration:    1 / 5000 [  0%]  (Warmup)
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [2] Iteration:    1 / 5000 [  0%]  (Warmup)
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 89, column 16 to column 82) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [1] Iteration:    1 / 5000 [  0%]  (Warmup)
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 24, column 8 to column 34) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 82, column 20 to column 88) (in '/storage/users/adadras/ANN-EAM/models/stan/LBA/LBA_cd.stan', line 261, column 4 to line 262, column 72)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [1] Iteration:  100 / 5000 [  2%]  (Warmup)
+Chain [2] Iteration:  100 / 5000 [  2%]  (Warmup)
+Chain [4] Iteration:  100 / 5000 [  2%]  (Warmup)
+Chain [3] Iteration:  100 / 5000 [  2%]  (Warmup)
+Chain [1] Iteration:  200 / 5000 [  4%]  (Warmup)
+Chain [4] Iteration:  200 / 5000 [  4%]  (Warmup)
+Chain [3] Iteration:  200 / 5000 [  4%]  (Warmup)
+Chain [2] Iteration:  200 / 5000 [  4%]  (Warmup)
+Chain [4] Iteration:  300 / 5000 [  6%]  (Warmup)
+Chain [3] Iteration:  300 / 5000 [  6%]  (Warmup)
+Chain [1] Iteration:  300 / 5000 [  6%]  (Warmup)
+Chain [2] Iteration:  300 / 5000 [  6%]  (Warmup)
+Chain [4] Iteration:  400 / 5000 [  8%]  (Warmup)
+Chain [3] Iteration:  400 / 5000 [  8%]  (Warmup)
+Chain [1] Iteration:  400 / 5000 [  8%]  (Warmup)
+Chain [2] Iteration:  400 / 5000 [  8%]  (Warmup)
+Chain [4] Iteration:  500 / 5000 [ 10%]  (Warmup)
+Chain [3] Iteration:  500 / 5000 [ 10%]  (Warmup)
+Chain [2] Iteration:  500 / 5000 [ 10%]  (Warmup)
+Chain [1] Iteration:  500 / 5000 [ 10%]  (Warmup)
+Chain [4] Iteration:  600 / 5000 [ 12%]  (Warmup)
+Chain [3] Iteration:  600 / 5000 [ 12%]  (Warmup)
+Chain [1] Iteration:  600 / 5000 [ 12%]  (Warmup)
+Chain [2] Iteration:  600 / 5000 [ 12%]  (Warmup)
+Chain [3] Iteration:  700 / 5000 [ 14%]  (Warmup)
+Chain [4] Iteration:  700 / 5000 [ 14%]  (Warmup)
+Chain [1] Iteration:  700 / 5000 [ 14%]  (Warmup)
+Chain [2] Iteration:  700 / 5000 [ 14%]  (Warmup)
+Chain [3] Iteration:  800 / 5000 [ 16%]  (Warmup)
+Chain [1] Iteration:  800 / 5000 [ 16%]  (Warmup)
+Chain [4] Iteration:  800 / 5000 [ 16%]  (Warmup)
+Chain [2] Iteration:  800 / 5000 [ 16%]  (Warmup)
+Chain [3] Iteration:  900 / 5000 [ 18%]  (Warmup)
+Chain [1] Iteration:  900 / 5000 [ 18%]  (Warmup)
+Chain [2] Iteration:  900 / 5000 [ 18%]  (Warmup)
+Chain [4] Iteration:  900 / 5000 [ 18%]  (Warmup)
+Chain [3] Iteration: 1000 / 5000 [ 20%]  (Warmup)
+Chain [2] Iteration: 1000 / 5000 [ 20%]  (Warmup)
+Chain [1] Iteration: 1000 / 5000 [ 20%]  (Warmup)
+Chain [4] Iteration: 1000 / 5000 [ 20%]  (Warmup)
+Chain [3] Iteration: 1100 / 5000 [ 22%]  (Warmup)
+Chain [2] Iteration: 1100 / 5000 [ 22%]  (Warmup)
+Chain [1] Iteration: 1100 / 5000 [ 22%]  (Warmup)
+Chain [3] Iteration: 1200 / 5000 [ 24%]  (Warmup)
+Chain [4] Iteration: 1100 / 5000 [ 22%]  (Warmup)
+Chain [2] Iteration: 1200 / 5000 [ 24%]  (Warmup)
+Chain [1] Iteration: 1200 / 5000 [ 24%]  (Warmup)
+Chain [3] Iteration: 1300 / 5000 [ 26%]  (Warmup)
+Chain [4] Iteration: 1200 / 5000 [ 24%]  (Warmup)
+Chain [2] Iteration: 1300 / 5000 [ 26%]  (Warmup)
+Chain [3] Iteration: 1400 / 5000 [ 28%]  (Warmup)
+Chain [1] Iteration: 1300 / 5000 [ 26%]  (Warmup)
+Chain [2] Iteration: 1400 / 5000 [ 28%]  (Warmup)
+Chain [4] Iteration: 1300 / 5000 [ 26%]  (Warmup)
+Chain [3] Iteration: 1500 / 5000 [ 30%]  (Warmup)
+Chain [2] Iteration: 1500 / 5000 [ 30%]  (Warmup)
+Chain [1] Iteration: 1400 / 5000 [ 28%]  (Warmup)
+Chain [4] Iteration: 1400 / 5000 [ 28%]  (Warmup)
+Chain [3] Iteration: 1600 / 5000 [ 32%]  (Warmup)
+Chain [2] Iteration: 1600 / 5000 [ 32%]  (Warmup)
+Chain [1] Iteration: 1500 / 5000 [ 30%]  (Warmup)
+Chain [4] Iteration: 1500 / 5000 [ 30%]  (Warmup)
+Chain [3] Iteration: 1700 / 5000 [ 34%]  (Warmup)
+Chain [2] Iteration: 1700 / 5000 [ 34%]  (Warmup)
+Chain [1] Iteration: 1600 / 5000 [ 32%]  (Warmup)
+Chain [4] Iteration: 1600 / 5000 [ 32%]  (Warmup)
+Chain [3] Iteration: 1800 / 5000 [ 36%]  (Warmup)
+Chain [2] Iteration: 1800 / 5000 [ 36%]  (Warmup)
+Chain [1] Iteration: 1700 / 5000 [ 34%]  (Warmup)
+Chain [4] Iteration: 1700 / 5000 [ 34%]  (Warmup)
+Chain [3] Iteration: 1900 / 5000 [ 38%]  (Warmup)
+Chain [2] Iteration: 1900 / 5000 [ 38%]  (Warmup)
+Chain [1] Iteration: 1800 / 5000 [ 36%]  (Warmup)
+Chain [4] Iteration: 1800 / 5000 [ 36%]  (Warmup)
+Chain [3] Iteration: 2000 / 5000 [ 40%]  (Warmup)
+Chain [2] Iteration: 2000 / 5000 [ 40%]  (Warmup)
+Chain [1] Iteration: 1900 / 5000 [ 38%]  (Warmup)
+Chain [4] Iteration: 1900 / 5000 [ 38%]  (Warmup)
+Chain [3] Iteration: 2100 / 5000 [ 42%]  (Warmup)
+Chain [2] Iteration: 2100 / 5000 [ 42%]  (Warmup)
+Chain [1] Iteration: 2000 / 5000 [ 40%]  (Warmup)
+Chain [4] Iteration: 2000 / 5000 [ 40%]  (Warmup)
+Chain [3] Iteration: 2200 / 5000 [ 44%]  (Warmup)
+Chain [2] Iteration: 2200 / 5000 [ 44%]  (Warmup)
+Chain [1] Iteration: 2100 / 5000 [ 42%]  (Warmup)
+Chain [3] Iteration: 2300 / 5000 [ 46%]  (Warmup)
+Chain [2] Iteration: 2300 / 5000 [ 46%]  (Warmup)
+Chain [4] Iteration: 2100 / 5000 [ 42%]  (Warmup)
+Chain [1] Iteration: 2200 / 5000 [ 44%]  (Warmup)
+Chain [2] Iteration: 2400 / 5000 [ 48%]  (Warmup)
+Chain [3] Iteration: 2400 / 5000 [ 48%]  (Warmup)
+Chain [4] Iteration: 2200 / 5000 [ 44%]  (Warmup)
+Chain [1] Iteration: 2300 / 5000 [ 46%]  (Warmup)
+Chain [4] Iteration: 2300 / 5000 [ 46%]  (Warmup)
+Chain [2] Iteration: 2500 / 5000 [ 50%]  (Warmup)
+Chain [2] Iteration: 2501 / 5000 [ 50%]  (Sampling)
+Chain [3] Iteration: 2500 / 5000 [ 50%]  (Warmup)
+Chain [3] Iteration: 2501 / 5000 [ 50%]  (Sampling)
+Chain [1] Iteration: 2400 / 5000 [ 48%]  (Warmup)
+Chain [2] Iteration: 2600 / 5000 [ 52%]  (Sampling)
+Chain [4] Iteration: 2400 / 5000 [ 48%]  (Warmup)
+Chain [3] Iteration: 2600 / 5000 [ 52%]  (Sampling)
+Chain [1] Iteration: 2500 / 5000 [ 50%]  (Warmup)
+Chain [1] Iteration: 2501 / 5000 [ 50%]  (Sampling)
+Chain [2] Iteration: 2700 / 5000 [ 54%]  (Sampling)
+Chain [4] Iteration: 2500 / 5000 [ 50%]  (Warmup)
+Chain [4] Iteration: 2501 / 5000 [ 50%]  (Sampling)
+Chain [3] Iteration: 2700 / 5000 [ 54%]  (Sampling)
+Chain [2] Iteration: 2800 / 5000 [ 56%]  (Sampling)
+Chain [4] Iteration: 2600 / 5000 [ 52%]  (Sampling)
+Chain [1] Iteration: 2600 / 5000 [ 52%]  (Sampling)
+Chain [2] Iteration: 2900 / 5000 [ 58%]  (Sampling)
+Chain [3] Iteration: 2800 / 5000 [ 56%]  (Sampling)
+Chain [4] Iteration: 2700 / 5000 [ 54%]  (Sampling)
+Chain [2] Iteration: 3000 / 5000 [ 60%]  (Sampling)
+Chain [3] Iteration: 2900 / 5000 [ 58%]  (Sampling)
+Chain [1] Iteration: 2700 / 5000 [ 54%]  (Sampling)
+Chain [2] Iteration: 3100 / 5000 [ 62%]  (Sampling)
+Chain [4] Iteration: 2800 / 5000 [ 56%]  (Sampling)
+Chain [3] Iteration: 3000 / 5000 [ 60%]  (Sampling)
+Chain [2] Iteration: 3200 / 5000 [ 64%]  (Sampling)
+Chain [4] Iteration: 2900 / 5000 [ 58%]  (Sampling)
+Chain [1] Iteration: 2800 / 5000 [ 56%]  (Sampling)
+Chain [3] Iteration: 3100 / 5000 [ 62%]  (Sampling)
+Chain [2] Iteration: 3300 / 5000 [ 66%]  (Sampling)
+Chain [4] Iteration: 3000 / 5000 [ 60%]  (Sampling)
+Chain [3] Iteration: 3200 / 5000 [ 64%]  (Sampling)
+Chain [2] Iteration: 3400 / 5000 [ 68%]  (Sampling)
+Chain [1] Iteration: 2900 / 5000 [ 58%]  (Sampling)
+Chain [4] Iteration: 3100 / 5000 [ 62%]  (Sampling)
+Chain [2] Iteration: 3500 / 5000 [ 70%]  (Sampling)
+Chain [3] Iteration: 3300 / 5000 [ 66%]  (Sampling)
+Chain [4] Iteration: 3200 / 5000 [ 64%]  (Sampling)
+Chain [2] Iteration: 3600 / 5000 [ 72%]  (Sampling)
+Chain [1] Iteration: 3000 / 5000 [ 60%]  (Sampling)
+Chain [3] Iteration: 3400 / 5000 [ 68%]  (Sampling)
+Chain [2] Iteration: 3700 / 5000 [ 74%]  (Sampling)
+Chain [4] Iteration: 3300 / 5000 [ 66%]  (Sampling)
+Chain [2] Iteration: 3800 / 5000 [ 76%]  (Sampling)
+Chain [3] Iteration: 3500 / 5000 [ 70%]  (Sampling)
+Chain [4] Iteration: 3400 / 5000 [ 68%]  (Sampling)
+Chain [1] Iteration: 3100 / 5000 [ 62%]  (Sampling)
+Chain [2] Iteration: 3900 / 5000 [ 78%]  (Sampling)
+Chain [4] Iteration: 3500 / 5000 [ 70%]  (Sampling)
+Chain [3] Iteration: 3600 / 5000 [ 72%]  (Sampling)
+Chain [2] Iteration: 4000 / 5000 [ 80%]  (Sampling)
+Chain [1] Iteration: 3200 / 5000 [ 64%]  (Sampling)
+Chain [4] Iteration: 3600 / 5000 [ 72%]  (Sampling)
+Chain [2] Iteration: 4100 / 5000 [ 82%]  (Sampling)
+Chain [3] Iteration: 3700 / 5000 [ 74%]  (Sampling)
+Chain [4] Iteration: 3700 / 5000 [ 74%]  (Sampling)
+Chain [2] Iteration: 4200 / 5000 [ 84%]  (Sampling)
+Chain [1] Iteration: 3300 / 5000 [ 66%]  (Sampling)
+Chain [3] Iteration: 3800 / 5000 [ 76%]  (Sampling)
+Chain [4] Iteration: 3800 / 5000 [ 76%]  (Sampling)
+Chain [2] Iteration: 4300 / 5000 [ 86%]  (Sampling)
+Chain [3] Iteration: 3900 / 5000 [ 78%]  (Sampling)
+Chain [4] Iteration: 3900 / 5000 [ 78%]  (Sampling)
+Chain [2] Iteration: 4400 / 5000 [ 88%]  (Sampling)
+Chain [1] Iteration: 3400 / 5000 [ 68%]  (Sampling)
+Chain [3] Iteration: 4000 / 5000 [ 80%]  (Sampling)
+Chain [2] Iteration: 4500 / 5000 [ 90%]  (Sampling)
+Chain [4] Iteration: 4000 / 5000 [ 80%]  (Sampling)
+Chain [3] Iteration: 4100 / 5000 [ 82%]  (Sampling)
+Chain [1] Iteration: 3500 / 5000 [ 70%]  (Sampling)
+Chain [2] Iteration: 4600 / 5000 [ 92%]  (Sampling)
+Chain [4] Iteration: 4100 / 5000 [ 82%]  (Sampling)
+Chain [2] Iteration: 4700 / 5000 [ 94%]  (Sampling)
+Chain [3] Iteration: 4200 / 5000 [ 84%]  (Sampling)
+Chain [4] Iteration: 4200 / 5000 [ 84%]  (Sampling)
+Chain [1] Iteration: 3600 / 5000 [ 72%]  (Sampling)
+Chain [2] Iteration: 4800 / 5000 [ 96%]  (Sampling)
+Chain [3] Iteration: 4300 / 5000 [ 86%]  (Sampling)
+Chain [4] Iteration: 4300 / 5000 [ 86%]  (Sampling)
+Chain [2] Iteration: 4900 / 5000 [ 98%]  (Sampling)
+Chain [1] Iteration: 3700 / 5000 [ 74%]  (Sampling)
+Chain [3] Iteration: 4400 / 5000 [ 88%]  (Sampling)
+Chain [4] Iteration: 4400 / 5000 [ 88%]  (Sampling)
+Chain [2] Iteration: 5000 / 5000 [100%]  (Sampling)
+Chain [2] 
+Chain [2] Elapsed Time: 68067.2 seconds (Warm-up)
+Chain [2] 57620 seconds (Sampling)
+Chain [2] 125687 seconds (Total)
+Chain [2] 
+Chain [2] 
+Chain [3] Iteration: 4500 / 5000 [ 90%]  (Sampling)
+Chain [4] Iteration: 4500 / 5000 [ 90%]  (Sampling)
+Chain [1] Iteration: 3800 / 5000 [ 76%]  (Sampling)
+Chain [4] Iteration: 4600 / 5000 [ 92%]  (Sampling)
+Chain [3] Iteration: 4600 / 5000 [ 92%]  (Sampling)
+Chain [4] Iteration: 4700 / 5000 [ 94%]  (Sampling)
+Chain [3] Iteration: 4700 / 5000 [ 94%]  (Sampling)
+Chain [1] Iteration: 3900 / 5000 [ 78%]  (Sampling)
+Chain [4] Iteration: 4800 / 5000 [ 96%]  (Sampling)
+Chain [3] Iteration: 4800 / 5000 [ 96%]  (Sampling)
+Chain [1] Iteration: 4000 / 5000 [ 80%]  (Sampling)
+Chain [4] Iteration: 4900 / 5000 [ 98%]  (Sampling)
+Chain [3] Iteration: 4900 / 5000 [ 98%]  (Sampling)
+Chain [4] Iteration: 5000 / 5000 [100%]  (Sampling)
+Chain [4] 
+Chain [4] Elapsed Time: 73394.3 seconds (Warm-up)
+Chain [4] 67568.8 seconds (Sampling)
+Chain [4] 140963 seconds (Total)
+Chain [4] 
+Chain [4] 
+Chain [1] Iteration: 4100 / 5000 [ 82%]  (Sampling)
+Chain [3] Iteration: 5000 / 5000 [100%]  (Sampling)
+Chain [3] 
+Chain [3] Elapsed Time: 68358.8 seconds (Warm-up)
+Chain [3] 74577.8 seconds (Sampling)
+Chain [3] 142937 seconds (Total)
+Chain [3] 
+Chain [3] 
+Chain [1] Iteration: 4200 / 5000 [ 84%]  (Sampling)
+Chain [1] Iteration: 4300 / 5000 [ 86%]  (Sampling)
+Chain [1] Iteration: 4400 / 5000 [ 88%]  (Sampling)
+Chain [1] Iteration: 4500 / 5000 [ 90%]  (Sampling)
+Chain [1] Iteration: 4600 / 5000 [ 92%]  (Sampling)
+Chain [1] Iteration: 4700 / 5000 [ 94%]  (Sampling)
+Chain [1] Iteration: 4800 / 5000 [ 96%]  (Sampling)
+Chain [1] Iteration: 4900 / 5000 [ 98%]  (Sampling)
+Chain [1] Iteration: 5000 / 5000 [100%]  (Sampling)
+Chain [1] 
+Chain [1] Elapsed Time: 72405.8 seconds (Warm-up)
+Chain [1] 108596 seconds (Sampling)
+Chain [1] 181002 seconds (Total)
+Chain [1] 
+Chain [1] 
+***hmc diagnostics:
+Processing csv files: /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/LBA_cd/LBA_cd-20230722040852_1.csv, /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/LBA_cd/LBA_cd-20230722040852_2.csv, /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/LBA_cd/LBA_cd-20230722040852_3.csv, /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/LBA_cd/LBA_cd-20230722040852_4.csv
+
+Checking sampler transitions treedepth.
+Treedepth satisfactory for all transitions.
+
+Checking sampler transitions for divergences.
+No divergent transitions found.
+
+Checking E-BFMI - sampler transitions HMC potential energy.
+E-BFMI satisfactory.
+
+Effective sample size satisfactory.
+
+Split R-hat values satisfactory all parameters.
+
+Processing complete, no problems detected.
+
+***DF: 
+                            Mean    MCSE  StdDev  ...    N_Eff  N_Eff/s  R_hat
+name                                              ...                         
+lp__                    -7000.00  0.8000   37.00  ...   2100.0   0.0070    1.0
+mu_k_word                   0.97  0.0100    0.28  ...    780.0   0.0025    1.0
+mu_k_nonword                1.50  0.0120    0.32  ...    770.0   0.0025    1.0
+mu_sp_trial_var_word        0.57  0.0096    0.30  ...    970.0   0.0031    1.0
+mu_sp_trial_var_nonword     1.80  0.0130    0.39  ...    860.0   0.0028    1.0
+...                          ...     ...     ...  ...      ...      ...    ...
+log_lik[36782]             -4.10  0.0020    0.24  ...  14134.0   0.0460    1.0
+log_lik[36783]             -4.10  0.0021    0.25  ...  14018.0   0.0450    1.0
+log_lik[36784]             -4.00  0.0028    0.33  ...  14486.0   0.0470    1.0
+log_lik[36785]             -4.10  0.0029    0.34  ...  13936.0   0.0450    1.0
+log_lik[36786]             -4.30  0.0030    0.36  ...  13905.0   0.0450    1.0
+
+[333917 rows x 9 columns]
+***Rhat > 1.01: 
+0
+       Mean  MCSE  StdDev   5%  50%  95%  N_Eff  N_Eff/s  R_hat
+count   0.0   0.0     0.0  0.0  0.0  0.0    0.0      0.0    0.0
+mean    NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+std     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+min     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+25%     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+50%     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+75%     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+max     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+HF words, word drift mean and std:
+3.842926964617609 0.5462774808633412
+HF words, nonword drift mean and std:
+2.166656494487761 0.3126609051434251
+LF words word drift mean and std:
+2.9720952581152327 0.4231127243425978
+LF words nonword drift mean and std:
+2.688359628659633 0.3842887691556798
+NW words word drift mean and std:
+1.253148808640776 0.1823248286813028
+NW words nonword drift mean and std:
+4.095704661060699 0.5816671111563013
+HF words, word starting point mean and std:
+1.2164394005609007 0.17459318403881138
+HF words, nonword starting point mean and std:
+2.16571398926406 0.3103215445522181
+LF words word starting point mean and std:
+1.227469229679358 0.17584014485605345
+LF words nonword starting point mean and std:
+2.170066740406628 0.3104196486014261
+NW words word starting point mean and std:
+1.2530787693627012 0.1795249839138515
+NW words nonword starting point mean and std:
+2.197063552454875 0.31427100743795655
+HF words, word threshold mean and std:
+2.4328788011218014 0.34918636807762277
+HF words, nonword threshold mean and std:
+4.33142797852812 0.6206430891044362
+LF words word threshold mean and std:
+2.454938459358716 0.3516802897121069
+LF words nonword threshold mean and std:
+4.340133480813256 0.6208392972028522
+NW words word threshold mean and std:
+2.5061575387254025 0.359049967827703
+NW words nonword threshold mean and std:
+4.39412710490975 0.6285420148759131
+HF words, word bias mean and std:
+1.2164394005609007 0.17459318403881138
+HF words, nonword bias mean and std:
+2.16571398926406 0.3103215445522181
+LF words word bias mean and std:
+1.227469229679358 0.17584014485605345
+LF words nonword bias mean and std:
+2.170066740406628 0.3104196486014261
+NW words word bias mean and std:
+1.2530787693627012 0.1795249839138515
+NW words nonword bias mean and std:
+2.197063552454875 0.31427100743795655
+HF words ndt mean and std:
+0.13959185406771074 0.005091240292562988
+LF words ndt mean and std:
+0.13974441700773046 0.005112427423843607
+Non Words ndt mean and std:
+0.1395494012655375 0.005121822947663424
+Estimation Fit metrics:
+{'lppd': -5770.225610836285, 'p_waic': 1068.2409800998735, 'waic': 13676.933181872319, 'waic_se': 501.72620855251216}
+INFO:cmdstanpy:deleting tmpfiles dir: /tmp/tmpycgm7l_4
+INFO:cmdstanpy:done
