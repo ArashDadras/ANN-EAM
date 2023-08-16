@@ -1,0 +1,790 @@
+nohup: ignoring input
+INFO:cmdstanpy:compiling stan file /storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan to exe file /storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear
+INFO:cmdstanpy:compiled model executable: /storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear
+WARNING:cmdstanpy:Stan compiler has produced 20 warnings:
+WARNING:cmdstanpy:
+--- Translating Stan model to C++ code ---
+bin/stanc  --o=/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.hpp /storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 55, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 57, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 58, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 59, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 60, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 62, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 97, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 98, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 99, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 100, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 101, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 102, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 113, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 114, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 115, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 116, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 117, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 118, column 4: Declaration
+    of arrays by placing brackets after a variable name is deprecated and
+    will be removed in Stan 2.32.0. Instead use the array keyword before the
+    type. This can be changed automatically using the auto-format flag to
+    stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 31, column 30: Use
+    of race_cdf without a vertical bar (|) between the first two arguments of
+    a CDF is deprecated and will be removed in Stan 2.32.0. This can be
+    automatically changed using the canonicalize flag for stanc
+Warning in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 35, column 30: Use
+    of race_cdf without a vertical bar (|) between the first two arguments of
+    a CDF is deprecated and will be removed in Stan 2.32.0. This can be
+    automatically changed using the canonicalize flag for stanc
+
+--- Compiling, linking C++ code ---
+g++ -std=c++1y -pthread -D_REENTRANT -Wno-sign-compare -Wno-ignored-attributes      -I stan/lib/stan_math/lib/tbb_2020.3/include    -O3 -I src -I stan/src -I lib/rapidjson_1.1.0/ -I lib/CLI11-1.9.1/ -I stan/lib/stan_math/ -I stan/lib/stan_math/lib/eigen_3.3.9 -I stan/lib/stan_math/lib/boost_1.78.0 -I stan/lib/stan_math/lib/sundials_6.1.1/include -I stan/lib/stan_math/lib/sundials_6.1.1/src/sundials    -DBOOST_DISABLE_ASSERTS          -c -Wno-ignored-attributes   -x c++ -o /storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.o /storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.hpp
+g++ -std=c++1y -pthread -D_REENTRANT -Wno-sign-compare -Wno-ignored-attributes      -I stan/lib/stan_math/lib/tbb_2020.3/include    -O3 -I src -I stan/src -I lib/rapidjson_1.1.0/ -I lib/CLI11-1.9.1/ -I stan/lib/stan_math/ -I stan/lib/stan_math/lib/eigen_3.3.9 -I stan/lib/stan_math/lib/boost_1.78.0 -I stan/lib/stan_math/lib/sundials_6.1.1/include -I stan/lib/stan_math/lib/sundials_6.1.1/src/sundials    -DBOOST_DISABLE_ASSERTS                -Wl,-L,"/storage/users/adadras/.cmdstan/cmdstan-2.30.1/stan/lib/stan_math/lib/tbb" -Wl,-rpath,"/storage/users/adadras/.cmdstan/cmdstan-2.30.1/stan/lib/stan_math/lib/tbb"      /storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.o src/cmdstan/main.o        -Wl,-L,"/storage/users/adadras/.cmdstan/cmdstan-2.30.1/stan/lib/stan_math/lib/tbb" -Wl,-rpath,"/storage/users/adadras/.cmdstan/cmdstan-2.30.1/stan/lib/stan_math/lib/tbb"   stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_nvecserial.a stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_cvodes.a stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_idas.a stan/lib/stan_math/lib/sundials_6.1.1/lib/libsundials_kinsol.a  stan/lib/stan_math/lib/tbb/libtbb.so.2 -o /storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear
+rm -f /storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.o
+
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [2] start processing
+INFO:cmdstanpy:Chain [3] start processing
+INFO:cmdstanpy:Chain [4] start processing
+INFO:cmdstanpy:Chain [2] done processing
+INFO:cmdstanpy:Chain [3] done processing
+INFO:cmdstanpy:Chain [4] done processing
+INFO:cmdstanpy:Chain [1] done processing
+Model name: ANN-RDM_l_FT
+Directory  Results/hierarchical/Plots/ANN-RDM_l_FT/  Created 
+Directory  Results/hierarchical/stan_results/ANN-RDM_l_FT/  Created 
+Model's configs:
+{'model_name': 'ANN-RDM_l_FT', 'stan_file': 'ANN-RDM/linear.stan', 'dataset_name': 'fastText_FC.csv', 'plots_folder_name': 'ANN-RDM_l_FT', 'transf_params': ['transf_mu_alpha_1', 'transf_mu_alpha_2', 'transf_mu_b', 'transf_mu_threshold_word', 'transf_mu_threshold_nonword', 'transf_mu_ndt']}
+Chain [3] method = sample (Default)
+Chain [3] sample
+Chain [3] num_samples = 4000
+Chain [3] num_warmup = 4000
+Chain [3] save_warmup = 0 (Default)
+Chain [3] thin = 1 (Default)
+Chain [3] adapt
+Chain [3] engaged = 1 (Default)
+Chain [3] gamma = 0.050000000000000003 (Default)
+Chain [3] delta = 0.80000000000000004 (Default)
+Chain [1] method = sample (Default)
+Chain [1] sample
+Chain [1] num_samples = 4000
+Chain [1] num_warmup = 4000
+Chain [1] save_warmup = 0 (Default)
+Chain [1] thin = 1 (Default)
+Chain [1] adapt
+Chain [1] engaged = 1 (Default)
+Chain [1] gamma = 0.050000000000000003 (Default)
+Chain [1] delta = 0.80000000000000004 (Default)
+Chain [1] kappa = 0.75 (Default)
+Chain [1] t0 = 10 (Default)
+Chain [3] kappa = 0.75 (Default)
+Chain [3] t0 = 10 (Default)
+Chain [3] init_buffer = 75 (Default)
+Chain [1] init_buffer = 75 (Default)
+Chain [1] term_buffer = 50 (Default)
+Chain [3] term_buffer = 50 (Default)
+Chain [3] window = 25 (Default)
+Chain [1] window = 25 (Default)
+Chain [1] algorithm = hmc (Default)
+Chain [3] algorithm = hmc (Default)
+Chain [3] hmc
+Chain [3] engine = nuts (Default)
+Chain [1] hmc
+Chain [1] engine = nuts (Default)
+Chain [3] nuts
+Chain [3] max_depth = 10 (Default)
+Chain [1] nuts
+Chain [1] max_depth = 10 (Default)
+Chain [3] metric = diag_e (Default)
+Chain [3] metric_file =  (Default)
+Chain [1] metric = diag_e (Default)
+Chain [1] metric_file =  (Default)
+Chain [3] stepsize = 1 (Default)
+Chain [3] stepsize_jitter = 0 (Default)
+Chain [1] stepsize = 1 (Default)
+Chain [1] stepsize_jitter = 0 (Default)
+Chain [3] num_chains = 1 (Default)
+Chain [3] id = 3
+Chain [1] num_chains = 1 (Default)
+Chain [1] id = 1 (Default)
+Chain [3] data
+Chain [3] file = /tmp/tmp5xwiwl4q/kvxt809_.json
+Chain [1] data
+Chain [1] file = /tmp/tmp5xwiwl4q/kvxt809_.json
+Chain [3] init = 2 (Default)
+Chain [3] random
+Chain [1] init = 2 (Default)
+Chain [1] random
+Chain [3] seed = 17297
+Chain [3] output
+Chain [1] seed = 17297
+Chain [1] output
+Chain [3] file = /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/ANN-RDM_l_FT/ANN-RDM_l_FT-20230811075206_3.csv
+Chain [3] diagnostic_file =  (Default)
+Chain [1] file = /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/ANN-RDM_l_FT/ANN-RDM_l_FT-20230811075206_1.csv
+Chain [1] diagnostic_file =  (Default)
+Chain [3] refresh = 100 (Default)
+Chain [3] sig_figs = -1 (Default)
+Chain [1] refresh = 100 (Default)
+Chain [1] sig_figs = -1 (Default)
+Chain [3] profile_file = profile.csv (Default)
+Chain [3] num_threads = 1 (Default)
+Chain [1] profile_file = profile.csv (Default)
+Chain [1] num_threads = 1 (Default)
+Chain [3] 
+Chain [1] 
+Chain [2] method = sample (Default)
+Chain [2] sample
+Chain [2] num_samples = 4000
+Chain [2] num_warmup = 4000
+Chain [2] save_warmup = 0 (Default)
+Chain [2] thin = 1 (Default)
+Chain [2] adapt
+Chain [2] engaged = 1 (Default)
+Chain [2] gamma = 0.050000000000000003 (Default)
+Chain [2] delta = 0.80000000000000004 (Default)
+Chain [2] kappa = 0.75 (Default)
+Chain [2] t0 = 10 (Default)
+Chain [2] init_buffer = 75 (Default)
+Chain [2] term_buffer = 50 (Default)
+Chain [2] window = 25 (Default)
+Chain [2] algorithm = hmc (Default)
+Chain [2] hmc
+Chain [2] engine = nuts (Default)
+Chain [2] nuts
+Chain [2] max_depth = 10 (Default)
+Chain [2] metric = diag_e (Default)
+Chain [2] metric_file =  (Default)
+Chain [2] stepsize = 1 (Default)
+Chain [2] stepsize_jitter = 0 (Default)
+Chain [2] num_chains = 1 (Default)
+Chain [2] id = 2
+Chain [2] data
+Chain [2] file = /tmp/tmp5xwiwl4q/kvxt809_.json
+Chain [2] init = 2 (Default)
+Chain [2] random
+Chain [2] seed = 17297
+Chain [2] output
+Chain [2] file = /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/ANN-RDM_l_FT/ANN-RDM_l_FT-20230811075206_2.csv
+Chain [2] diagnostic_file =  (Default)
+Chain [2] refresh = 100 (Default)
+Chain [2] sig_figs = -1 (Default)
+Chain [2] profile_file = profile.csv (Default)
+Chain [2] num_threads = 1 (Default)
+Chain [2] 
+Chain [4] method = sample (Default)
+Chain [4] sample
+Chain [4] num_samples = 4000
+Chain [4] num_warmup = 4000
+Chain [4] save_warmup = 0 (Default)
+Chain [4] thin = 1 (Default)
+Chain [4] adapt
+Chain [4] engaged = 1 (Default)
+Chain [4] gamma = 0.050000000000000003 (Default)
+Chain [4] delta = 0.80000000000000004 (Default)
+Chain [4] kappa = 0.75 (Default)
+Chain [4] t0 = 10 (Default)
+Chain [4] init_buffer = 75 (Default)
+Chain [4] term_buffer = 50 (Default)
+Chain [4] window = 25 (Default)
+Chain [4] algorithm = hmc (Default)
+Chain [4] hmc
+Chain [4] engine = nuts (Default)
+Chain [4] nuts
+Chain [4] max_depth = 10 (Default)
+Chain [4] metric = diag_e (Default)
+Chain [4] metric_file =  (Default)
+Chain [4] stepsize = 1 (Default)
+Chain [4] stepsize_jitter = 0 (Default)
+Chain [4] num_chains = 1 (Default)
+Chain [4] id = 4
+Chain [4] data
+Chain [4] file = /tmp/tmp5xwiwl4q/kvxt809_.json
+Chain [4] init = 2 (Default)
+Chain [4] random
+Chain [4] seed = 17297
+Chain [4] output
+Chain [4] file = /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/ANN-RDM_l_FT/ANN-RDM_l_FT-20230811075206_4.csv
+Chain [4] diagnostic_file =  (Default)
+Chain [4] refresh = 100 (Default)
+Chain [4] sig_figs = -1 (Default)
+Chain [4] profile_file = profile.csv (Default)
+Chain [4] num_threads = 1 (Default)
+Chain [4] 
+Chain [3] 
+Chain [3] Gradient evaluation took 0.058753 seconds
+Chain [3] 1000 transitions using 10 leapfrog steps per transition would take 587.53 seconds.
+Chain [3] Adjust your expectations accordingly!
+Chain [3] 
+Chain [3] 
+Chain [1] 
+Chain [1] Gradient evaluation took 0.086388 seconds
+Chain [1] 1000 transitions using 10 leapfrog steps per transition would take 863.88 seconds.
+Chain [1] Adjust your expectations accordingly!
+Chain [1] 
+Chain [1] 
+Chain [2] 
+Chain [2] Gradient evaluation took 0.088258 seconds
+Chain [2] 1000 transitions using 10 leapfrog steps per transition would take 882.58 seconds.
+Chain [2] Adjust your expectations accordingly!
+Chain [2] 
+Chain [2] 
+Chain [4] 
+Chain [4] Gradient evaluation took 0.061606 seconds
+Chain [4] 1000 transitions using 10 leapfrog steps per transition would take 616.06 seconds.
+Chain [4] Adjust your expectations accordingly!
+Chain [4] 
+Chain [4] 
+Chain [2] Iteration:    1 / 8000 [  0%]  (Warmup)
+Chain [4] Iteration:    1 / 8000 [  0%]  (Warmup)
+Chain [3] Iteration:    1 / 8000 [  0%]  (Warmup)
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: linear_model_namespace::log_prob: drift_word_t[3] is -nan, but must be greater than or equal to 0.000000 (in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 107, column 4 to column 36)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [2] Exception: linear_model_namespace::log_prob: drift_word_t[3] is -nan, but must be greater than or equal to 0.000000 (in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 107, column 4 to column 36)
+Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [2] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: linear_model_namespace::log_prob: drift_word_t[3] is -nan, but must be greater than or equal to 0.000000 (in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 107, column 4 to column 36)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: linear_model_namespace::log_prob: drift_word_t[3] is -nan, but must be greater than or equal to 0.000000 (in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 107, column 4 to column 36)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: linear_model_namespace::log_prob: drift_word_t[3] is -nan, but must be greater than or equal to 0.000000 (in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 107, column 4 to column 36)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [4] Exception: linear_model_namespace::log_prob: drift_word_t[3] is -nan, but must be greater than or equal to 0.000000 (in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 107, column 4 to column 36)
+Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [4] 
+Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain [3] Exception: linear_model_namespace::log_prob: drift_word_t[3] is -nan, but must be greater than or equal to 0.000000 (in '/storage/users/adadras/ANN-EAM/models/stan/ANN-RDM/linear.stan', line 107, column 4 to column 36)
+Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [3] 
+Chain [1] Iteration:    1 / 8000 [  0%]  (Warmup)
+Chain [3] Iteration:  100 / 8000 [  1%]  (Warmup)
+Chain [2] Iteration:  100 / 8000 [  1%]  (Warmup)
+Chain [4] Iteration:  100 / 8000 [  1%]  (Warmup)
+Chain [1] Iteration:  100 / 8000 [  1%]  (Warmup)
+Chain [2] Iteration:  200 / 8000 [  2%]  (Warmup)
+Chain [3] Iteration:  200 / 8000 [  2%]  (Warmup)
+Chain [1] Iteration:  200 / 8000 [  2%]  (Warmup)
+Chain [4] Iteration:  200 / 8000 [  2%]  (Warmup)
+Chain [1] Iteration:  300 / 8000 [  3%]  (Warmup)
+Chain [2] Iteration:  300 / 8000 [  3%]  (Warmup)
+Chain [3] Iteration:  300 / 8000 [  3%]  (Warmup)
+Chain [4] Iteration:  300 / 8000 [  3%]  (Warmup)
+Chain [1] Iteration:  400 / 8000 [  5%]  (Warmup)
+Chain [2] Iteration:  400 / 8000 [  5%]  (Warmup)
+Chain [3] Iteration:  400 / 8000 [  5%]  (Warmup)
+Chain [1] Iteration:  500 / 8000 [  6%]  (Warmup)
+Chain [4] Iteration:  400 / 8000 [  5%]  (Warmup)
+Chain [2] Iteration:  500 / 8000 [  6%]  (Warmup)
+Chain [1] Iteration:  600 / 8000 [  7%]  (Warmup)
+Chain [3] Iteration:  500 / 8000 [  6%]  (Warmup)
+Chain [4] Iteration:  500 / 8000 [  6%]  (Warmup)
+Chain [1] Iteration:  700 / 8000 [  8%]  (Warmup)
+Chain [2] Iteration:  600 / 8000 [  7%]  (Warmup)
+Chain [3] Iteration:  600 / 8000 [  7%]  (Warmup)
+Chain [4] Iteration:  600 / 8000 [  7%]  (Warmup)
+Chain [1] Iteration:  800 / 8000 [ 10%]  (Warmup)
+Chain [2] Iteration:  700 / 8000 [  8%]  (Warmup)
+Chain [3] Iteration:  700 / 8000 [  8%]  (Warmup)
+Chain [4] Iteration:  700 / 8000 [  8%]  (Warmup)
+Chain [2] Iteration:  800 / 8000 [ 10%]  (Warmup)
+Chain [1] Iteration:  900 / 8000 [ 11%]  (Warmup)
+Chain [4] Iteration:  800 / 8000 [ 10%]  (Warmup)
+Chain [3] Iteration:  800 / 8000 [ 10%]  (Warmup)
+Chain [2] Iteration:  900 / 8000 [ 11%]  (Warmup)
+Chain [1] Iteration: 1000 / 8000 [ 12%]  (Warmup)
+Chain [3] Iteration:  900 / 8000 [ 11%]  (Warmup)
+Chain [4] Iteration:  900 / 8000 [ 11%]  (Warmup)
+Chain [2] Iteration: 1000 / 8000 [ 12%]  (Warmup)
+Chain [1] Iteration: 1100 / 8000 [ 13%]  (Warmup)
+Chain [3] Iteration: 1000 / 8000 [ 12%]  (Warmup)
+Chain [4] Iteration: 1000 / 8000 [ 12%]  (Warmup)
+Chain [2] Iteration: 1100 / 8000 [ 13%]  (Warmup)
+Chain [1] Iteration: 1200 / 8000 [ 15%]  (Warmup)
+Chain [3] Iteration: 1100 / 8000 [ 13%]  (Warmup)
+Chain [4] Iteration: 1100 / 8000 [ 13%]  (Warmup)
+Chain [1] Iteration: 1300 / 8000 [ 16%]  (Warmup)
+Chain [2] Iteration: 1200 / 8000 [ 15%]  (Warmup)
+Chain [3] Iteration: 1200 / 8000 [ 15%]  (Warmup)
+Chain [4] Iteration: 1200 / 8000 [ 15%]  (Warmup)
+Chain [1] Iteration: 1400 / 8000 [ 17%]  (Warmup)
+Chain [2] Iteration: 1300 / 8000 [ 16%]  (Warmup)
+Chain [3] Iteration: 1300 / 8000 [ 16%]  (Warmup)
+Chain [4] Iteration: 1300 / 8000 [ 16%]  (Warmup)
+Chain [1] Iteration: 1500 / 8000 [ 18%]  (Warmup)
+Chain [2] Iteration: 1400 / 8000 [ 17%]  (Warmup)
+Chain [3] Iteration: 1400 / 8000 [ 17%]  (Warmup)
+Chain [4] Iteration: 1400 / 8000 [ 17%]  (Warmup)
+Chain [2] Iteration: 1500 / 8000 [ 18%]  (Warmup)
+Chain [1] Iteration: 1600 / 8000 [ 20%]  (Warmup)
+Chain [3] Iteration: 1500 / 8000 [ 18%]  (Warmup)
+Chain [4] Iteration: 1500 / 8000 [ 18%]  (Warmup)
+Chain [2] Iteration: 1600 / 8000 [ 20%]  (Warmup)
+Chain [1] Iteration: 1700 / 8000 [ 21%]  (Warmup)
+Chain [3] Iteration: 1600 / 8000 [ 20%]  (Warmup)
+Chain [4] Iteration: 1600 / 8000 [ 20%]  (Warmup)
+Chain [2] Iteration: 1700 / 8000 [ 21%]  (Warmup)
+Chain [1] Iteration: 1800 / 8000 [ 22%]  (Warmup)
+Chain [3] Iteration: 1700 / 8000 [ 21%]  (Warmup)
+Chain [4] Iteration: 1700 / 8000 [ 21%]  (Warmup)
+Chain [2] Iteration: 1800 / 8000 [ 22%]  (Warmup)
+Chain [1] Iteration: 1900 / 8000 [ 23%]  (Warmup)
+Chain [3] Iteration: 1800 / 8000 [ 22%]  (Warmup)
+Chain [2] Iteration: 1900 / 8000 [ 23%]  (Warmup)
+Chain [4] Iteration: 1800 / 8000 [ 22%]  (Warmup)
+Chain [1] Iteration: 2000 / 8000 [ 25%]  (Warmup)
+Chain [3] Iteration: 1900 / 8000 [ 23%]  (Warmup)
+Chain [2] Iteration: 2000 / 8000 [ 25%]  (Warmup)
+Chain [4] Iteration: 1900 / 8000 [ 23%]  (Warmup)
+Chain [3] Iteration: 2000 / 8000 [ 25%]  (Warmup)
+Chain [1] Iteration: 2100 / 8000 [ 26%]  (Warmup)
+Chain [2] Iteration: 2100 / 8000 [ 26%]  (Warmup)
+Chain [4] Iteration: 2000 / 8000 [ 25%]  (Warmup)
+Chain [3] Iteration: 2100 / 8000 [ 26%]  (Warmup)
+Chain [1] Iteration: 2200 / 8000 [ 27%]  (Warmup)
+Chain [2] Iteration: 2200 / 8000 [ 27%]  (Warmup)
+Chain [4] Iteration: 2100 / 8000 [ 26%]  (Warmup)
+Chain [3] Iteration: 2200 / 8000 [ 27%]  (Warmup)
+Chain [1] Iteration: 2300 / 8000 [ 28%]  (Warmup)
+Chain [2] Iteration: 2300 / 8000 [ 28%]  (Warmup)
+Chain [4] Iteration: 2200 / 8000 [ 27%]  (Warmup)
+Chain [3] Iteration: 2300 / 8000 [ 28%]  (Warmup)
+Chain [1] Iteration: 2400 / 8000 [ 30%]  (Warmup)
+Chain [2] Iteration: 2400 / 8000 [ 30%]  (Warmup)
+Chain [4] Iteration: 2300 / 8000 [ 28%]  (Warmup)
+Chain [3] Iteration: 2400 / 8000 [ 30%]  (Warmup)
+Chain [2] Iteration: 2500 / 8000 [ 31%]  (Warmup)
+Chain [4] Iteration: 2400 / 8000 [ 30%]  (Warmup)
+Chain [1] Iteration: 2500 / 8000 [ 31%]  (Warmup)
+Chain [3] Iteration: 2500 / 8000 [ 31%]  (Warmup)
+Chain [2] Iteration: 2600 / 8000 [ 32%]  (Warmup)
+Chain [4] Iteration: 2500 / 8000 [ 31%]  (Warmup)
+Chain [1] Iteration: 2600 / 8000 [ 32%]  (Warmup)
+Chain [3] Iteration: 2600 / 8000 [ 32%]  (Warmup)
+Chain [2] Iteration: 2700 / 8000 [ 33%]  (Warmup)
+Chain [4] Iteration: 2600 / 8000 [ 32%]  (Warmup)
+Chain [3] Iteration: 2700 / 8000 [ 33%]  (Warmup)
+Chain [1] Iteration: 2700 / 8000 [ 33%]  (Warmup)
+Chain [4] Iteration: 2700 / 8000 [ 33%]  (Warmup)
+Chain [2] Iteration: 2800 / 8000 [ 35%]  (Warmup)
+Chain [3] Iteration: 2800 / 8000 [ 35%]  (Warmup)
+Chain [1] Iteration: 2800 / 8000 [ 35%]  (Warmup)
+Chain [4] Iteration: 2800 / 8000 [ 35%]  (Warmup)
+Chain [2] Iteration: 2900 / 8000 [ 36%]  (Warmup)
+Chain [3] Iteration: 2900 / 8000 [ 36%]  (Warmup)
+Chain [1] Iteration: 2900 / 8000 [ 36%]  (Warmup)
+Chain [4] Iteration: 2900 / 8000 [ 36%]  (Warmup)
+Chain [2] Iteration: 3000 / 8000 [ 37%]  (Warmup)
+Chain [3] Iteration: 3000 / 8000 [ 37%]  (Warmup)
+Chain [1] Iteration: 3000 / 8000 [ 37%]  (Warmup)
+Chain [4] Iteration: 3000 / 8000 [ 37%]  (Warmup)
+Chain [2] Iteration: 3100 / 8000 [ 38%]  (Warmup)
+Chain [3] Iteration: 3100 / 8000 [ 38%]  (Warmup)
+Chain [1] Iteration: 3100 / 8000 [ 38%]  (Warmup)
+Chain [2] Iteration: 3200 / 8000 [ 40%]  (Warmup)
+Chain [4] Iteration: 3100 / 8000 [ 38%]  (Warmup)
+Chain [3] Iteration: 3200 / 8000 [ 40%]  (Warmup)
+Chain [4] Iteration: 3200 / 8000 [ 40%]  (Warmup)
+Chain [1] Iteration: 3200 / 8000 [ 40%]  (Warmup)
+Chain [2] Iteration: 3300 / 8000 [ 41%]  (Warmup)
+Chain [3] Iteration: 3300 / 8000 [ 41%]  (Warmup)
+Chain [4] Iteration: 3300 / 8000 [ 41%]  (Warmup)
+Chain [2] Iteration: 3400 / 8000 [ 42%]  (Warmup)
+Chain [3] Iteration: 3400 / 8000 [ 42%]  (Warmup)
+Chain [1] Iteration: 3300 / 8000 [ 41%]  (Warmup)
+Chain [4] Iteration: 3400 / 8000 [ 42%]  (Warmup)
+Chain [2] Iteration: 3500 / 8000 [ 43%]  (Warmup)
+Chain [3] Iteration: 3500 / 8000 [ 43%]  (Warmup)
+Chain [1] Iteration: 3400 / 8000 [ 42%]  (Warmup)
+Chain [4] Iteration: 3500 / 8000 [ 43%]  (Warmup)
+Chain [3] Iteration: 3600 / 8000 [ 45%]  (Warmup)
+Chain [2] Iteration: 3600 / 8000 [ 45%]  (Warmup)
+Chain [1] Iteration: 3500 / 8000 [ 43%]  (Warmup)
+Chain [4] Iteration: 3600 / 8000 [ 45%]  (Warmup)
+Chain [3] Iteration: 3700 / 8000 [ 46%]  (Warmup)
+Chain [2] Iteration: 3700 / 8000 [ 46%]  (Warmup)
+Chain [4] Iteration: 3700 / 8000 [ 46%]  (Warmup)
+Chain [1] Iteration: 3600 / 8000 [ 45%]  (Warmup)
+Chain [3] Iteration: 3800 / 8000 [ 47%]  (Warmup)
+Chain [2] Iteration: 3800 / 8000 [ 47%]  (Warmup)
+Chain [4] Iteration: 3800 / 8000 [ 47%]  (Warmup)
+Chain [1] Iteration: 3700 / 8000 [ 46%]  (Warmup)
+Chain [3] Iteration: 3900 / 8000 [ 48%]  (Warmup)
+Chain [2] Iteration: 3900 / 8000 [ 48%]  (Warmup)
+Chain [4] Iteration: 3900 / 8000 [ 48%]  (Warmup)
+Chain [1] Iteration: 3800 / 8000 [ 47%]  (Warmup)
+Chain [3] Iteration: 4000 / 8000 [ 50%]  (Warmup)
+Chain [3] Iteration: 4001 / 8000 [ 50%]  (Sampling)
+Chain [2] Iteration: 4000 / 8000 [ 50%]  (Warmup)
+Chain [2] Iteration: 4001 / 8000 [ 50%]  (Sampling)
+Chain [4] Iteration: 4000 / 8000 [ 50%]  (Warmup)
+Chain [4] Iteration: 4001 / 8000 [ 50%]  (Sampling)
+Chain [1] Iteration: 3900 / 8000 [ 48%]  (Warmup)
+Chain [3] Iteration: 4100 / 8000 [ 51%]  (Sampling)
+Chain [2] Iteration: 4100 / 8000 [ 51%]  (Sampling)
+Chain [4] Iteration: 4100 / 8000 [ 51%]  (Sampling)
+Chain [1] Iteration: 4000 / 8000 [ 50%]  (Warmup)
+Chain [1] Iteration: 4001 / 8000 [ 50%]  (Sampling)
+Chain [3] Iteration: 4200 / 8000 [ 52%]  (Sampling)
+Chain [2] Iteration: 4200 / 8000 [ 52%]  (Sampling)
+Chain [4] Iteration: 4200 / 8000 [ 52%]  (Sampling)
+Chain [1] Iteration: 4100 / 8000 [ 51%]  (Sampling)
+Chain [3] Iteration: 4300 / 8000 [ 53%]  (Sampling)
+Chain [2] Iteration: 4300 / 8000 [ 53%]  (Sampling)
+Chain [4] Iteration: 4300 / 8000 [ 53%]  (Sampling)
+Chain [1] Iteration: 4200 / 8000 [ 52%]  (Sampling)
+Chain [3] Iteration: 4400 / 8000 [ 55%]  (Sampling)
+Chain [2] Iteration: 4400 / 8000 [ 55%]  (Sampling)
+Chain [4] Iteration: 4400 / 8000 [ 55%]  (Sampling)
+Chain [1] Iteration: 4300 / 8000 [ 53%]  (Sampling)
+Chain [3] Iteration: 4500 / 8000 [ 56%]  (Sampling)
+Chain [2] Iteration: 4500 / 8000 [ 56%]  (Sampling)
+Chain [4] Iteration: 4500 / 8000 [ 56%]  (Sampling)
+Chain [1] Iteration: 4400 / 8000 [ 55%]  (Sampling)
+Chain [3] Iteration: 4600 / 8000 [ 57%]  (Sampling)
+Chain [2] Iteration: 4600 / 8000 [ 57%]  (Sampling)
+Chain [4] Iteration: 4600 / 8000 [ 57%]  (Sampling)
+Chain [1] Iteration: 4500 / 8000 [ 56%]  (Sampling)
+Chain [3] Iteration: 4700 / 8000 [ 58%]  (Sampling)
+Chain [2] Iteration: 4700 / 8000 [ 58%]  (Sampling)
+Chain [4] Iteration: 4700 / 8000 [ 58%]  (Sampling)
+Chain [1] Iteration: 4600 / 8000 [ 57%]  (Sampling)
+Chain [3] Iteration: 4800 / 8000 [ 60%]  (Sampling)
+Chain [2] Iteration: 4800 / 8000 [ 60%]  (Sampling)
+Chain [4] Iteration: 4800 / 8000 [ 60%]  (Sampling)
+Chain [1] Iteration: 4700 / 8000 [ 58%]  (Sampling)
+Chain [3] Iteration: 4900 / 8000 [ 61%]  (Sampling)
+Chain [2] Iteration: 4900 / 8000 [ 61%]  (Sampling)
+Chain [4] Iteration: 4900 / 8000 [ 61%]  (Sampling)
+Chain [1] Iteration: 4800 / 8000 [ 60%]  (Sampling)
+Chain [3] Iteration: 5000 / 8000 [ 62%]  (Sampling)
+Chain [2] Iteration: 5000 / 8000 [ 62%]  (Sampling)
+Chain [4] Iteration: 5000 / 8000 [ 62%]  (Sampling)
+Chain [1] Iteration: 4900 / 8000 [ 61%]  (Sampling)
+Chain [3] Iteration: 5100 / 8000 [ 63%]  (Sampling)
+Chain [2] Iteration: 5100 / 8000 [ 63%]  (Sampling)
+Chain [4] Iteration: 5100 / 8000 [ 63%]  (Sampling)
+Chain [1] Iteration: 5000 / 8000 [ 62%]  (Sampling)
+Chain [3] Iteration: 5200 / 8000 [ 65%]  (Sampling)
+Chain [2] Iteration: 5200 / 8000 [ 65%]  (Sampling)
+Chain [4] Iteration: 5200 / 8000 [ 65%]  (Sampling)
+Chain [1] Iteration: 5100 / 8000 [ 63%]  (Sampling)
+Chain [3] Iteration: 5300 / 8000 [ 66%]  (Sampling)
+Chain [2] Iteration: 5300 / 8000 [ 66%]  (Sampling)
+Chain [4] Iteration: 5300 / 8000 [ 66%]  (Sampling)
+Chain [1] Iteration: 5200 / 8000 [ 65%]  (Sampling)
+Chain [3] Iteration: 5400 / 8000 [ 67%]  (Sampling)
+Chain [2] Iteration: 5400 / 8000 [ 67%]  (Sampling)
+Chain [4] Iteration: 5400 / 8000 [ 67%]  (Sampling)
+Chain [1] Iteration: 5300 / 8000 [ 66%]  (Sampling)
+Chain [3] Iteration: 5500 / 8000 [ 68%]  (Sampling)
+Chain [2] Iteration: 5500 / 8000 [ 68%]  (Sampling)
+Chain [4] Iteration: 5500 / 8000 [ 68%]  (Sampling)
+Chain [1] Iteration: 5400 / 8000 [ 67%]  (Sampling)
+Chain [2] Iteration: 5600 / 8000 [ 70%]  (Sampling)
+Chain [3] Iteration: 5600 / 8000 [ 70%]  (Sampling)
+Chain [4] Iteration: 5600 / 8000 [ 70%]  (Sampling)
+Chain [1] Iteration: 5500 / 8000 [ 68%]  (Sampling)
+Chain [2] Iteration: 5700 / 8000 [ 71%]  (Sampling)
+Chain [3] Iteration: 5700 / 8000 [ 71%]  (Sampling)
+Chain [4] Iteration: 5700 / 8000 [ 71%]  (Sampling)
+Chain [1] Iteration: 5600 / 8000 [ 70%]  (Sampling)
+Chain [2] Iteration: 5800 / 8000 [ 72%]  (Sampling)
+Chain [3] Iteration: 5800 / 8000 [ 72%]  (Sampling)
+Chain [4] Iteration: 5800 / 8000 [ 72%]  (Sampling)
+Chain [1] Iteration: 5700 / 8000 [ 71%]  (Sampling)
+Chain [2] Iteration: 5900 / 8000 [ 73%]  (Sampling)
+Chain [3] Iteration: 5900 / 8000 [ 73%]  (Sampling)
+Chain [4] Iteration: 5900 / 8000 [ 73%]  (Sampling)
+Chain [1] Iteration: 5800 / 8000 [ 72%]  (Sampling)
+Chain [2] Iteration: 6000 / 8000 [ 75%]  (Sampling)
+Chain [3] Iteration: 6000 / 8000 [ 75%]  (Sampling)
+Chain [4] Iteration: 6000 / 8000 [ 75%]  (Sampling)
+Chain [1] Iteration: 5900 / 8000 [ 73%]  (Sampling)
+Chain [2] Iteration: 6100 / 8000 [ 76%]  (Sampling)
+Chain [3] Iteration: 6100 / 8000 [ 76%]  (Sampling)
+Chain [4] Iteration: 6100 / 8000 [ 76%]  (Sampling)
+Chain [1] Iteration: 6000 / 8000 [ 75%]  (Sampling)
+Chain [2] Iteration: 6200 / 8000 [ 77%]  (Sampling)
+Chain [3] Iteration: 6200 / 8000 [ 77%]  (Sampling)
+Chain [4] Iteration: 6200 / 8000 [ 77%]  (Sampling)
+Chain [1] Iteration: 6100 / 8000 [ 76%]  (Sampling)
+Chain [2] Iteration: 6300 / 8000 [ 78%]  (Sampling)
+Chain [3] Iteration: 6300 / 8000 [ 78%]  (Sampling)
+Chain [4] Iteration: 6300 / 8000 [ 78%]  (Sampling)
+Chain [1] Iteration: 6200 / 8000 [ 77%]  (Sampling)
+Chain [2] Iteration: 6400 / 8000 [ 80%]  (Sampling)
+Chain [3] Iteration: 6400 / 8000 [ 80%]  (Sampling)
+Chain [4] Iteration: 6400 / 8000 [ 80%]  (Sampling)
+Chain [1] Iteration: 6300 / 8000 [ 78%]  (Sampling)
+Chain [2] Iteration: 6500 / 8000 [ 81%]  (Sampling)
+Chain [3] Iteration: 6500 / 8000 [ 81%]  (Sampling)
+Chain [4] Iteration: 6500 / 8000 [ 81%]  (Sampling)
+Chain [1] Iteration: 6400 / 8000 [ 80%]  (Sampling)
+Chain [2] Iteration: 6600 / 8000 [ 82%]  (Sampling)
+Chain [3] Iteration: 6600 / 8000 [ 82%]  (Sampling)
+Chain [4] Iteration: 6600 / 8000 [ 82%]  (Sampling)
+Chain [1] Iteration: 6500 / 8000 [ 81%]  (Sampling)
+Chain [2] Iteration: 6700 / 8000 [ 83%]  (Sampling)
+Chain [3] Iteration: 6700 / 8000 [ 83%]  (Sampling)
+Chain [4] Iteration: 6700 / 8000 [ 83%]  (Sampling)
+Chain [1] Iteration: 6600 / 8000 [ 82%]  (Sampling)
+Chain [2] Iteration: 6800 / 8000 [ 85%]  (Sampling)
+Chain [3] Iteration: 6800 / 8000 [ 85%]  (Sampling)
+Chain [4] Iteration: 6800 / 8000 [ 85%]  (Sampling)
+Chain [1] Iteration: 6700 / 8000 [ 83%]  (Sampling)
+Chain [2] Iteration: 6900 / 8000 [ 86%]  (Sampling)
+Chain [3] Iteration: 6900 / 8000 [ 86%]  (Sampling)
+Chain [4] Iteration: 6900 / 8000 [ 86%]  (Sampling)
+Chain [1] Iteration: 6800 / 8000 [ 85%]  (Sampling)
+Chain [2] Iteration: 7000 / 8000 [ 87%]  (Sampling)
+Chain [3] Iteration: 7000 / 8000 [ 87%]  (Sampling)
+Chain [4] Iteration: 7000 / 8000 [ 87%]  (Sampling)
+Chain [1] Iteration: 6900 / 8000 [ 86%]  (Sampling)
+Chain [2] Iteration: 7100 / 8000 [ 88%]  (Sampling)
+Chain [3] Iteration: 7100 / 8000 [ 88%]  (Sampling)
+Chain [4] Iteration: 7100 / 8000 [ 88%]  (Sampling)
+Chain [1] Iteration: 7000 / 8000 [ 87%]  (Sampling)
+Chain [2] Iteration: 7200 / 8000 [ 90%]  (Sampling)
+Chain [3] Iteration: 7200 / 8000 [ 90%]  (Sampling)
+Chain [4] Iteration: 7200 / 8000 [ 90%]  (Sampling)
+Chain [1] Iteration: 7100 / 8000 [ 88%]  (Sampling)
+Chain [2] Iteration: 7300 / 8000 [ 91%]  (Sampling)
+Chain [3] Iteration: 7300 / 8000 [ 91%]  (Sampling)
+Chain [4] Iteration: 7300 / 8000 [ 91%]  (Sampling)
+Chain [1] Iteration: 7200 / 8000 [ 90%]  (Sampling)
+Chain [2] Iteration: 7400 / 8000 [ 92%]  (Sampling)
+Chain [3] Iteration: 7400 / 8000 [ 92%]  (Sampling)
+Chain [4] Iteration: 7400 / 8000 [ 92%]  (Sampling)
+Chain [1] Iteration: 7300 / 8000 [ 91%]  (Sampling)
+Chain [2] Iteration: 7500 / 8000 [ 93%]  (Sampling)
+Chain [3] Iteration: 7500 / 8000 [ 93%]  (Sampling)
+Chain [4] Iteration: 7500 / 8000 [ 93%]  (Sampling)
+Chain [1] Iteration: 7400 / 8000 [ 92%]  (Sampling)
+Chain [2] Iteration: 7600 / 8000 [ 95%]  (Sampling)
+Chain [3] Iteration: 7600 / 8000 [ 95%]  (Sampling)
+Chain [4] Iteration: 7600 / 8000 [ 95%]  (Sampling)
+Chain [1] Iteration: 7500 / 8000 [ 93%]  (Sampling)
+Chain [2] Iteration: 7700 / 8000 [ 96%]  (Sampling)
+Chain [3] Iteration: 7700 / 8000 [ 96%]  (Sampling)
+Chain [4] Iteration: 7700 / 8000 [ 96%]  (Sampling)
+Chain [1] Iteration: 7600 / 8000 [ 95%]  (Sampling)
+Chain [2] Iteration: 7800 / 8000 [ 97%]  (Sampling)
+Chain [3] Iteration: 7800 / 8000 [ 97%]  (Sampling)
+Chain [4] Iteration: 7800 / 8000 [ 97%]  (Sampling)
+Chain [1] Iteration: 7700 / 8000 [ 96%]  (Sampling)
+Chain [2] Iteration: 7900 / 8000 [ 98%]  (Sampling)
+Chain [3] Iteration: 7900 / 8000 [ 98%]  (Sampling)
+Chain [4] Iteration: 7900 / 8000 [ 98%]  (Sampling)
+Chain [1] Iteration: 7800 / 8000 [ 97%]  (Sampling)
+Chain [2] Iteration: 8000 / 8000 [100%]  (Sampling)
+Chain [2] 
+Chain [2] Elapsed Time: 20667.8 seconds (Warm-up)
+Chain [2] 23678.5 seconds (Sampling)
+Chain [2] 44346.3 seconds (Total)
+Chain [2] 
+Chain [2] 
+Chain [3] Iteration: 8000 / 8000 [100%]  (Sampling)
+Chain [3] 
+Chain [3] Elapsed Time: 20592.4 seconds (Warm-up)
+Chain [3] 23859.1 seconds (Sampling)
+Chain [3] 44451.5 seconds (Total)
+Chain [3] 
+Chain [3] 
+Chain [4] Iteration: 8000 / 8000 [100%]  (Sampling)
+Chain [4] 
+Chain [4] Elapsed Time: 20754.3 seconds (Warm-up)
+Chain [4] 23825.8 seconds (Sampling)
+Chain [4] 44580.2 seconds (Total)
+Chain [4] 
+Chain [4] 
+Chain [1] Iteration: 7900 / 8000 [ 98%]  (Sampling)
+Chain [1] Iteration: 8000 / 8000 [100%]  (Sampling)
+Chain [1] 
+Chain [1] Elapsed Time: 21491.2 seconds (Warm-up)
+Chain [1] 23766.5 seconds (Sampling)
+Chain [1] 45257.6 seconds (Total)
+Chain [1] 
+Chain [1] 
+***hmc diagnostics:
+Processing csv files: /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/ANN-RDM_l_FT/ANN-RDM_l_FT-20230811075206_1.csv, /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/ANN-RDM_l_FT/ANN-RDM_l_FT-20230811075206_2.csv, /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/ANN-RDM_l_FT/ANN-RDM_l_FT-20230811075206_3.csv, /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/ANN-RDM_l_FT/ANN-RDM_l_FT-20230811075206_4.csv
+
+Checking sampler transitions treedepth.
+Treedepth satisfactory for all transitions.
+
+Checking sampler transitions for divergences.
+No divergent transitions found.
+
+Checking E-BFMI - sampler transitions HMC potential energy.
+E-BFMI satisfactory.
+
+Effective sample size satisfactory.
+
+The following parameters had split R-hat greater than 1.05:
+  z_ndt[43], z_ndt[88], z_ndt[96], threshold_t_word[23886], threshold_t_word[23887], threshold_t_word[23888], threshold_t_word[23889], threshold_t_word[23890], threshold_t_word[23891], threshold_t_word[23892], threshold_t_word[23893], threshold_t_word[23894], threshold_t_word[23895], threshold_t_word[23896], threshold_t_word[23897], threshold_t_word[23898], threshold_t_word[23899], threshold_t_word[23900], threshold_t_word[23901], threshold_t_word[23902], threshold_t_word[23903], threshold_t_word[23904], threshold_t_word[23905], threshold_t_word[23906], threshold_t_word[23907], threshold_t_word[23908], threshold_t_word[23909], threshold_t_word[23910], threshold_t_word[23911], threshold_t_word[23912], threshold_t_word[23913], threshold_t_word[23914], threshold_t_word[23915], threshold_t_word[23916], threshold_t_word[23917], threshold_t_word[23918], threshold_t_word[23919], threshold_t_word[23920], threshold_t_word[23921], threshold_t_word[23922], threshold_t_word[23923], threshold_t_word[23924], threshold_t_word[23925], threshold_t_word[23926], threshold_t_word[23927], threshold_t_word[23928], threshold_t_word[23929], threshold_t_word[23930], threshold_t_word[23931], threshold_t_word[23932], threshold_t_word[23933], threshold_t_word[23934], threshold_t_word[23935], threshold_t_word[23936], threshold_t_word[23937], threshold_t_word[23938], threshold_t_word[23939], threshold_t_word[23940], threshold_t_word[23941], threshold_t_word[23942], threshold_t_word[23943], threshold_t_word[23944], threshold_t_word[23945], threshold_t_word[23946], threshold_t_word[23947], threshold_t_word[23948], threshold_t_word[23949], threshold_t_word[23950], threshold_t_word[23951], threshold_t_word[23952], threshold_t_word[23953], threshold_t_word[23954], threshold_t_word[23955], threshold_t_word[23956], threshold_t_word[23957], threshold_t_word[23958], threshold_t_word[23959], threshold_t_word[23960], threshold_t_word[23961], threshold_t_word[23962], threshold_t_word[23963], threshold_t_word[23964], threshold_t_word[23965], threshold_t_word[23966], threshold_t_word[23967], threshold_t_word[23968], threshold_t_word[23969], threshold_t_word[23970], threshold_t_word[23971], threshold_t_word[23972], threshold_t_word[23973], threshold_t_word[23974], threshold_t_word[23975], threshold_t_word[23976], threshold_t_word[23977], threshold_t_word[23978], threshold_t_word[23979], threshold_t_word[23980], threshold_t_word[23981], threshold_t_word[23982], threshold_t_word[23983], threshold_t_word[23984], threshold_t_word[23985], threshold_t_word[23986], threshold_t_word[23987], threshold_t_word[23988], threshold_t_word[23989], threshold_t_word[23990], threshold_t_word[23991], threshold_t_word[23992], threshold_t_word[23993], threshold_t_word[23994], threshold_t_word[23995], threshold_t_word[23996], threshold_t_word[23997], threshold_t_word[23998], threshold_t_word[23999], threshold_t_word[24000], threshold_t_word[24001], threshold_t_word[24002], threshold_t_word[24003], threshold_t_word[24004], threshold_t_word[24005], threshold_t_word[24006], threshold_t_word[24007], threshold_t_word[24008], threshold_t_word[24009], threshold_t_word[24010], threshold_t_word[24011], threshold_t_word[24012], threshold_t_word[24013], threshold_t_word[24014], threshold_t_word[24015], threshold_t_word[24016], threshold_t_word[24017], threshold_t_word[24018], threshold_t_word[24019], threshold_t_word[24020], threshold_t_word[24021], threshold_t_word[24022], threshold_t_word[24023], threshold_t_word[24024], threshold_t_word[24025], threshold_t_word[24026], threshold_t_word[24027], threshold_t_word[24028], threshold_t_word[24029], threshold_t_word[24030], threshold_t_word[24031], threshold_t_word[24032], threshold_t_word[24033], threshold_t_word[24034], threshold_t_word[24035], threshold_t_word[24036], threshold_t_word[24037], threshold_t_word[24038], threshold_t_word[24039], threshold_t_word[24040], threshold_t_word[24041], threshold_t_word[24042], threshold_t_word[24043], threshold_t_word[24044], threshold_t_word[24045], threshold_t_word[24046], threshold_t_word[24047], threshold_t_word[24048], threshold_t_word[24049], threshold_t_word[24050], threshold_t_word[24051], threshold_t_word[24052], threshold_t_word[24053], threshold_t_word[24054], threshold_t_word[24055], threshold_t_word[24056], threshold_t_word[24057], threshold_t_word[24058], threshold_t_word[24059], threshold_t_word[24060], threshold_t_word[24061], threshold_t_word[24062], threshold_t_word[24063], threshold_t_word[24064], threshold_t_word[24065], threshold_t_word[24066], threshold_t_word[24067], threshold_t_word[24068], threshold_t_word[24069], threshold_t_word[24070], threshold_t_word[24071], threshold_t_word[24072], threshold_t_word[24073], threshold_t_word[24074], threshold_t_word[24075], threshold_t_word[24076], threshold_t_word[24077], threshold_t_word[24078], threshold_t_word[24079], threshold_t_word[24080], threshold_t_word[24081], threshold_t_word[24082], threshold_t_word[24083], threshold_t_word[24084], threshold_t_word[24085], threshold_t_word[24086], threshold_t_word[24087], threshold_t_word[24088], threshold_t_word[24089], threshold_t_word[24090], threshold_t_word[24091], threshold_t_word[24092], threshold_t_word[24093], threshold_t_word[24094], threshold_t_word[24095], threshold_t_word[24096], threshold_t_word[24097], threshold_t_word[24098], threshold_t_word[24099], threshold_t_word[24100], threshold_t_word[24101], threshold_t_word[24102], threshold_t_word[24103], threshold_t_word[24104], threshold_t_word[24105], threshold_t_word[24106], threshold_t_word[24107], threshold_t_word[24108], threshold_t_word[24109], threshold_t_word[24110], threshold_t_word[24111], threshold_t_word[24112], threshold_t_word[24113], threshold_t_word[24114], threshold_t_word[24115], threshold_t_word[24116], threshold_t_word[24117], threshold_t_word[24118], threshold_t_word[24119], threshold_t_word[24120], threshold_t_word[24121], threshold_t_word[24122], threshold_t_word[24123], threshold_t_word[24124], threshold_t_word[24125], threshold_t_word[24126], threshold_t_word[24127], threshold_t_word[24128], threshold_t_word[24129], threshold_t_word[24130], threshold_t_word[24131], threshold_t_word[24132], threshold_t_word[24133], threshold_t_word[24134], threshold_t_word[24135], threshold_t_word[24136], threshold_t_word[24137], threshold_t_word[24138], threshold_t_word[24139], threshold_t_word[24140], threshold_t_word[24141], threshold_t_word[24142], threshold_t_word[24143], threshold_t_word[24144], threshold_t_word[24145], threshold_t_word[24146], threshold_t_word[24147], threshold_t_word[24148], threshold_t_word[24149], threshold_t_word[24150], threshold_t_word[24151], threshold_t_word[24152], threshold_t_word[24153], threshold_t_word[24154], threshold_t_word[24155], threshold_t_word[24156], threshold_t_word[24157], threshold_t_word[24158], threshold_t_word[24159], threshold_t_word[24160], threshold_t_word[24161], threshold_t_word[24162], threshold_t_word[24163], threshold_t_word[24164], threshold_t_word[24165], threshold_t_word[24166], threshold_t_word[24167], threshold_t_word[24168], threshold_t_word[24169], threshold_t_word[24170], threshold_t_word[24171], threshold_t_word[24172], threshold_t_word[24173], threshold_t_word[24174], threshold_t_word[24175], threshold_t_word[24176], threshold_t_word[24177], threshold_t_word[24178], threshold_t_word[24179], threshold_t_word[24180], threshold_t_word[24181], threshold_t_word[24182], threshold_t_word[24183], threshold_t_word[24184], threshold_t_word[24185], threshold_t_word[24186], threshold_t_word[24187], threshold_t_word[24188], threshold_t_word[24189], threshold_t_word[24190], threshold_t_word[24191], threshold_t_word[24192], threshold_t_word[24193], threshold_t_word[24194], threshold_t_word[24195], threshold_t_word[24196], threshold_t_word[24197], threshold_t_word[24198], threshold_t_word[24199], threshold_t_word[24200], threshold_t_word[24201], threshold_t_word[24202], threshold_t_word[24203], threshold_t_word[24204], threshold_t_word[24205], threshold_t_word[24206], threshold_t_word[24207], threshold_t_word[24208], threshold_t_word[24209], threshold_t_word[24210], threshold_t_word[24211], threshold_t_word[24212], threshold_t_word[24213], threshold_t_word[24214], threshold_t_word[24215], threshold_t_word[24216], threshold_t_word[24217], threshold_t_word[24218], threshold_t_word[24219], threshold_t_word[24220], threshold_t_word[24221], threshold_t_word[24222], threshold_t_word[24223], threshold_t_word[24224], threshold_t_word[24225], threshold_t_word[24226], threshold_t_word[24227], threshold_t_word[24228], threshold_t_word[24229], threshold_t_word[24230], threshold_t_word[24231], threshold_t_word[24232], threshold_t_word[24233], threshold_t_word[24234], threshold_t_word[24235], threshold_t_word[24236], threshold_t_word[24237], threshold_t_word[24238], threshold_t_word[24239], threshold_t_word[24240], threshold_t_word[24241], threshold_t_word[24242], threshold_t_word[24243], threshold_t_word[24244], threshold_t_word[24245], threshold_t_word[24246], threshold_t_word[24247], threshold_t_word[24248], threshold_t_word[24249], threshold_t_word[24250], threshold_t_word[24251], threshold_t_word[24252], threshold_t_word[24253], threshold_t_word[24254], threshold_t_word[24255], ndt_t[11722], ndt_t[11723], ndt_t[11724], ndt_t[11725], ndt_t[11726], ndt_t[11727], ndt_t[11728], ndt_t[11729], ndt_t[11730], ndt_t[11731], ndt_t[11732], ndt_t[11733], ndt_t[11734], ndt_t[11735], ndt_t[11736], ndt_t[11737], ndt_t[11738], ndt_t[11739], ndt_t[11740], ndt_t[11741], ndt_t[11742], ndt_t[11743], ndt_t[11744], ndt_t[11745], ndt_t[11746], ndt_t[11747], ndt_t[11748], ndt_t[11749], ndt_t[11750], ndt_t[11751], ndt_t[11752], ndt_t[11753], ndt_t[11754], ndt_t[11755], ndt_t[11756], ndt_t[11757], ndt_t[11758], ndt_t[11759], ndt_t[11760], ndt_t[11761], ndt_t[11762], ndt_t[11763], ndt_t[11764], ndt_t[11765], ndt_t[11766], ndt_t[11767], ndt_t[11768], ndt_t[11769], ndt_t[11770], ndt_t[11771], ndt_t[11772], ndt_t[11773], ndt_t[11774], ndt_t[11775], ndt_t[11776], ndt_t[11777], ndt_t[11778], ndt_t[11779], ndt_t[11780], ndt_t[11781], ndt_t[11782], ndt_t[11783], ndt_t[11784], ndt_t[11785], ndt_t[11786], ndt_t[11787], ndt_t[11788], ndt_t[11789], ndt_t[11790], ndt_t[11791], ndt_t[11792], ndt_t[11793], ndt_t[11794], ndt_t[11795], ndt_t[11796], ndt_t[11797], ndt_t[11798], ndt_t[11799], ndt_t[11800], ndt_t[11801], ndt_t[11802], ndt_t[11803], ndt_t[11804], ndt_t[11805], ndt_t[11806], ndt_t[11807], ndt_t[11808], ndt_t[11809], ndt_t[11810], ndt_t[11811], ndt_t[11812], ndt_t[11813], ndt_t[11814], ndt_t[11815], ndt_t[11816], ndt_t[11817], ndt_t[11818], ndt_t[11819], ndt_t[11820], ndt_t[11821], ndt_t[11822], ndt_t[11823], ndt_t[11824], ndt_t[11825], ndt_t[11826], ndt_t[11827], ndt_t[11828], ndt_t[11829], ndt_t[11830], ndt_t[11831], ndt_t[11832], ndt_t[11833], ndt_t[11834], ndt_t[11835], ndt_t[11836], ndt_t[11837], ndt_t[11838], ndt_t[11839], ndt_t[11840], ndt_t[11841], ndt_t[11842], ndt_t[11843], ndt_t[11844], ndt_t[11845], ndt_t[11846], ndt_t[11847], ndt_t[11848], ndt_t[11849], ndt_t[11850], ndt_t[11851], ndt_t[11852], ndt_t[11853], ndt_t[11854], ndt_t[11855], ndt_t[11856], ndt_t[11857], ndt_t[11858], ndt_t[11859], ndt_t[11860], ndt_t[11861], ndt_t[11862], ndt_t[11863], ndt_t[11864], ndt_t[11865], ndt_t[11866], ndt_t[11867], ndt_t[11868], ndt_t[11869], ndt_t[11870], ndt_t[11871], ndt_t[11872], ndt_t[11873], ndt_t[11874], ndt_t[11875], ndt_t[11876], ndt_t[11877], ndt_t[11878], ndt_t[11879], ndt_t[11880], ndt_t[11881], ndt_t[11882], ndt_t[11883], ndt_t[11884], ndt_t[11885], ndt_t[11886], ndt_t[11887], ndt_t[11888], ndt_t[11889], ndt_t[11890], ndt_t[11891], ndt_t[11892], ndt_t[11893], ndt_t[11894], ndt_t[11895], ndt_t[11896], ndt_t[11897], ndt_t[11898], ndt_t[11899], ndt_t[11900], ndt_t[11901], ndt_t[11902], ndt_t[11903], ndt_t[11904], ndt_t[11905], ndt_t[11906], ndt_t[11907], ndt_t[11908], ndt_t[11909], ndt_t[11910], ndt_t[11911], ndt_t[11912], ndt_t[11913], ndt_t[11914], ndt_t[11915], ndt_t[11916], ndt_t[11917], ndt_t[11918], ndt_t[11919], ndt_t[11920], ndt_t[11921], ndt_t[11922], ndt_t[11923], ndt_t[11924], ndt_t[11925], ndt_t[11926], ndt_t[11927], ndt_t[11928], ndt_t[11929], ndt_t[11930], ndt_t[11931], ndt_t[11932], ndt_t[11933], ndt_t[11934], ndt_t[11935], ndt_t[11936], ndt_t[11937], ndt_t[11938], ndt_t[11939], ndt_t[11940], ndt_t[11941], ndt_t[11942], ndt_t[11943], ndt_t[11944], ndt_t[11945], ndt_t[11946], ndt_t[11947], ndt_t[11948], ndt_t[11949], ndt_t[11950], ndt_t[11951], ndt_t[11952], ndt_t[11953], ndt_t[11954], ndt_t[11955], ndt_t[11956], ndt_t[11957], ndt_t[11958], ndt_t[11959], ndt_t[11960], ndt_t[11961], ndt_t[11962], ndt_t[11963], ndt_t[11964], ndt_t[11965], ndt_t[11966], ndt_t[11967], ndt_t[11968], ndt_t[11969], ndt_t[11970], ndt_t[11971], ndt_t[11972], ndt_t[11973], ndt_t[11974], ndt_t[11975], ndt_t[11976], ndt_t[11977], ndt_t[11978], ndt_t[11979], ndt_t[11980], ndt_t[11981], ndt_t[11982], ndt_t[11983], ndt_t[11984], ndt_t[11985], ndt_t[11986], ndt_t[11987], ndt_t[11988], ndt_t[11989], ndt_t[11990], ndt_t[11991], ndt_t[11992], ndt_t[11993], ndt_t[11994], ndt_t[11995], ndt_t[11996], ndt_t[11997], ndt_t[11998], ndt_t[11999], ndt_t[12000], ndt_t[12001], ndt_t[12002], ndt_t[12003], ndt_t[12004], ndt_t[12005], ndt_t[12006], ndt_t[12007], ndt_t[12008], ndt_t[12009], ndt_t[12010], ndt_t[12011], ndt_t[12012], ndt_t[12013], ndt_t[12014], ndt_t[12015], ndt_t[12016], ndt_t[12017], ndt_t[12018], ndt_t[12019], ndt_t[12020], ndt_t[12021], ndt_t[12022], ndt_t[12023], ndt_t[12024], ndt_t[12025], ndt_t[12026], ndt_t[12027], ndt_t[12028], ndt_t[12029], ndt_t[12030], ndt_t[12031], ndt_t[12032], ndt_t[12033], ndt_t[12034], ndt_t[12035], ndt_t[12036], ndt_t[12037], ndt_t[12038], ndt_t[12039], ndt_t[12040], ndt_t[12041], ndt_t[12042], ndt_t[12043], ndt_t[12044], ndt_t[12045], ndt_t[12046], ndt_t[12047], ndt_t[12048], ndt_t[12049], ndt_t[12050], ndt_t[12051], ndt_t[12052], ndt_t[12053], ndt_t[12054], ndt_t[12055], ndt_t[12056], ndt_t[12057], ndt_t[12058], ndt_t[12059], ndt_t[12060], ndt_t[12061], ndt_t[12062], ndt_t[12063], ndt_t[12064], ndt_t[12065], ndt_t[12066], ndt_t[12067], ndt_t[12068], ndt_t[12069], ndt_t[12070], ndt_t[12071], ndt_t[12072], ndt_t[12073], ndt_t[12074], ndt_t[12075], ndt_t[12076], ndt_t[12077], ndt_t[12078], ndt_t[12079], ndt_t[12080], ndt_t[12081], ndt_t[12082], ndt_t[15384], ndt_t[15385], ndt_t[15386], ndt_t[15387], ndt_t[15388], ndt_t[15389], ndt_t[15390], ndt_t[15391], ndt_t[15392], ndt_t[15393], ndt_t[15394], ndt_t[15395], ndt_t[15396], ndt_t[15397], ndt_t[15398], ndt_t[15399], ndt_t[15400], ndt_t[15401], ndt_t[15402], ndt_t[15403], ndt_t[15404], ndt_t[15405], ndt_t[15406], ndt_t[15407], ndt_t[15408], ndt_t[15409], ndt_t[15410], ndt_t[15411], ndt_t[15412], ndt_t[15413], ndt_t[15414], ndt_t[15415], ndt_t[15416], ndt_t[15417], ndt_t[15418], ndt_t[15419], ndt_t[15420], ndt_t[15421], ndt_t[15422], ndt_t[15423], ndt_t[15424], ndt_t[15425], ndt_t[15426], ndt_t[15427], ndt_t[15428], ndt_t[15429], ndt_t[15430], ndt_t[15431], ndt_t[15432], ndt_t[15433], ndt_t[15434], ndt_t[15435], ndt_t[15436], ndt_t[15437], ndt_t[15438], ndt_t[15439], ndt_t[15440], ndt_t[15441], ndt_t[15442], ndt_t[15443], ndt_t[15444], ndt_t[15445], ndt_t[15446], ndt_t[15447], ndt_t[15448], ndt_t[15449], ndt_t[15450], ndt_t[15451], ndt_t[15452], ndt_t[15453], ndt_t[15454], ndt_t[15455], ndt_t[15456], ndt_t[15457], ndt_t[15458], ndt_t[15459], ndt_t[15460], ndt_t[15461], ndt_t[15462], ndt_t[15463], ndt_t[15464], ndt_t[15465], ndt_t[15466], ndt_t[15467], ndt_t[15468], ndt_t[15469], ndt_t[15470], ndt_t[15471], ndt_t[15472], ndt_t[15473], ndt_t[15474], ndt_t[15475], ndt_t[15476], ndt_t[15477], ndt_t[15478], ndt_t[15479], ndt_t[15480], ndt_t[15481], ndt_t[15482], ndt_t[15483], ndt_t[15484], ndt_t[15485], ndt_t[15486], ndt_t[15487], ndt_t[15488], ndt_t[15489], ndt_t[15490], ndt_t[15491], ndt_t[15492], ndt_t[15493], ndt_t[15494], ndt_t[15495], ndt_t[15496], ndt_t[15497], ndt_t[15498], ndt_t[15499], ndt_t[15500], ndt_t[15501], ndt_t[15502], ndt_t[15503], ndt_t[15504], ndt_t[15505], ndt_t[15506], ndt_t[15507], ndt_t[15508], ndt_t[15509], ndt_t[15510], ndt_t[15511], ndt_t[15512], ndt_t[15513], ndt_t[15514], ndt_t[15515], ndt_t[15516], ndt_t[15517], ndt_t[15518], ndt_t[15519], ndt_t[15520], ndt_t[15521], ndt_t[15522], ndt_t[15523], ndt_t[15524], ndt_t[15525], ndt_t[15526], ndt_t[15527], ndt_t[15528], ndt_t[15529], ndt_t[15530], ndt_t[15531], ndt_t[15532], ndt_t[15533], ndt_t[15534], ndt_t[15535], ndt_t[15536], ndt_t[15537], ndt_t[15538], ndt_t[15539], ndt_t[15540], ndt_t[15541], ndt_t[15542], ndt_t[15543], ndt_t[15544], ndt_t[15545], ndt_t[15546], ndt_t[15547], ndt_t[15548], ndt_t[15549], ndt_t[15550], ndt_t[15551], ndt_t[15552], ndt_t[15553], ndt_t[15554], ndt_t[15555], ndt_t[15556], ndt_t[15557], ndt_t[15558], ndt_t[15559], ndt_t[15560], ndt_t[15561], ndt_t[15562], ndt_t[15563], ndt_t[15564], ndt_t[15565], ndt_t[15566], ndt_t[15567], ndt_t[15568], ndt_t[15569], ndt_t[15570], ndt_t[15571], ndt_t[15572], ndt_t[15573], ndt_t[15574], ndt_t[15575], ndt_t[15576], ndt_t[15577], ndt_t[15578], ndt_t[15579], ndt_t[15580], ndt_t[15581], ndt_t[15582], ndt_t[15583], ndt_t[15584], ndt_t[15585], ndt_t[15586], ndt_t[15587], ndt_t[15588], ndt_t[15589], ndt_t[15590], ndt_t[15591], ndt_t[15592], ndt_t[15593], ndt_t[15594], ndt_t[15595], ndt_t[15596], ndt_t[15597], ndt_t[15598], ndt_t[15599], ndt_t[15600], ndt_t[15601], ndt_t[15602], ndt_t[15603], ndt_t[15604], ndt_t[15605], ndt_t[15606], ndt_t[15607], ndt_t[15608], ndt_t[15609], ndt_t[15610], ndt_t[15611], ndt_t[15612], ndt_t[15613], ndt_t[15614], ndt_t[15615], ndt_t[15616], ndt_t[15617], ndt_t[15618], ndt_t[15619], ndt_t[15620], ndt_t[15621], ndt_t[15622], ndt_t[15623], ndt_t[15624], ndt_t[15625], ndt_t[15626], ndt_t[15627], ndt_t[15628], ndt_t[15629], ndt_t[15630], ndt_t[15631], ndt_t[15632], ndt_t[15633], ndt_t[15634], ndt_t[15635], ndt_t[15636], ndt_t[15637], ndt_t[15638], ndt_t[15639], ndt_t[15640], ndt_t[15641], ndt_t[15642], ndt_t[15643], ndt_t[15644], ndt_t[15645], ndt_t[15646], ndt_t[15647], ndt_t[15648], ndt_t[15649], ndt_t[15650], ndt_t[15651], ndt_t[15652], ndt_t[15653], ndt_t[15654], ndt_t[15655], ndt_t[15656], ndt_t[15657], ndt_t[15658], ndt_t[15659], ndt_t[15660], ndt_t[15661], ndt_t[15662], ndt_t[15663], ndt_t[15664], ndt_t[15665], ndt_t[15666], ndt_t[15667], ndt_t[15668], ndt_t[15669], ndt_t[15670], ndt_t[15671], ndt_t[15672], ndt_t[15673], ndt_t[15674], ndt_t[15675], ndt_t[15676], ndt_t[15677], ndt_t[15678], ndt_t[15679], ndt_t[15680], ndt_t[15681], ndt_t[15682], ndt_t[15683], ndt_t[15684], ndt_t[15685], ndt_t[15686], ndt_t[15687], ndt_t[15688], ndt_t[15689], ndt_t[15690], ndt_t[15691], ndt_t[15692], ndt_t[15693], ndt_t[15694], ndt_t[15695], ndt_t[15696], ndt_t[15697], ndt_t[15698], ndt_t[15699], ndt_t[15700], ndt_t[15701], ndt_t[15702], ndt_t[15703], ndt_t[15704], ndt_t[15705], ndt_t[15706], ndt_t[15707], ndt_t[15708], ndt_t[15709], ndt_t[15710], ndt_t[15711], ndt_t[15712], ndt_t[15713], ndt_t[15714], ndt_t[15715], ndt_t[15716], ndt_t[15717], ndt_t[15718], ndt_t[15719], ndt_t[15720], ndt_t[15721], ndt_t[15722], ndt_t[15723], ndt_t[15724], ndt_t[15725], ndt_t[15726], ndt_t[15727], ndt_t[15728], ndt_t[15729], ndt_t[15730], ndt_t[15731], ndt_t[15732], ndt_t[15733], ndt_t[15734], ndt_t[15735], ndt_t[15736], ndt_t[15737], ndt_t[15738], ndt_t[15739], ndt_t[15740], ndt_t[15741], ndt_t[15742], ndt_t[15743], ndt_t[15744], ndt_t[15745], ndt_t[15746], ndt_t[15747], ndt_t[15748], ndt_t[15749], ndt_t[15750], ndt_t[15751], ndt_t[15752], ndt_t[15753], ndt_t[15754], ndt_t[15755], ndt_t[15756], ndt_t[15757], ndt_t[15758], ndt_t[23886], ndt_t[23887], ndt_t[23888], ndt_t[23889], ndt_t[23890], ndt_t[23891], ndt_t[23892], ndt_t[23893], ndt_t[23894], ndt_t[23895], ndt_t[23896], ndt_t[23897], ndt_t[23898], ndt_t[23899], ndt_t[23900], ndt_t[23901], ndt_t[23902], ndt_t[23903], ndt_t[23904], ndt_t[23905], ndt_t[23906], ndt_t[23907], ndt_t[23908], ndt_t[23909], ndt_t[23910], ndt_t[23911], ndt_t[23912], ndt_t[23913], ndt_t[23914], ndt_t[23915], ndt_t[23916], ndt_t[23917], ndt_t[23918], ndt_t[23919], ndt_t[23920], ndt_t[23921], ndt_t[23922], ndt_t[23923], ndt_t[23924], ndt_t[23925], ndt_t[23926], ndt_t[23927], ndt_t[23928], ndt_t[23929], ndt_t[23930], ndt_t[23931], ndt_t[23932], ndt_t[23933], ndt_t[23934], ndt_t[23935], ndt_t[23936], ndt_t[23937], ndt_t[23938], ndt_t[23939], ndt_t[23940], ndt_t[23941], ndt_t[23942], ndt_t[23943], ndt_t[23944], ndt_t[23945], ndt_t[23946], ndt_t[23947], ndt_t[23948], ndt_t[23949], ndt_t[23950], ndt_t[23951], ndt_t[23952], ndt_t[23953], ndt_t[23954], ndt_t[23955], ndt_t[23956], ndt_t[23957], ndt_t[23958], ndt_t[23959], ndt_t[23960], ndt_t[23961], ndt_t[23962], ndt_t[23963], ndt_t[23964], ndt_t[23965], ndt_t[23966], ndt_t[23967], ndt_t[23968], ndt_t[23969], ndt_t[23970], ndt_t[23971], ndt_t[23972], ndt_t[23973], ndt_t[23974], ndt_t[23975], ndt_t[23976], ndt_t[23977], ndt_t[23978], ndt_t[23979], ndt_t[23980], ndt_t[23981], ndt_t[23982], ndt_t[23983], ndt_t[23984], ndt_t[23985], ndt_t[23986], ndt_t[23987], ndt_t[23988], ndt_t[23989], ndt_t[23990], ndt_t[23991], ndt_t[23992], ndt_t[23993], ndt_t[23994], ndt_t[23995], ndt_t[23996], ndt_t[23997], ndt_t[23998], ndt_t[23999], ndt_t[24000], ndt_t[24001], ndt_t[24002], ndt_t[24003], ndt_t[24004], ndt_t[24005], ndt_t[24006], ndt_t[24007], ndt_t[24008], ndt_t[24009], ndt_t[24010], ndt_t[24011], ndt_t[24012], ndt_t[24013], ndt_t[24014], ndt_t[24015], ndt_t[24016], ndt_t[24017], ndt_t[24018], ndt_t[24019], ndt_t[24020], ndt_t[24021], ndt_t[24022], ndt_t[24023], ndt_t[24024], ndt_t[24025], ndt_t[24026], ndt_t[24027], ndt_t[24028], ndt_t[24029], ndt_t[24030], ndt_t[24031], ndt_t[24032], ndt_t[24033], ndt_t[24034], ndt_t[24035], ndt_t[24036], ndt_t[24037], ndt_t[24038], ndt_t[24039], ndt_t[24040], ndt_t[24041], ndt_t[24042], ndt_t[24043], ndt_t[24044], ndt_t[24045], ndt_t[24046], ndt_t[24047], ndt_t[24048], ndt_t[24049], ndt_t[24050], ndt_t[24051], ndt_t[24052], ndt_t[24053], ndt_t[24054], ndt_t[24055], ndt_t[24056], ndt_t[24057], ndt_t[24058], ndt_t[24059], ndt_t[24060], ndt_t[24061], ndt_t[24062], ndt_t[24063], ndt_t[24064], ndt_t[24065], ndt_t[24066], ndt_t[24067], ndt_t[24068], ndt_t[24069], ndt_t[24070], ndt_t[24071], ndt_t[24072], ndt_t[24073], ndt_t[24074], ndt_t[24075], ndt_t[24076], ndt_t[24077], ndt_t[24078], ndt_t[24079], ndt_t[24080], ndt_t[24081], ndt_t[24082], ndt_t[24083], ndt_t[24084], ndt_t[24085], ndt_t[24086], ndt_t[24087], ndt_t[24088], ndt_t[24089], ndt_t[24090], ndt_t[24091], ndt_t[24092], ndt_t[24093], ndt_t[24094], ndt_t[24095], ndt_t[24096], ndt_t[24097], ndt_t[24098], ndt_t[24099], ndt_t[24100], ndt_t[24101], ndt_t[24102], ndt_t[24103], ndt_t[24104], ndt_t[24105], ndt_t[24106], ndt_t[24107], ndt_t[24108], ndt_t[24109], ndt_t[24110], ndt_t[24111], ndt_t[24112], ndt_t[24113], ndt_t[24114], ndt_t[24115], ndt_t[24116], ndt_t[24117], ndt_t[24118], ndt_t[24119], ndt_t[24120], ndt_t[24121], ndt_t[24122], ndt_t[24123], ndt_t[24124], ndt_t[24125], ndt_t[24126], ndt_t[24127], ndt_t[24128], ndt_t[24129], ndt_t[24130], ndt_t[24131], ndt_t[24132], ndt_t[24133], ndt_t[24134], ndt_t[24135], ndt_t[24136], ndt_t[24137], ndt_t[24138], ndt_t[24139], ndt_t[24140], ndt_t[24141], ndt_t[24142], ndt_t[24143], ndt_t[24144], ndt_t[24145], ndt_t[24146], ndt_t[24147], ndt_t[24148], ndt_t[24149], ndt_t[24150], ndt_t[24151], ndt_t[24152], ndt_t[24153], ndt_t[24154], ndt_t[24155], ndt_t[24156], ndt_t[24157], ndt_t[24158], ndt_t[24159], ndt_t[24160], ndt_t[24161], ndt_t[24162], ndt_t[24163], ndt_t[24164], ndt_t[24165], ndt_t[24166], ndt_t[24167], ndt_t[24168], ndt_t[24169], ndt_t[24170], ndt_t[24171], ndt_t[24172], ndt_t[24173], ndt_t[24174], ndt_t[24175], ndt_t[24176], ndt_t[24177], ndt_t[24178], ndt_t[24179], ndt_t[24180], ndt_t[24181], ndt_t[24182], ndt_t[24183], ndt_t[24184], ndt_t[24185], ndt_t[24186], ndt_t[24187], ndt_t[24188], ndt_t[24189], ndt_t[24190], ndt_t[24191], ndt_t[24192], ndt_t[24193], ndt_t[24194], ndt_t[24195], ndt_t[24196], ndt_t[24197], ndt_t[24198], ndt_t[24199], ndt_t[24200], ndt_t[24201], ndt_t[24202], ndt_t[24203], ndt_t[24204], ndt_t[24205], ndt_t[24206], ndt_t[24207], ndt_t[24208], ndt_t[24209], ndt_t[24210], ndt_t[24211], ndt_t[24212], ndt_t[24213], ndt_t[24214], ndt_t[24215], ndt_t[24216], ndt_t[24217], ndt_t[24218], ndt_t[24219], ndt_t[24220], ndt_t[24221], ndt_t[24222], ndt_t[24223], ndt_t[24224], ndt_t[24225], ndt_t[24226], ndt_t[24227], ndt_t[24228], ndt_t[24229], ndt_t[24230], ndt_t[24231], ndt_t[24232], ndt_t[24233], ndt_t[24234], ndt_t[24235], ndt_t[24236], ndt_t[24237], ndt_t[24238], ndt_t[24239], ndt_t[24240], ndt_t[24241], ndt_t[24242], ndt_t[24243], ndt_t[24244], ndt_t[24245], ndt_t[24246], ndt_t[24247], ndt_t[24248], ndt_t[24249], ndt_t[24250], ndt_t[24251], ndt_t[24252], ndt_t[24253], ndt_t[24254], ndt_t[24255], ndt_t[32000], ndt_t[32001], ndt_t[32002], ndt_t[32003], ndt_t[32004], ndt_t[32005], ndt_t[32006], ndt_t[32007], ndt_t[32008], ndt_t[32009], ndt_t[32010], ndt_t[32011], ndt_t[32012], ndt_t[32013], ndt_t[32014], ndt_t[32015], ndt_t[32016], ndt_t[32017], ndt_t[32018], ndt_t[32019], ndt_t[32020], ndt_t[32021], ndt_t[32022], ndt_t[32023], ndt_t[32024], ndt_t[32025], ndt_t[32026], ndt_t[32027], ndt_t[32028], ndt_t[32029], ndt_t[32030], ndt_t[32031], ndt_t[32032], ndt_t[32033], ndt_t[32034], ndt_t[32035], ndt_t[32036], ndt_t[32037], ndt_t[32038], ndt_t[32039], ndt_t[32040], ndt_t[32041], ndt_t[32042], ndt_t[32043], ndt_t[32044], ndt_t[32045], ndt_t[32046], ndt_t[32047], ndt_t[32048], ndt_t[32049], ndt_t[32050], ndt_t[32051], ndt_t[32052], ndt_t[32053], ndt_t[32054], ndt_t[32055], ndt_t[32056], ndt_t[32057], ndt_t[32058], ndt_t[32059], ndt_t[32060], ndt_t[32061], ndt_t[32062], ndt_t[32063], ndt_t[32064], ndt_t[32065], ndt_t[32066], ndt_t[32067], ndt_t[32068], ndt_t[32069], ndt_t[32070], ndt_t[32071], ndt_t[32072], ndt_t[32073], ndt_t[32074], ndt_t[32075], ndt_t[32076], ndt_t[32077], ndt_t[32078], ndt_t[32079], ndt_t[32080], ndt_t[32081], ndt_t[32082], ndt_t[32083], ndt_t[32084], ndt_t[32085], ndt_t[32086], ndt_t[32087], ndt_t[32088], ndt_t[32089], ndt_t[32090], ndt_t[32091], ndt_t[32092], ndt_t[32093], ndt_t[32094], ndt_t[32095], ndt_t[32096], ndt_t[32097], ndt_t[32098], ndt_t[32099], ndt_t[32100], ndt_t[32101], ndt_t[32102], ndt_t[32103], ndt_t[32104], ndt_t[32105], ndt_t[32106], ndt_t[32107], ndt_t[32108], ndt_t[32109], ndt_t[32110], ndt_t[32111], ndt_t[32112], ndt_t[32113], ndt_t[32114], ndt_t[32115], ndt_t[32116], ndt_t[32117], ndt_t[32118], ndt_t[32119], ndt_t[32120], ndt_t[32121], ndt_t[32122], ndt_t[32123], ndt_t[32124], ndt_t[32125], ndt_t[32126], ndt_t[32127], ndt_t[32128], ndt_t[32129], ndt_t[32130], ndt_t[32131], ndt_t[32132], ndt_t[32133], ndt_t[32134], ndt_t[32135], ndt_t[32136], ndt_t[32137], ndt_t[32138], ndt_t[32139], ndt_t[32140], ndt_t[32141], ndt_t[32142], ndt_t[32143], ndt_t[32144], ndt_t[32145], ndt_t[32146], ndt_t[32147], ndt_t[32148], ndt_t[32149], ndt_t[32150], ndt_t[32151], ndt_t[32152], ndt_t[32153], ndt_t[32154], ndt_t[32155], ndt_t[32156], ndt_t[32157], ndt_t[32158], ndt_t[32159], ndt_t[32160], ndt_t[32161], ndt_t[32162], ndt_t[32163], ndt_t[32164], ndt_t[32165], ndt_t[32166], ndt_t[32167], ndt_t[32168], ndt_t[32169], ndt_t[32170], ndt_t[32171], ndt_t[32172], ndt_t[32173], ndt_t[32174], ndt_t[32175], ndt_t[32176], ndt_t[32177], ndt_t[32178], ndt_t[32179], ndt_t[32180], ndt_t[32181], ndt_t[32182], ndt_t[32183], ndt_t[32184], ndt_t[32185], ndt_t[32186], ndt_t[32187], ndt_t[32188], ndt_t[32189], ndt_t[32190], ndt_t[32191], ndt_t[32192], ndt_t[32193], ndt_t[32194], ndt_t[32195], ndt_t[32196], ndt_t[32197], ndt_t[32198], ndt_t[32199], ndt_t[32200], ndt_t[32201], ndt_t[32202], ndt_t[32203], ndt_t[32204], ndt_t[32205], ndt_t[32206], ndt_t[32207], ndt_t[32208], ndt_t[32209], ndt_t[32210], ndt_t[32211], ndt_t[32212], ndt_t[32213], ndt_t[32214], ndt_t[32215], ndt_t[32216], ndt_t[32217], ndt_t[32218], ndt_t[32219], ndt_t[32220], ndt_t[32221], ndt_t[32222], ndt_t[32223], ndt_t[32224], ndt_t[32225], ndt_t[32226], ndt_t[32227], ndt_t[32228], ndt_t[32229], ndt_t[32230], ndt_t[32231], ndt_t[32232], ndt_t[32233], ndt_t[32234], ndt_t[32235], ndt_t[32236], ndt_t[32237], ndt_t[32238], ndt_t[32239], ndt_t[32240], ndt_t[32241], ndt_t[32242], ndt_t[32243], ndt_t[32244], ndt_t[32245], ndt_t[32246], ndt_t[32247], ndt_t[32248], ndt_t[32249], ndt_t[32250], ndt_t[32251], ndt_t[32252], ndt_t[32253], ndt_t[32254], ndt_t[32255], ndt_t[32256], ndt_t[32257], ndt_t[32258], ndt_t[32259], ndt_t[32260], ndt_t[32261], ndt_t[32262], ndt_t[32263], ndt_t[32264], ndt_t[32265], ndt_t[32266], ndt_t[32267], ndt_t[32268], ndt_t[32269], ndt_t[32270], ndt_t[32271], ndt_t[32272], ndt_t[32273], ndt_t[32274], ndt_t[32275], ndt_t[32276], ndt_t[32277], ndt_t[32278], ndt_t[32279], ndt_t[32280], ndt_t[32281], ndt_t[32282], ndt_t[32283], ndt_t[32284], ndt_t[32285], ndt_t[32286], ndt_t[32287], ndt_t[32288], ndt_t[32289], ndt_t[32290], ndt_t[32291], ndt_t[32292], ndt_t[32293], ndt_t[32294], ndt_t[32295], ndt_t[32296], ndt_t[32297], ndt_t[32298], ndt_t[32299], ndt_t[32300], ndt_t[32301], ndt_t[32302], ndt_t[32303], ndt_t[32304], ndt_t[32305], ndt_t[32306], ndt_t[32307], ndt_t[32308], ndt_t[32309], ndt_t[32310], ndt_t[32311], ndt_t[32312], ndt_t[32313], ndt_t[32314], ndt_t[32315], ndt_t[32316], ndt_t[32317], ndt_t[32318], ndt_t[32319], ndt_t[32320], ndt_t[32321], ndt_t[32322], ndt_t[32323], ndt_t[32324], ndt_t[32325], ndt_t[32326], ndt_t[32327], ndt_t[32328], ndt_t[32329], ndt_t[32330], ndt_t[32331], ndt_t[32332], ndt_t[32333], ndt_t[32334], ndt_t[32335], ndt_t[32336], ndt_t[32337], ndt_t[32338], ndt_t[32339], ndt_t[32340], ndt_t[32341], ndt_t[32342], ndt_t[32343], ndt_t[32344], ndt_t[32345], ndt_t[32346], ndt_t[32347], ndt_t[32348], ndt_t[32349], ndt_t[32350], ndt_t[32351], ndt_t[32352], ndt_t[32353], ndt_t[32354], ndt_t[32355], ndt_t[32356], ndt_t[32357], ndt_t[32358], ndt_t[32359], ndt_t[32360], ndt_t[32361], ndt_t[32362], ndt_t[32363], ndt_t[32364], ndt_t[32365], ndt_t[32366], ndt_t[32367], ndt_t[32368], ndt_t[32369], ndt_t[32370], ndt_t[32371], ndt_t[32372], ndt_t[32373], ndt_t[34947], ndt_t[34948], ndt_t[34949], ndt_t[34950], ndt_t[34951], ndt_t[34952], ndt_t[34953], ndt_t[34954], ndt_t[34955], ndt_t[34956], ndt_t[34957], ndt_t[34958], ndt_t[34959], ndt_t[34960], ndt_t[34961], ndt_t[34962], ndt_t[34963], ndt_t[34964], ndt_t[34965], ndt_t[34966], ndt_t[34967], ndt_t[34968], ndt_t[34969], ndt_t[34970], ndt_t[34971], ndt_t[34972], ndt_t[34973], ndt_t[34974], ndt_t[34975], ndt_t[34976], ndt_t[34977], ndt_t[34978], ndt_t[34979], ndt_t[34980], ndt_t[34981], ndt_t[34982], ndt_t[34983], ndt_t[34984], ndt_t[34985], ndt_t[34986], ndt_t[34987], ndt_t[34988], ndt_t[34989], ndt_t[34990], ndt_t[34991], ndt_t[34992], ndt_t[34993], ndt_t[34994], ndt_t[34995], ndt_t[34996], ndt_t[34997], ndt_t[34998], ndt_t[34999], ndt_t[35000], ndt_t[35001], ndt_t[35002], ndt_t[35003], ndt_t[35004], ndt_t[35005], ndt_t[35006], ndt_t[35007], ndt_t[35008], ndt_t[35009], ndt_t[35010], ndt_t[35011], ndt_t[35012], ndt_t[35013], ndt_t[35014], ndt_t[35015], ndt_t[35016], ndt_t[35017], ndt_t[35018], ndt_t[35019], ndt_t[35020], ndt_t[35021], ndt_t[35022], ndt_t[35023], ndt_t[35024], ndt_t[35025], ndt_t[35026], ndt_t[35027], ndt_t[35028], ndt_t[35029], ndt_t[35030], ndt_t[35031], ndt_t[35032], ndt_t[35033], ndt_t[35034], ndt_t[35035], ndt_t[35036], ndt_t[35037], ndt_t[35038], ndt_t[35039], ndt_t[35040], ndt_t[35041], ndt_t[35042], ndt_t[35043], ndt_t[35044], ndt_t[35045], ndt_t[35046], ndt_t[35047], ndt_t[35048], ndt_t[35049], ndt_t[35050], ndt_t[35051], ndt_t[35052], ndt_t[35053], ndt_t[35054], ndt_t[35055], ndt_t[35056], ndt_t[35057], ndt_t[35058], ndt_t[35059], ndt_t[35060], ndt_t[35061], ndt_t[35062], ndt_t[35063], ndt_t[35064], ndt_t[35065], ndt_t[35066], ndt_t[35067], ndt_t[35068], ndt_t[35069], ndt_t[35070], ndt_t[35071], ndt_t[35072], ndt_t[35073], ndt_t[35074], ndt_t[35075], ndt_t[35076], ndt_t[35077], ndt_t[35078], ndt_t[35079], ndt_t[35080], ndt_t[35081], ndt_t[35082], ndt_t[35083], ndt_t[35084], ndt_t[35085], ndt_t[35086], ndt_t[35087], ndt_t[35088], ndt_t[35089], ndt_t[35090], ndt_t[35091], ndt_t[35092], ndt_t[35093], ndt_t[35094], ndt_t[35095], ndt_t[35096], ndt_t[35097], ndt_t[35098], ndt_t[35099], ndt_t[35100], ndt_t[35101], ndt_t[35102], ndt_t[35103], ndt_t[35104], ndt_t[35105], ndt_t[35106], ndt_t[35107], ndt_t[35108], ndt_t[35109], ndt_t[35110], ndt_t[35111], ndt_t[35112], ndt_t[35113], ndt_t[35114], ndt_t[35115], ndt_t[35116], ndt_t[35117], ndt_t[35118], ndt_t[35119], ndt_t[35120], ndt_t[35121], ndt_t[35122], ndt_t[35123], ndt_t[35124], ndt_t[35125], ndt_t[35126], ndt_t[35127], ndt_t[35128], ndt_t[35129], ndt_t[35130], ndt_t[35131], ndt_t[35132], ndt_t[35133], ndt_t[35134], ndt_t[35135], ndt_t[35136], ndt_t[35137], ndt_t[35138], ndt_t[35139], ndt_t[35140], ndt_t[35141], ndt_t[35142], ndt_t[35143], ndt_t[35144], ndt_t[35145], ndt_t[35146], ndt_t[35147], ndt_t[35148], ndt_t[35149], ndt_t[35150], ndt_t[35151], ndt_t[35152], ndt_t[35153], ndt_t[35154], ndt_t[35155], ndt_t[35156], ndt_t[35157], ndt_t[35158], ndt_t[35159], ndt_t[35160], ndt_t[35161], ndt_t[35162], ndt_t[35163], ndt_t[35164], ndt_t[35165], ndt_t[35166], ndt_t[35167], ndt_t[35168], ndt_t[35169], ndt_t[35170], ndt_t[35171], ndt_t[35172], ndt_t[35173], ndt_t[35174], ndt_t[35175], ndt_t[35176], ndt_t[35177], ndt_t[35178], ndt_t[35179], ndt_t[35180], ndt_t[35181], ndt_t[35182], ndt_t[35183], ndt_t[35184], ndt_t[35185], ndt_t[35186], ndt_t[35187], ndt_t[35188], ndt_t[35189], ndt_t[35190], ndt_t[35191], ndt_t[35192], ndt_t[35193], ndt_t[35194], ndt_t[35195], ndt_t[35196], ndt_t[35197], ndt_t[35198], ndt_t[35199], ndt_t[35200], ndt_t[35201], ndt_t[35202], ndt_t[35203], ndt_t[35204], ndt_t[35205], ndt_t[35206], ndt_t[35207], ndt_t[35208], ndt_t[35209], ndt_t[35210], ndt_t[35211], ndt_t[35212], ndt_t[35213], ndt_t[35214], ndt_t[35215], ndt_t[35216], ndt_t[35217], ndt_t[35218], ndt_t[35219], ndt_t[35220], ndt_t[35221], ndt_t[35222], ndt_t[35223], ndt_t[35224], ndt_t[35225], ndt_t[35226], ndt_t[35227], ndt_t[35228], ndt_t[35229], ndt_t[35230], ndt_t[35231], ndt_t[35232], ndt_t[35233], ndt_t[35234], ndt_t[35235], ndt_t[35236], ndt_t[35237], ndt_t[35238], ndt_t[35239], ndt_t[35240], ndt_t[35241], ndt_t[35242], ndt_t[35243], ndt_t[35244], ndt_t[35245], ndt_t[35246], ndt_t[35247], ndt_t[35248], ndt_t[35249], ndt_t[35250], ndt_t[35251], ndt_t[35252], ndt_t[35253], ndt_t[35254], ndt_t[35255], ndt_t[35256], ndt_t[35257], ndt_t[35258], ndt_t[35259], ndt_t[35260], ndt_t[35261], ndt_t[35262], ndt_t[35263], ndt_t[35264], ndt_t[35265], ndt_t[35266], ndt_t[35267], ndt_t[35268], ndt_t[35269], ndt_t[35270], ndt_t[35271], ndt_t[35272], ndt_t[35273], ndt_t[35274], ndt_t[35275], ndt_t[35276], ndt_t[35277], ndt_t[35278], ndt_t[35279], ndt_t[35280], ndt_t[35281], ndt_t[35282], ndt_t[35283], ndt_t[35284], ndt_t[35285], ndt_t[35286], ndt_t[35287], ndt_t[35288], ndt_t[35289], ndt_t[35290], ndt_t[35291], ndt_t[35292], ndt_t[35293], ndt_t[35294], ndt_t[35295], ndt_t[35296], ndt_t[35297], ndt_t[35298], ndt_t[35299], ndt_t[35300], ndt_t[35301], ndt_t[35302], ndt_t[35303], ndt_t[35304], ndt_t[35305], ndt_t[35306], ndt_t[35307], ndt_t[35308], ndt_t[35309], ndt_t[35310], ndt_t[35311], threshold_sbj_word[66], ndt_sbj[33], ndt_sbj[43], ndt_sbj[66], ndt_sbj[88], ndt_sbj[96], log_lik[11722], log_lik[15384], log_lik[23886], log_lik[23889], log_lik[32000], log_lik[32001], log_lik[32002], log_lik[32003], log_lik[32040], log_lik[32043], log_lik[32044], log_lik[32054], log_lik[32058], log_lik[32070], log_lik[32099], log_lik[34947], log_lik[34948], log_lik[34949], log_lik[34950], log_lik[34952], log_lik[34953], log_lik[35005], log_lik[35018], log_lik[35046]
+Such high values indicate incomplete mixing and biased estimation.
+You should consider regularizating your model with additional prior information or a more effective parameterization.
+
+Processing complete.
+
+***DF: 
+                         Mean     MCSE  StdDev  ...    N_Eff  N_Eff/s  R_hat
+name                                            ...                         
+lp__                 -7600.00  0.48000  25.000  ...   2700.0   0.0280    1.0
+mu_ndt                   0.26  0.00290   0.081  ...    810.0   0.0085    1.0
+mu_threshold_word        0.83  0.00052   0.032  ...   3800.0   0.0400    1.0
+mu_threshold_nonword     1.00  0.00060   0.034  ...   3300.0   0.0350    1.0
+mu_alpha_1               0.47  0.00140   0.130  ...   8400.0   0.0880    1.0
+...                       ...      ...     ...  ...      ...      ...    ...
+log_lik[36782]          -3.50  0.00120   0.190  ...  24114.0   0.2500    1.0
+log_lik[36783]          -3.60  0.00120   0.190  ...  24167.0   0.2500    1.0
+log_lik[36784]          -2.70  0.00092   0.130  ...  18530.0   0.1900    1.0
+log_lik[36785]          -3.60  0.00140   0.200  ...  21608.0   0.2300    1.0
+log_lik[36786]          -3.70  0.00140   0.210  ...  21592.0   0.2300    1.0
+
+[221935 rows x 9 columns]
+***Rhat > 1.01: 
+2248
+                           Mean    MCSE  StdDev  ...  N_Eff  N_Eff/s  R_hat
+name                                             ...                       
+z_ndt[43]                0.0390  0.1000   0.800  ...   59.0  0.00062    1.1
+z_ndt[88]               -0.0470  0.0240   0.170  ...   53.0  0.00055    1.1
+z_ndt[96]               -1.8000  0.1200   0.840  ...   47.0  0.00049    1.1
+threshold_t_word[23886]  1.3000  0.0150   0.120  ...   69.0  0.00072    1.1
+threshold_t_word[23887]  1.3000  0.0150   0.120  ...   69.0  0.00072    1.1
+...                         ...     ...     ...  ...    ...      ...    ...
+log_lik[34952]          -0.2300  0.0180   0.170  ...   81.0  0.00085    1.1
+log_lik[34953]          -0.9000  0.0180   0.160  ...   81.0  0.00085    1.1
+log_lik[35005]           0.1100  0.0089   0.068  ...   57.0  0.00060    1.1
+log_lik[35018]           0.0013  0.0074   0.064  ...   76.0  0.00080    1.1
+log_lik[35046]          -0.1500  0.0073   0.059  ...   65.0  0.00069    1.1
+
+[2248 rows x 9 columns]
+              Mean         MCSE  ...      N_Eff/s        R_hat
+count  2248.000000  2248.000000  ...  2248.000000  2248.000000
+mean      0.392408     0.008455  ...     0.000515     1.116326
+std       0.856793     0.035691  ...     0.000169     0.036968
+min     -18.000000     0.003200  ...     0.000230     1.100000
+25%       0.220000     0.004000  ...     0.000350     1.100000
+50%       0.290000     0.005400  ...     0.000580     1.100000
+75%       0.340000     0.005800  ...     0.000620     1.100000
+max       1.400000     0.860000  ...     0.000850     1.200000
+
+[8 rows x 9 columns]
+HF words, word drift mean and std:
+3.4244459599175157 0.023823433449632933
+HF words, nonword drift mean and std:
+0.012247806488892813 0.00011717159429246865
+LF words word drift mean and std:
+2.3048604673894237 0.01902977795934515
+LF words nonword drift mean and std:
+0.02037159094814089 0.00017236421017408196
+NW words word drift mean and std:
+0.010842569770241851 0.0003944235816286639
+NW words nonword drift mean and std:
+2.42799931245975 0.01626393460588016
+HF words, word threshold mean and std:
+1.2093579458215487 0.007548130316494848
+HF words, nonword threshold mean and std:
+1.3462628978199291 0.007703728135136101
+LF words word threshold mean and std:
+1.2010535558513011 0.007318346340668362
+LF words nonword threshold mean and std:
+1.338958408207246 0.0074899810024651155
+NW words word threshold mean and std:
+1.2027526590287372 0.007270424473014301
+NW words nonword threshold mean and std:
+1.335451646051415 0.007379028335770762
+HF words ndt_t mean and std:
+0.3075217371827359 0.0015111053845122092
+LF words ndt_t mean and std:
+0.30669494316403334 0.0014211417100263443
+Non Words ndt_t mean and std:
+0.3076415708779033 0.0014151717914707151
+Estimation Fit metrics:
+{'lppd': -6977.18926648636, 'p_waic': 866.8274825125961, 'waic': 15688.033497997912, 'waic_se': 569.8014867633802}
+INFO:cmdstanpy:deleting tmpfiles dir: /tmp/tmp5xwiwl4q
+INFO:cmdstanpy:done
