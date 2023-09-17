@@ -41,5 +41,5 @@ def simulate_models(estimated_models_path):
         gc.collect()
 
 
-models_path = ['Results/hierarchical/stan_results/ANN-RDM_s_am_FT', 'Results/hierarchical/stan_results/RDM_cd'] 
+models_path = ['Results/hierarchical/stan_results/ANN-RDM_s_am_BERT'] 
 simulate_models(models_path)

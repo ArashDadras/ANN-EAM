@@ -129,11 +129,12 @@ ui-tests/playwright-report
 
 # Folders
 check_points/
+Simulations/
 
 # Files
 *.exe
 *.hpp
-
+*.npy
 stan_results/
 stan files/
 dist/

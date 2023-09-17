@@ -4,10 +4,10 @@ INFO:cmdstanpy:Chain [1] start processing
 INFO:cmdstanpy:Chain [2] start processing
 INFO:cmdstanpy:Chain [3] start processing
 INFO:cmdstanpy:Chain [4] start processing
-INFO:cmdstanpy:Chain [3] done processing
 INFO:cmdstanpy:Chain [2] done processing
-INFO:cmdstanpy:Chain [4] done processing
+INFO:cmdstanpy:Chain [3] done processing
 INFO:cmdstanpy:Chain [1] done processing
+INFO:cmdstanpy:Chain [4] done processing
 Model name: RDM_cd
 Directory  Results/hierarchical/Plots/RDM_cd/  Created 
 Directory  Results/hierarchical/stan_results/RDM_cd/  Created 
@@ -15,10 +15,47 @@ Model's configs:
 {'model_name': 'RDM_cd', 'stan_file': 'RDM/RDM_cd.stan', 'dataset_name': 'fastText_FC.csv', 'plots_folder_name': 'RDM_cd', 'transf_params': ['transf_mu_drift_word', 'transf_mu_drift_nonword', 'transf_mu_threshold_word', 'transf_mu_threshold_nonword', 'transf_mu_ndt']}
 Chain [1] method = sample (Default)
 Chain [1] sample
+Chain [1] num_samples = 4500
+Chain [1] num_warmup = 4500
+Chain [1] save_warmup = 0 (Default)
+Chain [1] thin = 1 (Default)
+Chain [1] adapt
+Chain [1] engaged = 1 (Default)
+Chain [1] gamma = 0.050000000000000003 (Default)
+Chain [1] delta = 0.80000000000000004 (Default)
+Chain [1] kappa = 0.75 (Default)
+Chain [1] t0 = 10 (Default)
+Chain [1] init_buffer = 75 (Default)
+Chain [1] term_buffer = 50 (Default)
+Chain [1] window = 25 (Default)
+Chain [1] algorithm = hmc (Default)
+Chain [1] hmc
+Chain [1] engine = nuts (Default)
+Chain [1] nuts
+Chain [1] max_depth = 10 (Default)
+Chain [1] metric = diag_e (Default)
+Chain [1] metric_file =  (Default)
+Chain [1] stepsize = 1 (Default)
+Chain [1] stepsize_jitter = 0 (Default)
+Chain [1] num_chains = 1 (Default)
+Chain [1] id = 1 (Default)
+Chain [1] data
+Chain [1] file = /tmp/tmpk_1mowpz/tauwsstw.json
+Chain [1] init = 2 (Default)
+Chain [1] random
+Chain [1] seed = 37984
+Chain [1] output
+Chain [1] file = /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230913042913_1.csv
+Chain [1] diagnostic_file =  (Default)
+Chain [1] refresh = 100 (Default)
+Chain [1] sig_figs = -1 (Default)
+Chain [1] profile_file = profile.csv (Default)
+Chain [1] num_threads = 1 (Default)
+Chain [1] 
 Chain [2] method = sample (Default)
 Chain [2] sample
-Chain [2] num_samples = 4000
-Chain [2] num_warmup = 4000
+Chain [2] num_samples = 4500
+Chain [2] num_warmup = 4500
 Chain [2] save_warmup = 0 (Default)
 Chain [2] thin = 1 (Default)
 Chain [2] adapt
@@ -27,113 +64,37 @@ Chain [2] gamma = 0.050000000000000003 (Default)
 Chain [2] delta = 0.80000000000000004 (Default)
 Chain [2] kappa = 0.75 (Default)
 Chain [2] t0 = 10 (Default)
-Chain [1] num_samples = 4000
-Chain [1] num_warmup = 4000
 Chain [2] init_buffer = 75 (Default)
 Chain [2] term_buffer = 50 (Default)
 Chain [2] window = 25 (Default)
 Chain [2] algorithm = hmc (Default)
-Chain [1] save_warmup = 0 (Default)
-Chain [1] thin = 1 (Default)
 Chain [2] hmc
-Chain [1] adapt
-Chain [1] engaged = 1 (Default)
-Chain [1] gamma = 0.050000000000000003 (Default)
 Chain [2] engine = nuts (Default)
 Chain [2] nuts
 Chain [2] max_depth = 10 (Default)
 Chain [2] metric = diag_e (Default)
-Chain [1] delta = 0.80000000000000004 (Default)
-Chain [1] kappa = 0.75 (Default)
 Chain [2] metric_file =  (Default)
-Chain [1] t0 = 10 (Default)
-Chain [1] init_buffer = 75 (Default)
 Chain [2] stepsize = 1 (Default)
-Chain [1] term_buffer = 50 (Default)
-Chain [1] window = 25 (Default)
 Chain [2] stepsize_jitter = 0 (Default)
-Chain [1] algorithm = hmc (Default)
 Chain [2] num_chains = 1 (Default)
-Chain [1] hmc
-Chain [1] engine = nuts (Default)
 Chain [2] id = 2
-Chain [1] nuts
-Chain [1] max_depth = 10 (Default)
 Chain [2] data
-Chain [1] metric = diag_e (Default)
-Chain [2] file = /tmp/tmpqiqcycd7/4xelre_x.json
-Chain [1] metric_file =  (Default)
-Chain [1] stepsize = 1 (Default)
+Chain [2] file = /tmp/tmpk_1mowpz/tauwsstw.json
 Chain [2] init = 2 (Default)
-Chain [1] stepsize_jitter = 0 (Default)
-Chain [1] num_chains = 1 (Default)
 Chain [2] random
-Chain [1] id = 1 (Default)
-Chain [1] data
-Chain [2] seed = 74357
-Chain [1] file = /tmp/tmpqiqcycd7/4xelre_x.json
-Chain [1] init = 2 (Default)
+Chain [2] seed = 37984
 Chain [2] output
-Chain [1] random
-Chain [2] file = /storage/users/msiavashpour/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230611204018_2.csv
-Chain [1] seed = 74357
-Chain [1] output
+Chain [2] file = /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230913042913_2.csv
 Chain [2] diagnostic_file =  (Default)
 Chain [2] refresh = 100 (Default)
-Chain [1] file = /storage/users/msiavashpour/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230611204018_1.csv
-Chain [1] diagnostic_file =  (Default)
 Chain [2] sig_figs = -1 (Default)
 Chain [2] profile_file = profile.csv (Default)
-Chain [1] refresh = 100 (Default)
 Chain [2] num_threads = 1 (Default)
 Chain [2] 
-Chain [1] sig_figs = -1 (Default)
-Chain [1] profile_file = profile.csv (Default)
-Chain [1] num_threads = 1 (Default)
-Chain [1] 
-Chain [3] method = sample (Default)
-Chain [3] sample
-Chain [3] num_samples = 4000
-Chain [3] num_warmup = 4000
-Chain [3] save_warmup = 0 (Default)
-Chain [3] thin = 1 (Default)
-Chain [3] adapt
-Chain [3] engaged = 1 (Default)
-Chain [3] gamma = 0.050000000000000003 (Default)
-Chain [3] delta = 0.80000000000000004 (Default)
-Chain [3] kappa = 0.75 (Default)
-Chain [3] t0 = 10 (Default)
-Chain [3] init_buffer = 75 (Default)
-Chain [3] term_buffer = 50 (Default)
-Chain [3] window = 25 (Default)
-Chain [3] algorithm = hmc (Default)
-Chain [3] hmc
-Chain [3] engine = nuts (Default)
-Chain [3] nuts
-Chain [3] max_depth = 10 (Default)
-Chain [3] metric = diag_e (Default)
-Chain [3] metric_file =  (Default)
-Chain [3] stepsize = 1 (Default)
-Chain [3] stepsize_jitter = 0 (Default)
-Chain [3] num_chains = 1 (Default)
-Chain [3] id = 3
-Chain [3] data
-Chain [3] file = /tmp/tmpqiqcycd7/4xelre_x.json
-Chain [3] init = 2 (Default)
-Chain [3] random
-Chain [3] seed = 74357
-Chain [3] output
-Chain [3] file = /storage/users/msiavashpour/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230611204018_3.csv
-Chain [3] diagnostic_file =  (Default)
-Chain [3] refresh = 100 (Default)
-Chain [3] sig_figs = -1 (Default)
-Chain [3] profile_file = profile.csv (Default)
-Chain [3] num_threads = 1 (Default)
-Chain [3] 
 Chain [4] method = sample (Default)
 Chain [4] sample
-Chain [4] num_samples = 4000
-Chain [4] num_warmup = 4000
+Chain [4] num_samples = 4500
+Chain [4] num_warmup = 4500
 Chain [4] save_warmup = 0 (Default)
 Chain [4] thin = 1 (Default)
 Chain [4] adapt
@@ -157,449 +118,490 @@ Chain [4] stepsize_jitter = 0 (Default)
 Chain [4] num_chains = 1 (Default)
 Chain [4] id = 4
 Chain [4] data
-Chain [4] file = /tmp/tmpqiqcycd7/4xelre_x.json
+Chain [4] file = /tmp/tmpk_1mowpz/tauwsstw.json
 Chain [4] init = 2 (Default)
 Chain [4] random
-Chain [4] seed = 74357
+Chain [4] seed = 37984
 Chain [4] output
-Chain [4] file = /storage/users/msiavashpour/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230611204018_4.csv
+Chain [4] file = /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230913042913_4.csv
 Chain [4] diagnostic_file =  (Default)
 Chain [4] refresh = 100 (Default)
 Chain [4] sig_figs = -1 (Default)
 Chain [4] profile_file = profile.csv (Default)
 Chain [4] num_threads = 1 (Default)
 Chain [4] 
-Chain [2] 
-Chain [2] Gradient evaluation took 0.074693 seconds
-Chain [2] 1000 transitions using 10 leapfrog steps per transition would take 746.93 seconds.
-Chain [2] Adjust your expectations accordingly!
-Chain [2] 
-Chain [2] 
-Chain [3] 
-Chain [3] Gradient evaluation took 0.092269 seconds
-Chain [3] 1000 transitions using 10 leapfrog steps per transition would take 922.69 seconds.
-Chain [3] Adjust your expectations accordingly!
-Chain [3] 
+Chain [3] method = sample (Default)
+Chain [3] sample
+Chain [3] num_samples = 4500
+Chain [3] num_warmup = 4500
+Chain [3] save_warmup = 0 (Default)
+Chain [3] thin = 1 (Default)
+Chain [3] adapt
+Chain [3] engaged = 1 (Default)
+Chain [3] gamma = 0.050000000000000003 (Default)
+Chain [3] delta = 0.80000000000000004 (Default)
+Chain [3] kappa = 0.75 (Default)
+Chain [3] t0 = 10 (Default)
+Chain [3] init_buffer = 75 (Default)
+Chain [3] term_buffer = 50 (Default)
+Chain [3] window = 25 (Default)
+Chain [3] algorithm = hmc (Default)
+Chain [3] hmc
+Chain [3] engine = nuts (Default)
+Chain [3] nuts
+Chain [3] max_depth = 10 (Default)
+Chain [3] metric = diag_e (Default)
+Chain [3] metric_file =  (Default)
+Chain [3] stepsize = 1 (Default)
+Chain [3] stepsize_jitter = 0 (Default)
+Chain [3] num_chains = 1 (Default)
+Chain [3] id = 3
+Chain [3] data
+Chain [3] file = /tmp/tmpk_1mowpz/tauwsstw.json
+Chain [3] init = 2 (Default)
+Chain [3] random
+Chain [3] seed = 37984
+Chain [3] output
+Chain [3] file = /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230913042913_3.csv
+Chain [3] diagnostic_file =  (Default)
+Chain [3] refresh = 100 (Default)
+Chain [3] sig_figs = -1 (Default)
+Chain [3] profile_file = profile.csv (Default)
+Chain [3] num_threads = 1 (Default)
 Chain [3] 
 Chain [4] 
-Chain [4] Gradient evaluation took 0.090737 seconds
-Chain [4] 1000 transitions using 10 leapfrog steps per transition would take 907.37 seconds.
+Chain [4] Gradient evaluation took 0.060125 seconds
+Chain [4] 1000 transitions using 10 leapfrog steps per transition would take 601.25 seconds.
 Chain [4] Adjust your expectations accordingly!
 Chain [4] 
 Chain [4] 
+Chain [2] 
+Chain [2] Gradient evaluation took 0.072494 seconds
+Chain [2] 1000 transitions using 10 leapfrog steps per transition would take 724.94 seconds.
+Chain [2] Adjust your expectations accordingly!
+Chain [2] 
+Chain [2] 
 Chain [1] 
-Chain [1] Gradient evaluation took 0.11786 seconds
-Chain [1] 1000 transitions using 10 leapfrog steps per transition would take 1178.6 seconds.
+Chain [1] Gradient evaluation took 0.076761 seconds
+Chain [1] 1000 transitions using 10 leapfrog steps per transition would take 767.61 seconds.
 Chain [1] Adjust your expectations accordingly!
 Chain [1] 
 Chain [1] 
+Chain [3] 
+Chain [3] Gradient evaluation took 0.097875 seconds
+Chain [3] 1000 transitions using 10 leapfrog steps per transition would take 978.75 seconds.
+Chain [3] Adjust your expectations accordingly!
+Chain [3] 
+Chain [3] 
+Chain [1] Iteration:    1 / 9000 [  0%]  (Warmup)
+Chain [3] Iteration:    1 / 9000 [  0%]  (Warmup)
+Chain [4] Iteration:    1 / 9000 [  0%]  (Warmup)
+Chain [2] Iteration:    1 / 9000 [  0%]  (Warmup)
 Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
-Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 13, column 8 to column 72) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 34, column 20 to column 68) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 168, column 4 to column 91)
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 13, column 8 to column 72) (in '/storage/users/adadras/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 30, column 20 to column 74) (in '/storage/users/adadras/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 168, column 4 to column 91)
 Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
 Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
 Chain [3] 
 Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
-Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 13, column 8 to column 72) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 34, column 20 to column 68) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 168, column 4 to column 91)
+Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/adadras/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 13, column 8 to column 72) (in '/storage/users/adadras/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 30, column 20 to column 74) (in '/storage/users/adadras/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 168, column 4 to column 91)
 Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
 Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
 Chain [3] 
-Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
-Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 13, column 8 to column 72) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 34, column 20 to column 68) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 168, column 4 to column 91)
-Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
-Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
-Chain [3] 
-Chain [2] Iteration:    1 / 8000 [  0%]  (Warmup)
-Chain [3] Iteration:    1 / 8000 [  0%]  (Warmup)
-Chain [4] Iteration:    1 / 8000 [  0%]  (Warmup)
-Chain [1] Iteration:    1 / 8000 [  0%]  (Warmup)
-Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
-Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 13, column 8 to column 72) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 34, column 20 to column 68) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 168, column 4 to column 91)
-Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
-Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
-Chain [3] 
-Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
-Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 13, column 8 to column 72) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 34, column 20 to column 68) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 168, column 4 to column 91)
-Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
-Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
-Chain [4] 
-Chain [3] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
-Chain [3] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 13, column 8 to column 72) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 34, column 20 to column 68) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 168, column 4 to column 91)
-Chain [3] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
-Chain [3] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
-Chain [3] 
-Chain [4] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
-Chain [4] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 13, column 8 to column 72) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 34, column 20 to column 68) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 168, column 4 to column 91)
-Chain [4] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
-Chain [4] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
-Chain [4] 
-Chain [2] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
-Chain [2] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 13, column 8 to column 72) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 30, column 20 to column 74) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 168, column 4 to column 91)
-Chain [2] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
-Chain [2] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain [1] Iteration:  100 / 9000 [  1%]  (Warmup)
+Chain [2] Iteration:  100 / 9000 [  1%]  (Warmup)
+Chain [3] Iteration:  100 / 9000 [  1%]  (Warmup)
+Chain [4] Iteration:  100 / 9000 [  1%]  (Warmup)
+Chain [1] Iteration:  200 / 9000 [  2%]  (Warmup)
+Chain [3] Iteration:  200 / 9000 [  2%]  (Warmup)
+Chain [2] Iteration:  200 / 9000 [  2%]  (Warmup)
+Chain [4] Iteration:  200 / 9000 [  2%]  (Warmup)
+Chain [1] Iteration:  300 / 9000 [  3%]  (Warmup)
+Chain [2] Iteration:  300 / 9000 [  3%]  (Warmup)
+Chain [3] Iteration:  300 / 9000 [  3%]  (Warmup)
+Chain [4] Iteration:  300 / 9000 [  3%]  (Warmup)
+Chain [2] Iteration:  400 / 9000 [  4%]  (Warmup)
+Chain [1] Iteration:  400 / 9000 [  4%]  (Warmup)
+Chain [3] Iteration:  400 / 9000 [  4%]  (Warmup)
+Chain [4] Iteration:  400 / 9000 [  4%]  (Warmup)
+Chain [2] Iteration:  500 / 9000 [  5%]  (Warmup)
+Chain [1] Iteration:  500 / 9000 [  5%]  (Warmup)
+Chain [3] Iteration:  500 / 9000 [  5%]  (Warmup)
+Chain [4] Iteration:  500 / 9000 [  5%]  (Warmup)
+Chain [1] Iteration:  600 / 9000 [  6%]  (Warmup)
+Chain [2] Iteration:  600 / 9000 [  6%]  (Warmup)
+Chain [3] Iteration:  600 / 9000 [  6%]  (Warmup)
+Chain [4] Iteration:  600 / 9000 [  6%]  (Warmup)
+Chain [1] Iteration:  700 / 9000 [  7%]  (Warmup)
+Chain [2] Iteration:  700 / 9000 [  7%]  (Warmup)
+Chain [3] Iteration:  700 / 9000 [  7%]  (Warmup)
+Chain [4] Iteration:  700 / 9000 [  7%]  (Warmup)
+Chain [1] Iteration:  800 / 9000 [  8%]  (Warmup)
+Chain [2] Iteration:  800 / 9000 [  8%]  (Warmup)
+Chain [3] Iteration:  800 / 9000 [  8%]  (Warmup)
+Chain [4] Iteration:  800 / 9000 [  8%]  (Warmup)
+Chain [1] Iteration:  900 / 9000 [ 10%]  (Warmup)
+Chain [2] Iteration:  900 / 9000 [ 10%]  (Warmup)
+Chain [3] Iteration:  900 / 9000 [ 10%]  (Warmup)
+Chain [4] Iteration:  900 / 9000 [ 10%]  (Warmup)
+Chain [1] Iteration: 1000 / 9000 [ 11%]  (Warmup)
+Chain [2] Iteration: 1000 / 9000 [ 11%]  (Warmup)
+Chain [3] Iteration: 1000 / 9000 [ 11%]  (Warmup)
+Chain [1] Iteration: 1100 / 9000 [ 12%]  (Warmup)
+Chain [4] Iteration: 1000 / 9000 [ 11%]  (Warmup)
+Chain [2] Iteration: 1100 / 9000 [ 12%]  (Warmup)
+Chain [3] Iteration: 1100 / 9000 [ 12%]  (Warmup)
+Chain [1] Iteration: 1200 / 9000 [ 13%]  (Warmup)
+Chain [4] Iteration: 1100 / 9000 [ 12%]  (Warmup)
+Chain [2] Iteration: 1200 / 9000 [ 13%]  (Warmup)
+Chain [1] Iteration: 1300 / 9000 [ 14%]  (Warmup)
+Chain [3] Iteration: 1200 / 9000 [ 13%]  (Warmup)
+Chain [4] Iteration: 1200 / 9000 [ 13%]  (Warmup)
+Chain [2] Iteration: 1300 / 9000 [ 14%]  (Warmup)
+Chain [1] Iteration: 1400 / 9000 [ 15%]  (Warmup)
+Chain [4] Iteration: 1300 / 9000 [ 14%]  (Warmup)
+Chain [3] Iteration: 1300 / 9000 [ 14%]  (Warmup)
+Chain [2] Iteration: 1400 / 9000 [ 15%]  (Warmup)
+Chain [1] Iteration: 1500 / 9000 [ 16%]  (Warmup)
+Chain [4] Iteration: 1400 / 9000 [ 15%]  (Warmup)
+Chain [3] Iteration: 1400 / 9000 [ 15%]  (Warmup)
+Chain [2] Iteration: 1500 / 9000 [ 16%]  (Warmup)
+Chain [1] Iteration: 1600 / 9000 [ 17%]  (Warmup)
+Chain [4] Iteration: 1500 / 9000 [ 16%]  (Warmup)
+Chain [3] Iteration: 1500 / 9000 [ 16%]  (Warmup)
+Chain [2] Iteration: 1600 / 9000 [ 17%]  (Warmup)
+Chain [1] Iteration: 1700 / 9000 [ 18%]  (Warmup)
+Chain [4] Iteration: 1600 / 9000 [ 17%]  (Warmup)
+Chain [3] Iteration: 1600 / 9000 [ 17%]  (Warmup)
+Chain [2] Iteration: 1700 / 9000 [ 18%]  (Warmup)
+Chain [4] Iteration: 1700 / 9000 [ 18%]  (Warmup)
+Chain [1] Iteration: 1800 / 9000 [ 20%]  (Warmup)
+Chain [3] Iteration: 1700 / 9000 [ 18%]  (Warmup)
+Chain [2] Iteration: 1800 / 9000 [ 20%]  (Warmup)
+Chain [4] Iteration: 1800 / 9000 [ 20%]  (Warmup)
+Chain [1] Iteration: 1900 / 9000 [ 21%]  (Warmup)
+Chain [3] Iteration: 1800 / 9000 [ 20%]  (Warmup)
+Chain [2] Iteration: 1900 / 9000 [ 21%]  (Warmup)
+Chain [4] Iteration: 1900 / 9000 [ 21%]  (Warmup)
+Chain [1] Iteration: 2000 / 9000 [ 22%]  (Warmup)
+Chain [3] Iteration: 1900 / 9000 [ 21%]  (Warmup)
+Chain [2] Iteration: 2000 / 9000 [ 22%]  (Warmup)
+Chain [4] Iteration: 2000 / 9000 [ 22%]  (Warmup)
+Chain [1] Iteration: 2100 / 9000 [ 23%]  (Warmup)
+Chain [3] Iteration: 2000 / 9000 [ 22%]  (Warmup)
+Chain [2] Iteration: 2100 / 9000 [ 23%]  (Warmup)
+Chain [4] Iteration: 2100 / 9000 [ 23%]  (Warmup)
+Chain [1] Iteration: 2200 / 9000 [ 24%]  (Warmup)
+Chain [3] Iteration: 2100 / 9000 [ 23%]  (Warmup)
+Chain [2] Iteration: 2200 / 9000 [ 24%]  (Warmup)
+Chain [4] Iteration: 2200 / 9000 [ 24%]  (Warmup)
+Chain [1] Iteration: 2300 / 9000 [ 25%]  (Warmup)
+Chain [2] Iteration: 2300 / 9000 [ 25%]  (Warmup)
+Chain [3] Iteration: 2200 / 9000 [ 24%]  (Warmup)
+Chain [4] Iteration: 2300 / 9000 [ 25%]  (Warmup)
+Chain [1] Iteration: 2400 / 9000 [ 26%]  (Warmup)
+Chain [2] Iteration: 2400 / 9000 [ 26%]  (Warmup)
+Chain [4] Iteration: 2400 / 9000 [ 26%]  (Warmup)
+Chain [3] Iteration: 2300 / 9000 [ 25%]  (Warmup)
+Chain [1] Iteration: 2500 / 9000 [ 27%]  (Warmup)
+Chain [2] Iteration: 2500 / 9000 [ 27%]  (Warmup)
+Chain [4] Iteration: 2500 / 9000 [ 27%]  (Warmup)
+Chain [3] Iteration: 2400 / 9000 [ 26%]  (Warmup)
+Chain [1] Iteration: 2600 / 9000 [ 28%]  (Warmup)
+Chain [2] Iteration: 2600 / 9000 [ 28%]  (Warmup)
+Chain [4] Iteration: 2600 / 9000 [ 28%]  (Warmup)
+Chain [3] Iteration: 2500 / 9000 [ 27%]  (Warmup)
+Chain [1] Iteration: 2700 / 9000 [ 30%]  (Warmup)
+Chain [2] Iteration: 2700 / 9000 [ 30%]  (Warmup)
+Chain [3] Iteration: 2600 / 9000 [ 28%]  (Warmup)
+Chain [4] Iteration: 2700 / 9000 [ 30%]  (Warmup)
+Chain [1] Iteration: 2800 / 9000 [ 31%]  (Warmup)
+Chain [2] Iteration: 2800 / 9000 [ 31%]  (Warmup)
+Chain [3] Iteration: 2700 / 9000 [ 30%]  (Warmup)
+Chain [4] Iteration: 2800 / 9000 [ 31%]  (Warmup)
+Chain [1] Iteration: 2900 / 9000 [ 32%]  (Warmup)
+Chain [2] Iteration: 2900 / 9000 [ 32%]  (Warmup)
+Chain [4] Iteration: 2900 / 9000 [ 32%]  (Warmup)
+Chain [3] Iteration: 2800 / 9000 [ 31%]  (Warmup)
+Chain [1] Iteration: 3000 / 9000 [ 33%]  (Warmup)
+Chain [2] Iteration: 3000 / 9000 [ 33%]  (Warmup)
+Chain [3] Iteration: 2900 / 9000 [ 32%]  (Warmup)
+Chain [4] Iteration: 3000 / 9000 [ 33%]  (Warmup)
+Chain [1] Iteration: 3100 / 9000 [ 34%]  (Warmup)
+Chain [2] Iteration: 3100 / 9000 [ 34%]  (Warmup)
+Chain [3] Iteration: 3000 / 9000 [ 33%]  (Warmup)
+Chain [4] Iteration: 3100 / 9000 [ 34%]  (Warmup)
+Chain [1] Iteration: 3200 / 9000 [ 35%]  (Warmup)
+Chain [2] Iteration: 3200 / 9000 [ 35%]  (Warmup)
+Chain [4] Iteration: 3200 / 9000 [ 35%]  (Warmup)
+Chain [3] Iteration: 3100 / 9000 [ 34%]  (Warmup)
+Chain [1] Iteration: 3300 / 9000 [ 36%]  (Warmup)
+Chain [2] Iteration: 3300 / 9000 [ 36%]  (Warmup)
+Chain [4] Iteration: 3300 / 9000 [ 36%]  (Warmup)
+Chain [3] Iteration: 3200 / 9000 [ 35%]  (Warmup)
+Chain [1] Iteration: 3400 / 9000 [ 37%]  (Warmup)
+Chain [2] Iteration: 3400 / 9000 [ 37%]  (Warmup)
+Chain [4] Iteration: 3400 / 9000 [ 37%]  (Warmup)
+Chain [3] Iteration: 3300 / 9000 [ 36%]  (Warmup)
+Chain [1] Iteration: 3500 / 9000 [ 38%]  (Warmup)
+Chain [2] Iteration: 3500 / 9000 [ 38%]  (Warmup)
+Chain [4] Iteration: 3500 / 9000 [ 38%]  (Warmup)
+Chain [3] Iteration: 3400 / 9000 [ 37%]  (Warmup)
+Chain [1] Iteration: 3600 / 9000 [ 40%]  (Warmup)
+Chain [2] Iteration: 3600 / 9000 [ 40%]  (Warmup)
+Chain [4] Iteration: 3600 / 9000 [ 40%]  (Warmup)
+Chain [3] Iteration: 3500 / 9000 [ 38%]  (Warmup)
+Chain [1] Iteration: 3700 / 9000 [ 41%]  (Warmup)
+Chain [2] Iteration: 3700 / 9000 [ 41%]  (Warmup)
+Chain [4] Iteration: 3700 / 9000 [ 41%]  (Warmup)
+Chain [3] Iteration: 3600 / 9000 [ 40%]  (Warmup)
+Chain [1] Iteration: 3800 / 9000 [ 42%]  (Warmup)
+Chain [4] Iteration: 3800 / 9000 [ 42%]  (Warmup)
+Chain [2] Iteration: 3800 / 9000 [ 42%]  (Warmup)
+Chain [3] Iteration: 3700 / 9000 [ 41%]  (Warmup)
+Chain [1] Iteration: 3900 / 9000 [ 43%]  (Warmup)
+Chain [4] Iteration: 3900 / 9000 [ 43%]  (Warmup)
+Chain [2] Iteration: 3900 / 9000 [ 43%]  (Warmup)
+Chain [3] Iteration: 3800 / 9000 [ 42%]  (Warmup)
+Chain [1] Iteration: 4000 / 9000 [ 44%]  (Warmup)
+Chain [4] Iteration: 4000 / 9000 [ 44%]  (Warmup)
+Chain [2] Iteration: 4000 / 9000 [ 44%]  (Warmup)
+Chain [3] Iteration: 3900 / 9000 [ 43%]  (Warmup)
+Chain [1] Iteration: 4100 / 9000 [ 45%]  (Warmup)
+Chain [4] Iteration: 4100 / 9000 [ 45%]  (Warmup)
+Chain [2] Iteration: 4100 / 9000 [ 45%]  (Warmup)
+Chain [3] Iteration: 4000 / 9000 [ 44%]  (Warmup)
+Chain [1] Iteration: 4200 / 9000 [ 46%]  (Warmup)
+Chain [4] Iteration: 4200 / 9000 [ 46%]  (Warmup)
+Chain [2] Iteration: 4200 / 9000 [ 46%]  (Warmup)
+Chain [3] Iteration: 4100 / 9000 [ 45%]  (Warmup)
+Chain [1] Iteration: 4300 / 9000 [ 47%]  (Warmup)
+Chain [4] Iteration: 4300 / 9000 [ 47%]  (Warmup)
+Chain [2] Iteration: 4300 / 9000 [ 47%]  (Warmup)
+Chain [3] Iteration: 4200 / 9000 [ 46%]  (Warmup)
+Chain [1] Iteration: 4400 / 9000 [ 48%]  (Warmup)
+Chain [4] Iteration: 4400 / 9000 [ 48%]  (Warmup)
+Chain [2] Iteration: 4400 / 9000 [ 48%]  (Warmup)
+Chain [3] Iteration: 4300 / 9000 [ 47%]  (Warmup)
+Chain [3] Iteration: 4400 / 9000 [ 48%]  (Warmup)
+Chain [1] Iteration: 4500 / 9000 [ 50%]  (Warmup)
+Chain [1] Iteration: 4501 / 9000 [ 50%]  (Sampling)
+Chain [4] Iteration: 4500 / 9000 [ 50%]  (Warmup)
+Chain [4] Iteration: 4501 / 9000 [ 50%]  (Sampling)
+Chain [2] Iteration: 4500 / 9000 [ 50%]  (Warmup)
+Chain [2] Iteration: 4501 / 9000 [ 50%]  (Sampling)
+Chain [3] Iteration: 4500 / 9000 [ 50%]  (Warmup)
+Chain [3] Iteration: 4501 / 9000 [ 50%]  (Sampling)
+Chain [2] Iteration: 4600 / 9000 [ 51%]  (Sampling)
+Chain [1] Iteration: 4600 / 9000 [ 51%]  (Sampling)
+Chain [4] Iteration: 4600 / 9000 [ 51%]  (Sampling)
+Chain [2] Iteration: 4700 / 9000 [ 52%]  (Sampling)
+Chain [3] Iteration: 4600 / 9000 [ 51%]  (Sampling)
+Chain [2] Iteration: 4800 / 9000 [ 53%]  (Sampling)
+Chain [1] Iteration: 4700 / 9000 [ 52%]  (Sampling)
+Chain [3] Iteration: 4700 / 9000 [ 52%]  (Sampling)
+Chain [4] Iteration: 4700 / 9000 [ 52%]  (Sampling)
+Chain [2] Iteration: 4900 / 9000 [ 54%]  (Sampling)
+Chain [3] Iteration: 4800 / 9000 [ 53%]  (Sampling)
+Chain [2] Iteration: 5000 / 9000 [ 55%]  (Sampling)
+Chain [1] Iteration: 4800 / 9000 [ 53%]  (Sampling)
+Chain [4] Iteration: 4800 / 9000 [ 53%]  (Sampling)
+Chain [2] Iteration: 5100 / 9000 [ 56%]  (Sampling)
+Chain [3] Iteration: 4900 / 9000 [ 54%]  (Sampling)
+Chain [1] Iteration: 4900 / 9000 [ 54%]  (Sampling)
+Chain [2] Iteration: 5200 / 9000 [ 57%]  (Sampling)
+Chain [3] Iteration: 5000 / 9000 [ 55%]  (Sampling)
+Chain [4] Iteration: 4900 / 9000 [ 54%]  (Sampling)
+Chain [2] Iteration: 5300 / 9000 [ 58%]  (Sampling)
+Chain [2] Iteration: 5400 / 9000 [ 60%]  (Sampling)
+Chain [1] Iteration: 5000 / 9000 [ 55%]  (Sampling)
+Chain [3] Iteration: 5100 / 9000 [ 56%]  (Sampling)
+Chain [2] Iteration: 5500 / 9000 [ 61%]  (Sampling)
+Chain [4] Iteration: 5000 / 9000 [ 55%]  (Sampling)
+Chain [3] Iteration: 5200 / 9000 [ 57%]  (Sampling)
+Chain [1] Iteration: 5100 / 9000 [ 56%]  (Sampling)
+Chain [2] Iteration: 5600 / 9000 [ 62%]  (Sampling)
+Chain [4] Iteration: 5100 / 9000 [ 56%]  (Sampling)
+Chain [2] Iteration: 5700 / 9000 [ 63%]  (Sampling)
+Chain [3] Iteration: 5300 / 9000 [ 58%]  (Sampling)
+Chain [1] Iteration: 5200 / 9000 [ 57%]  (Sampling)
+Chain [2] Iteration: 5800 / 9000 [ 64%]  (Sampling)
+Chain [3] Iteration: 5400 / 9000 [ 60%]  (Sampling)
+Chain [4] Iteration: 5200 / 9000 [ 57%]  (Sampling)
+Chain [2] Iteration: 5900 / 9000 [ 65%]  (Sampling)
+Chain [1] Iteration: 5300 / 9000 [ 58%]  (Sampling)
+Chain [2] Iteration: 6000 / 9000 [ 66%]  (Sampling)
+Chain [3] Iteration: 5500 / 9000 [ 61%]  (Sampling)
+Chain [4] Iteration: 5300 / 9000 [ 58%]  (Sampling)
+Chain [2] Iteration: 6100 / 9000 [ 67%]  (Sampling)
+Chain [3] Iteration: 5600 / 9000 [ 62%]  (Sampling)
+Chain [1] Iteration: 5400 / 9000 [ 60%]  (Sampling)
+Chain [2] Iteration: 6200 / 9000 [ 68%]  (Sampling)
+Chain [4] Iteration: 5400 / 9000 [ 60%]  (Sampling)
+Chain [3] Iteration: 5700 / 9000 [ 63%]  (Sampling)
+Chain [2] Iteration: 6300 / 9000 [ 70%]  (Sampling)
+Chain [1] Iteration: 5500 / 9000 [ 61%]  (Sampling)
+Chain [2] Iteration: 6400 / 9000 [ 71%]  (Sampling)
+Chain [3] Iteration: 5800 / 9000 [ 64%]  (Sampling)
+Chain [4] Iteration: 5500 / 9000 [ 61%]  (Sampling)
+Chain [2] Iteration: 6500 / 9000 [ 72%]  (Sampling)
+Chain [1] Iteration: 5600 / 9000 [ 62%]  (Sampling)
+Chain [3] Iteration: 5900 / 9000 [ 65%]  (Sampling)
+Chain [2] Iteration: 6600 / 9000 [ 73%]  (Sampling)
+Chain [4] Iteration: 5600 / 9000 [ 62%]  (Sampling)
+Chain [2] Iteration: 6700 / 9000 [ 74%]  (Sampling)
+Chain [1] Iteration: 5700 / 9000 [ 63%]  (Sampling)
+Chain [3] Iteration: 6000 / 9000 [ 66%]  (Sampling)
+Chain [2] Iteration: 6800 / 9000 [ 75%]  (Sampling)
+Chain [3] Iteration: 6100 / 9000 [ 67%]  (Sampling)
+Chain [1] Iteration: 5800 / 9000 [ 64%]  (Sampling)
+Chain [4] Iteration: 5700 / 9000 [ 63%]  (Sampling)
+Chain [2] Iteration: 6900 / 9000 [ 76%]  (Sampling)
+Chain [3] Iteration: 6200 / 9000 [ 68%]  (Sampling)
+Chain [2] Iteration: 7000 / 9000 [ 77%]  (Sampling)
+Chain [1] Iteration: 5900 / 9000 [ 65%]  (Sampling)
+Chain [4] Iteration: 5800 / 9000 [ 64%]  (Sampling)
+Chain [2] Iteration: 7100 / 9000 [ 78%]  (Sampling)
+Chain [3] Iteration: 6300 / 9000 [ 70%]  (Sampling)
+Chain [2] Iteration: 7200 / 9000 [ 80%]  (Sampling)
+Chain [1] Iteration: 6000 / 9000 [ 66%]  (Sampling)
+Chain [4] Iteration: 5900 / 9000 [ 65%]  (Sampling)
+Chain [3] Iteration: 6400 / 9000 [ 71%]  (Sampling)
+Chain [2] Iteration: 7300 / 9000 [ 81%]  (Sampling)
+Chain [2] Iteration: 7400 / 9000 [ 82%]  (Sampling)
+Chain [1] Iteration: 6100 / 9000 [ 67%]  (Sampling)
+Chain [3] Iteration: 6500 / 9000 [ 72%]  (Sampling)
+Chain [4] Iteration: 6000 / 9000 [ 66%]  (Sampling)
+Chain [2] Iteration: 7500 / 9000 [ 83%]  (Sampling)
+Chain [3] Iteration: 6600 / 9000 [ 73%]  (Sampling)
+Chain [2] Iteration: 7600 / 9000 [ 84%]  (Sampling)
+Chain [1] Iteration: 6200 / 9000 [ 68%]  (Sampling)
+Chain [4] Iteration: 6100 / 9000 [ 67%]  (Sampling)
+Chain [2] Iteration: 7700 / 9000 [ 85%]  (Sampling)
+Chain [3] Iteration: 6700 / 9000 [ 74%]  (Sampling)
+Chain [1] Iteration: 6300 / 9000 [ 70%]  (Sampling)
+Chain [2] Iteration: 7800 / 9000 [ 86%]  (Sampling)
+Chain [3] Iteration: 6800 / 9000 [ 75%]  (Sampling)
+Chain [4] Iteration: 6200 / 9000 [ 68%]  (Sampling)
+Chain [2] Iteration: 7900 / 9000 [ 87%]  (Sampling)
+Chain [1] Iteration: 6400 / 9000 [ 71%]  (Sampling)
+Chain [2] Iteration: 8000 / 9000 [ 88%]  (Sampling)
+Chain [3] Iteration: 6900 / 9000 [ 76%]  (Sampling)
+Chain [2] Iteration: 8100 / 9000 [ 90%]  (Sampling)
+Chain [4] Iteration: 6300 / 9000 [ 70%]  (Sampling)
+Chain [3] Iteration: 7000 / 9000 [ 77%]  (Sampling)
+Chain [1] Iteration: 6500 / 9000 [ 72%]  (Sampling)
+Chain [2] Iteration: 8200 / 9000 [ 91%]  (Sampling)
+Chain [2] Iteration: 8300 / 9000 [ 92%]  (Sampling)
+Chain [4] Iteration: 6400 / 9000 [ 71%]  (Sampling)
+Chain [3] Iteration: 7100 / 9000 [ 78%]  (Sampling)
+Chain [1] Iteration: 6600 / 9000 [ 73%]  (Sampling)
+Chain [2] Iteration: 8400 / 9000 [ 93%]  (Sampling)
+Chain [3] Iteration: 7200 / 9000 [ 80%]  (Sampling)
+Chain [2] Iteration: 8500 / 9000 [ 94%]  (Sampling)
+Chain [4] Iteration: 6500 / 9000 [ 72%]  (Sampling)
+Chain [1] Iteration: 6700 / 9000 [ 74%]  (Sampling)
+Chain [3] Iteration: 7300 / 9000 [ 81%]  (Sampling)
+Chain [2] Iteration: 8600 / 9000 [ 95%]  (Sampling)
+Chain [4] Iteration: 6600 / 9000 [ 73%]  (Sampling)
+Chain [2] Iteration: 8700 / 9000 [ 96%]  (Sampling)
+Chain [3] Iteration: 7400 / 9000 [ 82%]  (Sampling)
+Chain [1] Iteration: 6800 / 9000 [ 75%]  (Sampling)
+Chain [2] Iteration: 8800 / 9000 [ 97%]  (Sampling)
+Chain [3] Iteration: 7500 / 9000 [ 83%]  (Sampling)
+Chain [4] Iteration: 6700 / 9000 [ 74%]  (Sampling)
+Chain [2] Iteration: 8900 / 9000 [ 98%]  (Sampling)
+Chain [1] Iteration: 6900 / 9000 [ 76%]  (Sampling)
+Chain [2] Iteration: 9000 / 9000 [100%]  (Sampling)
 Chain [2] 
-Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
-Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 13, column 8 to column 72) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 30, column 20 to column 74) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 168, column 4 to column 91)
-Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
-Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
-Chain [1] 
-Chain [1] Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
-Chain [1] Exception: Exception: Exception: Phi: x is -nan, but must be not nan! (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 13, column 8 to column 72) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 30, column 20 to column 74) (in '/storage/users/msiavashpour/ANN-EAM/models/stan/RDM/RDM_cd.stan', line 168, column 4 to column 91)
-Chain [1] If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
-Chain [1] but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
-Chain [1] 
-Chain [3] Iteration:  100 / 8000 [  1%]  (Warmup)
-Chain [1] Iteration:  100 / 8000 [  1%]  (Warmup)
-Chain [4] Iteration:  100 / 8000 [  1%]  (Warmup)
-Chain [2] Iteration:  100 / 8000 [  1%]  (Warmup)
-Chain [1] Iteration:  200 / 8000 [  2%]  (Warmup)
-Chain [3] Iteration:  200 / 8000 [  2%]  (Warmup)
-Chain [4] Iteration:  200 / 8000 [  2%]  (Warmup)
-Chain [2] Iteration:  200 / 8000 [  2%]  (Warmup)
-Chain [3] Iteration:  300 / 8000 [  3%]  (Warmup)
-Chain [1] Iteration:  300 / 8000 [  3%]  (Warmup)
-Chain [4] Iteration:  300 / 8000 [  3%]  (Warmup)
-Chain [2] Iteration:  300 / 8000 [  3%]  (Warmup)
-Chain [1] Iteration:  400 / 8000 [  5%]  (Warmup)
-Chain [3] Iteration:  400 / 8000 [  5%]  (Warmup)
-Chain [4] Iteration:  400 / 8000 [  5%]  (Warmup)
-Chain [2] Iteration:  400 / 8000 [  5%]  (Warmup)
-Chain [1] Iteration:  500 / 8000 [  6%]  (Warmup)
-Chain [4] Iteration:  500 / 8000 [  6%]  (Warmup)
-Chain [3] Iteration:  500 / 8000 [  6%]  (Warmup)
-Chain [2] Iteration:  500 / 8000 [  6%]  (Warmup)
-Chain [1] Iteration:  600 / 8000 [  7%]  (Warmup)
-Chain [4] Iteration:  600 / 8000 [  7%]  (Warmup)
-Chain [3] Iteration:  600 / 8000 [  7%]  (Warmup)
-Chain [1] Iteration:  700 / 8000 [  8%]  (Warmup)
-Chain [2] Iteration:  600 / 8000 [  7%]  (Warmup)
-Chain [4] Iteration:  700 / 8000 [  8%]  (Warmup)
-Chain [3] Iteration:  700 / 8000 [  8%]  (Warmup)
-Chain [1] Iteration:  800 / 8000 [ 10%]  (Warmup)
-Chain [2] Iteration:  700 / 8000 [  8%]  (Warmup)
-Chain [4] Iteration:  800 / 8000 [ 10%]  (Warmup)
-Chain [3] Iteration:  800 / 8000 [ 10%]  (Warmup)
-Chain [2] Iteration:  800 / 8000 [ 10%]  (Warmup)
-Chain [1] Iteration:  900 / 8000 [ 11%]  (Warmup)
-Chain [4] Iteration:  900 / 8000 [ 11%]  (Warmup)
-Chain [3] Iteration:  900 / 8000 [ 11%]  (Warmup)
-Chain [2] Iteration:  900 / 8000 [ 11%]  (Warmup)
-Chain [1] Iteration: 1000 / 8000 [ 12%]  (Warmup)
-Chain [4] Iteration: 1000 / 8000 [ 12%]  (Warmup)
-Chain [3] Iteration: 1000 / 8000 [ 12%]  (Warmup)
-Chain [1] Iteration: 1100 / 8000 [ 13%]  (Warmup)
-Chain [2] Iteration: 1000 / 8000 [ 12%]  (Warmup)
-Chain [4] Iteration: 1100 / 8000 [ 13%]  (Warmup)
-Chain [3] Iteration: 1100 / 8000 [ 13%]  (Warmup)
-Chain [1] Iteration: 1200 / 8000 [ 15%]  (Warmup)
-Chain [2] Iteration: 1100 / 8000 [ 13%]  (Warmup)
-Chain [4] Iteration: 1200 / 8000 [ 15%]  (Warmup)
-Chain [3] Iteration: 1200 / 8000 [ 15%]  (Warmup)
-Chain [1] Iteration: 1300 / 8000 [ 16%]  (Warmup)
-Chain [2] Iteration: 1200 / 8000 [ 15%]  (Warmup)
-Chain [4] Iteration: 1300 / 8000 [ 16%]  (Warmup)
-Chain [3] Iteration: 1300 / 8000 [ 16%]  (Warmup)
-Chain [1] Iteration: 1400 / 8000 [ 17%]  (Warmup)
-Chain [2] Iteration: 1300 / 8000 [ 16%]  (Warmup)
-Chain [4] Iteration: 1400 / 8000 [ 17%]  (Warmup)
-Chain [3] Iteration: 1400 / 8000 [ 17%]  (Warmup)
-Chain [1] Iteration: 1500 / 8000 [ 18%]  (Warmup)
-Chain [2] Iteration: 1400 / 8000 [ 17%]  (Warmup)
-Chain [4] Iteration: 1500 / 8000 [ 18%]  (Warmup)
-Chain [3] Iteration: 1500 / 8000 [ 18%]  (Warmup)
-Chain [1] Iteration: 1600 / 8000 [ 20%]  (Warmup)
-Chain [2] Iteration: 1500 / 8000 [ 18%]  (Warmup)
-Chain [4] Iteration: 1600 / 8000 [ 20%]  (Warmup)
-Chain [3] Iteration: 1600 / 8000 [ 20%]  (Warmup)
-Chain [2] Iteration: 1600 / 8000 [ 20%]  (Warmup)
-Chain [1] Iteration: 1700 / 8000 [ 21%]  (Warmup)
-Chain [4] Iteration: 1700 / 8000 [ 21%]  (Warmup)
-Chain [3] Iteration: 1700 / 8000 [ 21%]  (Warmup)
-Chain [2] Iteration: 1700 / 8000 [ 21%]  (Warmup)
-Chain [1] Iteration: 1800 / 8000 [ 22%]  (Warmup)
-Chain [4] Iteration: 1800 / 8000 [ 22%]  (Warmup)
-Chain [3] Iteration: 1800 / 8000 [ 22%]  (Warmup)
-Chain [1] Iteration: 1900 / 8000 [ 23%]  (Warmup)
-Chain [2] Iteration: 1800 / 8000 [ 22%]  (Warmup)
-Chain [3] Iteration: 1900 / 8000 [ 23%]  (Warmup)
-Chain [4] Iteration: 1900 / 8000 [ 23%]  (Warmup)
-Chain [1] Iteration: 2000 / 8000 [ 25%]  (Warmup)
-Chain [2] Iteration: 1900 / 8000 [ 23%]  (Warmup)
-Chain [3] Iteration: 2000 / 8000 [ 25%]  (Warmup)
-Chain [4] Iteration: 2000 / 8000 [ 25%]  (Warmup)
-Chain [1] Iteration: 2100 / 8000 [ 26%]  (Warmup)
-Chain [2] Iteration: 2000 / 8000 [ 25%]  (Warmup)
-Chain [3] Iteration: 2100 / 8000 [ 26%]  (Warmup)
-Chain [4] Iteration: 2100 / 8000 [ 26%]  (Warmup)
-Chain [1] Iteration: 2200 / 8000 [ 27%]  (Warmup)
-Chain [2] Iteration: 2100 / 8000 [ 26%]  (Warmup)
-Chain [3] Iteration: 2200 / 8000 [ 27%]  (Warmup)
-Chain [4] Iteration: 2200 / 8000 [ 27%]  (Warmup)
-Chain [1] Iteration: 2300 / 8000 [ 28%]  (Warmup)
-Chain [2] Iteration: 2200 / 8000 [ 27%]  (Warmup)
-Chain [3] Iteration: 2300 / 8000 [ 28%]  (Warmup)
-Chain [4] Iteration: 2300 / 8000 [ 28%]  (Warmup)
-Chain [1] Iteration: 2400 / 8000 [ 30%]  (Warmup)
-Chain [2] Iteration: 2300 / 8000 [ 28%]  (Warmup)
-Chain [3] Iteration: 2400 / 8000 [ 30%]  (Warmup)
-Chain [1] Iteration: 2500 / 8000 [ 31%]  (Warmup)
-Chain [4] Iteration: 2400 / 8000 [ 30%]  (Warmup)
-Chain [2] Iteration: 2400 / 8000 [ 30%]  (Warmup)
-Chain [3] Iteration: 2500 / 8000 [ 31%]  (Warmup)
-Chain [1] Iteration: 2600 / 8000 [ 32%]  (Warmup)
-Chain [4] Iteration: 2500 / 8000 [ 31%]  (Warmup)
-Chain [2] Iteration: 2500 / 8000 [ 31%]  (Warmup)
-Chain [1] Iteration: 2700 / 8000 [ 33%]  (Warmup)
-Chain [4] Iteration: 2600 / 8000 [ 32%]  (Warmup)
-Chain [3] Iteration: 2600 / 8000 [ 32%]  (Warmup)
-Chain [2] Iteration: 2600 / 8000 [ 32%]  (Warmup)
-Chain [1] Iteration: 2800 / 8000 [ 35%]  (Warmup)
-Chain [3] Iteration: 2700 / 8000 [ 33%]  (Warmup)
-Chain [4] Iteration: 2700 / 8000 [ 33%]  (Warmup)
-Chain [2] Iteration: 2700 / 8000 [ 33%]  (Warmup)
-Chain [1] Iteration: 2900 / 8000 [ 36%]  (Warmup)
-Chain [3] Iteration: 2800 / 8000 [ 35%]  (Warmup)
-Chain [4] Iteration: 2800 / 8000 [ 35%]  (Warmup)
-Chain [2] Iteration: 2800 / 8000 [ 35%]  (Warmup)
-Chain [1] Iteration: 3000 / 8000 [ 37%]  (Warmup)
-Chain [3] Iteration: 2900 / 8000 [ 36%]  (Warmup)
-Chain [4] Iteration: 2900 / 8000 [ 36%]  (Warmup)
-Chain [2] Iteration: 2900 / 8000 [ 36%]  (Warmup)
-Chain [1] Iteration: 3100 / 8000 [ 38%]  (Warmup)
-Chain [3] Iteration: 3000 / 8000 [ 37%]  (Warmup)
-Chain [4] Iteration: 3000 / 8000 [ 37%]  (Warmup)
-Chain [2] Iteration: 3000 / 8000 [ 37%]  (Warmup)
-Chain [1] Iteration: 3200 / 8000 [ 40%]  (Warmup)
-Chain [3] Iteration: 3100 / 8000 [ 38%]  (Warmup)
-Chain [4] Iteration: 3100 / 8000 [ 38%]  (Warmup)
-Chain [2] Iteration: 3100 / 8000 [ 38%]  (Warmup)
-Chain [1] Iteration: 3300 / 8000 [ 41%]  (Warmup)
-Chain [3] Iteration: 3200 / 8000 [ 40%]  (Warmup)
-Chain [4] Iteration: 3200 / 8000 [ 40%]  (Warmup)
-Chain [1] Iteration: 3400 / 8000 [ 42%]  (Warmup)
-Chain [2] Iteration: 3200 / 8000 [ 40%]  (Warmup)
-Chain [3] Iteration: 3300 / 8000 [ 41%]  (Warmup)
-Chain [4] Iteration: 3300 / 8000 [ 41%]  (Warmup)
-Chain [2] Iteration: 3300 / 8000 [ 41%]  (Warmup)
-Chain [1] Iteration: 3500 / 8000 [ 43%]  (Warmup)
-Chain [3] Iteration: 3400 / 8000 [ 42%]  (Warmup)
-Chain [2] Iteration: 3400 / 8000 [ 42%]  (Warmup)
-Chain [4] Iteration: 3400 / 8000 [ 42%]  (Warmup)
-Chain [1] Iteration: 3600 / 8000 [ 45%]  (Warmup)
-Chain [3] Iteration: 3500 / 8000 [ 43%]  (Warmup)
-Chain [2] Iteration: 3500 / 8000 [ 43%]  (Warmup)
-Chain [4] Iteration: 3500 / 8000 [ 43%]  (Warmup)
-Chain [1] Iteration: 3700 / 8000 [ 46%]  (Warmup)
-Chain [3] Iteration: 3600 / 8000 [ 45%]  (Warmup)
-Chain [2] Iteration: 3600 / 8000 [ 45%]  (Warmup)
-Chain [1] Iteration: 3800 / 8000 [ 47%]  (Warmup)
-Chain [4] Iteration: 3600 / 8000 [ 45%]  (Warmup)
-Chain [3] Iteration: 3700 / 8000 [ 46%]  (Warmup)
-Chain [1] Iteration: 3900 / 8000 [ 48%]  (Warmup)
-Chain [2] Iteration: 3700 / 8000 [ 46%]  (Warmup)
-Chain [4] Iteration: 3700 / 8000 [ 46%]  (Warmup)
-Chain [3] Iteration: 3800 / 8000 [ 47%]  (Warmup)
-Chain [2] Iteration: 3800 / 8000 [ 47%]  (Warmup)
-Chain [4] Iteration: 3800 / 8000 [ 47%]  (Warmup)
-Chain [1] Iteration: 4000 / 8000 [ 50%]  (Warmup)
-Chain [1] Iteration: 4001 / 8000 [ 50%]  (Sampling)
-Chain [3] Iteration: 3900 / 8000 [ 48%]  (Warmup)
-Chain [2] Iteration: 3900 / 8000 [ 48%]  (Warmup)
-Chain [4] Iteration: 3900 / 8000 [ 48%]  (Warmup)
-Chain [3] Iteration: 4000 / 8000 [ 50%]  (Warmup)
-Chain [3] Iteration: 4001 / 8000 [ 50%]  (Sampling)
-Chain [2] Iteration: 4000 / 8000 [ 50%]  (Warmup)
-Chain [2] Iteration: 4001 / 8000 [ 50%]  (Sampling)
-Chain [4] Iteration: 4000 / 8000 [ 50%]  (Warmup)
-Chain [4] Iteration: 4001 / 8000 [ 50%]  (Sampling)
-Chain [1] Iteration: 4100 / 8000 [ 51%]  (Sampling)
-Chain [3] Iteration: 4100 / 8000 [ 51%]  (Sampling)
-Chain [2] Iteration: 4100 / 8000 [ 51%]  (Sampling)
-Chain [3] Iteration: 4200 / 8000 [ 52%]  (Sampling)
-Chain [4] Iteration: 4100 / 8000 [ 51%]  (Sampling)
-Chain [1] Iteration: 4200 / 8000 [ 52%]  (Sampling)
-Chain [3] Iteration: 4300 / 8000 [ 53%]  (Sampling)
-Chain [2] Iteration: 4200 / 8000 [ 52%]  (Sampling)
-Chain [4] Iteration: 4200 / 8000 [ 52%]  (Sampling)
-Chain [3] Iteration: 4400 / 8000 [ 55%]  (Sampling)
-Chain [1] Iteration: 4300 / 8000 [ 53%]  (Sampling)
-Chain [3] Iteration: 4500 / 8000 [ 56%]  (Sampling)
-Chain [2] Iteration: 4300 / 8000 [ 53%]  (Sampling)
-Chain [4] Iteration: 4300 / 8000 [ 53%]  (Sampling)
-Chain [3] Iteration: 4600 / 8000 [ 57%]  (Sampling)
-Chain [1] Iteration: 4400 / 8000 [ 55%]  (Sampling)
-Chain [2] Iteration: 4400 / 8000 [ 55%]  (Sampling)
-Chain [3] Iteration: 4700 / 8000 [ 58%]  (Sampling)
-Chain [4] Iteration: 4400 / 8000 [ 55%]  (Sampling)
-Chain [3] Iteration: 4800 / 8000 [ 60%]  (Sampling)
-Chain [1] Iteration: 4500 / 8000 [ 56%]  (Sampling)
-Chain [2] Iteration: 4500 / 8000 [ 56%]  (Sampling)
-Chain [3] Iteration: 4900 / 8000 [ 61%]  (Sampling)
-Chain [4] Iteration: 4500 / 8000 [ 56%]  (Sampling)
-Chain [3] Iteration: 5000 / 8000 [ 62%]  (Sampling)
-Chain [2] Iteration: 4600 / 8000 [ 57%]  (Sampling)
-Chain [1] Iteration: 4600 / 8000 [ 57%]  (Sampling)
-Chain [4] Iteration: 4600 / 8000 [ 57%]  (Sampling)
-Chain [3] Iteration: 5100 / 8000 [ 63%]  (Sampling)
-Chain [2] Iteration: 4700 / 8000 [ 58%]  (Sampling)
-Chain [1] Iteration: 4700 / 8000 [ 58%]  (Sampling)
-Chain [3] Iteration: 5200 / 8000 [ 65%]  (Sampling)
-Chain [4] Iteration: 4700 / 8000 [ 58%]  (Sampling)
-Chain [3] Iteration: 5300 / 8000 [ 66%]  (Sampling)
-Chain [2] Iteration: 4800 / 8000 [ 60%]  (Sampling)
-Chain [1] Iteration: 4800 / 8000 [ 60%]  (Sampling)
-Chain [3] Iteration: 5400 / 8000 [ 67%]  (Sampling)
-Chain [4] Iteration: 4800 / 8000 [ 60%]  (Sampling)
-Chain [2] Iteration: 4900 / 8000 [ 61%]  (Sampling)
-Chain [3] Iteration: 5500 / 8000 [ 68%]  (Sampling)
-Chain [1] Iteration: 4900 / 8000 [ 61%]  (Sampling)
-Chain [3] Iteration: 5600 / 8000 [ 70%]  (Sampling)
-Chain [4] Iteration: 4900 / 8000 [ 61%]  (Sampling)
-Chain [2] Iteration: 5000 / 8000 [ 62%]  (Sampling)
-Chain [3] Iteration: 5700 / 8000 [ 71%]  (Sampling)
-Chain [1] Iteration: 5000 / 8000 [ 62%]  (Sampling)
-Chain [4] Iteration: 5000 / 8000 [ 62%]  (Sampling)
-Chain [2] Iteration: 5100 / 8000 [ 63%]  (Sampling)
-Chain [3] Iteration: 5800 / 8000 [ 72%]  (Sampling)
-Chain [3] Iteration: 5900 / 8000 [ 73%]  (Sampling)
-Chain [1] Iteration: 5100 / 8000 [ 63%]  (Sampling)
-Chain [4] Iteration: 5100 / 8000 [ 63%]  (Sampling)
-Chain [2] Iteration: 5200 / 8000 [ 65%]  (Sampling)
-Chain [3] Iteration: 6000 / 8000 [ 75%]  (Sampling)
-Chain [1] Iteration: 5200 / 8000 [ 65%]  (Sampling)
-Chain [3] Iteration: 6100 / 8000 [ 76%]  (Sampling)
-Chain [2] Iteration: 5300 / 8000 [ 66%]  (Sampling)
-Chain [4] Iteration: 5200 / 8000 [ 65%]  (Sampling)
-Chain [3] Iteration: 6200 / 8000 [ 77%]  (Sampling)
-Chain [1] Iteration: 5300 / 8000 [ 66%]  (Sampling)
-Chain [3] Iteration: 6300 / 8000 [ 78%]  (Sampling)
-Chain [2] Iteration: 5400 / 8000 [ 67%]  (Sampling)
-Chain [4] Iteration: 5300 / 8000 [ 66%]  (Sampling)
-Chain [3] Iteration: 6400 / 8000 [ 80%]  (Sampling)
-Chain [1] Iteration: 5400 / 8000 [ 67%]  (Sampling)
-Chain [2] Iteration: 5500 / 8000 [ 68%]  (Sampling)
-Chain [3] Iteration: 6500 / 8000 [ 81%]  (Sampling)
-Chain [4] Iteration: 5400 / 8000 [ 67%]  (Sampling)
-Chain [3] Iteration: 6600 / 8000 [ 82%]  (Sampling)
-Chain [1] Iteration: 5500 / 8000 [ 68%]  (Sampling)
-Chain [2] Iteration: 5600 / 8000 [ 70%]  (Sampling)
-Chain [4] Iteration: 5500 / 8000 [ 68%]  (Sampling)
-Chain [3] Iteration: 6700 / 8000 [ 83%]  (Sampling)
-Chain [3] Iteration: 6800 / 8000 [ 85%]  (Sampling)
-Chain [1] Iteration: 5600 / 8000 [ 70%]  (Sampling)
-Chain [2] Iteration: 5700 / 8000 [ 71%]  (Sampling)
-Chain [4] Iteration: 5600 / 8000 [ 70%]  (Sampling)
-Chain [3] Iteration: 6900 / 8000 [ 86%]  (Sampling)
-Chain [1] Iteration: 5700 / 8000 [ 71%]  (Sampling)
-Chain [2] Iteration: 5800 / 8000 [ 72%]  (Sampling)
-Chain [3] Iteration: 7000 / 8000 [ 87%]  (Sampling)
-Chain [4] Iteration: 5700 / 8000 [ 71%]  (Sampling)
-Chain [3] Iteration: 7100 / 8000 [ 88%]  (Sampling)
-Chain [1] Iteration: 5800 / 8000 [ 72%]  (Sampling)
-Chain [2] Iteration: 5900 / 8000 [ 73%]  (Sampling)
-Chain [4] Iteration: 5800 / 8000 [ 72%]  (Sampling)
-Chain [3] Iteration: 7200 / 8000 [ 90%]  (Sampling)
-Chain [3] Iteration: 7300 / 8000 [ 91%]  (Sampling)
-Chain [2] Iteration: 6000 / 8000 [ 75%]  (Sampling)
-Chain [4] Iteration: 5900 / 8000 [ 73%]  (Sampling)
-Chain [1] Iteration: 5900 / 8000 [ 73%]  (Sampling)
-Chain [3] Iteration: 7400 / 8000 [ 92%]  (Sampling)
-Chain [2] Iteration: 6100 / 8000 [ 76%]  (Sampling)
-Chain [3] Iteration: 7500 / 8000 [ 93%]  (Sampling)
-Chain [4] Iteration: 6000 / 8000 [ 75%]  (Sampling)
-Chain [1] Iteration: 6000 / 8000 [ 75%]  (Sampling)
-Chain [3] Iteration: 7600 / 8000 [ 95%]  (Sampling)
-Chain [2] Iteration: 6200 / 8000 [ 77%]  (Sampling)
-Chain [4] Iteration: 6100 / 8000 [ 76%]  (Sampling)
-Chain [3] Iteration: 7700 / 8000 [ 96%]  (Sampling)
-Chain [1] Iteration: 6100 / 8000 [ 76%]  (Sampling)
-Chain [3] Iteration: 7800 / 8000 [ 97%]  (Sampling)
-Chain [2] Iteration: 6300 / 8000 [ 78%]  (Sampling)
-Chain [4] Iteration: 6200 / 8000 [ 77%]  (Sampling)
-Chain [3] Iteration: 7900 / 8000 [ 98%]  (Sampling)
-Chain [1] Iteration: 6200 / 8000 [ 77%]  (Sampling)
-Chain [3] Iteration: 8000 / 8000 [100%]  (Sampling)
-Chain [3] 
-Chain [3] Elapsed Time: 21373.3 seconds (Warm-up)
-Chain [3] 21857.1 seconds (Sampling)
-Chain [3] 43230.3 seconds (Total)
-Chain [3] 
-Chain [3] 
-Chain [2] Iteration: 6400 / 8000 [ 80%]  (Sampling)
-Chain [4] Iteration: 6300 / 8000 [ 78%]  (Sampling)
-Chain [1] Iteration: 6300 / 8000 [ 78%]  (Sampling)
-Chain [2] Iteration: 6500 / 8000 [ 81%]  (Sampling)
-Chain [4] Iteration: 6400 / 8000 [ 80%]  (Sampling)
-Chain [1] Iteration: 6400 / 8000 [ 80%]  (Sampling)
-Chain [2] Iteration: 6600 / 8000 [ 82%]  (Sampling)
-Chain [4] Iteration: 6500 / 8000 [ 81%]  (Sampling)
-Chain [1] Iteration: 6500 / 8000 [ 81%]  (Sampling)
-Chain [2] Iteration: 6700 / 8000 [ 83%]  (Sampling)
-Chain [4] Iteration: 6600 / 8000 [ 82%]  (Sampling)
-Chain [1] Iteration: 6600 / 8000 [ 82%]  (Sampling)
-Chain [2] Iteration: 6800 / 8000 [ 85%]  (Sampling)
-Chain [4] Iteration: 6700 / 8000 [ 83%]  (Sampling)
-Chain [1] Iteration: 6700 / 8000 [ 83%]  (Sampling)
-Chain [2] Iteration: 6900 / 8000 [ 86%]  (Sampling)
-Chain [4] Iteration: 6800 / 8000 [ 85%]  (Sampling)
-Chain [1] Iteration: 6800 / 8000 [ 85%]  (Sampling)
-Chain [2] Iteration: 7000 / 8000 [ 87%]  (Sampling)
-Chain [4] Iteration: 6900 / 8000 [ 86%]  (Sampling)
-Chain [1] Iteration: 6900 / 8000 [ 86%]  (Sampling)
-Chain [2] Iteration: 7100 / 8000 [ 88%]  (Sampling)
-Chain [4] Iteration: 7000 / 8000 [ 87%]  (Sampling)
-Chain [1] Iteration: 7000 / 8000 [ 87%]  (Sampling)
-Chain [2] Iteration: 7200 / 8000 [ 90%]  (Sampling)
-Chain [4] Iteration: 7100 / 8000 [ 88%]  (Sampling)
-Chain [1] Iteration: 7100 / 8000 [ 88%]  (Sampling)
-Chain [2] Iteration: 7300 / 8000 [ 91%]  (Sampling)
-Chain [4] Iteration: 7200 / 8000 [ 90%]  (Sampling)
-Chain [2] Iteration: 7400 / 8000 [ 92%]  (Sampling)
-Chain [1] Iteration: 7200 / 8000 [ 90%]  (Sampling)
-Chain [4] Iteration: 7300 / 8000 [ 91%]  (Sampling)
-Chain [2] Iteration: 7500 / 8000 [ 93%]  (Sampling)
-Chain [1] Iteration: 7300 / 8000 [ 91%]  (Sampling)
-Chain [4] Iteration: 7400 / 8000 [ 92%]  (Sampling)
-Chain [2] Iteration: 7600 / 8000 [ 95%]  (Sampling)
-Chain [1] Iteration: 7400 / 8000 [ 92%]  (Sampling)
-Chain [4] Iteration: 7500 / 8000 [ 93%]  (Sampling)
-Chain [2] Iteration: 7700 / 8000 [ 96%]  (Sampling)
-Chain [1] Iteration: 7500 / 8000 [ 93%]  (Sampling)
-Chain [4] Iteration: 7600 / 8000 [ 95%]  (Sampling)
-Chain [2] Iteration: 7800 / 8000 [ 97%]  (Sampling)
-Chain [1] Iteration: 7600 / 8000 [ 95%]  (Sampling)
-Chain [4] Iteration: 7700 / 8000 [ 96%]  (Sampling)
-Chain [2] Iteration: 7900 / 8000 [ 98%]  (Sampling)
-Chain [1] Iteration: 7700 / 8000 [ 96%]  (Sampling)
-Chain [4] Iteration: 7800 / 8000 [ 97%]  (Sampling)
-Chain [2] Iteration: 8000 / 8000 [100%]  (Sampling)
-Chain [2] 
-Chain [2] Elapsed Time: 21546.2 seconds (Warm-up)
-Chain [2] 36229.8 seconds (Sampling)
-Chain [2] 57776 seconds (Total)
+Chain [2] Elapsed Time: 24746.6 seconds (Warm-up)
+Chain [2] 22645 seconds (Sampling)
+Chain [2] 47391.6 seconds (Total)
 Chain [2] 
 Chain [2] 
-Chain [1] Iteration: 7800 / 8000 [ 97%]  (Sampling)
-Chain [4] Iteration: 7900 / 8000 [ 98%]  (Sampling)
-Chain [1] Iteration: 7900 / 8000 [ 98%]  (Sampling)
-Chain [4] Iteration: 8000 / 8000 [100%]  (Sampling)
-Chain [4] 
-Chain [4] Elapsed Time: 21641.2 seconds (Warm-up)
-Chain [4] 37575.3 seconds (Sampling)
-Chain [4] 59216.5 seconds (Total)
-Chain [4] 
-Chain [4] 
-Chain [1] Iteration: 8000 / 8000 [100%]  (Sampling)
+Chain [3] Iteration: 7600 / 9000 [ 84%]  (Sampling)
+Chain [4] Iteration: 6800 / 9000 [ 75%]  (Sampling)
+Chain [1] Iteration: 7000 / 9000 [ 77%]  (Sampling)
+Chain [3] Iteration: 7700 / 9000 [ 85%]  (Sampling)
+Chain [4] Iteration: 6900 / 9000 [ 76%]  (Sampling)
+Chain [1] Iteration: 7100 / 9000 [ 78%]  (Sampling)
+Chain [3] Iteration: 7800 / 9000 [ 86%]  (Sampling)
+Chain [3] Iteration: 7900 / 9000 [ 87%]  (Sampling)
+Chain [1] Iteration: 7200 / 9000 [ 80%]  (Sampling)
+Chain [4] Iteration: 7000 / 9000 [ 77%]  (Sampling)
+Chain [3] Iteration: 8000 / 9000 [ 88%]  (Sampling)
+Chain [1] Iteration: 7300 / 9000 [ 81%]  (Sampling)
+Chain [4] Iteration: 7100 / 9000 [ 78%]  (Sampling)
+Chain [3] Iteration: 8100 / 9000 [ 90%]  (Sampling)
+Chain [1] Iteration: 7400 / 9000 [ 82%]  (Sampling)
+Chain [4] Iteration: 7200 / 9000 [ 80%]  (Sampling)
+Chain [3] Iteration: 8200 / 9000 [ 91%]  (Sampling)
+Chain [1] Iteration: 7500 / 9000 [ 83%]  (Sampling)
+Chain [3] Iteration: 8300 / 9000 [ 92%]  (Sampling)
+Chain [4] Iteration: 7300 / 9000 [ 81%]  (Sampling)
+Chain [3] Iteration: 8400 / 9000 [ 93%]  (Sampling)
+Chain [1] Iteration: 7600 / 9000 [ 84%]  (Sampling)
+Chain [4] Iteration: 7400 / 9000 [ 82%]  (Sampling)
+Chain [3] Iteration: 8500 / 9000 [ 94%]  (Sampling)
+Chain [1] Iteration: 7700 / 9000 [ 85%]  (Sampling)
+Chain [3] Iteration: 8600 / 9000 [ 95%]  (Sampling)
+Chain [4] Iteration: 7500 / 9000 [ 83%]  (Sampling)
+Chain [1] Iteration: 7800 / 9000 [ 86%]  (Sampling)
+Chain [3] Iteration: 8700 / 9000 [ 96%]  (Sampling)
+Chain [4] Iteration: 7600 / 9000 [ 84%]  (Sampling)
+Chain [3] Iteration: 8800 / 9000 [ 97%]  (Sampling)
+Chain [1] Iteration: 7900 / 9000 [ 87%]  (Sampling)
+Chain [3] Iteration: 8900 / 9000 [ 98%]  (Sampling)
+Chain [4] Iteration: 7700 / 9000 [ 85%]  (Sampling)
+Chain [1] Iteration: 8000 / 9000 [ 88%]  (Sampling)
+Chain [3] Iteration: 9000 / 9000 [100%]  (Sampling)
+Chain [3] 
+Chain [3] Elapsed Time: 25160.4 seconds (Warm-up)
+Chain [3] 32496.1 seconds (Sampling)
+Chain [3] 57656.5 seconds (Total)
+Chain [3] 
+Chain [3] 
+Chain [4] Iteration: 7800 / 9000 [ 86%]  (Sampling)
+Chain [1] Iteration: 8100 / 9000 [ 90%]  (Sampling)
+Chain [4] Iteration: 7900 / 9000 [ 87%]  (Sampling)
+Chain [1] Iteration: 8200 / 9000 [ 91%]  (Sampling)
+Chain [1] Iteration: 8300 / 9000 [ 92%]  (Sampling)
+Chain [4] Iteration: 8000 / 9000 [ 88%]  (Sampling)
+Chain [1] Iteration: 8400 / 9000 [ 93%]  (Sampling)
+Chain [4] Iteration: 8100 / 9000 [ 90%]  (Sampling)
+Chain [1] Iteration: 8500 / 9000 [ 94%]  (Sampling)
+Chain [4] Iteration: 8200 / 9000 [ 91%]  (Sampling)
+Chain [1] Iteration: 8600 / 9000 [ 95%]  (Sampling)
+Chain [4] Iteration: 8300 / 9000 [ 92%]  (Sampling)
+Chain [1] Iteration: 8700 / 9000 [ 96%]  (Sampling)
+Chain [4] Iteration: 8400 / 9000 [ 93%]  (Sampling)
+Chain [1] Iteration: 8800 / 9000 [ 97%]  (Sampling)
+Chain [4] Iteration: 8500 / 9000 [ 94%]  (Sampling)
+Chain [1] Iteration: 8900 / 9000 [ 98%]  (Sampling)
+Chain [4] Iteration: 8600 / 9000 [ 95%]  (Sampling)
+Chain [1] Iteration: 9000 / 9000 [100%]  (Sampling)
 Chain [1] 
-Chain [1] Elapsed Time: 20769.2 seconds (Warm-up)
-Chain [1] 39137.3 seconds (Sampling)
-Chain [1] 59906.5 seconds (Total)
+Chain [1] Elapsed Time: 24600.4 seconds (Warm-up)
+Chain [1] 42053.1 seconds (Sampling)
+Chain [1] 66653.5 seconds (Total)
 Chain [1] 
 Chain [1] 
+Chain [4] Iteration: 8700 / 9000 [ 96%]  (Sampling)
+Chain [4] Iteration: 8800 / 9000 [ 97%]  (Sampling)
+Chain [4] Iteration: 8900 / 9000 [ 98%]  (Sampling)
+Chain [4] Iteration: 9000 / 9000 [100%]  (Sampling)
+Chain [4] 
+Chain [4] Elapsed Time: 24687.7 seconds (Warm-up)
+Chain [4] 44984.7 seconds (Sampling)
+Chain [4] 69672.4 seconds (Total)
+Chain [4] 
+Chain [4] 
 ***hmc diagnostics:
-Processing csv files: /storage/users/msiavashpour/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230611204018_1.csv, /storage/users/msiavashpour/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230611204018_2.csv, /storage/users/msiavashpour/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230611204018_3.csv, /storage/users/msiavashpour/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230611204018_4.csv
+Processing csv files: /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230913042913_1.csv, /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230913042913_2.csv, /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230913042913_3.csv, /storage/users/adadras/ANN-EAM/Estimations/Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230913042913_4.csv
 
 Checking sampler transitions treedepth.
-Treedepth satisfactory for all transitions.
+5 of 18000 (0.03%) transitions hit the maximum treedepth limit of 10, or 2^10 leapfrog steps.
+Trajectories that are prematurely terminated due to this limit will result in slow exploration.
+For optimal performance, increase this limit.
 
 Checking sampler transitions for divergences.
 No divergent transitions found.
@@ -611,69 +613,5 @@ Effective sample size satisfactory.
 
 Split R-hat values satisfactory all parameters.
 
-Processing complete, no problems detected.
+Processing complete.
 
-***DF: 
-                         Mean     MCSE  StdDev  ...    N_Eff  N_Eff/s  R_hat
-name                                            ...                         
-lp__                 -6200.00  0.56000  30.000  ...   3000.0    0.022    1.0
-mu_ndt                  -0.43  0.00180   0.100  ...   3300.0    0.024    1.0
-mu_threshold_word        1.30  0.00048   0.039  ...   6800.0    0.050    1.0
-mu_threshold_nonword     1.70  0.00044   0.041  ...   8500.0    0.063    1.0
-mu_drift_word[1]         3.70  0.00160   0.100  ...   4360.0    0.032    1.0
-...                       ...      ...     ...  ...      ...      ...    ...
-log_lik[36782]          -3.40  0.00150   0.210  ...  19590.0    0.150    1.0
-log_lik[36783]          -3.50  0.00160   0.220  ...  19615.0    0.150    1.0
-log_lik[36784]          -3.50  0.00220   0.320  ...  21514.0    0.160    1.0
-log_lik[36785]          -4.20  0.00250   0.350  ...  20845.0    0.150    1.0
-log_lik[36786]          -4.30  0.00260   0.370  ...  20853.0    0.150    1.0
-
-[222544 rows x 9 columns]
-***Rhat > 1.01: 
-0
-Empty DataFrame
-Columns: [Mean, MCSE, StdDev, 5%, 50%, 95%, N_Eff, N_Eff/s, R_hat]
-Index: []
-       Mean  MCSE  StdDev   5%  50%  95%  N_Eff  N_Eff/s  R_hat
-count   0.0   0.0     0.0  0.0  0.0  0.0    0.0      0.0    0.0
-mean    NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
-std     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
-min     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
-25%     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
-50%     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
-75%     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
-max     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
-HF words, word drift mean and std:
-3.770363020687595 0.028895066004586495
-HF words, nonword drift mean and std:
-0.927061313022946 0.047309675512803025
-LF words word drift mean and std:
-2.6708653903651047 0.025244051496378976
-LF words nonword drift mean and std:
-1.5791060575755926 0.030955873727945605
-NW words word drift mean and std:
-0.682165903677266 0.026765342832795618
-NW words nonword drift mean and std:
-3.06324549370016 0.02173455409224231
-HF words, word threshold mean and std:
-1.5805643334673665 0.01669965975374206
-HF words, nonword threshold mean and std:
-1.8582650766641513 0.01695735733283924
-LF words word threshold mean and std:
-1.576732421015735 0.016793972235340675
-LF words nonword threshold mean and std:
-1.8538951827313463 0.016997302343509574
-NW words word threshold mean and std:
-1.581709089147596 0.016727854301203986
-NW words nonword threshold mean and std:
-1.8527903527984546 0.01686894641372075
-HF words ndt_t mean and std:
-0.24039276826459907 0.0027769287653862593
-LF words ndt_t mean and std:
-0.23962360259743826 0.0028072742244150926
-Non Words ndt_t mean and std:
-0.23956357801376243 0.002798440133839753
-Estimation Fit metrics:
-{'lppd': -5296.158953213657, 'p_waic': 923.2615767827439, 'waic': 12438.841059992801, 'waic_se': 489.7359498640495}
-INFO:cmdstanpy:deleting tmpfiles dir: /tmp/tmpqiqcycd7
-INFO:cmdstanpy:done
