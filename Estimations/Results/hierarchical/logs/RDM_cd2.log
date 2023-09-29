@@ -1,0 +1,90 @@
+nohup: ignoring input
+Model name: RDM_cd
+Directory  Results/hierarchical/Plots/RDM_cd/  already exists
+Directory  Results/hierarchical/stan_results/RDM_cd/  already exists
+Model's configs:
+{'model_name': 'RDM_cd', 'stan_file': 'RDM/RDM_cd.stan', 'dataset_name': 'fastText_FC.csv', 'plots_folder_name': 'RDM_cd', 'transf_params': ['transf_mu_drift_word', 'transf_mu_drift_nonword', 'transf_mu_threshold_word', 'transf_mu_threshold_nonword', 'transf_mu_ndt']}
+***hmc diagnostics:
+Processing csv files: Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230913042913_1.csv, Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230913042913_4.csv, Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230913042913_2.csv, Results/hierarchical/stan_results/RDM_cd/RDM_cd-20230913042913_3.csv
+
+Checking sampler transitions treedepth.
+5 of 18000 (0.03%) transitions hit the maximum treedepth limit of 10, or 2^10 leapfrog steps.
+Trajectories that are prematurely terminated due to this limit will result in slow exploration.
+For optimal performance, increase this limit.
+
+Checking sampler transitions for divergences.
+No divergent transitions found.
+
+Checking E-BFMI - sampler transitions HMC potential energy.
+E-BFMI satisfactory.
+
+Effective sample size satisfactory.
+
+Split R-hat values satisfactory all parameters.
+
+Processing complete.
+
+***DF: 
+                         Mean     MCSE  StdDev  ...    N_Eff  N_Eff/s  R_hat
+name                                            ...                         
+lp__                 -6200.00  0.52000  31.000  ...   3600.0    0.025    1.0
+mu_ndt                  -0.44  0.00170   0.099  ...   3200.0    0.023    1.0
+mu_threshold_word        1.30  0.00053   0.040  ...   5600.0    0.040    1.0
+mu_threshold_nonword     1.70  0.00051   0.041  ...   6600.0    0.047    1.0
+mu_drift_word[1]         3.70  0.00150   0.100  ...   4990.0    0.035    1.0
+...                       ...      ...     ...  ...      ...      ...    ...
+log_lik[36782]          -3.40  0.00150   0.210  ...  20591.0    0.140    1.0
+log_lik[36783]          -3.50  0.00150   0.220  ...  20615.0    0.140    1.0
+log_lik[36784]          -3.50  0.00200   0.310  ...  25354.0    0.180    1.0
+log_lik[36785]          -4.20  0.00220   0.350  ...  25803.0    0.180    1.0
+log_lik[36786]          -4.30  0.00230   0.360  ...  25820.0    0.180    1.0
+
+[222544 rows x 9 columns]
+***Rhat > 1.01: 
+0
+Empty DataFrame
+Columns: [Mean, MCSE, StdDev, 5%, 50%, 95%, N_Eff, N_Eff/s, R_hat]
+Index: []
+       Mean  MCSE  StdDev   5%  50%  95%  N_Eff  N_Eff/s  R_hat
+count   0.0   0.0     0.0  0.0  0.0  0.0    0.0      0.0    0.0
+mean    NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+std     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+min     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+25%     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+50%     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+75%     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+max     NaN   NaN     NaN  NaN  NaN  NaN    NaN      NaN    NaN
+HF words, word drift mean and std:
+3.770430817525493 0.029068094230814627
+HF words, nonword drift mean and std:
+0.9264763083662896 0.046687402411850834
+LF words word drift mean and std:
+2.67101360093849 0.025596889077931426
+LF words nonword drift mean and std:
+1.579301377991862 0.030832369558617016
+NW words word drift mean and std:
+0.6829172209420794 0.02699066027105538
+NW words nonword drift mean and std:
+3.0632908848286204 0.02204009924046457
+HF words, word threshold mean and std:
+1.5809012863449055 0.016833467609518392
+HF words, nonword threshold mean and std:
+1.8584708877581408 0.017143748193546582
+LF words word threshold mean and std:
+1.5770903165067924 0.016877231469206045
+LF words nonword threshold mean and std:
+1.8541200398406077 0.017179983471576277
+NW words word threshold mean and std:
+1.5820569382295342 0.016842416162922626
+NW words nonword threshold mean and std:
+1.8530162133373378 0.01707734343199015
+HF words ndt_t mean and std:
+0.2403299101042698 0.0028039427976745118
+LF words ndt_t mean and std:
+0.23955205700640758 0.0028202368990387005
+Non Words ndt_t mean and std:
+0.23949303961853993 0.0028200555679529305
+Estimation Fit metrics:
+{'lppd': -5295.008501727095, 'p_waic': 925.7294410240172, 'waic': 12441.475885502225, 'waic_se': 489.7002964567658}
+INFO:cmdstanpy:deleting tmpfiles dir: /tmp/tmpsk0r6kcz
+INFO:cmdstanpy:done

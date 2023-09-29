@@ -5,16 +5,8 @@ sys.path.append(os.path.dirname(os.path.abspath(os.getcwd())))
 
 import numpy as np
 import pandas as pd
-import cmdstanpy 
-import pickle
 import matplotlib.pyplot as plt
-import seaborn as sns
-import arviz as az
-import json
-from utils.random import random_rdm_2A
 from utils.utils import get_dfs, calculate_waic, bci, plot_mean_posterior
-import ipywidgets as widgets
-
 
 root = "../"
 plots_root = "Results/hierarchical/Plots/"
