@@ -54,12 +54,17 @@ def paremeter_recovery(params=['k_1', 'k_2', 'b', 'alpha', 'threshold_word', 'th
             behavioral_df = simulate_ANNRDM_individual(n_trials=n_trials, trials_info_df=word_nword_df,
                                                  parameters_set=parameters_set)
             stan_parameters = get_stan_parameters(behavioral_df, priors)
-            fit = rdm_model.sample(data=stan_parameters,
-                               iter_sampling=n_sample, 
-                               iter_warmup=n_warmup,
-                               chains=n_chains,
-                               show_console=False)
+            try:
+                fit = rdm_model.sample(data=stan_parameters,
+                                   iter_sampling=n_sample, 
+                                   iter_warmup=n_warmup,
+                                   chains=n_chains,
+                                   show_console=False)
+            except:
+                print("Could not fit model becuase of generated parameters")
+                continue
 
+            print("dasdsadd")
             df = fit.summary()
             badRhat = False
             for f in df["R_hat"]:

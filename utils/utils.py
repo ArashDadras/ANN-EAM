@@ -262,7 +262,7 @@ def get_stan_parameters(generated_df, priors):
     response = generated_df["response"].to_numpy().astype(int)               # for all models
     rt = generated_df["rt"].to_numpy()                                       # for all models
     minRT = generated_df["minRT"].to_numpy()                                 # for all models
-    RTbound = 0.1                                                             # for all models
+    RTbound = 0.05                                                           # for all models
     ndt = generated_df["ndt"]
     threshold_word = generated_df["threshold_word"]
     threshold_nonword = generated_df["threshold_nonword"]
