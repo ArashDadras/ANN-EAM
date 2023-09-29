@@ -100,18 +100,17 @@ def simulate_ANNRDM_individual(n_trials, trials_info_df, parameters_set):
     k_2 = parameters_set.loc["k_2", "generated"]
     threshold_word = parameters_set.loc["threshold_word", "generated"]
     threshold_nonword = parameters_set.loc["threshold_nonword", "generated"]
-    # g = parameters_set.loc["g", "generated"]
-    # m = parameters_set.loc["m", "generated"]
+    ndt = parameters_set.loc["ndt", "generated"]
+
     
     data["k_1"] = np.repeat(k_1, n_trials)
     data["k_2"] = np.repeat(k_2, n_trials)
     data["alpha"]= np.repeat(alpha, n_trials)
     data["b"] = np.repeat(b, n_trials)
-    # data["m"] = np.repeat(m, n_trials)
-    # data["g"] = np.repeat(g, n_trials)
     data["threshold_word"] = np.repeat(threshold_word, n_trials)
     data["threshold_nonword"] = np.repeat(threshold_nonword, n_trials)
-    data["ndt"] = np.repeat(truncnorm.rvs(0.1, 1,loc=0.3315), n_trials)
+    # data["ndt"] = np.repeat(truncnorm.rvs(0.1, 1,loc=0.3315), n_trials)
+    data["ndt"] = np.repeat(ndt, n_trials)
 
     word_drifts = k_1 + b * zipf
     word_drifts /= 1 + np.exp(-alpha * (pword-0.5))
